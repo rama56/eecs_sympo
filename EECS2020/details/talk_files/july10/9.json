@@ -1,0 +1,9 @@
+{
+	"title" : "Graph-constrained dynamic choice",
+	"photo_link" : "photos/9._Vivek_Borker.jpg",
+	"speaker_link": "https://www.ee.iitb.ac.in/web/faculty/homepage/borkar",
+	"speaker" : "Vivek Borkar",
+	"abstract" : "We argue that graph-constrained dynamic choice with reinforcement can be viewed as a scaled version of a special instance of replicator dynamics. The latter also arises as the limiting differential equation for empirical measures of a vertex reinforced random walk on a directed graph. We use this equivalence to show that for positively alpha-homogeneous rewards with alpha > 0, the asymptotic outcome concentrates around the optimum in a certain limiting sense when `annealed' by letting alpha increase to infinity slowly. We also compare this model with classical simulated annealing. (Joint work with K. Avrachenkov, S. Moharir and S. M. Shah)",
+	"bio" : "Vivek Borkar did his B.Tech. (EE, `76) from IIT Bombay, MS (Systems and Control, `77) from Case Western Reserve Uni., and Ph.D. (EECS, `80) from Uni. of California, Berkeley. He has held positions at TIFR CAM and IISc in Bengaluru and TIFR and IIT Bombay in Mumbai. He retired from the latter in Sept. 2019. His researh interests are stochastic optimization and control - theory, algorithms and optimization."
+}
+

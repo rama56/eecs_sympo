@@ -1,0 +1,8 @@
+{
+	"title" : "Adaptive Beam Management for Mobile mm-Wave Devices",
+	"photo_link" : "photos/3._P.R._Kumar.jpg",
+	"speaker" : "P.R. Kumar",
+	"speaker_link" : "https://cesg.tamu.edu/faculty/p-r-kumar/",
+	"abstract" : "In the mm-wave band, narrow beams are used to overcome path loss. They can be used to support high data rates with reduced interference. However, it is necessary to manage the narrow directional beams since they can become misaligned as users move, blocked as users rotate, or lose connectivity as users move out of range.  We will present an account of the opportunities, challenges, and some solutions. <br>[Joint work with Venkata Siva Santosh Ganji, Francisco A. Espinal and Tzu-Hsiang Lin]",
+	"bio" : "P. R. Kumar obtained his B.Tech. degree in Electrical Engineering (Electronics) from I.I.T. Madras in 1973, and the M.S. and D.Sc. degrees in Systems Science and Mathematics from Washington University, St. Louis in 1975 and 1977, respectively. From 1977-84, he was a faculty member in the Department of Mathematics at the University of Maryland Baltimore County. From 1985-2011, he was a faculty member in the Department of Electrical and Computer Engineering and the Coordinated Science Laboratory at the University of Illinois. Currently he is at Texas A&M University where he is a University Distinguished Professor, Regents Professor, and holds the College of Engineering Chair in Computer Engineering."
+}

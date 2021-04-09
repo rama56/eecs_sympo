@@ -1,0 +1,9 @@
+{
+	"title" : "Collaborative Multi-agent Bandits",
+	"photo_link" : "photos/12._Sanjay_Shakkottai.jpg",
+	"speaker_link": "https://sites.google.com/view/sanjay-shakkottai/",
+	"speaker" : "Sanjay Shakkottai",
+	"abstract" : "In this talk, we consider a (networks+learning) bandit, where N agents collaborate by exchanging only arm recommendations through pairwise gossip over a communication network to determine the best resource (aka arm in a bandit). We establish that even with very limited communications, the regret per agent is a factor of order N smaller compared to the case of no collaborations. Furthermore, we show that the communication constraints only have a second order effect on regret. Based on joint work with Ronshee Chawla, Abishek Sankararaman and Ayalvadi J. Ganesh.",
+	"bio" : "Sanjay Shakkottai received his Ph.D. from the ECE Department at the University of Illinois at Urbana-Champaign in 2002. He is with The University of Texas at Austin, where he is currently the Temple Foundation Endowed Professor No. 3, and a Professor in the Department of Electrical and Computer Engineering. He received the NSF CAREER award in 2004, and was elected as an IEEE Fellow in 2014. His research interests lie at the intersection of algorithms for resource allocation, statistical learning and networks, with applications to wireless communication networks and online platforms."
+}
+

@@ -1,0 +1,130 @@
+#participating_departments .member {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+#participating_departments .member .pic {
+  margin-bottom: 0px;
+  overflow: hidden;
+  height: 200px;
+
+}
+
+#participating_departments .member .pic img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: scale-down;
+}
+
+#participating_departments .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+#participating_departments .member span {
+  /*font-style: italic;*/
+  display: block;
+  margin-top:-30px;
+  font-size: 13px;
+}
+
+.img_mine {
+	text-align: center;
+}
+.img_mine figure img{
+    float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+#themes {
+	background: #ececec;
+}
+/* speakers Section
+--------------------------------*/
+#speakers {
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+
+#speakers .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#speakers .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 200px;
+  
+}
+
+#speakers .member .pic img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#speakers .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+#speakers .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+#speakers .member .social {
+  margin-top: 15px;
+}
+
+#speakers .member .social a {
+  color: #b3b3b3;
+}
+
+#speakers .member .social a:hover {
+  color: #2dc997;
+}
+
+#speakers .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+.content-desktop {display: none;}
+.content-mobile {display: block;text-align:center;width:100%; margin-left: 44px;margin-top: -28px;}
+
+}
+
+.blinking{
+	animation:blinkingText 2s infinite;
+}
+@keyframes blinking {
+        0%{
+	}
+        /* YOU CAN ADD MORE COLORS IN THE KEYFRAMES IF YOU WANT
+ *         50%{
+ *                   background-color: #55d66b;
+ *                             border: 5px solid #126620;
+ *                                     }
+ *                                             */
+        50%{
+		background-color: transparent;
+        }
+      }
+      #demo{
+        /* NAME | TIME | ITERATION */
+	color:white;
+        animation: blinking 1.2s infinite;
+      }
