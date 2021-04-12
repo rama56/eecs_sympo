@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+        <script>
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+    <title>Robert Bosch Centre for Cyber-Physical Systems &#8211; Interdisciplinary research and academic centre focused on unearthing new knowledge in the science and engineering of cyber physical systems.</title>
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="google-site-verification=pwiBUKFP3HCR-HkkmYAqlbd-DQAcmzdOjLNSIydrzjk" />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Robert Bosch Centre for Cyber-Physical Systems &raquo; Feed" href="http://www.rbccps.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Robert Bosch Centre for Cyber-Physical Systems &raquo; Comments Feed" href="http://www.rbccps.org/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Robert Bosch Centre for Cyber-Physical Systems &raquo; iCal Feed" href="http://www.rbccps.org/events/?ical=1" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.rbccps.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='atomic-blocks-fontawesome-css'  href='http://www.rbccps.org/wp-content/plugins/atomic-blocks/dist/assets/fontawesome/css/all.min.css?ver=1552884991' type='text/css' media='all' />
+<link rel='stylesheet' id='companion-bundle-css'   data-href='http://www.rbccps.org/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/css/companion.bundle.min.css?ver=1.6.110' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-cv-public-style-css'  href='http://www.rbccps.org/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=2.1.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://www.rbccps.org/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='atomic-blocks-style-css-css'  href='http://www.rbccps.org/wp-content/plugins/atomic-blocks/dist/blocks.style.build.css?ver=1552884989' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.rbccps.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='searchandfilter-css'  href='http://www.rbccps.org/wp-content/plugins/search-filter/style.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='backButtonCSS-css'  href='http://www.rbccps.org/wp-content/plugins/wp-back-button/css/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='googleFonts1-css'   data-href='http://fonts.googleapis.com/css?family=Cabin%3A400%2C500%2C600%2Cbold&#038;ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='googleFonts2-css'   data-href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow%3Aregular%2Cbold&#038;ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-show-posts-css'  href='http://www.rbccps.org/wp-content/plugins/wp-show-posts/css/wp-show-posts-min.css?ver=1.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='http://www.rbccps.org/wp-content/themes/mesmerize/style.min.css?ver=1.6.81' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+/** cached kirki style */@media screen and (min-width: 768px){.header-homepage{background-position:center center;}.header{background-position:center center;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.6;}.mesmerize-front-page .header-separator .svg-white-bg{fill:rgb(255,255,255)!important;}.mesmerize-front-page .header-separator path.svg-accent{stroke:rgb(113,63,147)!important;}.mesmerize-front-page .header-separator svg{height:150px!important;}.header.color-overlay:before{background:#000000;}.header .background-overlay,.header.color-overlay::before{opacity:0.6;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}.inner-header-description{padding-top:1%;padding-bottom:1%;}.mesmerize-front-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:5%;padding-bottom:5%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}
+</style>
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='http://www.rbccps.org/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.6.81' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='http://www.rbccps.org/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://www.rbccps.org/wp-content/plugins/jetpack/css/jetpack.css?ver=7.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.rbccps.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript'>
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+</script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/wp-back-button/js/wp-backbutton.js?ver=5.1.1'></script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/atomic-blocks/dist/assets/js/dismiss.js?ver=1552884989'></script>
+<link rel='https://api.w.org/' href='http://www.rbccps.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.rbccps.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.rbccps.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+<link rel="canonical" href="http://www.rbccps.org/" />
+<link rel='shortlink' href='https://wp.me/P8dKDs-Xw' />
+<link rel="alternate" type="application/json+oembed" href="http://www.rbccps.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.rbccps.org%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.rbccps.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.rbccps.org%2F&#038;format=xml" />
+    <style data-name="header-overlap-with">
+        @media screen and (min-width: 768px) {
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .header-homepage {
+                padding-bottom: 120px;
+            }
+
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .page-content div[data-overlap]:first-of-type > div:not([class*="section-separator"]) {
+                margin-top: -120px;
+            }
+        }
+    </style>
+    
+<!-- teachPress -->
+<script type="text/javascript" src="http://www.rbccps.org/wp-content/plugins/teachpress/js/frontend.js?ver=6.2.4"></script>
+<link type="text/css" href="http://www.rbccps.org/wp-content/plugins/teachpress/styles/teachpress_front.css?ver=6.2.4" rel="stylesheet" />
+<!-- END teachPress -->
+<style type="text/css">.backButton{}</style><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://www.rbccps.org"><link rel="https://theeventscalendar.com/" href="http://www.rbccps.org/wp-json/tribe/events/v1/" />
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<link rel='dns-prefetch' href='//i0.wp.com'/>
+<link rel='dns-prefetch' href='//i1.wp.com'/>
+<link rel='dns-prefetch' href='//i2.wp.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>
+    
+    <style type="text/css" data-name="custom-mobile-image-position">
+        @media screen and (max-width: 767px) {
+            /*Custom mobile position*/
+        .header-homepage {
+            background-position: 50% 0px;
+        }
+        }
+    </style>
+
+    
+        <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+    
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Robert Bosch Centre for Cyber-Physical Systems" />
+<meta property="og:description" content="Interdisciplinary research and academic centre focused on unearthing new knowledge in the science and engineering of cyber physical systems." />
+<meta property="og:url" content="http://www.rbccps.org/" />
+<meta property="og:site_name" content="Robert Bosch Centre for Cyber-Physical Systems" />
+<meta property="og:image" content="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2016/12/cropped-BCCPS-Logo.png?fit=512%2C512" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
+<meta name="twitter:text:title" content="Front Page" />
+<meta name="twitter:image" content="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2016/12/cropped-BCCPS-Logo.png?fit=240%2C240" />
+<meta name="twitter:card" content="summary" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="icon" href="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2016/12/cropped-BCCPS-Logo.png?fit=32%2C32" sizes="32x32" />
+<link rel="icon" href="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2016/12/cropped-BCCPS-Logo.png?fit=192%2C192" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2016/12/cropped-BCCPS-Logo.png?fit=180%2C180" />
+<meta name="msapplication-TileImage" content="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2016/12/cropped-BCCPS-Logo.png?fit=270%2C270" />
+    <style id="page-content-custom-styles">
+            </style>
+        <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #F5FAFD;
+        }
+    </style>
+    </head>
+
+<body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-3690 overlap-first-section tribe-no-js mesmerize-front-page elementor-default mesmerize-content-no-padding ">
+
+
+<div id="page-top" class="header-top homepage">
+        <div class="navigation-bar bordered homepage"  data-sticky='0'  data-sticky-mobile='1'  data-sticky-to='top' >
+    <div class="navigation-wrapper ">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a class="text-logo" data-type="group"  data-dynamic-mod="true" href="http://www.rbccps.org/">Robert<span style="font-weight: 300;" class="span12"> Bosch</span> Centre<span style="font-weight: 300;" class="span12"> for</span> Cyber-Physical<span style="font-weight: 300;" class="span12"> Systems</span></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-3687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3687"><a data-ps2id-api="true">The Centre</a>
+<ul class="sub-menu">
+	<li id="menu-item-2123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2123"><a href="http://www.rbccps.org/about/" data-ps2id-api="true">About us</a></li>
+	<li id="menu-item-3688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3688"><a data-ps2id-api="true">People</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2384"><a href="http://www.rbccps.org/people/faculty/" data-ps2id-api="true">Faculty Participants</a></li>
+		<li id="menu-item-2991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2991"><a href="http://www.rbccps.org/people/inspire/" data-ps2id-api="true">INSPIRE Faculty</a></li>
+		<li id="menu-item-2383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2383"><a href="http://www.rbccps.org/people/research/" data-ps2id-api="true">Research Staff</a></li>
+		<li id="menu-item-2453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2453"><a href="http://www.rbccps.org/people/phd-students/" data-ps2id-api="true">PhD Students</a></li>
+		<li id="menu-item-2379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2379"><a href="http://www.rbccps.org/people/project-staff/" data-ps2id-api="true">Project Staff</a></li>
+		<li id="menu-item-3072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3072"><a href="http://www.rbccps.org/people/admin-staff/" data-ps2id-api="true">Administrative Staff</a></li>
+		<li id="menu-item-2382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2382"><a href="http://www.rbccps.org/people/visiting-professors/" data-ps2id-api="true">Visiting Professors</a></li>
+		<li id="menu-item-3921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3921"><a href="http://www.rbccps.org/people/visiting-scientists/" data-ps2id-api="true">Visiting Scientists/Technologists</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3913" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3913"><a href="http://www.rbccps.org/makery/" data-ps2id-api="true">Makery</a></li>
+	<li id="menu-item-3833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3833"><a href="http://www.rbccps.org/partners/" data-ps2id-api="true">Collaboration partners</a></li>
+	<li id="menu-item-2195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2195"><a href="http://www.rbccps.org/newsletter/" data-ps2id-api="true">Newsletter</a></li>
+</ul>
+</li>
+<li id="menu-item-3675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3675"><a href="http://www.rbccps.org/research/" data-ps2id-api="true">Research</a>
+<ul class="sub-menu">
+	<li id="menu-item-3671" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3671"><a data-ps2id-api="true">IoT enabled socio-technical systems</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3664"><a href="http://www.rbccps.org/research/smart-city/" data-ps2id-api="true">Smart City</a></li>
+		<li id="menu-item-3669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3669"><a href="http://www.rbccps.org/research/iiot/" data-ps2id-api="true">Industrial IoT for Energy Efficient Assembly Lines</a></li>
+		<li id="menu-item-3665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3665"><a href="http://www.rbccps.org/research/air-quality-monitoring/" data-ps2id-api="true">Air quality monitoring</a></li>
+		<li id="menu-item-3667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3667"><a href="http://www.rbccps.org/research/smart-energy/" data-ps2id-api="true">Smart Energy</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3673"><a data-ps2id-api="true">Autonomous navigation of unmanned vehicles</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3670"><a href="http://www.rbccps.org/research/mbzirc/" data-ps2id-api="true">Mohamed Bin Zayed International Robotics Challenge (MBZIRC)</a></li>
+		<li id="menu-item-3666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3666"><a href="http://www.rbccps.org/research/drones/" data-ps2id-api="true">Drones</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3672"><a data-ps2id-api="true">Machine learning for robotics</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3662"><a href="http://www.rbccps.org/research/learning-to-control/" data-ps2id-api="true">Learning to control</a></li>
+		<li id="menu-item-3663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3663"><a href="http://www.rbccps.org/research/walking-robot/" data-ps2id-api="true">Walking robot</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3660"><a href="http://www.rbccps.org/research/student-research-grants/" data-ps2id-api="true">Student Research Grants</a></li>
+	<li id="menu-item-3676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3676"><a href="http://www.rbccps.org/research/completed-projects/" data-ps2id-api="true">Completed Projects</a></li>
+</ul>
+</li>
+<li id="menu-item-1664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1664"><a href="http://www.rbccps.org/publications/" data-ps2id-api="true">Publications</a></li>
+<li id="menu-item-3253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3253"><a href="http://www.rbccps.org/courses/" data-ps2id-api="true">Courses</a>
+<ul class="sub-menu">
+	<li id="menu-item-3254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3254"><a href="http://www.rbccps.org/courses/cps-312/" data-ps2id-api="true">CPS 312: Robot dynamics and control</a></li>
+	<li id="menu-item-3256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3256"><a href="http://www.rbccps.org/courses/cps-313/" data-ps2id-api="true">CPS 313: Autonomous Navigation</a></li>
+	<li id="menu-item-3988" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3988"><a href="http://www.rbccps.org/short-course-data-visualisation-for-decision-making/" data-ps2id-api="true">Short Course: Data visualisation for decision making</a></li>
+</ul>
+</li>
+<li id="menu-item-3812" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3812"><a href="http://www.rbccps.org/events" data-ps2id-api="true">Events</a></li>
+<li id="menu-item-2310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2310"><a href="http://www.rbccps.org/talks/" data-ps2id-api="true">Talks</a></li>
+<li id="menu-item-4218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4218"><a href="http://www.rbccps.org/open-positions/" data-ps2id-api="true">Open Positions</a></li>
+<li id="menu-item-4229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4229"><a href="http://www.rbccps.org/phd/" data-ps2id-api="true">PhD Programme</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a class="text-logo" data-type="group"  data-dynamic-mod="true" href="http://www.rbccps.org/">Robert<span style="font-weight: 300;" class="span12"> Bosch</span> Centre<span style="font-weight: 300;" class="span12"> for</span> Cyber-Physical<span style="font-weight: 300;" class="span12"> Systems</span></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-primary-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3687"><a data-ps2id-api="true">The Centre</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2123"><a href="http://www.rbccps.org/about/" data-ps2id-api="true">About us</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3688"><a data-ps2id-api="true">People</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2384"><a href="http://www.rbccps.org/people/faculty/" data-ps2id-api="true">Faculty Participants</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2991"><a href="http://www.rbccps.org/people/inspire/" data-ps2id-api="true">INSPIRE Faculty</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2383"><a href="http://www.rbccps.org/people/research/" data-ps2id-api="true">Research Staff</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2453"><a href="http://www.rbccps.org/people/phd-students/" data-ps2id-api="true">PhD Students</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2379"><a href="http://www.rbccps.org/people/project-staff/" data-ps2id-api="true">Project Staff</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3072"><a href="http://www.rbccps.org/people/admin-staff/" data-ps2id-api="true">Administrative Staff</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2382"><a href="http://www.rbccps.org/people/visiting-professors/" data-ps2id-api="true">Visiting Professors</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3921"><a href="http://www.rbccps.org/people/visiting-scientists/" data-ps2id-api="true">Visiting Scientists/Technologists</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3913"><a href="http://www.rbccps.org/makery/" data-ps2id-api="true">Makery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3833"><a href="http://www.rbccps.org/partners/" data-ps2id-api="true">Collaboration partners</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2195"><a href="http://www.rbccps.org/newsletter/" data-ps2id-api="true">Newsletter</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3675"><a href="http://www.rbccps.org/research/" data-ps2id-api="true">Research</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3671"><a data-ps2id-api="true">IoT enabled socio-technical systems</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3664"><a href="http://www.rbccps.org/research/smart-city/" data-ps2id-api="true">Smart City</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3669"><a href="http://www.rbccps.org/research/iiot/" data-ps2id-api="true">Industrial IoT for Energy Efficient Assembly Lines</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3665"><a href="http://www.rbccps.org/research/air-quality-monitoring/" data-ps2id-api="true">Air quality monitoring</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3667"><a href="http://www.rbccps.org/research/smart-energy/" data-ps2id-api="true">Smart Energy</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3673"><a data-ps2id-api="true">Autonomous navigation of unmanned vehicles</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3670"><a href="http://www.rbccps.org/research/mbzirc/" data-ps2id-api="true">Mohamed Bin Zayed International Robotics Challenge (MBZIRC)</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3666"><a href="http://www.rbccps.org/research/drones/" data-ps2id-api="true">Drones</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3672"><a data-ps2id-api="true">Machine learning for robotics</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3662"><a href="http://www.rbccps.org/research/learning-to-control/" data-ps2id-api="true">Learning to control</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3663"><a href="http://www.rbccps.org/research/walking-robot/" data-ps2id-api="true">Walking robot</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3660"><a href="http://www.rbccps.org/research/student-research-grants/" data-ps2id-api="true">Student Research Grants</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3676"><a href="http://www.rbccps.org/research/completed-projects/" data-ps2id-api="true">Completed Projects</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1664"><a href="http://www.rbccps.org/publications/" data-ps2id-api="true">Publications</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3253"><a href="http://www.rbccps.org/courses/" data-ps2id-api="true">Courses</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3254"><a href="http://www.rbccps.org/courses/cps-312/" data-ps2id-api="true">CPS 312: Robot dynamics and control</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3256"><a href="http://www.rbccps.org/courses/cps-313/" data-ps2id-api="true">CPS 313: Autonomous Navigation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3988"><a href="http://www.rbccps.org/short-course-data-visualisation-for-decision-making/" data-ps2id-api="true">Short Course: Data visualisation for decision making</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3812"><a href="http://www.rbccps.org/events" data-ps2id-api="true">Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2310"><a href="http://www.rbccps.org/talks/" data-ps2id-api="true">Talks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4218"><a href="http://www.rbccps.org/open-positions/" data-ps2id-api="true">Open Positions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4229"><a href="http://www.rbccps.org/phd/" data-ps2id-api="true">PhD Programme</a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+
+<div id="page" class="site">
+
+            <div class="header-wrapper">
+            <div  class='header-homepage  color-overlay' style='; background-image:url(&quot;http://www.rbccps.org/wp-content/uploads/2018/09/Background-1.jpg&quot;); background-color:#6a73da' data-parallax-depth='20'>
+                                                
+    <div class="header-description gridContainer content-on-center">
+        <div class="row header-description-row middle-sm">
+    <div class="header-content header-content-centered col-md col-xs-12">
+        <div class="align-holder center">
+                    </div>
+    </div>
+</div>
+    </div>
+    
+        <script>
+        window.mesmerizeSetHeaderTopSpacing();
+    </script>
+                    
+                <div class="header-separator header-separator-bottom header-separator-reverse"><svg preserveAspectRatio="none" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none">
+        <path class="svg-white-bg" d="M1000 27.588v-27.588h-1000v78.709c185.603-24.327 313.804-36.323 384.603-35.986 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.265-3.661 88.685 2.523 124.26 18.552z" fill="#000"/>
+        <path class="svg-accent" d="M-1.23 87.791c171.627-34.447 300.773-52.658 387.438-54.634 129.998-2.964 166.902 40.422 235.909 40.422s175.29-63.463 246.825-68.994c47.69-3.687 91.633 10.063 131.828 41.25" stroke="#50E3C2" stroke-width="1"/>
+    </g>
+</svg></div>                            </div>
+        </div>
+        
+    <div class="page-content">
+        <div class="content">
+            <div  id="latest-news-1" style="background-color: #f5fafd;" data-label="Latest-news" data-id="blog-section" data-export-id="blog-section" data-category="latest_news" class="blog-section blog-section-standard content-section content-section-spacing"><div  class="gridContainer"> <div  class="row"><div  data-type="column" class="section-title-col"> <h2  class="">Latest News</h2> </div> </div> <div  class="row"> <div  data-type="row" data-dynamic-columns="handled" data-content-shortcode="mesmerize_latest_news">        <div class="row center-sm content-left-sm">
+                    <div id="post-4194" class="col-sm-6 col-md-4 space-bottom space-bottom-xs">
+                <div class="post-content card y-move bordered">
+                        <div class="post-thumbnail">
+        <a href="http://www.rbccps.org/rbccps-team-invited-to-present-their-work-at-the-international-conference-on-robotics-and-automation-icra/" class="post-list-item-thumb ">
+            <img width="512" height="512" src="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2018/09/STOCH-e1548847190637.jpg?fit=512%2C512" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" data-attachment-id="3851" data-permalink="http://www.rbccps.org/research/walking-robot/stoch/" data-orig-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2018/09/STOCH-e1548847190637.jpg?fit=400%2C400" data-orig-size="400,400" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;4.5&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS 1100D&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1536239922&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;32&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;0.02&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="STOCH" data-image-description="" data-medium-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2018/09/STOCH-e1548847190637.jpg?fit=300%2C300" data-large-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2018/09/STOCH-e1548847190637.jpg?fit=1024%2C1024" />        </a>
+    </div>
+                        <div class="col-padding col-padding-xs">
+                        <h3 class="post-title space-bottom-small">
+                            <a href="http://www.rbccps.org/rbccps-team-invited-to-present-their-work-at-the-international-conference-on-robotics-and-automation-icra/" rel="bookmark">
+                                RBCCPS team invited to present their work at the International Conference on Robotics and Automation (ICRA)                            </a>
+                        </h3>
+                        <p>The Walking Robot team at RBCCPS has been invited to present their paper &#8220;Realizing learned quadruped locomotion behaviors through kinematic motion primitives&#8221; at the flagship conference of the IEEE Robotics[&hellip;]</p>
+                        <a class="read-more link" href="http://www.rbccps.org/rbccps-team-invited-to-present-their-work-at-the-international-conference-on-robotics-and-automation-icra/">
+                            Read more                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div id="post-4196" class="col-sm-6 col-md-4 space-bottom space-bottom-xs">
+                <div class="post-content card y-move bordered">
+                        <div class="post-thumbnail">
+        <a href="http://www.rbccps.org/iudx-technical-specs-released-and-first-companies-join-the-consortium/" class="post-list-item-thumb ">
+            <img width="512" height="288" src="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/Gujarat._small.jpg?fit=512%2C288" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/Gujarat._small.jpg?w=600 600w, https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/Gujarat._small.jpg?resize=300%2C169 300w, https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/Gujarat._small.jpg?resize=512%2C288 512w" sizes="(max-width: 512px) 100vw, 512px" data-attachment-id="4197" data-permalink="http://www.rbccps.org/iudx-technical-specs-released-and-first-companies-join-the-consortium/gujarat-_small/" data-orig-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/Gujarat._small.jpg?fit=600%2C338" data-orig-size="600,338" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Gujarat._small" data-image-description="" data-medium-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/Gujarat._small.jpg?fit=300%2C169" data-large-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/Gujarat._small.jpg?fit=600%2C338" />        </a>
+    </div>
+                        <div class="col-padding col-padding-xs">
+                        <h3 class="post-title space-bottom-small">
+                            <a href="http://www.rbccps.org/iudx-technical-specs-released-and-first-companies-join-the-consortium/" rel="bookmark">
+                                IUDX: Technical Specs released and first companies join the Consortium                            </a>
+                        </h3>
+                        <p>The IUDX team released the first public version of the IUDX technical specs for public comment and feedback. The document is available here, public engagement is actively solicited. Please contact[&hellip;]</p>
+                        <a class="read-more link" href="http://www.rbccps.org/iudx-technical-specs-released-and-first-companies-join-the-consortium/">
+                            Read more                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div id="post-4191" class="col-sm-6 col-md-4 space-bottom space-bottom-xs">
+                <div class="post-content card y-move bordered">
+                        <div class="post-thumbnail">
+        <a href="http://www.rbccps.org/economic-times-india-reports-on-iisc-tcs-robotics-team/" class="post-list-item-thumb ">
+            <img width="512" height="384" src="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/67680540.cms_.jpg?fit=512%2C384" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/67680540.cms_.jpg?w=640 640w, https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/67680540.cms_.jpg?resize=300%2C225 300w, https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/67680540.cms_.jpg?resize=512%2C384 512w" sizes="(max-width: 512px) 100vw, 512px" data-attachment-id="4192" data-permalink="http://www.rbccps.org/economic-times-india-reports-on-iisc-tcs-robotics-team/67680540-cms/" data-orig-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/67680540.cms_.jpg?fit=640%2C480" data-orig-size="640,480" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="67680540.cms" data-image-description="" data-medium-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/67680540.cms_.jpg?fit=300%2C225" data-large-file="https://i1.wp.com/www.rbccps.org/wp-content/uploads/2019/01/67680540.cms_.jpg?fit=640%2C480" />        </a>
+    </div>
+                        <div class="col-padding col-padding-xs">
+                        <h3 class="post-title space-bottom-small">
+                            <a href="http://www.rbccps.org/economic-times-india-reports-on-iisc-tcs-robotics-team/" rel="bookmark">
+                                Economic Times India reports on IISc-TCS robotics team                            </a>
+                        </h3>
+                        <p>RBCCPS, together with IISc&#8217;s Department of Aerospace Engineering and Tata Consultancy Services, are participating in the Mohamed Bin Zayed International Robotics Challenge 2020 in Abu Dhabi. 42 international teams have[&hellip;]</p>
+                        <a class="read-more link" href="http://www.rbccps.org/economic-times-india-reports-on-iisc-tcs-robotics-team/">
+                            Read more                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div></div> <div  class="row"><div  class="text-center"> <a  class="button color1" data-attr-shortcode="href:mesmerize_blog_link" href="http://www.rbccps.org/blog/" target="_self">SEE ALL BLOG POSTS</a></div> </div></div></div><div  id="overlappable-4" style="background-color: #ffffff;" data-label="Overlappable" data-id="overlappable-4" data-export-id="overlappable-4" data-category="overlappable" class="overlappable-4 content-section content-section-spacing" data-overlap="true"><div  class="gridContainer"> <div  data-type="row" class="row spaced-cols text-center"><div  class="col-xs-12 col-sm-4 col-padding"> <a  data-cp-link="1" href="http://www.rbccps.org/the-centre/about" target="_self"><i  class="fa icon shadow-large-black aligncenter color1 reverse round large fa-university"></i></a> <div  data-type="column" class=""> <h5  class="">ABOUT THE CENTRE</h5> <p  class="">The Robert Bosch Centre is conducting experimental and theoretical research to gain a deep understanding of key CPS components.</p></div> </div> <div  class="col-xs-12 col-sm-4 col-padding"> <a  data-cp-link="1" href="http://www.rbccps.org/research" target="_self"><i  class="fa icon large shadow-large-black round aligncenter reverse color1 fa-cogs"></i></a> <div  data-type="column" class=""><h5  class="">RESEARCH</h5> <p  class="">Our research focuses on three broad topics: (1) IoT enabled socio-technical systems, (2) Autonomous navigation and (3) Machine learning for robotics</p></div> </div> <div  class="col-xs-12 col-sm-4 col-padding"> <a  data-cp-link="1" href="http://www.rbccps.org/events/talks" target="_self"><i  class="fa icon large shadow-large-black round aligncenter reverse color1 fa-film"></i></a> <div  data-type="column" class=""><h5  class="">TALKS</h5> <p  class="">We provide more than 30 recorded talks on CPS topics by renowned researchers from Indian and international universities as well as companies.</p></div> </div></div> </div></div><div  data-label="Cta" data-id="cta--1" data-export-id="cta-blue-section" data-category="cta" class="cta-blue-section content-section content-section-spacing-medium bg-color1 white-text" id="cta-1"><div  class="gridContainer"> <div  class="row middle-xs"><div  class="col-sm-8 space-bottom-xs" data-type="column"> <h2  class="">Join us!<span  class="font-300"></span></h2> <h4  class="">Open positions in the areas of Computer Vision and Machine Learning</h4></div> <div  class="col-sm-4 end-sm" data-type="column"> <a  class="button color2" href="http://www.rbccps.org/open-positions" target="_self" data-cp-link="1">OPEN POSITIONS</a></div> </div></div> </div><div  id="contact-1" data-label="Contact" data-id="contact-1" data-export-id="contact-1" data-category="contact" class="contact-1 content-section content-section-spacing white-text" data-parallax-depth="20" style="background-size: cover; background-position: center top; background-image: url(&quot;http://www.rbccps.org/wp-content/uploads/2018/09/Background-1.jpg&quot;);"><div  class="gridContainer"> <div  class="row text-center"><div  class="section-title-col" data-type="column"> <h2  class="">Contact us</h2> <p  class="lead">Please contact us using the form below. We will get back to you as soon as possible.</p></div> </div> <div  class="row text-center"> <div  class="col-xs-12 col-sm-8 col-sm-offset-2 contact-form-wrapper inline-info"> <div  class="card large-padding"> <div  class="" data-content-shortcode="mesmerize_contact_form shortcode=&quot;wpforms id=&amp;amp;quot;3713&amp;amp;quot; title=&amp;amp;quot;false&amp;amp;quot; description=&amp;amp;quot;false&amp;amp;quot;&quot;" data-editable="true"><div class="wpforms-container wpforms-container-full" id="wpforms-3713"><form id="wpforms-form-3713" class="wpforms-validate wpforms-form" data-formid="3713" method="post" enctype="multipart/form-data" action="/"><div class="wpforms-field-container"><div id="wpforms-3713-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-3713-field_0">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-large"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-3713-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-3713-field_0" class="wpforms-field-sublabel after ">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-3713-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-3713-field_0-last" class="wpforms-field-sublabel after ">Last</label></div></div></div><div id="wpforms-3713-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-3713-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-3713-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-3713-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-3713-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-3713-field_2" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][2]" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-field_hp" class="wpforms-field-label">Message</label><input type="text" name="wpforms[hp]" id="wpforms-field_hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="3713"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="3690"><button type="submit" name="wpforms[submit]" class="wpforms-submit button color1" id="wpforms-submit-3713" value="wpforms-submit" data-alt-text="Sending...">Submit</button></div></form></div></div></div> </div></div> </div></div>        </div>
+    </div>
+
+	<div  class='footer footer-simple'>
+    <div  class='footer-content center-xs'>
+        <div class="gridContainer">
+	        <div class="row middle-xs footer-content-row">
+	            <div class="footer-content-col col-xs-12">
+	                    <p  class="copyright">&copy;&nbsp;&nbsp;2019&nbsp;Robert Bosch Centre for Cyber-Physical Systems.&nbsp;Built using WordPress and the <a target="_blank" href="https://extendthemes.com/go/built-with-mesmerize/" class="mesmerize-theme-link">Mesmerize Theme</a></p>	            </div>
+	        </div>
+	    </div>
+    </div>
+</div>
+	</div>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		    <script type="text/javascript">
+        function atomicBlocksShare( url, title, w, h ){
+            var left = ( window.innerWidth / 2 )-( w / 2 );
+            var top  = ( window.innerHeight / 2 )-( h / 2 );
+            return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
+        }
+    </script>
+	<div style="display:none">
+	</div>
+<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};var tribe_system_info = {"sysinfo_optin_nonce":"487573c1aa","clipboard_btn_text":"Copy to clipboard","clipboard_copied_text":"System info copied","clipboard_fail_text":"Press \"Cmd + C\" to copy"};/* ]]> */ </script><link rel='stylesheet' id='wpforms-full-css'  href='http://www.rbccps.org/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.css?ver=1.5.1.3' type='text/css' media='all' />
+<script type='text/javascript'  defer="defer" src='http://www.rbccps.org/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/js/companion.bundle.min.js?ver=1.6.110'></script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js?ver=20130122'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/www.rbccps.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"e67a271d83","is_admin":"","is_mobile":"","ajaxurl":"http:\/\/www.rbccps.org\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.1.3.2'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201914'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[rel='m_PageScroll2id']","autoSelectorMenuLinks":"true","scrollSpeed":1000,"autoScrollSpeed":"true","scrollEasing":"easeInOutQuint","scrollingEasing":"easeOutQuint","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","layout":"vertical","offset":0,"highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"true","scrollToHashForAll":"true","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","normalizeAnchorPointTargets":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js?ver=1.6.4'></script>
+<script type='text/javascript'  defer="defer" src='http://www.rbccps.org/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'  defer="defer" src='http://www.rbccps.org/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'  defer="defer" src='http://www.rbccps.org/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.6.81'></script>
+<script type='text/javascript'  defer="defer" src='http://www.rbccps.org/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.15.1'></script>
+<script type='text/javascript' src='http://www.rbccps.org/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.5.1.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_url":"Please enter a valid URL.","val_email":"Please enter a valid email address.","val_number":"Please enter a valid number.","val_confirm":"Field values do not match.","val_fileextension":"File type is not allowed.","val_filesize":"File exceeds max size allowed.","val_time12h":"Please enter time in 12-hour AM\/PM format (eg 8:45 AM).","val_time24h":"Please enter time in 24-hour format (eg 22:45).","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","uuid_cookie":"","locale":"en"}
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-201914.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.1.1',blog:'121488222',post:'3690',tz:'5.5',srv:'www.rbccps.org'} ]);
+	_stq.push([ 'clickTrackerInit', '121488222', '3690' ]);
+</script>
+</body>
+</html>

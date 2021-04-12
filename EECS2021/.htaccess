@@ -1,0 +1,8 @@
+#AuthUserFile /var/www/html/eecs/EECS2020/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Secure Document"
+#AuthType Basic
+#require user admin
+
+RewriteEngine On
+RewriteRule ^index.html$ /EECS2020/ [R,L]
