@@ -1,13 +1,13 @@
 <?php
 require_once('collage/display/config.php');
 shuffle($images_details);
-$base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
+$base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EECS RESEARCH STUDENTS SYMPOSIUM - 2020, Division of EECS (Electrical, Electronics and Computer Sciences), Indian Institute of Science, IISc Bangalore</title>
+  <title>EECS RESEARCH STUDENTS SYMPOSIUM - 2021, Division of EECS (Electrical, Electronics and Computer Sciences), Indian Institute of Science, IISc Bangalore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -25,7 +25,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="padding: 0px!important;padding-left:2px!important;">
     <div class="container">
       <a class="navbar-brand mr-1" href="index.html">
-        <img src="images/iisc-seal.jpg" alt="" style="width: 60px;"> <strong>EECS 2020 </strong><!--  <span>Indian Institute of Science Bangalore</span> --><span class="content-desktop"> | IISc Bangalore</span><span class="content-mobile">IISc Bangalore</span> 
+        <img src="images/iisc-seal.jpg" alt="" style="width: 60px;"> <strong>EECS 2021 </strong><!--  <span>Indian Institute of Science Bangalore</span> --><span class="content-desktop"> | IISc Bangalore</span><span class="content-mobile">IISc Bangalore</span> 
       </a>
       <!-- <a class="navbar-brand mr-1" style="margin-top:-7px;" href="index.html">
        <span class="content-desktop"> | Indian Institute of Science Bangalore</span>
@@ -50,15 +50,15 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
           <li class="nav-item mr-3">
             <a class="nav-link" href="#speakers">Speakers</a>
           </li>
-	  <li class="nav-item dropdown">
+    <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Schedule</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown20">
-              <a class="dropdown-item" href="schedule-jul10.html">Symposium on Advances in Communication Networks</a>
+              <a class="dropdown-item" href="schedule-may9.html">Symposium on Advances in Communication Networks</a>
               <a class="dropdown-item" href="http://www.rbccps.org/cyphyss2020/schedule/">Cyber-Physical Systems Symposium - 2020</a>
-              <a class="dropdown-item" href="schedule-july12.html">EECS Research Students' Symposium</a>
+              <a class="dropdown-item" href="schedule-may10.html">EECS Research Students' Symposium</a>
             </div>
           </li>
-	  <li class="nav-item dropdown">
+    <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sponsors</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown21">
               <a class="dropdown-item" href="#sponsors">Current Sponsors</a>
@@ -68,12 +68,13 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
           <li class="nav-item mr-3">
             <a class="nav-link" href="#contact">Contacts</a>
           </li>
-	  <li class="nav-item mr-3">
+    <li class="nav-item mr-3">
             <a class="nav-link" target="_blank" href="EECS_Brochure.pdf">EECS Info Brochure</a>
           </li>
-	  <li class="nav-item">
-	    <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=l80Vb6f240Gyxa1Bk5dkdozRGpqKdiJDiqeJABPctyFUMTY2UjlNTDZNRjZCSUZVMzJNMEsyQ1RDNi4u" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
-	</li>	
+    <li class="nav-item">
+      <!-- RAMA UPDATE LINK -->
+      <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=l80Vb6f240Gyxa1Bk5dkdozRGpqKdiJDiqeJABPctyFUMTY2UjlNTDZNRjZCSUZVMzJNMEsyQ1RDNi4u" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
+  </li> 
             <!-- <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search">
               <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -91,32 +92,46 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
         <div class="container ">
           <div class="row  justify-content-center align-items-center d-flex-row text-center h-100">
             <div class="col-12 col-md-12 h-50 ">
-              <h1 class="font-weight-bold   text-white  mb-2 mt-0"> EECS RESEARCH STUDENTS SYMPOSIUM - 2020</h1>
-              <h4 class=" text-white">July 10 to July 12, 2020</h4>
+              <h1 class="font-weight-bold   text-white  mb-2 mt-0"> EECS RESEARCH STUDENTS SYMPOSIUM - 2021</h1>
+              <h4 class=" text-white">May 9 and 10, 2021</h4>
 <!--              <p>
                 <a href="schedule.html" class="btn btn-info btn-lg mt-5 mb-5 ">View Full Schedule &gt;</a>
               </p>-->
-              <div class="col-12 col-md-12 text-white text-bold pt-2 pb-2 mt-3" style="background: transperent;;border-radius: 20px;">
-		We confirm the registration of all those who have submitted the registration form. <br> <a class="btn btn-danger mt-3" href="note-to-registrants.html">View Details</a>
-              </div>
+
+              <!--RAMA: TO BE ENABLED WHEN CLOSE TO THE DATES OF SYMPOSIUM-->
+              <!-- <div class="col-12 col-md-12 text-white text-bold pt-2 pb-2 mt-3" style="background: transperent;;border-radius: 20px;">
+    We confirm the registration of all those who have submitted the registration form. <br> <a class="btn btn-danger mt-3" href="note-to-registrants.html">View Details</a>
+              </div> -->
             </div>
           </div>
+          <!-- SECTION : DAYS AND LINKS -->
           <div class="row text-left text-white align-items-start mt-5">
             <div class="col-12 col-md-6 col-lg-4">
-              <h3>July 10 <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1xDlqFCdR8ulgkv8mDFygUEX741oYCtGW?usp=sharing" style="float:right;">Watch Recorded Videos</a></h3>
+              <h3>May 9 
+                <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1xDlqFCdR8ulgkv8mDFygUEX741oYCtGW?usp=sharing" style="float:right;">Watch Recorded Videos</a>
+              </h3>
               <hr style="height: 1px;background-color: #ccc;border: none;">
-              <h4 class="text-h3"><a href="schedule-jul10.html" target="_blank">Symposium on Advances in Communication Networks</a></h4>
+              <h4 class="text-h3"><a href="schedule-may9.html" target="_blank">Symposium on Advances in Communication Networks</a></h4>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 pt-4 pt-md-0">
-              <h3>July 11 <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1E6uwql5DpOe9zf051lvGB0-ybrMU9D9o?usp=sharing" style="float:right;">Watch Recorded Videos</a></h3>
+            <!-- <div class="col-12 col-md-6 col-lg-4 pt-4 pt-md-0">
+              <h3>May 9 
+                <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1E6uwql5DpOe9zf051lvGB0-ybrMU9D9o?usp=sharing" style="float:right;">Watch Recorded Videos</a>
+              </h3>
               <hr style="height: 1px;background-color: #ccc;border: none;">
               <h4 class="text-h3"><a href="http://www.rbccps.org/cyphyss2020" target="_blank">Cyber-Physical Systems Symposium - 2020</a></h4>
-            </div>
+            </div> -->
             <div class="col-12 col-md-8 m-auto m-lg-0 col-lg-4 pt-5 pt-lg-0">
-              <h3>July 12 <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1sEh1xTL8uysvE0zC7uvrgO-pWBvgMHt0?usp=sharing" style="float:right;">Watch Recorded Videos</a></h3>
+              <h3>May 10 
+                <!-- <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1sEh1xTL8uysvE0zC7uvrgO-pWBvgMHt0?usp=sharing" style="float:right;">Watch Recorded Videos</a> -->
+              </h3>
               <hr style="height: 1px;background-color: #ccc;border: none;">
-              <h4 class="text-h3"><a href="https://eecs.iisc.ac.in/EECS2020/schedule-july12.html" target="_blank">EECS Research Students' Symposium</a></h4>
-	      <h5 class="text-h4"><a href="https://eecs.iisc.ac.in/EECS2020/awards.html" class="btn text-white btn-outline-success" target="_blank">Student best paper awards</a></h4>
+              <h4 class="text-h3">
+                <a href="sschedule-may10.html" target="_blank">EECS Research Students' Symposium</a>
+              </h4>
+              <!-- SECTION : STUDENT BEST PAPER AWARD -->
+              <h5 class="text-h4">
+                <a href="https://eecs.iisc.ac.in/EECS2020/awards.html" class="btn text-white btn-outline-success" target="_blank">Student best paper awards</a>
+              </h5>
             </div>
           </div>
         </div>
@@ -127,7 +142,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
             <div class="col-md-12 col-sm-12 ">
               <h1 class="blog-post-title">About</h1>
               <p class="lead text-justify">
-               Welcome to the Eleventh EECS Research Students Symposium. This year, the symposium will happen online.
+               Welcome to the twelfth EECS Research Students Symposium. This year, the symposium will happen online.
              </p>
              <p class="lead text-justify">
                EECS-2020 is an initiative of the <a href="https://eecs.iisc.ac.in">Division of EECS</a> and is primarily a forum for presentations by senior research students (expecting to graduate in 2020) involving the Departments of Computational and Data Sciences <a href="http://cds.iisc.ac.in/">(CDS)</a>, Computer Science and Automation <a href="http://csa.iisc.ac.in">(CSA)</a>, Electrical Communication Engineering <a href="https://ece.iisc.ac.in/">(ECE)</a>, Electrical Engineering <a href="http://www.ee.iisc.ac.in/">(EE)</a>, Electronic Systems Engineering <a href="http://dese.iisc.ac.in">(ESE)</a> and the Robert Bosch Centre for Cyber-Physical Systems (<a href="http://www.rbccps.org/">RBCCPS</a>).
@@ -137,10 +152,11 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
              </p>
            </div>
            <div class="col-md-12 col-sm-12 text-lg-right text-right">
+                <!-- RAMA UPDATE LINK -->
                 <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=l80Vb6f240Gyxa1Bk5dkdozRGpqKdiJDiqeJABPctyFUMTY2UjlNTDZNRjZCSUZVMzJNMEsyQ1RDNi4u" target="_blank" class="btn btn-primary shadow-lg btn-lg">Register &gt;</a>
            </div>
          </div>
-	<hr>
+  <hr>
        </div>
      </section>
 
@@ -190,7 +206,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
               <span><a href="http://www.rbccps.org/">Robert Bosch Centre for Cyber-Physical Systems </a></span>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </section>
     <section class="pt-5 pb-5" id="themes">
@@ -305,8 +321,8 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
             <div class="col-md-10 col-12">
               <p class="lead mb-3 mt-3 text-h3">Award Sponsor</p>
               <p class="text-h3 lead"><h5><a  target="_blank" href="https://btirc.iisc.ac.in/">British Telecom India Research Centre, IISc</a><h5></p>
-            </div>	  
-	    <div class="col-md-2 col-6 text-right">
+            </div>    
+      <div class="col-md-2 col-6 text-right">
               <div class="card">
                 <img class="card-img-top shadow" src="images/BT_Logo_Indigo_RGB.jpg" alt="Profile">
               </div>
@@ -321,7 +337,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
               <p class="lead mt-3 text-h3">"Advances in Communication Networks" Symposium Sponsor</p>
               <p class="text-h3 lead"><h5><a target="_blank" href="https://eecs.iisc.ac.in/centre-for-networked-intelligence-iisc-a-cisco-csr-initiative/">Centre for Networked Intelligence</a><h5></p>
             </div>
-	    <div class="col-md-4 col-6 text-right">
+      <div class="col-md-4 col-6 text-right">
               <div class="card">
                 <img class="card-img-top shadow" src="images/cisco-final.png" alt="Profile">
               </div>
@@ -351,7 +367,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
         <p>shishirk@iisc.ac.in</p>
       </div>
     </div>
-	<hr style="height: 1px;background-color: #ccc;border: none;">
+  <hr style="height: 1px;background-color: #ccc;border: none;">
   </div>
 </section>
 <section class="mb-0 text-dark pt-5 pb-5 bg-light"  id="volunteers">
@@ -364,7 +380,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
             <div class="col-md-4 col-sm-12 text-left">
               <h5>Faculty Volunteers</h5>
               <ul class="list-unstyled  ">
-		<li>Varun Raghunathan (ECE) [Coordinator]</li>
+    <li>Varun Raghunathan (ECE) [Coordinator]</li>
                 <li>Anirban Chakraborty (CDS)</li>
                 <li>Arkaprava Basu (CSA)</li>
                 <li>Chandramani Singh (ESE)</li>
@@ -440,7 +456,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
                 <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=l80Vb6f240Gyxa1Bk5dkdozRGpqKdiJDiqeJABPctyFUMTY2UjlNTDZNRjZCSUZVMzJNMEsyQ1RDNi4u"  target="_blank" >Registration</a>
               </span>
             </li>
-	    <li>
+      <li>
               <span class="d-inline-block" tabindex="0">
                 <a href="cfs.html">Call for Sponsorship</a>
               </span>
@@ -508,8 +524,8 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2020/";
       <!-- jQuery is required -->
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>	 
-	<script type="text/javascript" src="collage/display/js/jquery.montage.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>   
+  <script type="text/javascript" src="collage/display/js/jquery.montage.min.js"></script>
         <script type="text/javascript" src="image-speakers.js"></script>
 
       <script type="text/javascript">
