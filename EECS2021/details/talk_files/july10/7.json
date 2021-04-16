@@ -1,9 +1,0 @@
-{
-	"title" : "Partial resource sharing in blocking and waiting systems",
-	"speaker_link": "https://www.ee.iitb.ac.in/~dmanju/",
-	"photo_link" : "photos/7._D_Manjunath.jpg",
-	"speaker" : "D. Manjunath",
-	"abstract" : "When two systems pool their resources, servers or server capacity, and act as one entity, the overall system performance improves. Example performance metrics are blocking probability, waiting probability, or waiting time statistics. However, in many cases, one of the two entiies can have a performance degradation in the fully pooled system. Instead of full pooling, we could consider partial pooling. An immediate question then is how and how much would the entities pool? <br>We study blocking and queueing systems in the quest of an answer to the preceding question.",
-	"bio" : "D Manjunath is the Institute Chair Professor in the Electrical Engineering Department of IIT Bombay. He first met Anurag Kumar as a graduate student in 1990. And has been meeting him regularly since, during which he has co-authored two textbooks with him."
-}
-

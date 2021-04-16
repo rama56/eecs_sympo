@@ -1,58 +1,31 @@
 <?php 
 
 $images_details = array(
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/1._Y_Narahari.jpg' , 'webpage' => 'http://lcm.csa.iisc.ernet.in/hari/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/10._Eitan_Altman.jpg' , 'webpage' => 'https://www-sop.inria.fr/members/Eitan.Altman/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/11._Franois_Baccelli.jpg' , 'webpage' => 'http://www.ece.utexas.edu/people/faculty/fran%C3%A7ois-baccelli'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/12._A_J_Ganesh.jpg' , 'webpage' => 'https://people.maths.bris.ac.uk/~maajg/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/12._Sanjay_Shakkottai.jpg' , 'webpage' => 'https://sites.google.com/view/sanjay-shakkottai/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/13._R._Srikant.jpg' , 'webpage' => 'https://sites.google.com/a/illinois.edu/srikant/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/14._Gustavo_de_Veciana.jpg' , 'webpage' => 'http://users.ece.utexas.edu/~gustavo/ '],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/15._Catherine_Rosenberg.jpg' , 'webpage' => 'https://uwaterloo.ca/scholar/cath'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/16._Bharat_Doshi.jpg' , 'webpage' => 'javascript:void()'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/17._Anurag_Kumar.jpg' , 'webpage' => 'https://ece.iisc.ac.in/~anurag/index.html'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/2__venkata_ananthara_OvzXc.jpg' , 'webpage' => 'https://www2.eecs.berkeley.edu/Faculty/Homepages/anantharam.html'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/3._P.R._Kumar.jpg' , 'webpage' => 'https://cesg.tamu.edu/faculty/p-r-kumar/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/4._A._Paulraj.jpg' , 'webpage' => 'https://web.stanford.edu/~apaulraj/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/5._Kumar_Sivarajan.jpg' , 'webpage' => 'https://www.tejasnetworks.com/key-management.php '],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/6._Venkat_Padmanabhan.jpg' , 'webpage' => 'https://www.microsoft.com/en-us/research/people/padmanab/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/7__d_manjunath.jpg' , 'webpage' => 'https://www.ee.iitb.ac.in/~dmanju/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/8._Robert_Morris.jpg' , 'webpage' => 'https://www.linkedin.com/in/robertjtmorris/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/9._Vivek_Borker.jpg' , 'webpage' => 'https://www.ee.iitb.ac.in/web/faculty/homepage/borkar'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/images/speakers/aditya_cds.jpg' , 'webpage' => 'http://cds.iisc.ac.in/faculty/konduriadi/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/images/speakers/arindam_csa.jpg' , 'webpage' => 'https://www.csa.iisc.ac.in/~arindamkhan/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/images/speakers/varun_ece.jpg' , 'webpage' => 'https://www.sites.google.com/site/varunr196/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/images/speakers/saladi_csa.jpg' , 'webpage' => 'https://www.csa.iisc.ac.in/~saladi/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/images/speakers/pavan_ee.jpg' , 'webpage' => 'http://www.ee.iisc.ac.in/people/faculty/pavant/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/images/speakers/chetan_dese.jpg' , 'webpage' => 'http://neuronics.dese.iisc.ac.in/dr-chetan-singh-thakur/'],
-[ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/images/speakers/vaibhav_rbccps.jpg' , 'webpage' => 'https://sites.google.com/view/vkatewa'],
+[ 'photo'=> 'resources/images/faculty_speakers/chaya_csa.jpeg' ,
+  'webpage' => 'https://www.csa.iisc.ac.in/~chaya/'],
+
+[ 'photo'=> 'resources/images/faculty_speakers/phanim_cds.jpeg',
+  'webpage' => 'https://cds.iisc.ac.in/people/faculty/name/phani-motamarri/'],
+
+[ 'photo'=> 'resources/images/faculty_speakers/vishnu_ee.jpeg',
+  'webpage' => 'http://www.ee.iisc.ac.in/faculty/vishnu/index.php'],
+
+[ 'photo'=> 'resources/images/faculty_speakers/sundeep_ece.jpeg',
+'webpage' => 'https://ece.iisc.ac.in/~spchepuri/'],
+
+[ 'photo'=> 'resources/images/faculty_speakers/jishnu_rbccps.jpeg',
+'webpage' => 'https://mecheng.iisc.ac.in/people/jishnu-keshavan/'],
+
+// [ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/1._Y_Narahari.jpg',
+//  'webpage' => 'http://lcm.csa.iisc.ernet.in/hari/'],
+
+
+
 );
 
-$images = array(
-'https://eecs.iisc.ac.in/EECS2020/details/photos/1._Y_Narahari.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/10._Eitan_Altman.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/11._Franois_Baccelli.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/12._A_J_Ganesh.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/12._Sanjay_Shakkottai.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/13._R._Srikant.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/14._Gustavo_de_Veciana.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/15._Catherine_Rosenberg.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/16._Bharat_Doshi.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/17._Anurag_Kumar.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/2__venkata_ananthara_OvzXc.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/3._P.R._Kumar.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/4._A._Paulraj.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/5._Kumar_Sivarajan.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/6._Venkat_Padmanabhan.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/7__d_manjunath.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/8._Robert_Morris.jpg',
-'https://eecs.iisc.ac.in/EECS2020/details/photos/9._Vivek_Borker.jpg',
-'https://eecs.iisc.ac.in/EECS2020/images/speakers/aditya_cds.jpg',
-'https://eecs.iisc.ac.in/EECS2020/images/speakers/arindam_csa.jpg',
-'https://eecs.iisc.ac.in/EECS2020/images/speakers/varun_ece.jpg',
-'https://eecs.iisc.ac.in/EECS2020/images/speakers/saladi_csa.jpg',
-'https://eecs.iisc.ac.in/EECS2020/images/speakers/pavan_ee.jpg',
-'https://eecs.iisc.ac.in/EECS2020/images/speakers/chetan_dese.jpg',
-'https://eecs.iisc.ac.in/EECS2020/images/speakers/vaibhav_rbccps.jpg',
-);
+// $images = array(
+// 'resources/images/faculty_speakers/chaya_csa.jpeg',
+// 'resources/images/faculty_speakers/phanim_cds.jpeg',
+// 'https://eecs.iisc.ac.in/EECS2020/details/photos/1._Y_Narahari.jpg',
+// );
 

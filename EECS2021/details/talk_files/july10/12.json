@@ -1,9 +1,0 @@
-{
-	"title" : "Reliable allcast over random graphs",
-	"photo_link" : "photos/12._A_J_Ganesh.jpg",
-	"speaker_link": "https://people.maths.bris.ac.uk/~maajg/",
-	"speaker" : "Ayalvadi J. Ganesh",
-	"abstract" : "Consider n nodes, each of which has a single packet to transmit to all the other nodes. The nodes are connected via a random graph with constant edge probability p. Time is split into rounds where, in each round, each node may broadcast a single packet to all its neighbours. The objective is to minimise the latency, i.e., the time until all nodes have received all packets. We first study a random relaying scheme and show that it terminates in log n rounds (with high probability), with all nodes having all packets. Next we show that, with network coding, allcast can be completed in a constant number of rounds, whp.",
-	"bio" : "Ayalvadi Ganesh received his B. Tech. from IIT Madras in 1988, and his M.S. and Ph.D. from Cornell University in 1991 and 1995. His research interests include queuing theory, large deviations, network science and distributed algorithms. He is currently at the School of Mathematics, University of Bristol."
-}
-
