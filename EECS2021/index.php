@@ -21,6 +21,39 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
   <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
   <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css' />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script> 
+    // Set the date we're counting down to
+    var countDownDate = new Date("May 7, 2021 09:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("countdown_timer_1").innerHTML = days + " days " + hours + " hours "
+      + minutes + " minutes ";
+      document.getElementById("countdown_timer_2").innerHTML = seconds + " seconds to go !";      
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown_timer_1").innerHTML = "";
+        document.getElementById("countdown_timer_2").innerHTML = "";
+        document.getElementById("countdown_message").innerHTML = "WE ARE LIVE !!"
+      }
+    }, 1000);  
+  </script>
 </head>
 <body>
   <div id='header_bar'>
@@ -55,9 +88,9 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Schedule</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown20">
-                <a class="dropdown-item" href="schedule-may9.html">Title for Day 1 TODO</a>
+                <a class="dropdown-item" href="schedule-may7.html">Day 1 (May 7)</a>
                 <!-- <a class="dropdown-item" href="http://www.rbccps.org/cyphyss2020/schedule/">Cyber-Physical Systems Symposium - 2020</a> -->
-                <a class="dropdown-item" href="schedule-may10.html">Title for Day 2 TODO</a>
+                <a class="dropdown-item" href="schedule-may8.html">Day 2 (May 8)</a>
               </div>
             </li>
             <!-- <li class="nav-item dropdown">
@@ -121,7 +154,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <!-- <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1xDlqFCdR8ulgkv8mDFygUEX741oYCtGW?usp=sharing" style="float:right;">Watch Recorded Videos</a> -->
           </h3>
           <hr style="height: 1px;background-color: #ccc;border: none;">
-          <h4 class="text-h3"><a href="schedule-may7.html" target="_blank">Title for Day 1 TODO</a></h4>
+          <h4 class="text-h3"><a href="schedule-may7.html" target="_blank">Day 1 - Schedule</a></h4>
         </div>
         <div class="col-12 col-md-6 col-lg-4 pt-4 pt-md-0">
           <h3>May 8 
@@ -130,22 +163,20 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
           </h3>
           <hr style="height: 1px;background-color: #ccc;border: none;">
           <h4 class="text-h3">
-            <a href="schedule-may8.html" target="_blank">Title for Day 2 TODO</a>
+            <a href="schedule-may8.html" target="_blank">Day 2 - Schedule</a>
           </h4>
           <!-- SECTION : STUDENT BEST PAPER AWARD -->
           <!-- <h5 class="text-h4">
             <a href="awards.html" class="btn text-white btn-outline-success" target="_blank">Student best paper awards</a>
           </h5> -->
         </div>
-        <!-- <div class="col-12 col-md-8 m-auto m-lg-0 col-lg-4 pt-5 pt-lg-0">
-              <h3>July 12 <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1sEh1xTL8uysvE0zC7uvrgO-pWBvgMHt0?usp=sharing" style="float:right;">Watch Recorded Videos</a></h3>
-              <hr style="height: 1px;background-color: #ccc;border: none;">
-              <h4 class="text-h3"><a href="https://eecs.iisc.ac.in/EECS2020/schedule-july12.html" target="_blank">EECS Research Students' Symposium</a></h4>
-            </div>
-            <a href="https://www.hitwebcounter.com" target="_blank">
-              <img src="https://hitwebcounter.com/counter/counter.php?page=7797448&style=0047&nbdigits=4&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" />
-            </a>
-        </div> -->
+        <div class="col-12 col-md-8 m-auto m-lg-0 col-lg-4 pt-5 pt-lg-0">
+          <h3 style="text-align: center;">
+            <span class='glow stylish' id='countdown_message'>STAY TUNED...</span> <br>
+            <span class='glow stylish' id='countdown_timer_1'></span><br>
+            <span class='glow stylish' id='countdown_timer_2'></span>
+          </h3>
+        </div>
       </div>
 
     </section>
@@ -375,9 +406,9 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
                   <ul class="list-unstyled  ">
                     <li>Konduri Aditya (CDS)</li>
                     <li>Rahul Saladi (CSA)</li>
-                    <li>Sundeep  Prabhakar (Dept)</li>
+                    <li>Sundeep  Prabhakar (ECE)</li>
                     <li>Sriram Ganapathy (EE)</li>
-                    <li>Ramachandran P (Dept)</li>
+                    <li>Ramachandran P (DESE)</li>
                     <li>Vaibhav Katewa (RBCCPS/ECE)</li>
                     <li>Dipanjan Gope (ECE)</li>
                   </ul>

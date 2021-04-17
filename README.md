@@ -51,3 +51,6 @@ v_1, v_2 are same. v_3 has smaller left margin (for mobile devices?). @media scr
 
 April 12th - Removing unused files that are typically older versions and duplicates of the used files.
 
+April 16th - Creating an almost empty template for 2021 website.
+April 17th - Bug fixes, added countdown timer.
+
