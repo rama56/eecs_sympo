@@ -1,8 +1,8 @@
 {
 	"title" : "Title of the talk - 1 line",
-	"photo_link" : "resources/images/faculty_speakers/phanim_cds.jpg",
-	"speaker_link": "https://ece.iisc.ac.in/~anurag/index.html",
-	"speaker" : "Name of speaker",
+	"photo_link" : "resources/images/plenary_speakers/tambe.jpg",
+	"speaker_link": "https://teamcore.seas.harvard.edu/tambe",
+	"speaker" : "Milind Tambe",
 	"abstract" : "200 to 250 words",
-	"bio" : "50 to 100 words"
+	"bio" : "Milind Tambe is Gordon McKay Professor of Computer Science and Director of Center for Research in Computation and Society at Harvard University; concurrently, he is also Director 'AI for Social Good' at Google Research India. Prof. Tambe's work  focuses on advancing AI and multiagent systems for public health, conservation & public safety, with a track record of building pioneering AI systems for social impact. He is recipient of the IJCAI (International Joint Conference on AI) John McCarthy Award, ACM (Association for Computing Machinery) Autonomous Agents Research Award, AAAI (Association for Advancement of Artificial Intelligence)  Robert S. Engelmore Memorial Lecture Award, and he is a fellow of AAAI and ACM. Prof. Tambe has contributed several foundational papers in Artificial Intelligence in areas of multiagent systems and computational game theory, for which he has received influential/best paper awards at a number of premier Artificial Intelligence conferences. Prof. Tambe's research has often providing the very first uses of AI and multiagent systems algorithms in large-scale societally impactful applications."
 }

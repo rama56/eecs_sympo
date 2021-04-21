@@ -1,8 +1,8 @@
 {
 	"title" : "Title of the talk - 1 line",
-	"photo_link" : "resources/images/faculty_speakers/sundeep_ece.jpeg",
-	"speaker_link": "https://ece.iisc.ac.in/~spchepuri/",
-	"speaker" : "Sundeep Prabhakar",
+	"photo_link" : "resources/images/faculty_speakers/vishnu_ee.jpeg",
+	"speaker_link": "http://www.ee.iisc.ac.in/faculty/vishnu/index.php",
+	"speaker" : "Vishnu Mahadev Iyer",
 	"abstract" : "200 to 250 words",
-	"bio" : "50 to 100 words"
+	"bio" : "Vishnu Mahadeva Iyer joined as an Assistant Professor in the Department of Electrical Engineering at the Indian Institute of Science (IISc), Bengaluru, in September 2020. Before joining IISc, he worked as a Lead Engineer at GE Research, Niskayuna, USA. He completed his Ph.D. in Electrical Engineering from the NSF FREEDM Systems Center, NC State University, Raleigh, USA. He is interested in the broad area of power conversion. His current research and scholarly interests include power conversion systems for transportation electrification, DC microgrids, differential power processing, and control and stability of power electronic systems."
 }

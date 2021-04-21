@@ -1,8 +1,8 @@
 {
 	"title" : "Title of the talk - 1 line",
-	"photo_link" : "resources/images/faculty_speakers/phanim_cds.jpeg",
-	"speaker_link": "https://ece.iisc.ac.in/~anurag/index.html",
-	"speaker" : "Name of speaker",
+	"photo_link" : "resources/images/plenary_speakers/lalitesh.jpg",
+	"speaker_link": "https://www.linkedin.com/in/lalitesh-katragadda-aa37224/?originalSubdomain=in",
+	"speaker" : "Lalitesh Katragadda",
 	"abstract" : "200 to 250 words",
-	"bio" : "50 to 100 words"
+	"bio" : "Dr. Lalitesh Katragadda is a pioneer in crowdsourcing and building products for the underserved. His creation, Google Map Maker, tripled the world's digital maps corpus - mapping 3 billion people in 187 countries. His robotics startup (Sphereo) was Google's  first acquisition in 2002, after which he co-founded Google India and headed Google India Products until 2014. He now builds scalable companies and products for India's Billion. He architected AP's Fiber Grid and authored India's national Open API policy. Lalitesh has spoken at TED and The White House."
 }

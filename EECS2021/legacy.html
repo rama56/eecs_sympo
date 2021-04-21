@@ -1,29 +1,13 @@
-<?php 
-$talkId=$_GET['id'];
-if($talkId == "" || !is_numeric($talkId)) {
-	echo "Content not found.";
-	die;
-}
-$file_to_read = "";
-$base_file = "resources/talk_files/";
-if(!file_exists($base_file . $talkId . ".json")) {
-	echo file_get_contents("404.html");
-	die;
-}
-
-$data = file_get_contents($base_file . $talkId . ".json");
-$data = json_decode($data , true);
-$base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title><?php echo $data['title'];?> | EECS RESEARCH STUDENTS SYMPOSIUM - 2021, Division of EECS (Electrical, Electronics and Computer Sciences), Indian Institute of Science, IISc Bangalore</title>
+  <title>Legacy | EECS RESEARCH STUDENTS SYMPOSIUM - 2021, Division of EECS (Electrical, Electronics and Computer Sciences), Indian Institute of Science, IISc Bangalore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <meta name="theme-color" content="#343a40">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css ">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -31,7 +15,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
   <!-- Plugins -->
 </head>
 <body>
-  <div id='header_bar'> 
+  <div id='header_bar'>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="padding: 0px!important;">
       <div class="container">
         <a class="navbar-brand mr-1" href="index.php">
@@ -97,66 +81,61 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       </a> -->
     </nav>
   </div>
-
-  <!-- LINKS TO HOME, SCHEDULE PAGE : TODOO DOESN'T MAKE SENSE -->
-  <!-- <section class="pt-3 pb-0">
-    <nav aria-label="breadcrumb">
-      <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/index.php">Home</a></li>
-        <li class="breadcrumb-item"><a href="/schedule-may09.html">Schedule</a></li> 
-        <li class="breadcrumb-item active" aria-current="page"><?php echo $data['title'];?></li>
-      </ol>
-      </div>
-    </nav>
-  </section> -->
-  
-  <!-- TALK DETAILS -->
-  </section>
-  <section class="pt-1 pb-0">
+  <section class="pt-4 pb-4">
     <div class="container">
+    	<!-- LIST OF WEBSITES -->
       <div class="row">
-        <div class="col-md-2 col-4">
-          <a class="story-img" href="#">
-            <img src="<?php echo $data['photo_link'];?>" style="height:100px" class="mb-3 img-fluid">
-          </a>
-        </div>
-        <div class="col-md-10 col-sm-9">
-          <h3><?php echo $data['title'];?> </h3>
-          <p class="text-h3">
-            Speaker: <?php if($data['speaker_link'] != "") { echo "<a href='".$data['speaker_link']."'>";} ?>
-            <?php echo $data['speaker'];?>
-            <?php if($data['speaker_link'] != "") { echo "</a>";};?>
-          </p>
-        </div>
-      </div>
-      <hr>
-    </div>
-  </section>
-  <?php if($data['abstract'] != "") {?>
-    <section class="pt-0 pb-0 mt-0 mb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col col-sm-12 col-md-12 text-left">
-           <h3>Abstract</h3>
-           <p class="text-h3"><?php echo $data['abstract'];?></p>
-         </div>
-       </div>
-     </div>
-   </section>
-  <?php }?>
-  <section class="pt-0 pb-0 mt-0 mb-0">
-    <div class="container">
-      <div class="row">
-        <div class="col col-sm-12 col-md-12 text-left">
-          <h3>Bio</h3>
-          <p class="text-h3"><?php echo $data['bio'];?></p>
-        </div>
+        <div class="col-sm-12 text-center"><h4>PREVIOUS EDITIONS OF EECS RESEARCH STUDENTS' SYMPOSIUM</h4></div>
+        <ul>
+          <li>
+            2010 - 
+            <a href="https://eecs.iisc.ac.in/symp/firstsymposium.html" target="_blank" > Website (retrieved)</a>
+          </li>
+          <li>
+            2011 - 
+            <a href="https://eecs.iisc.ac.in/symp/secondsymposium.html" target="_blank" > Website (retrieved)</a>
+          </li>
+          <li>
+            2012 - 
+            <a href="https://eecs.iisc.ac.in/symp/thirdsymposium.html" target="_blank" > Website (retrieved)</a>
+          </li>
+          <li>
+            2013 - 
+            <a href="https://eecs.iisc.ac.in/symp/fourthsymposium.html" target="_blank" > Website (retrieved)</a>
+          </li>
+          <li>
+            2014 - 
+            <a href="https://eecs.iisc.ac.in/symp/fifthsymposium.html" target="_blank" > Website (retrieved)</a>
+          </li>
+          <li>
+            2015 - 
+            <a href="https://eecs.iisc.ac.in/EECS2015/" target="_blank" > Website</a>
+          </li>
+          <li>
+            2016 -
+            <a href="https://eecs.iisc.ac.in/EECS2016/" target="_blank" > Website</a>
+          </li>
+          <li>
+            2017 -
+            <a href="https://eecs.iisc.ac.in/EECS2017/" target="_blank" > Website</a>
+          </li>
+          <li>
+            2018 -
+            <a href="https://eecs.iisc.ac.in/EECS2018/" target="_blank" > Website</a>
+          </li>
+          <li>
+            2019 -
+            <a href="https://eecs.iisc.ac.in/EECS2019/" target="_blank" > Website</a> -
+            <a href="https://www.youtube.com/playlist?list=PLmx4utxjUQD7VDOIh7PEkZnhYItqp25Ia" target="_blank"> YouTube lectures</a>
+          </li>
+          <li>
+            2020 - 
+            <a href="https://eecs.iisc.ac.in/EECS2020/" target="_blank" > Website</a>
+          </li>
       </div>
     </div>
   </section>
-
-  <div id='footer_space'> 
+  <div id='footer_space'>
     <section class="mb-0 mt-0">
       <div class="footer text-dark">
         <div class="   bg-light pt-5 pb-5">
@@ -252,5 +231,8 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       window.scrollTo(window.scrollX, window.scrollY - 80);
     });
   </script>
+  <style>
+    .myelement p {margin-top:0!important; margin-bottom:0!important;}
+  </style>
 </body>
 </html>

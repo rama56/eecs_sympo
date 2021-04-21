@@ -16,10 +16,17 @@ $images_details = array(
 [ 'photo'=> 'resources/images/faculty_speakers/jishnu_rbccps.jpeg',
 'webpage' => 'https://mecheng.iisc.ac.in/people/jishnu-keshavan/'],
 
-// [ 'photo'=> 'https://eecs.iisc.ac.in/EECS2020/details/photos/1._Y_Narahari.jpg',
-//  'webpage' => 'http://lcm.csa.iisc.ernet.in/hari/'],
+[ 'photo'=> 'resources/images/faculty_speakers/arup_ese.jpg',
+'webpage' => 'https://ece.iisc.ac.in/~anurag/index.html'],
 
+// [ 'photo'=> 'resources/images/plenary_speakers/lalitesh.jpg', 
+//  'webpage' => 'talk.php?id=7'],
 
+// [ 'photo'=> 'resources/images/plenary_speakers/malik.gif',
+//  'webpage' => 'talk.php?id=8'],
+
+//  [ 'photo'=> 'resources/images/plenary_speakers/tambe.jpg',
+//  'webpage' => 'talk.php?id=9'],
 
 );
 

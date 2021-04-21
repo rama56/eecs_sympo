@@ -1,8 +1,8 @@
 {
-	"title" : "Title of the talk - 1 line",
+	"title" : "Computational integrity: succinct proofs in cryptography",
 	"photo_link" : "resources/images/faculty_speakers/chaya_csa.jpeg",
 	"speaker_link": "https://www.csa.iisc.ac.in/~chaya/",
 	"speaker" : "Chaya Ganesh",
-	"abstract" : "200 to 250 words",
-	"bio" : "50 to 100 words"
+	"abstract" : "A common denominator of conventional financial systems, trusted execution environments (like SGX), blockchain technology, and ZK rollups is the promise of computational integrity -- doing the right computation, even when there is no trust. In this talk, we will define computational integrity and show how one can verify the correctness of a computation much more efficiently than having to re-perform the computation. We will introduce the notion of succinct proof systems that allow a prover to convince a verifier about the correctness of computation such that verification is exponentially faster than the computation itself. We will see applications of SNARKs (Succinct Non-interactive ARguments of Knowledge), a kind of succinct arguments in decentralized systems like blockchain technology for both privacy and scalability issues, and outline the design principle underlying SNARK constructions.",
+	"bio" : "Chaya is an Assistant Professor in the Department of Computer Science and Automation at Indian Institute of Science . Her research interests are in Cryptography and Security. Before joining IISc, she was a post-doctoral researcher in the Crypto group at Aarhus University. She received her PhD from NYU's Courant Institute of Mathematical Sciences."
 }

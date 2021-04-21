@@ -1,8 +1,8 @@
 {
-	"title" : "Title of the talk - 1 line",
+	"title" : "Data-Augmented Control of Visual Autonomous Systems",
 	"photo_link" : "resources/images/faculty_speakers/jishnu_rbccps.jpeg",
 	"speaker_link": "https://mecheng.iisc.ac.in/people/jishnu-keshavan/",
 	"speaker" : "Jishnu Keshavan",
-	"abstract" : "200 to 250 words",
-	"bio" : "50 to 100 words"
+	"abstract" : "Vision-enabled robotic systems are a pervasive presence that have begun to enhance and redefine a variety of industries including automated package delivery and manufacturing. While these systems are beginning to be deployed in controlled settings for a variety of applications, their large-scale deployment across a range of diverse environments still eludes us. Satisfaction of performance guarantees is paramount to facilitate this transition. To this end, two data-driven strategies based on bioinspired learning are presented for endowing robotic systems with the ability to make rapid control decisions using noisy sensory data in uncertain and dynamic environments. To this end, a bioinspired strategy is combined with traditional control theoretic tools for the synthesis of novel nonlinear closed loop systems for ensuring safe collision-free navigation in challenging environments. Numerous validation studies of aerial and ground systems are considered that attest to the efficacy of the proposed schemes. These results and their implications for the realization of autonomous systems suitable for real-world applications will be discussed.",
+	"bio" : "Dr. Jishnu Keshavan is an Assistant Professor in Mechanical Engineering at IISc. His research interests are broadly in the areas of dynamical systems theory, nonlinear dynamics and control, and autonomous vision. He obtained a PhD (2012) and a MS (2007) in Aerospace Engineering from University of Maryland, College Park, and a BTech in Aerospace Engineering (2004) from the Indian Institute of Technology Bombay."
 }

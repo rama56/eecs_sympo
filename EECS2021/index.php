@@ -106,6 +106,9 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li class="nav-item mr-3">
               <a class="nav-link" href="index.php#contact">Contacts</a>
             </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="legacy.html">Legacy</a>
+            </li>
             <!--  BROCHURE TODO <li> </li> -->
             <li class="nav-item">
               <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
@@ -331,17 +334,62 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       </div>
     </div>
   </section>
-  <section class="pt-1 pb-0" id="speakers">
+
+<!-- pt-1 pb-0 -->
+  <section class="pt-5 pb-5" id="speakers">
+    
     <div class="container" style="text-align:center;">
-      <h1 class="text-center">Speakers</h1>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 text-center">
+          <h2> Plenary Speakers </h2>
+        </div>
+      </div>
       <hr>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="resources/images/plenary_speakers/lalitesh.jpg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=7">Lalitesh Katragadda</a></h4>
+            <span>Founder, Indihood</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="resources/images/plenary_speakers/malik.gif" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=8"> Milind Tambe </a></h4>
+            <span>Harvard University </span>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="resources/images/plenary_speakers/tambe.jpg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=9"> Jitendra Malik </a></h4>
+            <span>UC Berkley</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <div class="container" style="text-align:center;">
+      <!-- <h2 class="text-center">Faculty Speakers</h2> -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 text-center">
+          <h2> Faculty Speakers </h2>
+        </div>
+      </div>  
+      <br> 
       <div class="am-container" id="am-container">
         <?php foreach($images_details as $imageLink) {?>
           <a href="<?php echo $imageLink['webpage'];?>" target="_blank"><img src="<?php echo $imageLink['photo'];?>"></img></a>
         <?php }?>
       </div>
+      <hr>
     </div>
   </section>
+  
   <section class="bg-light text-dark pt-5 pb-5" id="sponsors">
     <div class="row">
       <div class='col-sm-12 text-center'><h2>Sponsors</h2></div>
@@ -363,175 +411,198 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
 
       <div class="row">
         <div class="col-md-10 col-12">
-          <p class="lead mb-3 mt-3 text-h3">This event is partially sponsored by a generous donation by Mr. Shekhar Kirani (CSA alumnus) from Accel Ventures.</p>
-        </div>    
+          <p class="lead mb-3 mt-3 text-h3">Industry Sponsor</p>
+          <p class="text-h3 lead"><h5><a target="_blank" href="https://accel.com/india-home">Accel Ventures</a><h5></p>
+        </div> 
+        <div class="col-md-2 col-6 text-right">
+          <div class="card">
+            <img class="card-img-top shadow" src="resources/images/logos/Accel_Logo_Black.png" alt="Profile">
+          </div>
+        </div>   
         <hr>
       </div>
     </div>
 
   </section>
 
-        <section class="text-light bg-dark pt-5 pb-5" id="contact">
+  <section class="text-light bg-dark pt-5 pb-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class='col-sm-12 text-center'><h2>Contacts</h2></div>
+      </div>
+      <hr style="height: 1px;background-color: #ccc;border: none;">
+      <div class="row text-center justify-content-sm-center no-gutters">
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Dipanjan Gope</h5>
+          <p>dipanjan@iisc.ac.in</p>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Sriram Ganapathy</h5>
+          <p>sriramg@iisc.ac.in</p>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Konduri Aditya</h5>
+          <p>konduriadi@iisc.ac.in</p>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Rahul Saladi</h5>
+          <p>saladi@iisc.ac.in</p>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Sundeep Prabhakar Chepuri</h5>
+          <p>spchepuri@iisc.ac.in</p>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Vaibhav Katewa</h5>
+          <p>vkatewa@iisc.ac.in</p>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Ramachandran Ponnuswamy</h5>
+          <p>prama@iisc.ac.in</p>
+        </div>
+      </div>
+      <hr style="height: 1px;background-color: #ccc;border: none;">
+    </div>
+  </section>
+  <section class="mb-0 text-dark pt-5 pb-5 bg-light"  id="volunteers">
+    <div class="row">
+      <div class='col-sm-12 text-center'><h3>Volunteers</h3></div>
+    </div>
+    <footer class="container pt-0 my-md-1 pt-md-3 text-center border-top">
+      <div class="row">
+        <div class="col-md-2 col-sm-12"></div>
+          <div class="col-md-4 col-sm-12 text-left">
+            <h5>Faculty Volunteers</h5>
+            <ul class="list-unstyled  ">
+              <li>Konduri Aditya (CDS)</li>
+              <li>Rahul Saladi (CSA)</li>
+              <li>Sundeep  Prabhakar (ECE)</li>
+              <li>Sriram Ganapathy (EE)</li>
+              <li>Ramachandran P (DESE)</li>
+              <li>Vaibhav Katewa (RBCCPS/ECE)</li>
+              <li>Dipanjan Gope (ECE)</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 text-left">
+            <h5>Student Volunteers</h5>
+            <ul class="list-unstyled  text-left">
+              <li>Tutan Debnath (ESE)</li>
+              <li>Prerna Arote (ESE)<li>
+              <li>Alok Joshi (ECE)</li>
+              <li>Anand Kumar (ECE)</li>
+              <li>Aditya Rastogi (CDS)</li>
+              <li>Tejan Karmali (CDS)</li>
+              <li>Nishchal Hoysal (CPS)</li>
+              <li>Dhanaprakaash G (CPS)</li>
+              <li>Ramakrishnan K (CSA)</li>
+              <li>Varun Krishna (EE)</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </footer>
+  </section>
+  <div id='footer_space'>
+    <section class="mb-0 mt-0">
+      <div class="footer text-dark">
+        <div class="   bg-light pt-5 pb-5">
           <div class="container">
             <div class="row">
-              <div class='col-sm-12 text-center'><h2>Contacts</h2></div>
+              <div class="col-xs-6 col-sm-4">
+                <a href="#">
+                 <img src="resources/images/logos/IISc_Logo.png" height="100px">
+                </a>
+                <address class="color-light-20">
+                  Division of EECS
+                  <br> Electrical, Electronics and Computer Sciences
+                  <br> Indian Institute of Science, Bangalore
+                </address>
+              </div>
+              <div class="col-xs-6 col-sm-5">
+                <h5 class="my-2">Participating Departments</h5>
+                <ul class="list-unstyled list-light">
+                  <li>
+                    <a href="http://cds.iisc.ac.in" target="_blank">Computational and Data Sciences</a>
+                  </li>
+                  <li>
+                    <a href="https://csa.iisc.ac.in/" target="_blank">Computer Science and Automation</a>
+                  </li>
+                  <li>
+                    <a href="http://www.ee.iisc.ac.in/" target="_blank">Electrical Engineering</a>
+                  </li>
+                  <li>
+                    <a href="http://ece.iisc.ac.in" target="_blank">Electrical Communication Engineering</a>
+                  </li>
+                  <li>
+                    <a href="http://dese.iisc.ac.in/" target="_blank">Electronic Systems Engineering</a>
+                  </li>
+                  <li>
+                    <a href="http://www.rbccps.org/" target="_blank">Robert Bosch Centre for Cyber-Physical Systems</a>
+                  </li>
+                </ul>
             </div>
-            <hr style="height: 1px;background-color: #ccc;border: none;">
-            <div class="row text-center justify-content-sm-center no-gutters">
-              <div class="col-12 col-sm-8 col-md-3 m-auto">
-                <h5 class="mt-5 mb-4">Dipanjan Gope</h5>
-                <p>dipanjan@iisc.ac.in</p>
-              </div>
-              <div class="col-12 col-sm-8 col-md-3 m-auto">
-                <h5 class="mt-5 mb-4">Sriram Ganapathy</h5>
-                <p>sriramg@iisc.ac.in</p>
-              </div>
-              <div class="col-12 col-sm-8 col-md-3 m-auto">
-                <h5 class="mt-5 mb-4">Konduri Aditya</h5>
-                <p>konduriadi@iisc.ac.in</p>
-              </div>
+            <br style="clear:both" class="hidden-sm-up">
+            <div class="col-xs-4 col-sm-3">
+              <h5 class="my-2">Important Links</h5>
+              <ul class="list-unstyled list-light">
+                <li>
+                  <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Registration Link">
+                    <a href="https://forms.office.com/r/pgZj93WrPD">Registration</a>
+                  </span>
+                </li>
+                <!-- <li>
+                  <span class="d-inline-block" tabindex="0">
+                    <a href="cfs.html">Call for Sponsorship</a>
+                  </span>
+                </li> -->
+              </ul>
             </div>
-            <hr style="height: 1px;background-color: #ccc;border: none;">
           </div>
-        </section>
-        <section class="mb-0 text-dark pt-5 pb-5 bg-light"  id="volunteers">
-          <div class="row">
-            <div class='col-sm-12 text-center'><h3>Volunteers</h3></div>
+          <hr>
+          <div class="row f-flex justify-content-between" style="justify-content: space-between;">
+            <div class="col-md-8 text-xs-center  text-left text-secondary my-1">
+              <p class="mt-2  text-dark"> &copy; Copyright 2021  All Rights Reserved |
+                <a class=" " href="http://eecs.iisc.ac.in" target="_blank">Division of EECS</a>
+              </p>
+            </div>
+            
+            <div class="col-md-4 text-xs-center   text-lg-right text-secondary my-1">
+              <div class="btn-container  mt-1 text-md-right text-sm-center">
+                <div class="mb-1 mr-3 align-self-right pt-0 d-inline-block">
+                  <a href="https://twitter.com/eecsiisc" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-twitter fa-lg  " aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.facebook.com/EECS-IISc-Research-Students-Symposium-2021-105756351649015" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+                  </a>
+                  <a href=" https://www.linkedin.com/company/eecs-iisc-research-students-symposium" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+                  </a>
+                  <!-- <a href="#" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-google-plus fa-lg" aria-hidden="true"></i>
+                  </a> -->
+                </div>
+              </div> 
+            </div>
+           
           </div>
-          <footer class="container pt-0 my-md-1 pt-md-3 text-center border-top">
-            <div class="row">
-              <div class="col-md-2 col-sm-12"></div>
-                <div class="col-md-4 col-sm-12 text-left">
-                  <h5>Faculty Volunteers</h5>
-                  <ul class="list-unstyled  ">
-                    <li>Konduri Aditya (CDS)</li>
-                    <li>Rahul Saladi (CSA)</li>
-                    <li>Sundeep  Prabhakar (ECE)</li>
-                    <li>Sriram Ganapathy (EE)</li>
-                    <li>Ramachandran P (DESE)</li>
-                    <li>Vaibhav Katewa (RBCCPS/ECE)</li>
-                    <li>Dipanjan Gope (ECE)</li>
-                  </ul>
-                </div>
-                <div class="col-md-4 col-sm-12 text-left">
-                  <h5>Student Volunteers</h5>
-                  <ul class="list-unstyled  text-left">
-                    <li>Student 1</li>
-                    <li>Student 2<li>
-                    <li>Student 3</li>
-                    <li>Student 4</li>
-                    <li>Student 5</li>
-                    <li>Student 6</li>
-                    <li>Student 7</li>
-                    <li>Student 8</li>
-                    <li>Student 9</li>
-                  </ul>
-                </div>
-              </div>
-              <hr>
-            </div>
-          </footer>
-        </section>
-        <div id='footer_space'>
-          <section class="mb-0 mt-0">
-            <div class="footer text-dark">
-              <div class="   bg-light pt-5 pb-5">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-xs-6 col-sm-4">
-                      <a href="#">
-                       <img src="resources/images/logos/IISc_Logo.png" height="100px">
-                      </a>
-                      <address class="color-light-20">
-                        Division of EECS
-                        <br> Electrical, Electronics and Computer Sciences
-                        <br> Indian Institute of Science, Bangalore
-                      </address>
-                    </div>
-                    <div class="col-xs-6 col-sm-5">
-                      <h5 class="my-2">Participating Departments</h5>
-                      <ul class="list-unstyled list-light">
-                        <li>
-                          <a href="http://cds.iisc.ac.in" target="_blank">Computational and Data Sciences</a>
-                        </li>
-                        <li>
-                          <a href="https://csa.iisc.ac.in/" target="_blank">Computer Science and Automation</a>
-                        </li>
-                        <li>
-                          <a href="http://www.ee.iisc.ac.in/" target="_blank">Electrical Engineering</a>
-                        </li>
-                        <li>
-                          <a href="http://ece.iisc.ac.in" target="_blank">Electrical Communication Engineering</a>
-                        </li>
-                        <li>
-                          <a href="http://dese.iisc.ac.in/" target="_blank">Electronic Systems Engineering</a>
-                        </li>
-                        <li>
-                          <a href="http://www.rbccps.org/" target="_blank">Robert Bosch Centre for Cyber-Physical Systems</a>
-                        </li>
-                      </ul>
-                  </div>
-                  <br style="clear:both" class="hidden-sm-up">
-                  <div class="col-xs-4 col-sm-3">
-                    <h5 class="my-2">Important Links</h5>
-                    <ul class="list-unstyled list-light">
-                      <li>
-                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Registration Link">
-                          <a href="https://forms.office.com/r/pgZj93WrPD">Registration</a>
-                        </span>
-                      </li>
-                      <!-- <li>
-                        <span class="d-inline-block" tabindex="0">
-                          <a href="cfs.html">Call for Sponsorship</a>
-                        </span>
-                      </li> -->
-                    </ul>
-                  </div>
-                </div>
-                <hr>
-                <div class="row f-flex justify-content-between" style="justify-content: space-between;">
-                  <div class="col-md-8 text-xs-center  text-left text-secondary my-1">
-                    <p class="mt-2  text-dark"> &copy; Copyright 2021  All Rights Reserved |
-                      <a class=" " href="http://eecs.iisc.ac.in" target="_blank">Division of EECS</a>
-                    </p>
-                  </div>
-                  <!-- 
-                  <div class="col-md-4 text-xs-center   text-lg-right text-secondary my-1">
-                    <div class="btn-container  mt-1 text-md-right text-sm-center">
-                      <div class="mb-1 mr-3 align-self-right pt-0 d-inline-block">
-                        <a href="#" role="button" class=" p-2 m-2 btn btn-light">
-                          <i class="fab fa-twitter fa-lg  " aria-hidden="true"></i>
-                        </a>
-                        <a href="#" role="button" class=" p-2 m-2 btn btn-light">
-                          <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" role="button" class=" p-2 m-2 btn btn-light">
-                          <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" role="button" class=" p-2 m-2 btn btn-light">
-                          <i class="fab fa-google-plus fa-lg" aria-hidden="true"></i>
-                        </a>
-                      </div>
-                    </div> 
-                  </div>
-                  -->
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
+      </div>
+    </section>
+  </div>
 
-        <!-- jQuery is required -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>   
-        <script type="text/javascript" src="collage/display/js/jquery.montage.min.js"></script>
-        <script type="text/javascript" src="js/image-speakers.js"></script>
+  <!-- jQuery is required -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>   
+  <script type="text/javascript" src="collage/display/js/jquery.montage.min.js"></script>
+  <script type="text/javascript" src="js/image-speakers.js"></script>
 
-        <script type="text/javascript">
-          window.addEventListener("hashchange", function () {
-            window.scrollTo(window.scrollX, window.scrollY - 80);
-          });
-        </script>
-      </body>
-      </html>
+  <script type="text/javascript">
+    window.addEventListener("hashchange", function () {
+      window.scrollTo(window.scrollX, window.scrollY - 80);
+    });
+  </script>
+</body>
+</html>
