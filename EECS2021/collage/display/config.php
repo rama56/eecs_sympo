@@ -17,7 +17,7 @@ $images_details = array(
 'webpage' => 'https://mecheng.iisc.ac.in/people/jishnu-keshavan/'],
 
 [ 'photo'=> 'resources/images/faculty_speakers/arup_ese.jpg',
-'webpage' => 'https://ece.iisc.ac.in/~anurag/index.html'],
+'webpage' => 'talk.php?id=5'],
 
 // [ 'photo'=> 'resources/images/plenary_speakers/lalitesh.jpg', 
 //  'webpage' => 'talk.php?id=7'],

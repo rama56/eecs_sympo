@@ -4,6 +4,16 @@ html {
   scroll-behavior: smooth;
 }*/
 
+#header_bar .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.below_header {
+  margin-top: 68px;
+}
+
 #participating_departments .member {
   text-align: center;
   margin-bottom: 20px;

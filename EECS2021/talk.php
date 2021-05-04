@@ -28,6 +28,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css ">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/newstyle_v3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Plugins -->
 </head>
 <body>
@@ -84,7 +85,9 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li class="nav-item mr-3">
               <a class="nav-link" href="legacy.html">Legacy</a>
             </li>
-            <!--  BROCHURE TODO <li> </li> -->
+            <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_brochure.pdf">Info. Brochure</a>
+            </li>
             <li class="nav-item">
               <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
             </li> 
@@ -113,7 +116,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
   
   <!-- TALK DETAILS -->
   </section>
-  <section class="pt-1 pb-0">
+  <section class="pt-1 pb-0 below_header">
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-4">
@@ -164,11 +167,11 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <div class="row">
               <div class="col-xs-6 col-sm-4">
                 <a href="#">
-                 <img src="resources/images/logos/IISc_Logo.png" height="100px">
+                 <img src="resources/images/logos/IISc_Seal.jpg" height="158px">
                 </a>
                 <address class="color-light-20">
-                  Division of EECS
-                  <br> Electrical, Electronics and Computer Sciences
+                  <a href="https://eecs.iisc.ac.in/"> Division of EECS
+                  <br> Electrical, Electronics and Computer Sciences </a>
                   <br> Indian Institute of Science, Bangalore
                 </address>
               </div>

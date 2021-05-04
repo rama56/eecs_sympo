@@ -1,8 +1,8 @@
 {
-	"title" : "Title of the talk - 1 line",
+	"title" : "Graph Neural Networks",
 	"photo_link" : "resources/images/faculty_speakers/sundeep_ece.jpeg",
 	"speaker_link": "https://ece.iisc.ac.in/~spchepuri/",
-	"speaker" : "Sundeep Prabhakar",
-	"abstract" : "200 to 250 words",
-	"bio" : "50 to 100 words"
+	"speaker" : "Sundeep Prabhakar Chepuri",
+	"abstract" : "Many science applications deal with data having an underlying graph structure, e.g., social networks, transportation networks, brain networks, sensor networks, chemical molecules, protein-protein interactions, and meshed surfaces in computer graphics, to list a few. For these applications, more recently, deep learning for graph-structured data is receiving a steady research attention from many scientific disciplines. In this talk, we discuss convolutions on graphs that form the basic building block of graph neural networks and discuss a graph neural network model with applications to COVID-19 drug repurposing.",
+	"bio" : "He received the M.Sc. degree (cum laude) in Electrical Engineering and the Ph.D. degree (cum laude) from TU Delft, in July 2011 and January 2016, respectively. Currently, he is an Assistant Professor at the Electrical Communication Engineering department at IISc. He was an Associate Editor of the EURASIP Journal on Advances in Signal Processing (2016 - 2020). He is an elected member of the IEEE SPS Society's Sensor Array and Multichannel Technical Committee (2021 - ) and EURASIP Signal Processing for Multisensor Systems’ Special Area Team (2019 - ).<br><br> His research interests include mathematical signal processing, statistical inference and learning, applied to communication systems, network sciences, and computational imaging. The main themes of hisresearch are computational sensing, sparse sampling, signal processing and machine learning for communications, graph signal processing, and machine learning over graphs."
 }

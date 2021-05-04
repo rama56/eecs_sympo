@@ -109,7 +109,9 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li class="nav-item mr-3">
               <a class="nav-link" href="legacy.html">Legacy</a>
             </li>
-            <!--  BROCHURE TODO <li> </li> -->
+            <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_brochure.pdf">Info. Brochure</a>
+            </li>
             <li class="nav-item">
               <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
             </li> 
@@ -123,7 +125,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
     </nav>
   </div>
 
-  <section class="pt-2 pb-2 mt-0 align-items-center d-flex bg-dark image-container" style="min-height: 100vh; background-size: cover; background-image: url('resources/images/others/iisc-bg.jpg');position: relative;">
+  <section class="pt-2 pb-2 mt-0 align-items-center d-flex bg-dark image-container below_header" style="min-height: 100vh; background-size: cover; background-image: url('resources/images/others/iisc-bg.jpg');position: relative; ">
     <div class="layer" style="background-color: black; opacity:0.5;
     position: absolute;
     top: 0;
@@ -153,7 +155,8 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       <div class="row text-left text-white align-items-start mt-5">
         <div class="col-12 col-md-6 col-lg-4">
           <h3>May 7
-            <span class="btn btn-danger" style="float:right;">Live link To Be Updated</span>
+            <!-- <span class="btn btn-danger" style="float:right;">Live link To Be Updated</span> -->
+            <a class="btn btn-danger" href="https://zoom.us/j/98101873619?pwd=L1BwSzdaWDkwVVE1SkR1aldyd3pVUT09" target="_blank" style="float:right;">Join Live !</a>
             <!-- <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1xDlqFCdR8ulgkv8mDFygUEX741oYCtGW?usp=sharing" style="float:right;">Watch Recorded Videos</a> -->
           </h3>
           <hr style="height: 1px;background-color: #ccc;border: none;">
@@ -161,7 +164,8 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         </div>
         <div class="col-12 col-md-6 col-lg-4 pt-4 pt-md-0">
           <h3>May 8 
-            <span class="btn btn-danger" style="float:right;">Live link To Be Updated</span>
+            <!-- <span class="btn btn-danger" style="float:right;">Live link To Be Updated</span> -->
+            <a class="btn btn-danger" href="https://zoom.us/j/98101873619?pwd=L1BwSzdaWDkwVVE1SkR1aldyd3pVUT09" style="float:right;">Join Live !</a>
             <!-- <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1sEh1xTL8uysvE0zC7uvrgO-pWBvgMHt0?usp=sharing" style="float:right;">Watch Recorded Videos</a> -->
           </h3>
           <hr style="height: 1px;background-color: #ccc;border: none;">
@@ -186,7 +190,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
     <section class="bg-white text-dark pt-0 pb-3 mb-0" id="about" style="color:black!important;">
       <div class="container">
         <div class="row mt-0 mb-2 pt-5 d-flex justify-content-center">
-          <div class="col-md-12 col-sm-12 ">
+          <div class="col-md-6 col-sm-12 ">
             <h1 class="blog-post-title">About</h1>
             <p class="lead text-justify">
              Welcome to the twelfth EECS Research Students Symposium. This year, the symposium will happen online.
@@ -197,11 +201,15 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <p class="lead text-justify">
               We invite researchers, faculty members, industry professionals, and research students working in EECS to participate and provide their feedback. We especially invite the alumni of the division to join us for this event.
             </p>
-          </div>
-          <div class="col-md-12 col-sm-12 text-lg-right text-right">
-            <!-- RAMA UPDATE LINK -->
             <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary shadow-lg btn-lg">Register &gt;</a>
           </div>
+          <div class="col-md-6 col-sm-12" style="overflow: auto; max-height: 570px">
+            <!-- <a class="twitter-timeline" href="https://twitter.com/PMOIndia?ref_src=twsrc%5Etfw">Tweets by PMOIndia</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+            <a class="twitter-timeline" href="https://twitter.com/EecsIisc?ref_src=twsrc%5Etfw">Tweets by EecsIisc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <!-- <div class="col-md-12 col-sm-12 text-lg-right text-right">
+            <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary shadow-lg btn-lg">Register &gt;</a>
+          </div> -->
         </div>
         <hr>
       </div>
@@ -212,7 +220,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         <div class="row">
           <div class='col-sm-12 text-center'><h2>Participating Departments</h2></div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <div class='row'>
           <div class="col-lg-2 col-md-4">
             <div class="member">
@@ -254,13 +262,14 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <span><a href="http://www.rbccps.org/">Robert Bosch Centre for Cyber-Physical Systems </a></span>
           </div>
         </div>
+        <hr>
       </div> 
     </div>
   </section>
   <section class="pt-5 pb-5" id="themes">
     <div class="container">
       <div class="row">
-        <div class='col-sm-12 text-center'><h2>Themes</h2></div>
+        <div class='col-sm-12 text-center'><h2>Theme clusters</h2></div>
       </div>
       <hr>
       <div class="row align-items-center justify-content-around">
@@ -272,27 +281,22 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
           </div>
           <div class="media mt-4 pb-3 d-flex   align-items-center">
             <div class="order-2 order-md-1  media-body small">
-              <h5 class="mt-0">Data Science</h5>
+              <h5 class="mt-0">Nanodevices, VLSI Circuits and Microsystems</h5>
             </div>
           </div>
           <div class="media mt-4 pb-3 d-flex   align-items-center">
             <div class="order-2 order-md-1  media-body small">
-              <h5 class="mt-0">Communication and Signal Processing</h5>
+              <h5 class="mt-0">Signal Processing and Communications</h5>
             </div>
           </div>
           <div class="media mt-4 pb-3 d-flex   align-items-center">
             <div class="order-2 order-md-1  media-body small">
-              <h5 class="mt-0">Networks</h5>
+              <h5 class="mt-0">Security and Cryptography</h5>
             </div>
           </div>
           <div class="media mt-4 pb-3 d-flex   align-items-center">
             <div class="order-2 order-md-1  media-body small">
-              <h5 class="mt-0">Computer Systems and Software</h5>
-            </div>
-          </div>
-          <div class="media mt-4 pb-3 d-flex   align-items-center">
-            <div class="order-2 order-md-1  media-body small">
-              <h5 class="mt-0">Computational Science</h5>
+              <h5 class="mt-0">Visual Analytics</h5>
             </div>
           </div>
         </div>
@@ -302,17 +306,17 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         <div class="col-12 col-md-4">
           <div class="media mt-4 pb-3 d-flex align-items-center">
             <div class="media-body small">
-              <h5 class="mt-0">Theoretical Computer Science</h5>
+              <h5 class="mt-0">Computational Sciences</h5>
             </div>
           </div>
           <div class="media mt-4 pb-3 d-flex align-items-center">
             <div class="media-body small">
-              <h5 class="mt-0">Electronic Design</h5>
+              <h5 class="mt-0">Brain, Computation, and Data</h5>
             </div>
           </div>
           <div class="media mt-4 pb-3 d-flex align-items-center">
             <div class="media-body small">
-              <h5 class="mt-0">Image and Video processing</h5>
+              <h5 class="mt-0">Computer Systems</h5>
             </div>
           </div>
           <div class="media mt-4 pb-3 d-flex align-items-center">
@@ -323,11 +327,6 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
           <div class="media mt-4 pb-3 d-flex align-items-center">
             <div class="media-body small">
               <h5 class="mt-0">Power Engineering</h5>
-            </div>
-          </div>
-          <div class="media mt-4 pb-3 d-flex align-items-center">
-            <div class="media-body small">
-              <h5 class="mt-0">Autonomous Systems and Robotics</h5>
             </div>
           </div>
         </div>
@@ -345,49 +344,99 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         </div>
       </div>
       <hr>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
+      <div class="row text-center justify-content-sm-center no-gutters">
+        
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
           <div class="member">
-            <div class="pic"><img src="resources/images/plenary_speakers/lalitesh.jpg" alt=""></div>
+            <div class="pic"><img src="resources/images/plenary_speakers/lalitesh_new.jpg" alt=""></div>
             <h4><a href="speaker_redirect.php?id=7">Lalitesh Katragadda</a></h4>
             <span>Founder, Indihood</span>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/plenary_speakers/malik.gif" alt=""></div>
-            <h4><a href="speaker_redirect.php?id=8"> Milind Tambe </a></h4>
-            <span>Harvard University </span>
+            <h4><a href="speaker_redirect.php?id=9"> Jitendra Malik </a></h4>
+            <span>UC-Berkeley & Facebook AI Research</span>
+            <!-- <span>Facebook AI Research</span> -->
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/plenary_speakers/umesh-mishra.jpg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=10"> Umesh Mishra </a></h4>
+            <span>UC-Santa Barbara</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/plenary_speakers/tambe.jpg" alt=""></div>
-            <h4><a href="speaker_redirect.php?id=9"> Jitendra Malik </a></h4>
-            <span>UC Berkley</span>
+            <h4><a href="speaker_redirect.php?id=8"> Milind Tambe </a></h4>
+            <span>Harvard University & Google Research India</span>
+            <!-- <span> Google Research India</span> -->
           </div>
         </div>
+
       </div>
       <hr>
     </div>
 
-    <div class="container" style="text-align:center;">
-      <!-- <h2 class="text-center">Faculty Speakers</h2> -->
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 text-center">
-          <h2> Faculty Speakers </h2>
-        </div>
-      </div>  
-      <br> 
-      <div class="am-container" id="am-container">
-        <?php foreach($images_details as $imageLink) {?>
-          <a href="<?php echo $imageLink['webpage'];?>" target="_blank"><img src="<?php echo $imageLink['photo'];?>"></img></a>
-        <?php }?>
+        <div class='col-sm-12 text-center'><h2>Faculty Speakers</h2></div>
       </div>
       <hr>
+      <!-- <hr style="height: 1px;background-color: #ccc;border: none;"> -->
+      <div class="row text-center justify-content-sm-center no-gutters">
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/phanim_cds.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=1"> Phani Motamarri </a></h4>
+            <span>CDS</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/chaya_csa.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=2"> Chaya Ganesh </a></h4>
+            <span>CSA</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/sundeep_ece.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=3">Sundeep Prabhakar Chepuri</a></h4>
+            <span>ECE</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/vishnu_ee.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=4">Vishnu Mahadev Iyer</a></h4>
+            <span>EE</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/arup_ese.jpg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=5"> Arup Polley</a></h4>
+            <span>ESE</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/jishnu_rbccps.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=6">Jishnu Keshavan</a></h4>
+            <span>RBCCPS</span>
+          </div>
+        </div>
+      </div>
+      <hr style="height: 1px;background-color: #ccc;border: none;">
     </div>
+    
   </section>
   
   <section class="bg-light text-dark pt-5 pb-5" id="sponsors">
@@ -403,7 +452,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         </div>
         <div class="col-md-2 col-6 text-right">
           <div class="card">
-            <img class="card-img-top shadow" src="resources/images/logos/IISc_Logo.png" alt="Profile">
+            <img class="card-img-top shadow" src="resources/images/logos/IISc_Seal.jpg" alt="Profile">
           </div>
         </div>
       </div>
@@ -437,10 +486,6 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
           <p>dipanjan@iisc.ac.in</p>
         </div>
         <div class="col-12 col-sm-8 col-md-3 m-auto">
-          <h5 class="mt-5">Sriram Ganapathy</h5>
-          <p>sriramg@iisc.ac.in</p>
-        </div>
-        <div class="col-12 col-sm-8 col-md-3 m-auto">
           <h5 class="mt-5">Konduri Aditya</h5>
           <p>konduriadi@iisc.ac.in</p>
         </div>
@@ -453,12 +498,16 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
           <p>spchepuri@iisc.ac.in</p>
         </div>
         <div class="col-12 col-sm-8 col-md-3 m-auto">
-          <h5 class="mt-5">Vaibhav Katewa</h5>
-          <p>vkatewa@iisc.ac.in</p>
+          <h5 class="mt-5">Sriram Ganapathy</h5>
+          <p>sriramg@iisc.ac.in</p>
         </div>
         <div class="col-12 col-sm-8 col-md-3 m-auto">
           <h5 class="mt-5">Ramachandran Ponnuswamy</h5>
           <p>prama@iisc.ac.in</p>
+        </div>
+        <div class="col-12 col-sm-8 col-md-3 m-auto">
+          <h5 class="mt-5">Vaibhav Katewa</h5>
+          <p>vkatewa@iisc.ac.in</p>
         </div>
       </div>
       <hr style="height: 1px;background-color: #ccc;border: none;">
@@ -466,41 +515,53 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
   </section>
   <section class="mb-0 text-dark pt-5 pb-5 bg-light"  id="volunteers">
     <div class="row">
-      <div class='col-sm-12 text-center'><h3>Volunteers</h3></div>
+      <div class='col-sm-12 text-center'><h3>Hosts & Volunteers</h3></div>
     </div>
-    <footer class="container pt-0 my-md-1 pt-md-3 text-center border-top">
+    <hr>
+    <footer class="container pt-0 my-md-1 pt-md-3 text-center">
       <div class="row">
-        <div class="col-md-2 col-sm-12"></div>
-          <div class="col-md-4 col-sm-12 text-left">
-            <h5>Faculty Volunteers</h5>
-            <ul class="list-unstyled  ">
-              <li>Konduri Aditya (CDS)</li>
-              <li>Rahul Saladi (CSA)</li>
-              <li>Sundeep  Prabhakar (ECE)</li>
-              <li>Sriram Ganapathy (EE)</li>
-              <li>Ramachandran P (DESE)</li>
-              <li>Vaibhav Katewa (RBCCPS/ECE)</li>
-              <li>Dipanjan Gope (ECE)</li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-12 text-left">
-            <h5>Student Volunteers</h5>
-            <ul class="list-unstyled  text-left">
-              <li>Tutan Debnath (ESE)</li>
-              <li>Prerna Arote (ESE)<li>
-              <li>Alok Joshi (ECE)</li>
-              <li>Anand Kumar (ECE)</li>
-              <li>Aditya Rastogi (CDS)</li>
-              <li>Tejan Karmali (CDS)</li>
-              <li>Nishchal Hoysal (CPS)</li>
-              <li>Dhanaprakaash G (CPS)</li>
-              <li>Ramakrishnan K (CSA)</li>
-              <li>Varun Krishna (EE)</li>
-            </ul>
-          </div>
+        <div class="col-md-4 col-sm-12 text-left">
+          <h5>Faculty Hosts</h5>
+          <ul class="list-unstyled  ">
+            <li>Sashikumaar Ganesan (CDS)</li>
+            <li>Chiranjib Bhattacharyya (CSA)</li>
+            <li>K.J. Vinoy (ECE)</li>
+            <li>Udaya Kumar (EE)</li>
+            <li>L. Umanand (ESE)</li>
+            <li>Bharadwaj Amrutur (RBCCPS)</li>
+          </ul>
         </div>
-        <hr>
+        <div class="col-md-4 col-sm-12 text-left">
+          <h5>Faculty Volunteers</h5>
+          <ul class="list-unstyled  ">
+            <li>Dipanjan Gope (ECE)</li>
+            <li>Konduri Aditya (CDS)</li>
+            <li>Rahul Saladi (CSA)</li>
+            <li>Sundeep Prabhakar Chepuri (ECE)</li>
+            <li>Sriram Ganapathy (EE)</li>
+            <li>Ramachandran P (ESE)</li>
+            <li>Vaibhav Katewa (RBCCPS/ECE)</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 text-left">
+          <h5>Student Volunteers</h5>
+          <ul class="list-unstyled  text-left">
+            <li>Aditya Rastogi (CDS)</li>
+            <li>Tejan Karmali (CDS)</li>
+            <li>Ramakrishnan K (CSA)</li>
+            <li>Rameesh Paul (CSA)</li>
+            <li>Alok Joshi (ECE)</li>
+            <li>Anand Kumar (ECE)</li>
+            <li>Varun Krishna (EE)</li>
+            <li>Anand Kumar R (EE)</li>
+            <li>Tutan Debnath (ESE)</li>
+            <li>Prerna Arote (ESE)<li>
+            <li>Nishchal Hoysal (CPS)</li>
+            <li>Dhanaprakaash G (CPS)</li>
+          </ul>
+        </div>
       </div>
+      <hr>
     </footer>
   </section>
   <div id='footer_space'>
@@ -511,11 +572,11 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <div class="row">
               <div class="col-xs-6 col-sm-4">
                 <a href="#">
-                 <img src="resources/images/logos/IISc_Logo.png" height="100px">
+                 <img src="resources/images/logos/IISc_Seal.jpg" height="158px">
                 </a>
                 <address class="color-light-20">
-                  Division of EECS
-                  <br> Electrical, Electronics and Computer Sciences
+                  <a href="https://eecs.iisc.ac.in/"> Division of EECS
+                  <br> Electrical, Electronics and Computer Sciences </a>
                   <br> Indian Institute of Science, Bangalore
                 </address>
               </div>
