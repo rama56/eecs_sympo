@@ -365,9 +365,9 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
 
         <div class="col-12 col-sm-8 col-md-3 m-auto">
           <div class="member">
-            <div class="pic"><img src="resources/images/plenary_speakers/umesh-mishra.jpg" alt=""></div>
-            <h4><a href="speaker_redirect.php?id=10"> Umesh Mishra </a></h4>
-            <span>UC-Santa Barbara</span>
+            <div class="pic"><img src="resources/images/plenary_speakers/madhav.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=10"> Madhav Marathe </a></h4>
+            <span> University of Virginia</span>
           </div>
         </div>
 
@@ -554,10 +554,13 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li>Anand Kumar (ECE)</li>
             <li>Varun Krishna (EE)</li>
             <li>Anand Kumar R (EE)</li>
+            <li>Himanshu Bhusan (EE)</li>
             <li>Tutan Debnath (ESE)</li>
             <li>Prerna Arote (ESE)<li>
-            <li>Nishchal Hoysal (CPS)</li>
-            <li>Dhanaprakaash G (CPS)</li>
+            <li>Nishchal Hoysal (RBCCPS)</li>
+            <li>Dhanaprakaash G (RBCCPS)</li>
+            <li>Aniruddh Sanjoy Sikdar (RBCCPS)</li>
+            <li>Harini V (RBCCPS)</li>
           </ul>
         </div>
       </div>
