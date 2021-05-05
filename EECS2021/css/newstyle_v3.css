@@ -116,3 +116,35 @@
 .content-mobile {display: block;text-align:center;width:100%; margin-left: 44px;margin-top: -28px;}
 
 }
+
+.abs_title, .abs_authors, .abs_dept {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+ 
+
+.abs_title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+ 
+
+.abs_authors {
+  font-size: 20px;
+}
+
+ 
+
+.abs_dept {
+  font-size: 18px;
+}
+
+ 
+
+.abs_text {
+  font-size: 18px;
+  padding-top: 30px;
+}
