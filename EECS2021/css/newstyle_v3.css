@@ -123,28 +123,29 @@
   align-items: center
 }
 
- 
-
 .abs_title {
   font-size: 22px;
   font-weight: bold;
 }
 
- 
-
 .abs_authors {
   font-size: 20px;
 }
-
- 
 
 .abs_dept {
   font-size: 18px;
 }
 
- 
-
 .abs_text {
   font-size: 18px;
   padding-top: 30px;
+}
+
+.abstract::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -70px; 
+  height: 70px; 
+  visibility: hidden; 
+  pointer-events: none;
 }
