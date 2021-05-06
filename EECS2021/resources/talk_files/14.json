@@ -1,9 +1,9 @@
 {
-	"title" : "Immersive Panoramic Video Streaming over Wireless Channels",
-	"photo_link" : "photos/13._R._Srikant.jpg",
-	"speaker_link": "https://sites.google.com/a/illinois.edu/srikant/",
-	"speaker" : "R. Srikant",
-	"abstract" : "Transmission scheduling for immersive panoramic video streaming involves the selection of transmission rates and coding schemes to provide a high quality viewing experience for the user. We will present a solution to this scheduling problem by formulating it as a multi-armed bandit problem in which one has more information than in a traditional bandit setting. Join work with Jiangong Chen, Bin Li and Harsh Gupta.",
-	"bio" : "R. Srikant is the co-Director of the C3.ai Digital Transformation Institute, and the Fredric G. and Elizabeth H. Nearing Professor in the Department of Electrical and Computer Engineering and the Coordinated Science Lab at the University of Illinois of Urbana-Champaign. He is the recipient of the 2019 IEEE Koji Kobayashi Computers and Communications Award, and has received several Best Paper awards including the 2015 INFOCOM Best Paper Award and  the 2017 Applied Probability Society Best Publication Award. He was the Editor-in-Chief of the IEEE/ACM Transactions on Networking from 2013-2017. His research interests include machine learning, applied probability, and communication networks."
+	"title" : "Confidential Computing – Towards a new contract of data sharing",
+	"photo_link" : "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/avatar_user__1465570784-360x360.jpg",
+	"speaker_link": "https://www.microsoft.com/en-us/research/people/kapilv/",
+	"speaker" : "Kapil Vaswani",
+	"abstract" : "In a data-driven world, we have been co-opted into a contract where we pay for online services using our digital footprint. This contract places a lot of trust in the services providers, who often hide behind the fine print of privacy statements and misuse our data. Confidential computing is an emerging class of security systems and service that redefines this contract by giving data owners stronger technical control over how their data is used and shared. In this talk, I will describe the fundamentals and recent advances in confidential computing. I will also talk about how confidential computing can enable a new class of trustworthy data sharing scenarios that were not feasible or too expensive before.",
+	"bio" : "Kapil Vaswani is a security researcher in the Confidential Computing group at Microsoft Research. His research focuses on building secure, robust, and transparent systems. He has pioneered work on designing secure services such as databases using confidential computing and new forms of confidential computing hardware on devices like GPUs. He graduated from the Indian Institute of Science in Bangalore, where he worked on performance profiling and modeling techniques."
 }
 

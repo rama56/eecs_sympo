@@ -1,0 +1,9 @@
+{
+	"title" : "Trusted Multi-enterprise AI with Blockchain",
+	"photo_link" : "https://researcher.watson.ibm.com/researcher/photos/3077.jpg",
+	"speaker_link": "https://researcher.watson.ibm.com/researcher/view.php?person=in-pankajdayama",
+	"speaker" : "Pankaj Dayama",
+	"abstract" : "Blockchain technology provides greater transparency and security in carrying out business transactions by maintaining immutable transaction records within a distributed network of mutually untrusting entities. It has been seen as a very promising technology in supply chain as well as financial services industry. Applications related to product traceability, international trade finance, paperless trade, etc. are the initial ones that have gone into production. This talk will provide an overview of blockchain solutions we have developed for various industries. We will further deep-dive into some of the work we are doing at the intersection of Blockchain and AI.",
+	"bio" : "Pankaj Dayama is a Senior Technical Staff Member and Master Inventor at IBM Research India. He is currently leading AI for Supply Chain Collaboration and Blockchain group at IRL. His current work spans different aspects of multi-enterprise business networks including building innovative solutions in supply chain space working directly with clients, and developing technologies to enable privacy preserving collaboration on the business networks. Pankaj is an alumnus of Indian Institute of Science, Bangalore. He has published about 20 papers in peer reviewed conferences and has more than 50 filed US patents."
+}
+

@@ -34,7 +34,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
 <body>
   <div id='header_bar'> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="padding: 0px!important;">
-      <div class="container">
+      <div class="container"  style="max-width: 90%;">
         <a class="navbar-brand mr-1" href="index.php">
           <img src="resources/images/logos/iisc-seal.jpg" alt="" style="width: 60px;">
           <strong>EECS 2021 </strong>
@@ -86,7 +86,13 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
               <a class="nav-link" href="legacy.html">Legacy</a>
             </li>
             <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_symposium_program.pdf">Program</a>
+            </li>
+            <li class="nav-item mr-3">
               <a class="nav-link" target="_blank" href="resources/EECS_2021_brochure.pdf">Info. Brochure</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_BookofAbstracts.pdf">Book of Abstracts</a>
             </li>
             <li class="nav-item">
               <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
@@ -121,7 +127,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       <div class="row">
         <div class="col-md-2 col-4">
           <a class="story-img" href="#">
-            <img src="<?php echo $data['photo_link'];?>" style="height:100px" class="mb-3 img-fluid">
+            <img src="<?php echo $data['photo_link'];?>" style="height:130px" class="mb-3 img-fluid">
           </a>
         </div>
         <div class="col-md-10 col-sm-9">

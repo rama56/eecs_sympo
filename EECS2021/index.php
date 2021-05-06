@@ -52,13 +52,22 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         document.getElementById("countdown_timer_2").innerHTML = "";
         document.getElementById("countdown_message").innerHTML = "WE ARE LIVE !!"
       }
-    }, 1000);  
+    }, 1000);
+
+    $( document ).ready(function() {
+      var parent = $("#invited_talks");
+      var children = parent.children();
+      while (children.length) {
+          parent.append(children.splice(Math.floor(Math.random() *  children.length), 1));
+      }
+    })
+
   </script>
 </head>
 <body>
   <div id='header_bar'>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="padding: 0px!important;">
-      <div class="container">
+      <div class="container" style="max-width: 90%;">
         <a class="navbar-brand mr-1" href="index.php">
           <img src="resources/images/logos/iisc-seal.jpg" alt="" style="width: 60px;">
           <strong>EECS 2021 </strong>
@@ -110,7 +119,13 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
               <a class="nav-link" href="legacy.html">Legacy</a>
             </li>
             <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_symposium_program.pdf">Program</a>
+            </li>
+            <li class="nav-item mr-3">
               <a class="nav-link" target="_blank" href="resources/EECS_2021_brochure.pdf">Info. Brochure</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_BookofAbstracts.pdf">Book of Abstracts</a>
             </li>
             <li class="nav-item">
               <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
@@ -154,24 +169,26 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       <!-- DAYS AND LINKS -->
       <div class="row text-left text-white align-items-start mt-5">
         <div class="col-12 col-md-6 col-lg-4">
-          <h3>May 7
+          <h3 style="text-align: center;">May 7 (Day 1)
             <!-- <span class="btn btn-danger" style="float:right;">Live link To Be Updated</span> -->
-            <a class="btn btn-danger" href="https://zoom.us/j/98101873619?pwd=L1BwSzdaWDkwVVE1SkR1aldyd3pVUT09" target="_blank" style="float:right;">Join Live !</a>
+            <!-- <a class="btn btn-danger" href="https://zoom.us/j/98101873619?pwd=L1BwSzdaWDkwVVE1SkR1aldyd3pVUT09" target="_blank" style="float:right;">Join Live !</a> -->
             <!-- <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1xDlqFCdR8ulgkv8mDFygUEX741oYCtGW?usp=sharing" style="float:right;">Watch Recorded Videos</a> -->
           </h3>
           <hr style="height: 1px;background-color: #ccc;border: none;">
-          <h4 class="text-h3"><a href="schedule-may7.html" target="_blank">Day 1 - Schedule</a></h4>
+          <h3  style="text-align: center; color: red" class="text-h3">
+            <a href="schedule-may7.html" target="_blank" style="color: yellow">Schedule &<br> Live Session Links</a>
+          </h3>
         </div>
         <div class="col-12 col-md-6 col-lg-4 pt-4 pt-md-0">
-          <h3>May 8 
+          <h3 style="text-align: center;">May 8 (Day 2)
             <!-- <span class="btn btn-danger" style="float:right;">Live link To Be Updated</span> -->
-            <a class="btn btn-danger" href="https://zoom.us/j/98101873619?pwd=L1BwSzdaWDkwVVE1SkR1aldyd3pVUT09" style="float:right;">Join Live !</a>
+            <!-- <a class="btn btn-danger" href="https://zoom.us/j/98101873619?pwd=L1BwSzdaWDkwVVE1SkR1aldyd3pVUT09" style="float:right;">Join Live !</a> -->
             <!-- <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1sEh1xTL8uysvE0zC7uvrgO-pWBvgMHt0?usp=sharing" style="float:right;">Watch Recorded Videos</a> -->
           </h3>
           <hr style="height: 1px;background-color: #ccc;border: none;">
-          <h4 class="text-h3">
-            <a href="schedule-may8.html" target="_blank">Day 2 - Schedule</a>
-          </h4>
+          <h3  style="text-align: center; " class="text-h3">
+            <a href="schedule-may8.html" target="_blank" style="color: yellow">Schedule &<br> Live Session Links</a>
+          </h3>
           <!-- SECTION : STUDENT BEST PAPER AWARD -->
           <!-- <h5 class="text-h4">
             <a href="awards.html" class="btn text-white btn-outline-success" target="_blank">Student best paper awards</a>
@@ -187,9 +204,30 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       </div>
 
     </section>
+
+    <!-- AT A GLANCE -->
+    <!-- <section class="bg-white text-dark pt-0 pb-3 mb-0" id="about" style="color:black!important;">
+      <div class="container">
+        <div class="row">
+          <div class='col-sm-12 text-center'><h2>At a glance...</h2></div>
+        </div>
+        <div class="row mt-0 mb-2 pt-5 d-flex justify-content-center">
+          <div class="col-md-12 col-sm-12">
+            <img src="resources/at_a_glance.png" style="max-width: 100%;">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section> -->
+
+    <!-- ABOUT & TWITTER -->
     <section class="bg-white text-dark pt-0 pb-3 mb-0" id="about" style="color:black!important;">
       <div class="container">
+        <!-- style="max-width: 1680px;" -->
         <div class="row mt-0 mb-2 pt-5 d-flex justify-content-center">
+          <!-- <div class="col-md-4 col-sm-12">
+            <img src="resources/images/others/EECS_2021_flyer.jpg" style="max-width: 100%;">
+          </div> -->
           <div class="col-md-6 col-sm-12 ">
             <h1 class="blog-post-title">About</h1>
             <p class="lead text-justify">
@@ -204,6 +242,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary shadow-lg btn-lg">Register &gt;</a>
           </div>
           <div class="col-md-6 col-sm-12" style="overflow: auto; max-height: 570px">
+            <!--  -->
             <!-- <a class="twitter-timeline" href="https://twitter.com/PMOIndia?ref_src=twsrc%5Etfw">Tweets by PMOIndia</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             <a class="twitter-timeline" href="https://twitter.com/EecsIisc?ref_src=twsrc%5Etfw">Tweets by EecsIisc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
@@ -269,7 +308,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
   <section class="pt-5 pb-5" id="themes">
     <div class="container">
       <div class="row">
-        <div class='col-sm-12 text-center'><h2>Theme clusters</h2></div>
+        <div class='col-sm-12 text-center'><h2>Research clusters</h2></div>
       </div>
       <hr>
       <div class="row align-items-center justify-content-around">
@@ -337,6 +376,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
 <!-- pt-1 pb-0 -->
   <section class="pt-5 pb-5" id="speakers">
     
+    <!-- PLENARY TALKS -->
     <div class="container" style="text-align:center;">
       <div class="row">
         <div class="col-lg-12 col-md-12 text-center">
@@ -384,6 +424,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       <hr>
     </div>
 
+    <!-- FACULTY TALKS -->
     <div class="container">
       <div class="row">
         <div class='col-sm-12 text-center'><h2>Faculty Speakers</h2></div>
@@ -437,6 +478,236 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       <hr style="height: 1px;background-color: #ccc;border: none;">
     </div>
     
+    <!-- INVITED TALKS -->
+    <div class="container" style="max-width: 90%;">
+      <div class="row">
+        <div class='col-sm-12 text-center'><h2>Keynote & Industry Speakers</h2></div>
+      </div>
+      <hr>
+      <!-- <hr style="height: 1px;background-color: #ccc;border: none;"> -->
+      <div id="invited_talks" class="row text-center justify-content-sm-center no-gutters">
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.cse.iitb.ac.in/~sunita/mugshot2018.png" alt=""></div>
+            <h4><a href="https://www.cse.iitb.ac.in/~sunita/">Sunita Sarawagi</a></h4>
+            <span>IIT Bombay</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.prateekjain.org/images/newpic.jpg" alt=""></div>
+            <h4><a href="https://www.prateekjain.org/"> Prateek Jain </a></h4>
+            <span>Google</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/invited_speakers/martin_kuball.jpeg" alt=""></div>
+            <h4><a href="https://research-information.bris.ac.uk/en/persons/martin-h-h-kuball">Martin Kuball</a></h4>
+            <span>University of Bristol, UK</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://acme.dei.unipd.it/wp-content/uploads/2020/02/48562d5a-99d1-4054-860f-1c5203ef3fff-1358x1536.jpg" alt=""></div>
+            <h4><a href="https://acme.dei.unipd.it/team/matteo-meneghini/">Matteo Meneghini</a></h4>
+            <span>University of Padua, Italy</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQGwoATivWIPBQ/profile-displayphoto-shrink_400_400/0/1517731962675?e=1625702400&v=beta&t=jVb1MkpVi871RjRkMlsTlq9OAo6VP89U-95P-dA6dbA" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/harald-gossner-5512025/"> Harald Gossner</a></h4>
+            <span>Intel Corporation, Germany</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="http://home.iitk.ac.in/~chauhan/ysc_web10.jpeg" alt=""></div>
+            <h4><a href="http://home.iitk.ac.in/~chauhan/">Yogesh Chauhan</a></h4>
+            <span>IIT Kanpur</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.comp.nus.edu.sg/~mohan/IMG1C_20_5_2013.jpg" alt=""></div>
+            <h4><a href="https://www.comp.nus.edu.sg/~mohan/">Mohan Kankanhalli</a></h4>
+            <span>NUS Singapore</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.cse.iitb.ac.in/~ajitvr/ajit.jpg" alt=""></div>
+            <h4><a href="https://www.cse.iitb.ac.in/~ajitvr/">Ajit Rawade</a></h4>
+            <span>IIT Bombay</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQGP8KldAX-sEA/profile-displayphoto-shrink_800_800/0/1517561302009?e=1625702400&v=beta&t=NvIBtCiJ71rJD_w1RkqoB8IDlCdryd8VJpz337K8q-M" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/adrian-sharples-25876929/?originalSubdomain=uk">Adrian Sharples</a></h4>
+            <span>British Telecom</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.ee.iitb.ac.in/web/images/stallur" alt=""></div>
+            <h4><a href="https://www.ee.iitb.ac.in/web/people/faculty/home/stallur">Siddharth Tallur</a></h4>
+            <span>IIT Bombay</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.research.manchester.ac.uk/portal/files/47911121/Aravind1.jpg" alt=""></div>
+            <h4><a href="https://www.research.manchester.ac.uk/portal/aravind.html">Aravind Vijayaraghavan</a></h4>
+            <span>Manchester University, UK</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C5603AQEJT_s6NKcCzg/profile-displayphoto-shrink_800_800/0/1517699313197?e=1625702400&v=beta&t=Ex0P2elF5VFQJ50qu1_6LomkShzL59kKHAD0D6kCfsw" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/suparna-bhattacharya-5a7798b/?originalSubdomain=in">Suparna Bhattacharyya</a></h4>
+            <span>Hewlett-Packard Enterprise</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.cse.iitm.ac.in/~rangan/pandu.gif" alt=""></div>
+            <h4><a href="https://www.cse.iitm.ac.in/~rangan/">C. Pandu Rangan</a></h4>
+            <span>IIT Madras</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="http://sanneck.net/sanneck.jpg" alt=""></div>
+            <h4><a href="http://sanneck.net/">Henning Sanneck</a></h4>
+            <span>Nokia Strategy and Technology, Germany</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://researcher.watson.ibm.com/researcher/photos/4641.jpg" alt=""></div>
+            <h4><a href="https://researcher.watson.ibm.com/researcher/view.php?person=in-asinghee">Amith Singhee</a></h4>
+            <span>IBM Research, India</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.cs.ksu.edu/people/faculty/prabhakar/prabhakar_pavithra_med.jpg" alt=""></div>
+            <h4><a href="https://www.cs.ksu.edu/people/faculty/prabhakar/">Pavithra Prabhakar</a></h4>
+            <span>Kansas State University, USA</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.ee.iitb.ac.in/~agarwal/index_files/agarwal.jpg" alt=""></div>
+            <h4><a href="https://www.ee.iitb.ac.in/~agarwal/">Vivek Agarwal</a></h4>
+            <span>IIT Bombay</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQEBQhU7B09YXg/profile-displayphoto-shrink_800_800/0/1517747937877?e=1625702400&v=beta&t=rEGI7-OQJMHQI_uA_k1XJrFaNtb-xbTXLXuDyh11pKc" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/ranganathan-gurunathan-a67b508/">Ranganathan Gurunathan</a></h4>
+            <span>Bloom Energy</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFA08CBTMyHTw/profile-displayphoto-shrink_400_400/0/1517655425200?e=1625702400&v=beta&t=tLxFTJ8hyFRsWpqRiT3JTnMF8K6cvmqEw8X9Eza6GmY" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/shailesh-ghotgalkar-97a4239/?originalSubdomain=in">Shailesh Ghotgalkar</a></h4>
+            <span>Texas Instruments</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C5103AQE4rgtVsXn6gw/profile-displayphoto-shrink_800_800/0/1516945530338?e=1625702400&v=beta&t=C_rwqztI7dRiNiQSDoaSmXAES_JlucHXom2Ti1cLgKY" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/utsab-kundu-014a2956/?originalSubdomain=in">Utsab Kundu</a></h4>
+            <span>EE, IISc</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://phfi.org/wp-content/uploads/2021/05/Giri.jpg" alt=""></div>
+            <h4><a href="https://phfi.org/member/giridhar-r-babu/">Giridhara R Babu</a></h4>
+            <span>PHFI</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/invited_speakers/deepak_subramani.png" alt=""></div>
+            <h4><a href="http://cds.iisc.ac.in/faculty/deepakns/">Deepak Subramani</a></h4>
+            <span>CDS, IISc</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://ashoka.edu.in/static/images/media/2019/08/06/t1565066093_123_small.jpg" alt=""></div>
+            <h4><a href="https://ashoka.edu.in/faculty#!/gautam-menon-1526">Gautam Menon</a></h4>
+            <span>Ashoka University</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://engineering.virginia.edu/sites/default/files/styles/faculty_headshot/public/anil-cropped.jpg?itok=rzmC0AEr" alt=""></div>
+            <h4><a href="https://engineering.virginia.edu/faculty/anil-vullikanti">Ani Vullikanti</a></h4>
+            <span>Virginia Tech</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C5103AQFNWUDsZDfukw/profile-displayphoto-shrink_800_800/0/1517364927318?e=1625702400&v=beta&t=qcjoOGvZfcSPg8RDaED4q_qu8IXfhILbv58D644K8B8" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/suvarna-alladi-71621a5a/?originalSubdomain=in">Suvarna Alladi</a></h4>
+            <span>NIMHANS</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C5603AQExMtjcg7kxtg/profile-displayphoto-shrink_800_800/0/1516270461290?e=1625702400&v=beta&t=3bQLOvV1xoUgg3azBdSfCP7qiOkRlvexrXJCkIHrVnw" alt=""></div>
+            <h4><a href="https://www.linkedin.com/in/gurpreet-singh-kalsi-bb75302/?originalSubdomain=in">Gurpreet Singh Kalsi</a></h4>
+            <span>Intel Labs India</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://neerajww.github.io/images/neeks_01.jpg" alt=""></div>
+            <h4><a href="https://neerajww.github.io/#home">Neeraj Sharma</a></h4>
+            <span>EE, IISc</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/avatar_user__1465570784-360x360.jpg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=14">Kapil Vaswani</a></h4>
+            <span>Microsoft Research</span>
+          </div>
+        </div>
+        <!-- <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/jishnu_rbccps.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=1">Pankaj Dayama</a></h4>
+            <span>RBCCPS</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="resources/images/faculty_speakers/jishnu_rbccps.jpeg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=16">JishnuKeshavan</a></h4>
+            <span>RBCCPS</span>
+          </div>
+        </div> -->
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
+          <div class="member">
+            <div class="pic"><img src="https://researcher.watson.ibm.com/researcher/photos/3077.jpg" alt=""></div>
+            <h4><a href="speaker_redirect.php?id=17">Pankaj Dayama</a></h4>
+            <span>IBM Research</span>
+          </div>
+        </div>
+
+      </div>
+      <hr style="height: 1px;background-color: #ccc;border: none;">
+    </div>
   </section>
   
   <section class="bg-light text-dark pt-5 pb-5" id="sponsors">
@@ -520,7 +791,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
     <hr>
     <footer class="container pt-0 my-md-1 pt-md-3 text-center">
       <div class="row">
-        <div class="col-md-4 col-sm-12 text-left">
+        <div class="col-md-3 col-sm-12 text-left">
           <h5>Faculty Hosts</h5>
           <ul class="list-unstyled  ">
             <li>Sashikumaar Ganesan (CDS)</li>
@@ -531,7 +802,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li>Bharadwaj Amrutur (RBCCPS)</li>
           </ul>
         </div>
-        <div class="col-md-4 col-sm-12 text-left">
+        <div class="col-md-3 col-sm-12 text-left">
           <h5>Faculty Volunteers</h5>
           <ul class="list-unstyled  ">
             <li>Dipanjan Gope (ECE)</li>
@@ -543,9 +814,34 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li>Vaibhav Katewa (RBCCPS/ECE)</li>
           </ul>
         </div>
-        <div class="col-md-4 col-sm-12 text-left">
-          <h5>Student Volunteers</h5>
-          <ul class="list-unstyled  text-left">
+        <div class="col-md-6 col-sm-12 text-left">
+          <h5 style="text-align: center">Student Volunteers</h5>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 text-left">
+              <ul class="list-unstyled  text-center">
+                <li>Aditya Rastogi (CDS)</li>
+                <li>Tejan Karmali (CDS)</li>
+                <li>Ramakrishnan K (CSA)</li>
+                <li>Rameesh Paul (CSA)</li>
+                <li>Alok Joshi (ECE)</li>
+                <li>Anand Kumar (ECE)</li>
+                <li>Varun Krishna (EE)</li> 
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-12 text-left">
+              <ul class="list-unstyled  text-center">
+                <li>Anand Kumar R (EE)</li>
+                <li>Himanshu Bhusan (EE)</li>
+                <li>Tutan Debnath (ESE)</li>
+                <li>Prerna Arote (ESE)<li>
+                <li>Nishchal Hoysal (RBCCPS)</li>
+                <li>Dhanaprakaash G (RBCCPS)</li>
+                <li>Aniruddh Sanjoy Sikdar (RBCCPS)</li>
+                <li>Harini V (RBCCPS)</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <ul class="list-unstyled  text-left">
             <li>Aditya Rastogi (CDS)</li>
             <li>Tejan Karmali (CDS)</li>
             <li>Ramakrishnan K (CSA)</li>
@@ -560,8 +856,8 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <li>Nishchal Hoysal (RBCCPS)</li>
             <li>Dhanaprakaash G (RBCCPS)</li>
             <li>Aniruddh Sanjoy Sikdar (RBCCPS)</li>
-            <li>Harini V (RBCCPS)</li>
-          </ul>
+            <li>Harini V (RBCCPS)</li> 
+          </ul> -->
         </div>
       </div>
       <hr>

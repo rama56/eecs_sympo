@@ -1,9 +1,8 @@
 {
-	"title" : "Collaborative Multi-agent Bandits",
-	"photo_link" : "photos/12._Sanjay_Shakkottai.jpg",
-	"speaker_link": "https://sites.google.com/view/sanjay-shakkottai/",
-	"speaker" : "Sanjay Shakkottai",
-	"abstract" : "In this talk, we consider a (networks+learning) bandit, where N agents collaborate by exchanging only arm recommendations through pairwise gossip over a communication network to determine the best resource (aka arm in a bandit). We establish that even with very limited communications, the regret per agent is a factor of order N smaller compared to the case of no collaborations. Furthermore, we show that the communication constraints only have a second order effect on regret. Based on joint work with Ronshee Chawla, Abishek Sankararaman and Ayalvadi J. Ganesh.",
-	"bio" : "Sanjay Shakkottai received his Ph.D. from the ECE Department at the University of Illinois at Urbana-Champaign in 2002. He is with The University of Texas at Austin, where he is currently the Temple Foundation Endowed Professor No. 3, and a Professor in the Department of Electrical and Computer Engineering. He received the NSF CAREER award in 2004, and was elected as an IEEE Fellow in 2014. His research interests lie at the intersection of algorithms for resource allocation, statistical learning and networks, with applications to wireless communication networks and online platforms."
+	"title" : "Felicitation",
+	"photo_link" : "resources/images/felicitations/srikant.jpeg",
+	"speaker_link": "https://www.csa.iisc.ac.in/~srikant/",
+	"speaker" : "Prof. Y.N. Srikant",
+	"abstract" : "He is being felicitated !",
+	"bio" : "Prof. Srikant is currently the Dean of the Faculty of Engineering at the Indian Institute of Science. Earlier he was chairperson of the Department of Computer Science and Automation during 2001-2005. Having completed his Ph.D. at the Department of CSA, he has been on the faculty of the Department since 1986. Prof. Srikant’s areas of expertise include compiling techniques, program analysis, and parallel programming languages. In these areas, he has authored a large number of papers in leading journals and conferences. He has graduated 20 Ph.D. students and 27 Master’s students by Research, and about 100 M.Tech. project students."
 }
-
