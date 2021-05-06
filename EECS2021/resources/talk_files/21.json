@@ -1,0 +1,9 @@
+{
+	"title" : "Designing Optimal Vaccination Policies for COVID-19",
+	"photo_link" : "https://ashoka.edu.in/static/images/media/2019/08/06/t1565066093_123_small.jpg",
+	"speaker_link": "https://ashoka.edu.in/faculty#!/gautam-menon-1526",
+	"speaker" : "Gautam Menon",
+	"abstract" : "I will summarize our ongoing work on optimal models for vaccination, including the use of epidemiological compartmental models, network models and agent-based models. Incorporating different SARS-CoV-2 variants as well as understanding the differential impact of vaccinations on those with prior infections and vaccination history is a current priority. I will describe how we address these questions.",
+	"bio" : ""
+}
+

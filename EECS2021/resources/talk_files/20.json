@@ -1,0 +1,9 @@
+{
+	"title" : "Spatio-temporal Prediction of Epidemic Spread: Data, Models and Ensembles",
+	"photo_link" : "resources/images/invited_speakers/deepak_subramani.png",
+	"speaker_link": "http://cds.iisc.ac.in/faculty/deepakns/",
+	"speaker" : "Deepak Subramani",
+	"abstract" : "The Covid-19 pandemic has seen a flurry of mathematical predictive models. Broadly, several researchers have adapted classical approaches to epidemic spread modeling such as compartment models and agent-based models for forecasting Covid-19 spread in India. We developed and implemented a novel predictive modeling framework for the spread of infectious diseases using high-dimensional partial differential equations in this context. A scalar function representing the infected population is defined on a high-dimensional space and its evolution over all the directions is described by a population balance equation (PBE). New infections are introduced among the susceptible population from a non-quarantined infected population based on their interaction, adherence to distancing norms, hygiene levels, and other societal interventions. Moreover, recovery, death, immunity, and all parameters mentioned above are modeled on the high-dimensional space. Prognostic estimates of Covid-19 spread using a six-dimensional (time, 2D space, infection severity, duration of infection, and population age) PBE are presented to epitomize the capabilities and features of the above framework. Further, ensembles with different scenarios and parameter ranges are presented. Such scenario analysis provides insights that could be used for science-informed policy planning.",
+	"bio" : ""
+}
+

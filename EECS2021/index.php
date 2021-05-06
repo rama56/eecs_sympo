@@ -202,6 +202,29 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
           </h3>
         </div>
       </div>
+      <br><br>
+      <!-- buttons for pdfs -->
+      <div class="row text-center text-white align-items-center mt-5">
+        <!-- <div class="col-12 col-md-3 col-lg-3">
+        </div> -->
+        <div class="col-12 col-md-4 col-lg-4">
+          <h3  style="text-align: center; " class="text-h3 btn btn-outline-success">
+            <a href="resources/EECS_2021_brochure.pdf" target="_blank" style="color: white">EECS 2021 Brochure</a>
+          </h3>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h3  style="text-align: center;" class="text-h3 btn btn-outline-success">
+            <a href="resources/EECS_2021_BookofAbstracts.pdf" target="_blank" style="color: white">Book of Abstracts</a>
+          </h3>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h3  style="text-align: center; " class="text-h3 btn btn-outline-success">
+            <a href="resources/EECS_2021_symposium_program.pdf" target="_blank" style="color: white">Symposium Program</a>
+          </h3>
+        </div>
+        <!-- <div class="col-12 col-md-3 col-lg-3">
+        </div> -->
+      </div>
 
     </section>
 
@@ -222,13 +245,13 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
 
     <!-- ABOUT & TWITTER -->
     <section class="bg-white text-dark pt-0 pb-3 mb-0" id="about" style="color:black!important;">
-      <div class="container">
+      <div class="container" style="max-width: 95%">
         <!-- style="max-width: 1680px;" -->
         <div class="row mt-0 mb-2 pt-5 d-flex justify-content-center">
-          <!-- <div class="col-md-4 col-sm-12">
-            <img src="resources/images/others/EECS_2021_flyer.jpg" style="max-width: 100%;">
-          </div> -->
-          <div class="col-md-6 col-sm-12 ">
+          <div class="col-md-3 col-sm-12">
+            <img src="resources/images/others/EECS_2021_Flyer.jpg" style="max-width: 100%;">
+          </div>
+          <div class="col-md-4 col-sm-12 " style="text-align: center;">
             <h1 class="blog-post-title">About</h1>
             <p class="lead text-justify">
              Welcome to the twelfth EECS Research Students Symposium. This year, the symposium will happen online.
@@ -239,9 +262,10 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
             <p class="lead text-justify">
               We invite researchers, faculty members, industry professionals, and research students working in EECS to participate and provide their feedback. We especially invite the alumni of the division to join us for this event.
             </p>
+            <br>
             <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary shadow-lg btn-lg">Register &gt;</a>
           </div>
-          <div class="col-md-6 col-sm-12" style="overflow: auto; max-height: 570px">
+          <div class="col-md-4 col-sm-12" style="overflow: auto; max-height: 570px">
             <!--  -->
             <!-- <a class="twitter-timeline" href="https://twitter.com/PMOIndia?ref_src=twsrc%5Etfw">Tweets by PMOIndia</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             <a class="twitter-timeline" href="https://twitter.com/EecsIisc?ref_src=twsrc%5Etfw">Tweets by EecsIisc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -425,49 +449,49 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
     </div>
 
     <!-- FACULTY TALKS -->
-    <div class="container">
+    <div class="container" style="max-width: 90%;">
       <div class="row">
         <div class='col-sm-12 text-center'><h2>Faculty Speakers</h2></div>
       </div>
       <hr>
       <!-- <hr style="height: 1px;background-color: #ccc;border: none;"> -->
       <div class="row text-center justify-content-sm-center no-gutters">
-        <div class="col-12 col-sm-8 col-md-3 m-auto">
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/faculty_speakers/phanim_cds.jpeg" alt=""></div>
             <h4><a href="speaker_redirect.php?id=1"> Phani Motamarri </a></h4>
             <span>CDS</span>
           </div>
         </div>
-        <div class="col-12 col-sm-8 col-md-3 m-auto">
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/faculty_speakers/chaya_csa.jpeg" alt=""></div>
             <h4><a href="speaker_redirect.php?id=2"> Chaya Ganesh </a></h4>
             <span>CSA</span>
           </div>
         </div>
-        <div class="col-12 col-sm-8 col-md-3 m-auto">
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/faculty_speakers/sundeep_ece.jpeg" alt=""></div>
             <h4><a href="speaker_redirect.php?id=3">Sundeep Prabhakar Chepuri</a></h4>
             <span>ECE</span>
           </div>
         </div>
-        <div class="col-12 col-sm-8 col-md-3 m-auto">
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/faculty_speakers/vishnu_ee.jpeg" alt=""></div>
             <h4><a href="speaker_redirect.php?id=4">Vishnu Mahadev Iyer</a></h4>
             <span>EE</span>
           </div>
         </div>
-        <div class="col-12 col-sm-8 col-md-3 m-auto">
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/faculty_speakers/arup_ese.jpg" alt=""></div>
             <h4><a href="speaker_redirect.php?id=5"> Arup Polley</a></h4>
             <span>ESE</span>
           </div>
         </div>
-        <div class="col-12 col-sm-8 col-md-3 m-auto">
+        <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="resources/images/faculty_speakers/jishnu_rbccps.jpeg" alt=""></div>
             <h4><a href="speaker_redirect.php?id=6">Jishnu Keshavan</a></h4>
@@ -538,7 +562,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="https://www.cse.iitb.ac.in/~ajitvr/ajit.jpg" alt=""></div>
-            <h4><a href="https://www.cse.iitb.ac.in/~ajitvr/">Ajit Rawade</a></h4>
+            <h4><a href="https://www.cse.iitb.ac.in/~ajitvr/">Ajit Rajwade</a></h4>
             <span>IIT Bombay</span>
           </div>
         </div>
@@ -651,7 +675,7 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
         <div class="col-12 col-sm-8 col-md-2 m-auto">
           <div class="member">
             <div class="pic"><img src="https://engineering.virginia.edu/sites/default/files/styles/faculty_headshot/public/anil-cropped.jpg?itok=rzmC0AEr" alt=""></div>
-            <h4><a href="https://engineering.virginia.edu/faculty/anil-vullikanti">Ani Vullikanti</a></h4>
+            <h4><a href="https://engineering.virginia.edu/faculty/anil-vullikanti">Anil Vullikanti</a></h4>
             <span>Virginia Tech</span>
           </div>
         </div>
