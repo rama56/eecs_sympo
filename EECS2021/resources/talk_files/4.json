@@ -2,7 +2,7 @@
 	"title" : "An Approach Towards an Extreme Fast Charging Station Architecture for Electric Vehicles",
 	"photo_link" : "resources/images/faculty_speakers/vishnu_ee.jpeg",
 	"speaker_link": "http://www.ee.iisc.ac.in/faculty/vishnu/index.php",
-	"speaker" : "Vishnu Mahadev Iyer",
+	"speaker" : "Vishnu Mahadeva Iyer",
 	"abstract" : "This talk introduces an extreme fast charging (XFC) station architecture concept for simultaneous charging of multiple electric vehicles (EVs). The XFC station architecture comprises several power electronic converters interfaced to form a microgrid. The first part of the talk discusses a brief overview of the ongoing developments in XFC.  In the second part of the talk, the use of partial rated power electronic converters for enabling XFC is introduced. Partial power processing enables independent charging control over each EV while processing only a fraction of the total battery charging power. System-level benefits of the proposed approach include lower capital investments, lower operational costs, lower footprint, and improved power and energy efficiency.",
 	"bio" : "Vishnu Mahadeva Iyer joined as an Assistant Professor in the Department of Electrical Engineering at the Indian Institute of Science (IISc), Bengaluru, in September 2020. Before joining IISc, he worked as a Lead Engineer at GE Research, Niskayuna, USA. He completed his Ph.D. in Electrical Engineering from the NSF FREEDM Systems Center, NC State University, Raleigh, USA. He is interested in the broad area of power conversion. His current research and scholarly interests include power conversion systems for transportation electrification, DC microgrids, differential power processing, and control and stability of power electronic systems."
 }

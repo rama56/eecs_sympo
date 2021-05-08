@@ -1,8 +1,8 @@
 {
-	"title" : "Felicitation",
+	"title" : "Thanks Giving",
 	"photo_link" : "resources/images/felicitations/vijaykumar.jpeg",
 	"speaker_link": "https://ece.iisc.ac.in/~pvkece/index.html",
 	"speaker" : "Prof. P.V. Kumar",
-	"abstract" : "He is being felicitated !",
+	"abstract" : "-NA-",
 	"bio" : "P. Vijay Kumar received the B.Tech. and M.Tech. degrees from IIT Kharagpur and IIT Kanpur respectively, and the Ph.D. degree from USC in 1983, all in Electrical Engineering. From 1983 to 2003 he was on the faculty of the EE-Systems Department at USC. Since 2003, he has been on the faculty of IISc Bengaluru.  <br><br> His current research interests include streaming codes for low-latency communication, codes for distributed storage, polar codes and coded computation including coded block chains. He is a recipient of the 1995 IEEE Information Theory Society Prize-Paper award and the IEEE Data Storage Best Paper Award of 2011/2012. He is a J. C. Bose National Fellow, a plenary speaker at ISIT 2014,  and a TPC Co-Chair of ISIT 2015. He is a Fellow of the INAE, IASc, and INSA."
 }

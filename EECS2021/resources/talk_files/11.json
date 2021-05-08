@@ -1,8 +1,8 @@
 {
-	"title" : "Felicitation",
+	"title" : "Thanks Giving",
 	"photo_link" : "resources/images/felicitations/gopinath.jpeg",
 	"speaker_link": "https://www.csa.iisc.ac.in/~gopi/",
 	"speaker" : "Prof. K. Gopinath",
-	"abstract" : "He is being felicitated !",
+	"abstract" : "-NA-",
 	"bio" : "K. Gopinath is a Professor at the Indian Institute of Science in the Department of Computer Science and Automation. His research interests are primarily in the computer systems area (Operating Systems, Storage Systems, Systems Security and Systems Verification). He is a co-author of a recently published book on 'Resource Proportional Software Design for Emerging Systems', Chapman and Hall/CRC, 2020. He has been in the past an associate editor of IEEE Computer Society Letters and that of ACM Transactions on Storage. His education has been at IIT-Madras (B.Tech'77), University of Wisconsin, Madison (MS'80) and Stanford University (PhD'88). He has also worked at AMD (Sunnyvale) ('80-'82), and as a PostDoc ('88-'89) at Stanford."
 }
