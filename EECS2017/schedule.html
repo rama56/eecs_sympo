@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EECS Research Students Symposium - 2016</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="EESC 2017" />
+
+    <style type="text/css">
+        body {font: normal 16px/1.5em helvetica, arial, sans-serif}
+        p {text-align:center}
+
+        #container {
+            width:1100px;
+            margin:-10px auto;
+            background: #FFF;
+        }
+
+        #header {
+            text-align:center;
+            background: #2D6F93;
+            color:#fff;
+            height:2px;
+        }
+
+        #content {
+            float:right;
+            width:836px;
+            text-align:center;  
+            background:#FFF;
+            padding:5px 5px
+        }
+
+        #sidebar {
+            float:left;
+            width:250px;
+            text-align:center;
+            background: #2D6F93;
+            color:#FFF;
+            padding:0px 2px
+        }
+
+        #footer {
+            clear:both;
+            text-align:center;
+            background: #2D6F93;
+            color:#fff;
+            height:2px; 
+        }
+
+        #sidebar a {
+            color: #FFF;
+            text-decoration: none;
+        }
+        
+        #sidebar a:hover {
+            color: #E1BFBF;
+            text-decoration: none;
+        }
+        
+        #sidebar ul {
+            list-style: none;
+            list-style-type: none;  
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #content p { 
+            text-align:justify; 
+        }
+
+        #content-header {
+            color: #2D6F93; 
+            text-align: justify;
+            background-color:#FFF; 
+            background-image:url('iisc.png');
+            float: right;
+            width: 836px;
+            padding: 5px 5px;
+        }
+
+        .schedule-table{
+           /*text-align: center;*/
+       }
+
+
+       .table-striped > tbody > tr.session {
+         text-align: center;
+         vertical-align: middle;
+     }
+
+     .table-striped > tbody > tr:nth-of-type(2n+1) {
+      background-color: #f9f9f9;
+  }
+
+  .table-striped > tbody > tr.break {
+      background: #c8d5de;
+      text-align: center;
+  }
+
+
+
+  .table-striped > tbody > tr.slot {
+      text-align: center;
+  }
+
+  .day {
+     text-align: center;
+     height: 50px;
+     vertical-align: middle;
+     background: #49a289;
+ }
+
+ .slot {
+
+ }
+
+ .de-emp {
+     font-size: 13px;
+ }
+
+ .abstract {
+    display: none;
+    text-align: justify;
+}
+</style>
+<script language="javascript"> 
+    function toggle(elementId) {
+        var ele = document.getElementById(elementId);
+        if(ele.style.display == "block") {
+            ele.style.display = "none";
+        }
+        else {
+            ele.style.display = "block";
+        }
+    } 
+</script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">   
+        </div>
+
+        <div id="sidebar">
+            <img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+        </div>
+
+        <div id="content-header">
+
+            <h1>EECS Research Students Symposium - 2017</h1>
+            <h3>April 07-08, 2017 </h3>
+            <h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+
+    </div>
+
+    <div id="container">
+
+     <div id="content" style="text-align:justify;">
+
+      <table width="840px"  class="schedule-table table-striped">
+       <tbody>
+
+
+           <tr>
+            <td  align='center' colspan="2" class="day">Friday, April 07, 2017</td>
+        </tr>
+        <tr class="slot">
+         <td width="15%">08:30 - 08:50</td>
+         <td width="85%">Registration</td>
+     </tr>
+
+     <tr class="slot">
+         <td width="15%">08:50 - 09:00</td>
+         <td width="85%">Inauguration</td>
+     </tr>
+     <tr class="session">
+         <td width="15%">09:00 - 09:50</td>
+         <td width="85%" ><a href="javascript:toggle('s1a');"><b>Session 1a : Machine Learning and  Optimization</b></a>
+            <br>  <span class="de-emp"> Chairs : P Balamuralidhar, TCS R&I and P. S. Sastry, IISc.</span>
+            <ul style="text-align: left;font-size:small; display: none;" id="s1a" >
+                <li> 09:01 - 09:12 : Ashutosh Simha and Soumyendu Raha - 
+                    <a href="javascript:toggle('1a1');">
+                     Geometric Tracking Control Of Axis-symmetric, Thrust-vectored Rigid Bodies On SE(3)
+                     </a> <a href="slides_posters/EECS_2017_paper_40.pdf">  [Poster and Slides]</a>
+                 <div class="abstract" id="1a1">
+                     <p>
+                         We propose a trajectory tracking feedback control law for the dynamics of an axis-symmetric rigid body which is subjected to terminal vectored thrust. The control law exploits the geometric structure of the configuration manifold i.e. SE(3), in order to achieve global stability. The control law is intrinsic to the manifold and is thereby free from singularities due to Euclidean parameterizations or input-output decoupling maps. The rigid body dynamics is shown to be differentially flat on the submanifold described by zero axial spin, via the map induced by the Hyugen's center of oscillation. Based on the principle of immersion and ivariance, a nonlinear proportional derivative feedback law is designed based on the Riemannian structure of SE(3)/SO(2) i.e. the above submanifold. This is augmented with a feedback law for the axial torque which renders the invariant submanifold globally stable, with bounded transients. The overall control law is shown to exponentially stabilize the tracking errors for all initial conditions lying in an open-dense subset of T(SE(3)). The control design is simulated on the dynamics of a tail-sitter UAV and is shown to execute global, aggressive tracking maneuvers. 
+                     </p>
+                 </div>
+             </li>
+
+             <li> 09:13 - 09:25 : Divya Padmanabhan, Shirish Shevade, and Y. Narahari - 
+             <a href="javascript:toggle('1a2');">
+                Improved Multi-armed Bandit Mechanisms for Sponsored Search Auctions
+            </a> <a href="slides_posters/EECS_2017_paper_1.pdf"> [Poster and Slides]</a>
+            <div class="abstract" id="1a2">
+                <p>
+                    Stochastic multi-armed bandit (MAB) mechanisms are widely used in sponsored search auctions, crowdsourcing, online procurement, etc. Existing stochastic MAB mechanisms with a deterministic payment rule, proposed in the literature, necessarily suffer a regret of $\Omega(T^{2/3})$, where $T$ is the number of time steps. This happens because the existing mechanisms consider the worst case scenario where the means of the agents' stochastic rewards are separated by a very small amount that depends on $T$. We make, and, exploit the crucial observation that in most scenarios, the separation between the agents' rewards is rarely a function of $T$. Moreover, in the case that the rewards of the arms are arbitrarily close, the regret contributed by such sub-optimal arms is minimal. Our idea is to allow the center to indicate the resolution, $\Delta$, with which the agents must be distinguished. This immediately leads us to introduce the notion of $\Delta$-Regret. Using sponsored search auctions as a concrete example (the same idea applies for other applications as well), we propose a dominant strategy incentive compatible (DSIC) and individually rational (IR), deterministic MAB mechanism, based on ideas from the Upper Confidence Bound (UCB) family of MAB algorithms. Remarkably, the proposed mechanism $\Delta$-UCB achieves a $\Delta$-regret of $O(\log T)$ for the case of sponsored search auctions. We first establish the results for single slot sponsored search auctions and then non-trivially extend the results to the case where multiple slots are to be allocated. 
+                </p>
+
+            </div>
+        </li>
+        <li> 09:26 - 09:38 : Vinayaka G. Yaji and Shalabh Bhatnagar  - 
+            <a href="javascript:toggle('1a3');">Stochastic Approximation With Set-valued Maps And Markov Noise</a> <a href="slides_posters/EECS_2017_paper_3.pdf"> [Poster and Slides]</a>
+            <div class="abstract" id="1a3">
+                <p>
+                    In our work we investigate the asymptotic behavior of stochastic approximation schemes where the drift function is set-valued depending additionally on an iterate-dependent Markov noise term. We adopt the dynamical systems approach to analyze the asymptotic behavior of such schemes. We consider two variants of the same, namely: <br>
+                    (1) Single time scale stochastic recursive inclusion (SRI) with Markov noise: 
+                    – Convergence analysis involves showing that the iterates track the flow of a differential inclusion and then invoking the limit-set theorem to characterize the limit sets of the recursion in terms of the dynamics of the differential inclusion. 
+                    – Applications include controlled stochastic approximation, subgradient descent, approximate drift problem and analysis of discontinuous dynamics. 
+                    (2) Two time scale SRI with Markov noise: 
+                    – Iterates are updated along a slower and faster timescale induced due to a clever choice of step size regimes. 
+                    – Applications include actor-critic algorithms in reinforcement learning and solving nested optimization problems, eg: computation of saddle points. 
+                </p>
+                <p>
+                    In the analysis above, the iterates are assumed to lie in compact set which is sample path dependent. This stability assumption is essential but is often hard to verify. Our contributions towards the analysis of standard SRI in the absence of a stability guarantee are: 
+                    (1)Extension of the lock-in probability bound to the case with set-valued maps. 
+                    (2)Using the lock-in probability result we show that a feedback mechanism which involves resetting the iterates at regular time intervals, stabilizes the recursion when the mean field possesses a global attractor.    
+                </p>
+
+            </div>
+        </li>                   
+        <li> 09:39 - 09:50 : Gaurav Pandey and Ambedkar Dukkipati - 
+            <a href="javascript:toggle('1a4');">Weakly Supervised Semantic Segmentation with Latent Conditional Random Fields</a> <a href="slides_posters/EECS_2017_paper_31.pdf"> [Poster and Slides]</a>
+            <div class="abstract" id="1a4">
+                <p>
+                    Conditional random fields (CRFs) are commonly employed as a post-processing tool for image segmentation tasks. The unary potentials of the CRF are often learnt independently by a classifier, thereby decoupling the inference in CRF from the training of classifier. Such a scheme works effectively, when pixel-level labelling is available for all the images. However, in absence of pixel-level labels, the classifier is faced with the uphill task of selectively assigning the image-level labels to the pixels of the image. Prior work often relied on localization cues, such as saliency maps, objectness priors, bounding boxes etc., to address this challenging problem. In contrast, we model the labels of the pixels as latent variables of a CRF. The pixels and the image-level labels are the observed variables of the latent CRF. We amortize the cost of inference in the latent CRF over the entire dataset, by training an inference network to approximate the posterior distribution of the latent variables given the observed variables. The inference network can be trained in an end-to-end fashion, and requires no localization cues for training. Moreover, unlike other approaches for weakly-supervised segmentation, the proposed model doesn't require further post-processing.</p>
+                    <p>The proposed model achieves performance comparable with other approaches that employ saliency masks for the task of weakly-supervised semantic image segmentation on the challenging VOC 2012 dataset.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </td>
+</tr>
+
+<tr class="slot">
+ <td width="15%">09:50 - 10:10</td>
+ <td width="85%"><b>Faculty Talk 1: Sivaram Ambikasaran, CDS, IISc</b>
+    <br>  <span class="de-emp"> Chair : P Balamuralidhar, TCS R&I</span>
+</td>
+</tr>
+
+<tr class="slot">
+    <td width="15%">10:15 - 11:00</td>
+    <td width="85%"><b>Keynote 1 : M. Annadurai, ISAC, ISRO </b>
+        <br> <span class="de-emp">Chair : P Vijay Kumar, IISc </span>
+    </td>
+</tr>
+
+<tr class="break">
+    <td width="15%">11:00 -11:30</td>
+    <td width="85%">Coffee Break <br> <span class="de-emp">Faculty Hall Reception Area</span> </td>
+</tr>
+
+<tr class="slot">
+    <td width="15%">11:30 - 12:15</td>
+    <td width="85%"><b>Keynote 2 : Venkat Padmanabhan, Microsoft Research India</b>
+        <br> <span class="de-emp"> Chair : P Vijay Kumar, IISc </span>
+    </td>
+</tr>
+
+<tr class="session">
+ <td width="15%">12:15 - 13:10</td>
+ <td width="85%"><a href="javascript:toggle('s1b');"><b>Session 1b : Machine Learning and Optimization</b></a>
+    <br> <span class="de-emp"> Chairs : P Balamuralidhar, TCS R&I and Partha Talukdar, IISc.
+    <ul style="text-align: left;font-size:small;display: none;" id="s1b">
+
+        <li> 12:16 - 12:27 : Prasenjit Karmakar and Shalabh Bhatnagar - 
+            <a href="javascript:toggle('1b1');">Stochastic Approximation with Markov Noise: Analysis and applications</a> <a href="slides_posters/EECS_2017_paper_1.pdf">[Poster and Slides]</a>
+            <div class="abstract" id="1b1">
+               <p>
+                   Stochastic approximation algorithms are sequential non-parametric methods for finding a zero or minimum of a function in the situation where only the noisy observations of the function values are available. Two time-scale stochastic approximation algorithms consist of two coupled recursions which are updated with different (one is considerably smaller than the other) step sizes which in turn facilitate convergence for such algorithms.
+               </p>  
+               <p>
+                   Here we analyze two time-scale stochastic approximation with “controlled” Markov noise, i.e., the noise is not simply Markov; rather it is driven by the iterates and an additional control process as well. Next, using these results for the special case of our framework where the random processes are irreducible Markov chains, we present a solution to the off-policy convergence problem for temporal difference learning with linear function approximation.
+               </p>
+               <p>
+                   One of the important assumption in the earlier analysis is the pointwise boundedness of the iterates. However, finding sufficient conditions for this is very hard. We compile several aspects (under some restrictive assumptions) of such recursions when the iterates are not known to be stable beforehand. We achieve the same by extending the lock-in probability (i.e. the probability of convergence to a specific attractor of the limiting o.d.e. given that the iterates are in its domain of attraction after a sufficiently large number of iterations (say) n_0) framework to such recursions.
+               </p>
+               <p>
+                   Finally, we obtain new error bounds of function approximation for the policy evaluation algorithm when the aim is to find the risk-sensitive cost represented using exponential utility.
+               </p>
+           </div>
+       </li>
+       <li> 12:28 - 12:39 : Mopuri Reddy and R. Venkatesh Babu -  
+           <a href="javascript:toggle('1b2');">
+               Learning and Understanding Deep Visual Representations
+           </a> <a href="slides_posters/EECS_2017_paper_28.pdf">[Poster and Slides]</a>
+           <div class="abstract" id="1b2">
+               <p>
+                   Deep Convolutional neural networks(CNNs) have resulted in unprecedented performances for visual recognition. They have been shown to learn representations that can efficiently discriminate hundreds of visual categories. In their vanilla supervised setting, CNNs learn from large scale datasets that offer category labels. In this work, we exploit the useful “side and additional information” to enrich the representations with more semantics. Specifically, we learn to encode additional discriminative information from cues such as (i) objectness, (ii) textual tags associated with images and (iii) strong supervision offered by the captions. In order to encode complete scene information, we deploy objectness information to aggregate the individual region descriptions. Images on social media and sharing websites are typically tagged with text. We develop a method to augment the CNN features with the tags using natural language descriptors. In case of labels, its only weak supervision that is offered about a scene. To improve the performance for applications such as retrieval, we exploit the image captions as strong supervision. </p>
+
+                   <p>In second part, we develop methods to understand representations learned by CNNs. Despite their impressive performance, CNNs offer limited transparency and are treated as black boxes. One way to understand them is to visualize the important image regions that affect their performance. We develop a visualization method that highlights the discriminative image regions thereby providing visual explanations for the predictions. Another important issue that concerns CNNs is to understand why adversarial images exist. We attempt to answer this via a domain independent feature level augmentation technique.
+                   </p>
+               </div>
+           </li>
+           <li> 12:40 - 12:51 : Niladri Ranjan,  Debnath Pal and Kunal N. Chaudhury - 
+               <a href="javascript:toggle('1b3');">3D Protein Modeling From Sparse Distance-constraints Derived From NMR Experimental Data</a> <a href="slides_posters/EECS_2017_paper_15.pdf">[Poster and Slides]</a>
+               <div class="abstract" id="1b3">
+                   <p>
+                       Modeling three-dimensional structures of protein molecules from multidimensional Nuclear Magnetic Resonance (NMR) spectroscopy is an important problem in structural biology, vital for drug design, understanding cell and enzyme functioning, etc. However, NMR experiments return only a sparse set of inter-atomic distance bounds. Currently, distance geometric approaches or energy minimization with simulated annealing are commonly used to model protein conformation from these constraints. However, the combinatorial complexity makes the task computationally intensive and error prone with increasing molecular size. We attempt to overcome the problem by graph modeling along with divide-and-conquer paradigm. We extract the dense subgraphs corresponding to relatively stable regions of the protein. The advantage is that conformation modeling for these regions is well posed due adequate bounds accrued from additional restraints inferred from first principles. Further they can be solved in parallel making the method scalable. We use semidefinite programming to solve the associated optimization problem. The structures from the divide stage are registered together in a single step yielding a single conformation. Varying the constraint set ultimately leads to an ensemble of structures. The method is faster than the widely used molecular dynamics and simulated annealing related pursuit since their associated equations are nonconvex making the optimization difficult. With real data sets (from BioMagnetic Resonance Bank restraints grid) our method is able to calculate an aggregate of structures exploiting the natural packing of protein molecules in core and comparatively free regions. Even with large proteins with inadequate distance bounds, we are able to compute conformations.
+                   </p>
+               </div>
+           </li>
+
+           <li> 12:52 - 13:05 : Subhadip Mukherjee and Chandra Sekhar Seelamantula - 
+               <a href="javascript:toggle('1b4');">Deep Sparse Coding and Dictionary Learning</a> <a href="slides_posters/EECS_2017_paper_13.pdf">[Poster and Slides]</a>
+               <div class="abstract" id="1b4">
+                   <p>
+                       We address the problem of reconstructing sparse signals from noisy and compressive measurements using a feed-forward deep neural network (DNN) with an architecture motivated by the iterative shrinkage-thresholding algorithm (ISTA). We maintain the weights and biases of the network as prescribed by ISTA and model the nonlinear activation using a linear expansion of thresholds (LET). The optimal set of coefficients of the parametrized activation is learned over a training dataset containing measurement-signal pairs, corresponding to a fixed dictionary. We develop an efficient second-order training algorithm, which requires only matrix-vector product computations in every training epoch and offers superior convergence performance than the gradient-descent algorithm. Subsequently, we derive an improved network architecture inspired by a faster version of ISTA, to achieve similar signal estimation performance with about 50% of the number of layers. The resulting architecture turns out to be a deep residual network, which has recently been shown to exhibit superior performance in visual recognition tasks. Numerical experiments demonstrate that the proposed architectures lead to 3-4 dB improvement in the reconstruction signal-to-noise ratio, compared with the state-of-the-art sparse coding algorithms.
+                   </p>
+                   <p>The ISTA-inspired DNN architecture is extended to perform dictionary learning, wherein the dictionary and the corresponding sparse codes are simultaneously estimated for a given set of training signals. We develop a gradient-descent-based approach for learning, where the computation of gradient is inexpensive, as it involves matrix-vector products. The resulting algorithm is scalable as the size of the training dataset increases and can be modified for online and distributed implementations.
+                   </p>
+               </div>
+           </li>
+
+           <li> <b>13:06 - 13:10 : Session 1 Concluding Remarks</b></li>
+       </ul>
+   </td>
+</tr>
+
+<tr class="break">
+    <td width="15%">13:10 - 14:30</td>
+    <td width="85%">Lunch <br> <span class="de-emp">Main Guest House, IISc</span></td>
+</tr>
+
+<tr class="slot">
+    <td width="15%">14:30 - 14:50</td>
+    <td width="85%"><b>Faculty Talk 2: Kausik Majumdar, ECE, IISc</b>
+        <br> <span class="de-emp">Chair : Preetam Tadeparthy, Texas Instruments </span>
+    </td>
+</tr>
+
+<tr class="slot">
+    <td width="15%">14:50 - 15:45</td>
+    <td width="85%"><a href="javascript:toggle('s2');"><b>Session 2 : Electronics</b></a>
+        <br> <span class="de-emp">Chairs : Preetam Tadeparthy, Texas Instruments and K.J. Vinoy, IISc </span>
+        <ul style="text-align: left;font-size:small;display: none;" id="s2">
+            <li> 14:51 - 15:02 : Prayag Gowgi and Shayan Srinivasa Garani - 
+                <a href="javascript:toggle('21');">Temporal Self-Organization: A Reaction-diffusion Framework for Spatio-temporal Memories</a> <a href="slides_posters/EECS_2017_paper_19.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="21">
+                    <p>
+                        Self-organizing maps find numerous applications for learning, clustering and recalling spatial input patterns. For learning spatio-temporal patterns, the traditional approach is to incorporate time on the output space of a self-organizing map along with heuristic update rules that work well in practice. Inspired by the pioneering work of Alan Turing who used reaction-diffusion equations to explain spatial pattern formation, we develop an analogous theoretical model for a spatio-temporal memory to learn and recall temporal patterns. The contribution of our work is three-fold: (a) Using coupled reaction-diffusion equations, we develop a theory from first principles for constructing a spatio-temporal self-organizing map (STSOM), and derive an update rule for learning based on the gradient of a potential function. (b) We analyze the dynamics of our algorithm and derive conditions for optimally setting the model parameters. (c) We mathematically quantify the \textit{temporal plasticity} effect observed during recall in response to the input dynamics. Simulation results show that our proposed algorithm outperforms the self-organizing maps with temporal activity diffusion (SOMTAD), neural gas with temporal activity diffusion (GASTAD) and spatio-temporal map formation based on a potential function (STMPF) in the presence of correlated noise on the same data set and similar training conditions.
+                    </p>
+                </div>
+            </li>
+            <li> 15:03 - 15:15 : Dipankar Saha and Santanu Mahapatra - 
+                <a href="javascript:toggle('22');">Atomistic Modeling of Phase-engineered MoS2 Channel for the Decananometer Scale Digital Switches</a> <a href="slides_posters/EECS_2017_paper_14.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="22">
+                    <P>
+                        Over the past few years, exploration of different two dimensional layered transition metal dichalcogenides (TMDs) as the alternative to conventional silicon channel has become enormously popular. Among those, the monolayer MoS2 has emerged as a suitable choice, owing to its distinctive optical, mechanical and electronic properties. The realization of sub-10 nm transistors with the atomic layer TMDs as the channel may provide many significant advantages such as, high On/Off current ratio, excellent electrostatic control of the gate, low leakage, etc. However, there are quite a few critical issues such as, forming low resistance source/drain contacts, achieving higher effective mobility, ensuring large scale controlled growth, etc. which need to be addressed for successful implementation of the atomically thin transistors in integrated circuits. </P>
+                        <p>In this work we conceive atomistic model of the hetero-phase structures by interfacing the semiconducting (2H) and the metallic (1T’) phases of MoS2 appropriately, and demonstrate a good agreement with the experimental findings. We delineate the two distinct types of phase boundaries (β and β*) at the interfacing regions of a metallic-semiconducting-metallic in-plane hetero-phase MoS2 structure. In order to conduct various transport related studies, we employ density functional theory (DFT)- non equilibrium Green’s function (NEGF) combination. Nonetheless, to achieve excellent impedance matching with various metal contacts (such as, ‘Au’, ‘Pd’, etc.), we further develop the atomistic models of metal-1T’ MoS2 edge contact geometries and compute their resistance values. 
+                        </p>
+                    </div>
+                </li>
+                <li> 15:16 - 15:28 : Immanuel Raja and Gaurab Banerjee - 
+                    <a href="javascript:toggle('23');">Fully Integrated CMOS Transmitter and Power Amplifier for Software Defined Radios and Cognitive Radios</a> <a href="slides_posters/EECS_2017_paper_17.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="23"> <a href="slides_posters/EECS_2017_paper_1.pdf">[Poster and Slides]</a>
+                        <p>
+                            Software Defined Radios (SDRs) and Cognitive Radios (CRs) pave the way for next-generation radio technology. They promise versatility, flexibility and cognition which can revolutionize communications systems. However they present greater challenges to the radio frequency (RF) front-ends. RF front-ends for the radios in use today are narrow-band in their frequency response and are optimized and tuned to the carrier frequency of interest. SDRs and CRs demand front-ends which are versatile, configurable, tunable and be capable of transmitting and receiving signals with different bandwidths and modulation schemes. Integrating power amplifiers (PAs) with transmitters in CMOS has many advantages and challenges. 
+                        </p>
+                        <p>
+                            After a brief overview of the existing techniques, the proposed architecture will presented and explained. We propose a digitally intensive transmitter solution. The transmitter covers a wide frequency range of 750 MHz to 2.5 GHz. The inputs to the proposed transmitter are in-phase and quadrature (I & Q) data bit streams. Digital signal processing is done to eliminate spurs due to sampling. Differential quadrature clocks are generated from a continuous wave signal at twice the carrier frequency. The clocks are corrected for their duty cycle and quadrature impairments. These correction circuitry work across a wide frequency range. The heart of the transmitter is an integrated reconfigurable CMOS power amplifier (PA). A methodology to design reconfigurable Class E PAs with a series fixed inductor will be presented. The full transmitter and the clock correction blocks have been designed and fabricated in a commercial 130nm CMOS process. The measured results will be discussed.
+                        </p>
+                    </div>
+                </li>
+
+                <li> 15:29 - 15:40 : Joseph Vimal Vas and Joy Thomas - 
+                    <a href="javascript:toggle('24');">Electromagnetic Properties of Carbon based Polymer Nanocomposites for Shielding, Chaffing and Camouflage Applications</a> <a href="slides_posters/EECS_2017_paper_36.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="24">
+                        <p>
+                         Conducting polymer composites are attractive alternatives for electromagnetic shielding, chaffing and camouflage applications in which metals are conventionally used due to their advantages like light weight, ease of processing etc. The high conductivity of carbon makes it an attractive filler for polymer composites. The conductivity and the shielding effectiveness (SE) of carbon based composites have been studied in literature and it was shown that the overall performance is limited. Monte Carlo simulations were conducted to understand this behaviour. The conductivity of spherical and rod-like carbon fillers in silicone rubber (SR) polymers was investigated. It was seen that rod-like carbon fillers were better at making polymers conducting and the conductivity is due to the electron tunnelling through the polymer and not by physical contact in conventional composites. This problem was addressed by developing a new type of composite -SR composite layered with carbon nanofiber (CNF) wafers. The SE was measured in the frequency range of 30 MHz to 18 GHz. It was seen that high SE (> 50 dB) could be achieved using SR composites layered with CNF. The reason for the high SE was the enhanced real and imaginary permittivity. Models were developed to predict the performance of the SR composites layered with CNF wafers and the shielding values thus computed were compared with the experimental measurements. 
+                     </p>
+                 </div>
+             </li>
+
+             <li> <b>15:41 - 15:45 : Session 2 Concluding Remarks</b></li>
+         </ul>
+     </td>
+ </tr>
+
+ <tr class="slot">
+    <td width="15%">15:45 - 16:30</td>
+    <td width="85%"><b>Keynote 3: Vinay Kulkarni, TCS</b>
+        <br> <span class="de-emp">Chair : Joy Kuri, IISc </span>
+    </td>
+</tr>
+
+<tr class="break">
+    <td width="15%">16:30 - 17:00</td>
+    <td width="85%">Coffee Break <br> <span class="de-emp">Faculty Hall Reception Area</span></td>
+</tr>
+
+<tr class="slot">
+    <td width="15%">17:00 - 18:00</td>
+    <td width="85%"><b>Invited Talk 1 : P Vijay Kumar, ECE, IISc </b>
+        <br> <span class="de-emp">Chair : Y Narahari, IISc </span>
+    </td>
+</tr>
+
+<tr class="slot">
+    <td width="15%">18:00 - 18:20</td>
+    <td width="85%"><b>Faculty Talk 3: Prasanta Kumar Ghosh, EE, IISc</b>
+        <br><span class="de-emp">Chair : Rajesh Langoju, GE Global Research </span>
+    </td>
+</tr>
+<tr class="session">
+    <td width="15%">18:20 - 19:40</td>
+    <td width="85%"><a href="javascript:toggle('s3');"><b>Session 3: Signal Processing</b></a>
+        <br> <span class="de-emp">Chairs : Rajesh Langoju, GE Global Research and Soma Biswas, IISc </span>
+        <ul style="text-align: left;font-size:small;display: none;" id="s3">
+
+            <li> 18:21 - 18:32 : Shweta Srivastava and Sashikumaar Ganesan - 
+                <a href="javascript:toggle('31');">Stabilization Schemes For Convection Dominated Scalar Problems With Different Time Discretizations In Time-dependent Domains</a> <a href="slides_posters/EECS_2017_paper_7.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="31">
+                    <p>
+                        Problems governed by PDEs in deformable domains are of fundamental importance in science and engineering. However, developing numerical scheme for such problems is still very challenging even when the deformation of boundary of domain is prescribed a priori. The ALE approach is a way to overcome this difficulty. Galerkin formulations, which yield the best approximations for differential equations with high diffusivity, tend to induce spurious oscillations in numerical solution of convection dominated equations. Though such spurious oscillations can be avoided by adaptive meshing, which is computationally very expensive on fine grids. Alternatively, stabilization methods can be used to suppress the spurious oscillations. Here, the considered equation is designed within the framework of ALE formulation. 
+                    </p>
+                    <p>
+                        Firstly, SUPG finite element method with conservative ALE formulation is proposed. The first order backward Euler and second order Crank-Nicolson methods are used for temporal discretization. It is shown that stability of semi-discrete ALE-SUPG equation is independent of mesh velocity, 
+                        whereas stability of fully discrete problem is unconditionally stable for implicit Euler method and is only conditionally stable for Crank-Nicolson time discretization. Next, SUPG scheme with non-conservative ALE formulation is proposed. The implicit Euler, Crank-Nicolson and backward-difference methods are used for temporal discretization. The stability of fully discrete scheme, irrespective of temporal discretization, is only conditionally stable. 
+                        Numerical results are presented to support the theoretical considerations. Further, the difference between solutions obtained with conservative and non-conservative ALE forms is significant when the deformation of domain is large, whereas it is negligible in domains with small deformation. 
+                    </p>
+                </div>
+            </li>
+            
+            <li> 18:33 - 18:45 : Chaitanya Matcha and Shayan Srinivasa Garani - 
+                <a href="javascript:toggle('32');">Signal Processing for Two-Dimensional Magnetic Recording Channels</a> <a href="slides_posters/EECS_2017_paper_22.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="32">
+                    <p>
+                        Two-dimensional magnetic recording (2-D TDMR) is an emerging technology that aims to achieve areal densities as high as 10 Tb/in2 using sophisticated 2-D signal-processing algorithms. TDMR achieves high areal densities by reducing the size of a bit to the order of the size of a magnetic, resulting in 2-D inter-symbol interference (ISI). Jitter noise due to irregular grain positions on the magnetic medium is more pronounced at these areal densities. Further, a variations in servo motor speed and mechanical jitter in read-write head results in timing errors both in cross-track and down-track directions. Therefore, a viable read-channel architecture for TDMR requires 2-D signal-detection algorithms that can mitigate 2-D timing errors, 2-D ISI and combat noise comprising jitter and electronic components. We present following contributions of our work so far towards TDMR read channel architecture 1) We proposed a 2-D Soft-output Viterbi algorithm (SOVA) as an extension to the well known 1D SOVA; 2) We empirically characterized the jitter noise using a Voronoi-based granular media model and developed a data-dependent noise-prediction (DDNP) algorithm to handle the media noise seem in TDMR; 3) we also developed techniques to design 2-D separable and non-separable targets for generalized partial response equalization for TDMR that can be used along with a 2-D signal detection algorithm; 4) We proposed a method to correct 2-D burst erasures seen in TDMR; 5) we proposed a joint 2-D timing recovery and signal detection scheme using 2-D SOVA to handle the 2-D timing errors.
+                    </p>
+                </div>
+            </li>
+            <li> 18:46 - 18:57 : Saurabh Khanna and Chandra Murthy - 
+                <a href="javascript:toggle('33');">Covariance Matching Techniques for Joint Sparse Support Recovery</a> <a href="slides_posters/EECS_2017_paper_20.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="33">
+                    <p>
+                        We consider the compressive sensing problem with multiple measurements vectors (MMVs) where the signals of interest are jointly sparse vectors, i.e., they share a common nonzero support. We investigate the covariance matching (COMET) framework which recently has been shown to be capable of recovering O(m^2) sparse supports using only m measurements per signal. This is in contrast to O(m) sized support recovery guarantees offered by conventional MMV algorithms. </p>
+
+                        <p>We show that a well known MMV algorithm, Multiple Sparse Bayesian Learning (M-SBL) is essentially a covariance matching technique for support recovery, by interpreting it as a Bregman matrix divergence minimization problem. We derive sufficient conditions for exact support recovery of multiple joint sparse Gaussian sources in the M-SBL algorithm. Compared to existing results for M-SBL, our sufficient conditions are non-asymptotic and also account for the presence of measurement noise. The support recovery performance of M-SBL is shown to depend on two factors, 
+                            (i) the restricted isometry property of self-Khatri-Rao product of the measurement matrix used for generating compressive measurements,
+                            (ii) the number of measurement vectors (MMVs).
+                        </p>
+                        <p>Motivated by the matrix divergence interpretation of M-SBL, we propose a novel Renyi divergence based joint sparse support recovery algorithm which is several orders of magnitude faster than M-SBL and other COMET based MMV algorithms. The substantial speedup of the algorithm is achieved by interpreting the proposed Renyi divergence cost function as a difference of two sub-modular set functions which results in its fast optimization via the majorization-minimization procedure.
+                        </p>
+                    </div>
+                </li>
+                <li> 18:58 - 19:10 : Tarun Choubisa and P Vijay Kumar - 
+                    <a href="javascript:toggle('34');">
+                        Design, Development, Study and Deployment of a PIR based Monitoring, Intruder Detection and Classification in an Outdoor Environment
+                    </a> <a href="slides_posters/EECS_2017_paper_37.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="34">
+                        <p>
+                            This thesis presents the development, physical and algorithmic, of a Pyroelectric-Infrared (PIR)-sensor-based system capable of detecting and distinguishing between human and animal intrusion in an outdoor setting, while rejecting false alarms arising from moving vegetation. The thesis makes four principal contributions. It first presents a novel PIR-sensor platform design comprised of a 2D array of 8 sensor-lens combinations possessing the spatial resolution needed for classification and that moreover, is robust to small errors in component alignment. Next, two signal-processing algorithms are explored. In the first, the intruder-generated signal is modeled as a chirp and the extracted chirp parameters are used to distinguish between intruder and clutter. In the second, low-complexity, low-memory-requirement algorithm, signal energy and cross correlation values form the feature vector. Computations associated with the first approach were carried out on a laptop, while in the case of energy and correlation features, the algorithm could be implemented on the mote itself. The average classification accuracy obtained was 97 % and 93 % under the chirp-based and energy-correlation based approaches, respectively. A third major contribution of the thesis is the first study, that we are aware of, of the operation of a PIR sensor in situations where the ambient temperature is close to that of the human body. Finally, two test deployments were carried out, one at the Bannerghatta Biological Park and the second, on the campus of IISc.
+                            Time:   
+                        </p>
+                    </div>
+                </li>
+                <li> 19:11 - 19:22 : Jishnu Sadasivan and Chandra Sekhar Seelamantula - 
+                    <a href="javascript:toggle('35');">PROSE: Perceptual Risk Optimization for Speech Enhancement</a>
+                    <a href="slides_posters/EECS_2017_paper_30.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="35">
+                        <p>
+                            The goal in speech enhancement is to obtain an estimate of clean speech starting from noisy signal measurements by minimizing a chosen distortion measure (risk). However, direct minimization of the original risk results in an estimate that is a function of the unknown clean signal to be estimated or its statistics. In reality, access to such prior knowledge is limited or not possible and hence, practical solutions depend on the estimation of clean signal statistics. In this paper, we propose the risk estimation framework for speech enhancement, where instead of optimizing the original risk, an unbiased estimate of the risk (which is a function of observations only) is optimized. We consider various perceptually relevant distortion measures for speech denoising and develop unbiased estimates under the assumptions that the a priori signal-to-noise ratio (SNR) is high and that the additive noise follows a truncated Gaussian distribution. The estimators turn out to be nonlinear functions of the SNR. We minimize the risk estimates to obtain the corresponding optimum denoising functions. We compare the denoising performance obtained using various perceptual distortion measures. Objective evaluation of subjective quality (using perceptual evaluation of speech quality (PESQ) scores), average segmental SNR (SSNR), show that the proposed approach based on Itakura-Saito distortion, and weighted hyperbolic cosine distortion gives better performance than the other distortion functions. For input SNRs greater than 5 dB, proposed technique shows a superior denoising performance over the competing techniques.
+                        </p>
+                    </div>
+                </li>
+                <li> 19:23 - 19:35 : Basty Ajay Shenoy and Chandra Sekhar Seelamantula - 
+                    <a href="javascript:toggle('36');">Phase Retrieval and Hilbert Integral Equations Beyond Minimum Phase</a> <a href="slides_posters/EECS_2017_paper_34.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="36">
+                        <p>
+                            Phase retrieval is the reconstruction of a signal from its magnitude spectrum. Such problems are encountered in imaging modalities such as X-ray crystallography, phase microscopy, etc., where only the magnitudes of the wavefront can be measured. The phase retrieval problem is ill-posed, since an infinite number of signals can have the same magnitude spectrum. A classical result in phase retrieval is that minimum-phase signals have log-magnitude and phase spectra that satisfy the Hilbert integral equations, thus facilitating exact phase retrieval. We demonstrate that there exist larger classes of signals beyond minimum-phase signals, for which exact phase retrieval is possible. Our first extension pertains to a specific type of parametric modelling of 2-D signals, for which phase retrieval is accomplished by a parameter computation technique. Our second extension is to continuous signals that lie in a principal shift-invariant space. Such signals are characterized by the combining coefficients. We introduce the concept of causal, delta dominant (CDD) sequences, and show that such signals are characterized by their magnitude spectra. The shift-invariant structure is applicable to modelling signals encountered in imaging modalities such as FDOCT. We present an application of 2-D phase retrieval to continuous CDD signals in the context of quantitative phase microscopy. Finally we develop Hilbert integral equations for 2-D first-quadrant signals and in introducing the notion of generalized minimum-phase signals for both 1-D and 2-D signals.
+                        </p>
+                    </div>
+                </li>
+                <li> <b> 19:36 - 19:40 : Session 3 Concluding Remarks</b></li>
+            </ul>
+        </td>
+
+    </tr>
+
+    <tr class="break">
+        <td width="15%">19:40 - 20:15</td>
+        <td width="85%">High Tea <br> <span class="de-emp">Faculty Hall Reception Area</span></td>
+    </tr>
+
+    <tr>
+        <td  align='center' colspan="2" class="day">Saturday, April 08, 2017</td>
+    </tr>
+
+    <tr class="slot">
+     <td width="15%">08:30 - 08:50</td>
+     <td width="85%">Registration</td>
+ </tr>
+
+ <tr class="session">
+    <td width="15%">08:50 - 10:35</td>
+    <td width="85%"><a href="javascript:toggle('s4');"><b>Session 4 : Algorithms and Computer Systems</b>
+    </a>
+    <br> <span class="de-emp">Chairs : Omprakash Subbarao, Sonata Software  and K V Raghavan, IISc </span>
+
+    <ul style="text-align: left;font-size:small;display: none;" id="s4">
+        <li> 08:51 - 09:02 : Monika Dhok and Murali Krishna - 
+            <a href="javascript:toggle('41');">Techniques to Improve The Reliability of Software Applications</a> <a href="slides_posters/EECS_2017_paper_44.pdf">[Poster and Slides]</a>
+            <div class="abstract" id="41">
+                <p>
+                    We develop program analysis techniques to improve the adaptability of software applications in real world. In particular, we address research problems in the domain of performance analysis, automated test generation, and their intersection. The first problem focuses on deterministic multi-threaded systems that ensure reproducibility of program behavior, which however can 
+                    serialize the execution thus affecting performance. Our technique automatically inserts barrier in the program that improves the performance. We observe performance improvement ranging from 38% to 88% as compared to programs without barriers. Also, we are able to reduce the overall execution time of programs by upto 34% when compared to the execution time where barriers are inserted manually. The second problem focuses on introducing type-awareness in conventional concolic testing for JavaScript programs, thereby making concolic testing more scalable. Our proposed technique generates less that 5% of the inputs as compared to conventional 
+                    approaches. On average, we achieve over 97% of the line coverage and over 94% of the branch coverage for all the functions across all benchmarks. The third problem focuses on redundant traversal bugs, an important source of performance bugs in Java libraries. We propose an approach that takes a library and an initial set of coverage driven tests as input, and generates tests which enable detection of redundant traversal of loops. Our experiments revealed 46 bugs across seven libraries, including 34 previously unknown bugs. We observe that the tests generated using our approach significantly outperform the randomly generated tests in their ability to expose the loop inefficiencies.
+                </p>
+            </div>
+        </li>
+
+
+        <li> 09:03 - 09:14 : Girish M. Rama and  K. V. Raghavan - 
+            <a href="javascript:toggle('42');">Program Analysis to Support Allocation Site based Refactorings</a>
+            <a href="slides_posters/EECS_2017_paper_42.pdf">[Poster and Slides]</a>
+            <div class="abstract" id="42">
+                <p>
+                    Object oriented programs typically create millions of objects at runtime and greatly impact both the memory requirement as well as running time. One of the major causes is repeated creation of isomorphic or identical objects. If allocation sites that creates such objects are refactored to cache isomorphic objects then it greatly reduces the number of objects created. This not only improves the memory footprint but because of reduced garbage collection improves the runtime as well. Our work is targeted at supporting the refactoring of such sites. We use a dynamic analysis based technique to identify sites where isomorphic objects are created among the thousands of allocation sites. A static analysis is subsequently employed to identify the exact location where caching is to be introduced and byte code instrumentation is used to automatically introduce caching. Finally a scalable, iterative object sensitivity pointer analysis is used to validate the safety of the refactoring. Results of Dacapo benchmarks indicate that using our technique one can automatically refactor such allocation site and improve memory footprint of Java programs. Our contributions also have other applications such as immutability refactoring and other static analysis that need a scalable yet precise pointer analysis.
+                </p>    
+            </div>
+        </li>
+
+
+        <li> 09:15 - 09:26 : M. Raveendra Kumar and  K. V. Raghavan - 
+            <a href="javascript:toggle('43');">Analysis and Transformation of File Processing Programs</a>
+            <a href="slides_posters/EECS_2017_paper_38.pdf">[Poster and Slides]</a>
+            <div class="abstract" id="43">
+                <p>
+                    Programs that process data residing in files are widely used in domains, such as banking, healthcare, and web-traffic analysis. Our research aims at automated analysis and transformation tasks to address several challenging problems in file-processing programs. Our key insight is that the analysis of file processing programs can be made more useful if knowledge of the input file format is made available to the analysis. We instantiate this idea in a static analysis setting to solve two practical problems - Specialising a program to a given "restricted" input file format, and verifying if a program "conforms" to a given input file format. Experiments on a set of benchmark programs showed that our approach provides precise output compared to naive approaches. In our experiments, we observed that there is a trade-off between precision and scalability in our analysis when applied to programs having multiple procedures. Our key insight is that in these multi-procedural programs, where precision is more important in higher level procedures, the scalability of the analysis can be improved by maintaining precise analysis information at higher level procedures and imprecise information at lower level procedures. To this end, we designed a new context-sensitive analysis that can scale without losing the precision in important procedures. 
+                    In our current research, we are devising an automated testing tool to generate test inputs that can crash a given program for a specific error. Initially, we are targeting buffer overflow errors, and plan to extend it to other errors.
+                </p>
+            </div>
+        </li>
+        <li> 09:27 - 09:38 : Balaji and P Vijay Kumar - 
+            <a href="javascript:toggle('44');">Codes with Locality for Multiple Erasures in Distributed Storage</a>
+            <a href="slides_posters/EECS_2017_paper_29.pdf">[Poster and Slides]</a>
+            <div class="abstract" id="44">
+                In this presentation we present part of two of our recent work on codes with locality.The first work is on codes with sequential recovery. An [n,k] code C is said to be locally recoverable in the presence of a single erasure, and with locality parameter r, if each of the n code symbols of C can be recovered by accessing at most r other code symbols. An [n,k] code is said to be a locally recoverable code with sequential recovery from t erasures, if for any set of s<=t erasures, there is an s-step sequential recovery process, in which at each step, a single erased symbol is recovered by accessing at most r other code symbols. In this presentation, a tight upper bound on the rate of such a code, for any value of number of erasures t and any value r>=3, of the locality parameter is presented. This bound proves an earlier conjecture due to Song, Cai and Yuen. While the bound is valid irrespective of the field over which the code is defined, a matching construction of binary codes that are rate-optimal is also presented, again for any value of t and any value r>=3. In the second work, we present rate upper bound for t=3 and general t, for codes with strict availability. Codes with strict availability can be defined as t,r+1 regular ldpc code with girth of tanner graph >=6.
+            </div>
+        </li>
+        <li> 09:39 - 09:51 : Aniket Basu Roy and Sathish Govindarajan - 
+            <a href="javascript:toggle('45');">Packing and Covering with Geometric Objects</a>
+            <a href="slides_posters/EECS_2017_paper_39.pdf">[Poster and Slides]</a>
+            <div class="abstract" id="45">
+                <p>
+                    We study a host of Geometric optimization problems that are computationally hard and design polynomial time approximation algorithms for them. Particularly, we consider different Packing and Covering problems and show that they admit Polynomial Time Approximation Schemes (PTAS) using local search algorithms. </p>
+                    <p>
+                        More precisely, we are given a family of geometric objects and a point set in the plane and we study different variants of Packing and Covering problems viz., Shallow Packing, Point Packing, Runaway Rectangle Escape problem, Unique Coverage, Multi-Covering problem, Prize Collecting Set Cover, and few Art Gallery problems. These problems have a wide range of applications in map labeling, wireless and sensor networks, routing in printed circuit boards, and of course, guarding art galleries. </p>
+                        <p>
+                            Local Search algorithm paradigm has been a popular heuristic since long. It is only recently that it has been theoretically proved to guarantee good approximation for geometric problems. The algorithm per se is very simple to state. One starts with some feasible solution and at every iteration makes "small" changes, retaining the feasibility and improving the objective function. When it cannot be improved one returns the current solution. A framework is known for geometric problems where this algorithm is a PTAS algorithm that yields the best possible approximation in polynomial time provided one can show the existence of a graph with some "nice" properties. We consider the above-mentioned problems and show the existence of respective graphs with those "nice" properties for a broad class of geometric objects.
+                        </p>
+                    </div>
+                </li>
+                <li> 09:52 - 10:04 : Sayantan Mukherjee and Sanjit Chatterjee - 
+                    <a href="javascript:toggle('46');">Predicate Encryptions: Equivalence of Abstract Encodings and Generic CCA-security</a>
+                    <a href="slides_posters/EECS_2017_paper_35.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="46">
+                        <p>
+                            A predicate encryption (PE) can be thought of as emulation of predicate function R : X × Y → {0, 1} in the encrypted domain. In case of a PE, given a key K_x (x ∈ X ) one can decrypt the ciphertext C_y (y ∈ Y) if R(x, y) = 1. We studied predicate encryptions from different aspects. 
+                            <ol>
+                                <li>
+                                    Two different encoding paradigms (pair encoding and predicate encoding) were developed by Attrapadung and Wee independently to generalize the constructions of predicate encryptions for different predicate families. Even though both the encodings focus on the exponent polynomials of the available schemes, their relationship was 
+                                    not evident from their definition. We observed certain equivalence relation between them. 
+                                </li>
+                                <li>
+                                    Chen et al. integrated predicate encoding on top of their novel framework called dual system group (DSG) to simplify the security proof of CPA-secure predicate encryptions. We noticed a (some-what) similar integration of pair encoding and DSG in black-box manner.
+                                </li>
+                                <li>
+                                    CCA-security guarantees protection against active adversaries and therefore is a stronger notion of security than CPA-security. We have studied the problem of converting CPA-secure PE instantiated using pair encoding to CCA-secure PE in a generic manner. Available generic conversion techniques use properties like delegation or verifiability which are respectively scarce and not efficient. Recently Pandit et al. came up with a direct conversion technique with much better efficiency in composite order groups. We propose a direct conversion procedure to achieve CCA-secure predicate encryptions of schemes in Attrapadung (Asiacrypt'16) in prime order groups.
+                                </li>
+                            </ol>
+
+                        </p>
+                    </div>
+                </li>
+                <li> 10:05 - 10:17 : Kabaleeshwaram and  Sanjit Chatterjee - 
+                    <a href="javascript:toggle('47');">Converting Pairing-based Cryptosystems From Composite to Prime-Order Setting</a>
+                    <a href="slides_posters/EECS_2017_paper_23.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="47">
+                        <p>
+                            In pairing-based cryptography, composite-order pairing plays a vital role to achieve some additional cryptographic functionalities as compared to prime-order setting. However it is well-known that instantiating composite-order pairing is costlier than the prime-order pairing. Hence converting cryptographic protocols from composite-order to prime-order pairing emerged as an important research direction. Towards this, we follow two approaches. The first one is converting cryptographic protocols that are not yet converted. Shacham-Waters ring signature and Boyen-Waters group signature schemes are such protocols. We convert these protocols using Freeman projection framework (with full decomposition) and Seo-Cheon projecting cum cancelling framework. For both protocols, the former framework gives better instantiation as compared to the latter. The second one is more efficient instantiation of cryptosystem as compared to previously proposed framework. We consider Meiklejohn et al.’s round optimal blind signature scheme (ROBS), originally instantiated in composite-order pairing, whose security proof uses both projecting and cancelling. Seo and Cheon converted ROBS using symmetric projecting (with full decomposition) framework without using cancelling. First we extract the variant of Freeman projection framework defined in the unbalanced bilinear group setting, which is obtained using Chatterjee et al.’s technique on Ghadafi et al.’s NIWI proof system. We instantiate ROBS using this unbalanced Freeman projecting framework. We also instantiate ROBS using Seo-Cheon projecting cum cancelling framework. With respect to the computation cost, instantiation using Seo-Cheon framework performs better and with respect to communication complexity, instantiation using unbalanced Freeman projecting framework performs better.
+
+                        </p>
+                    </div>
+                </li>
+
+                <li>10:18 - 10:30 : Srinivas Karthik and Jayant Haritsa - 
+                    <a href="javascript:toggle('48');">Database Engine Design for Robust Query Processing</a>
+                    <a href="slides_posters/EECS_2017_paper_11.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="48">
+                        <p>Database Management Systems form the backbone of today’s information-rich society, efficiently handling data through its entire lifecycle. Specifically, they support declarative query processing, where the user only specifies the end objectives, and the system’s query optimizer module identifies the most efficient execution strategy to achieve these objectives. However, in practice, the optimizer’s strategy selection is often orders-of-magnitude slower as compared to the ideal choice. </p>
+                        <p>My thesis addresses the above challenge by designing new query processing techniques that bound MSO, the worst-case query execution times with respect to the optimal. In the initial part, we propose a new algorithm called SpillBound that provides an MSO guarantee of $D^2+3D$, where $D$ is a function of the query complexity. We also prove a lower bound of $\omega(D)$ on the guarantee. </p>
+                        <p>To bridge the quadratic-to-linear gap, we propose the AlignedBound algorithm, which delivers an MSO guarantee in the $[2D+2, D^2+3D]$ range. Moreover, its empirical performance falls in the lower end of the guarantee range, thus matching the lower bound. Overall, our new algorithms collapse the enormous MSO of contemporary database query optimizers, which can even reach the millions, down to a single order of magnitude. </p>
+                        <p>A limitation of SpillBound and AlignedBound is their dependency on expensive pre-processing efforts, which are unviable for dynamic queries. Hence, we are currently designing online algorithms to eliminate these overheads while retaining performance guarantees. </p>
+                        <p>This work has appeared in the IEEE ICDE 2016 conference, where it received the Best Student Paper award, and the IEEE TKDE 2017 journal. </p>
+                    </div>
+                </li>
+
+                <li> <b>10:31 - 10:35 : Session 4 Concluding Remarks</b></li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr class="session">
+        <td width="15%">10:35 - 11:20</td>
+        <td width="85%"><b>Keynote 4: P. Anandan, Vice President, Adobe Research</b>
+            <br> <span class="de-emp">Chair : Phaneendra K. Yalavarthy, IISc </span>
+        </td>
+    </tr>
+
+    <tr class="break">
+        <td width="15%">11:20 - 11:45</td>
+        <td width="85%">Coffee Break <br><span class="de-emp">Faculty Hall Reception Area</span></td>
+    </tr>
+    <tr class="slot">
+        <td width="15%">11:45 - 12:05</td>
+        <td width="85%"><b>Faculty Talk 4: Siddharth Barman, CSA, IISc</b>
+            <br><span class="de-emp">Chair : Omprakash Subbarao, Sonata Software </span>
+        </td>
+    </tr>
+
+    <tr class="slot">
+        <td width="15%">12:05 - 12:25</td>
+        <td width="85%"><b>Faculty Talk 5: Hardik J Pandya, ESE, IISc</b>
+            <br> <span class="de-emp">Chair : Dr. Kasi Viswanadha Raju G, GE India Technology Centre
+        </span>
+    </td>
+</tr>
+
+<tr class="session">
+    <td width="15%">12:25 - 13:30</td>
+    <td width="85%"><a href="javascript:toggle('s5');"><b>Session 5 : Power Engineering</b></a>
+
+        <br><span class="de-emp">Chairs : Dr. Kasi Viswanadha Raju G, GE India Technology Centre and Dr. Gurunath Gurrala, Dept. of EE, IISc </span>
+        <ul style="text-align: left;font-size:small;display: none;" id="s5">
+
+            <li> 12:26 - 12:37 : K. Saichand and  Vinod John - 
+                <a href="javascript:toggle('51');">Modelling And Control Of Ultracapacitor Based Bidirectional DC-DC Converter Systems</a> <a href="slides_posters/EECS_2017_paper_10.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="51">
+                    <p>
+                        Ultracapacitors (UC) possess a higher specific energy density than electrolytic capacitors and a higher specific power density than batteries. UCs are used to supplement batteries for addressing the peak power demands due to their relatively high cycle life. However, unlike the case of batteries, in UCs the reduction in the stack voltage during discharging (∆V) is quite high which is typically half the nominal voltage . To regulate the voltage and to provide effective backup, a power electronics converter is interfaced with the UC stack. This work attempts to address several control and modelling issues in such a UC based back-up system. 
+                    </p>
+                    <p>
+                        UC backup system have two operating control modes: 1) charging mode and 2) discharging mode. Accurate identification and seamless transfer between the two operating control modes is crucial for reliable backup at the target node. Here, a mode identification algorithm is proposed by which smooth and seamless transition is achieved. 
+                        An accurate yet simple electrical model is needed to utilize UCs to their full potential. A reduced order model of UCs is proposed which treats the UCs as variable voltage sources. The proposed model is compared against popular series RC model which shows that the two models match closely over wide range of design applications. For comparison, several metrics are analysed which are validated over wide range of design applications. 
+                    </p>
+                    <p>
+                        All the analysis and control methods are validated through simulations and experimentation. These are compared against existing approaches and the proposed methods are found to be quite effective. 
+                    </p>
+                </div>
+            </li>
+
+            <li> 12:38 - 12:49 : Subhash Joshi T.G and Vinod John - 
+                <a href="javascript:toggle('52');">High Voltage Power Supply and Crowbar Protection</a> <a href="slides_posters/EECS_2017_paper_18.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="52">
+                    <p>
+                        The performance of systems used in various high voltage applications depend majorly on the output voltage ripple of High Voltage Power Supplies (HVPS). One of the failure mode of vacuum tubes commonly used in these applications is due to the energy accumulation above the specified limit during fault events due to higher stored energy in HVPS. This demands either a protection for vacuum tube or reduced ripple voltage without increasing the stored energy. 
+                        Crowbar is a protection device for vacuum tube, conventionally built with mercury based devices. Due to environmental concern, the state of art is to replace these devices with semiconductor devices, referred as Solid State Crowbar (SSC). Few works are reported on the installation of SSC, but only limited information are available about its design and analysis. The contributions based on the research on SSC are, 
+                        1. Modelling of dc fault current and, vacuum tube 
+                        2. Design of di/dt inductor and, voltage balancing network 
+                        3. Thermal modelling of crowbar 
+                        4. Design of mechanical assembly that ensures desired electrical characteristics <br>
+                        The ripple at the input dc voltage of HVPS which often built with series resonant converter (SRC), can affect the output voltage referred as Audio Susceptibility (AS). AS of SRC have not been widely studied in literature and the reported model are either approximated or numerically solved, which hampers the design purpose. The contributions from research are, 
+                        1. Small signal AS model 
+                        2. Design procedure of converter for superior AS performance 
+                        3. Design of high voltage high frequency magnetic
+                    </p>
+                </div>
+            </li>
+
+            <li> 12:50 - 13:01 : Shakthi Prasad D., Subba Reddy B and B. S. Rajanikant - 
+                <a href="javascript:toggle('53');">Investigations on the Corona Degradation of Polymeric Insulating Samples</a> <a href="slides_posters/EECS_2017_paper_5.pdf">[Poster and Slides]</a>
+                <div class="abstract" id="53">
+                    <p>
+                        Insulators are integral part of transmission system. Polymeric insulators are currently used in the country for power transmission. Owing their organic in nature, corona, moisture, chemical attack etc., are recognized as the degradation inducing factors. Methodologies to evaluate the polymeric insulators are still under progress. </p>
+
+                        <p>In the present experimental work, a unique methodology based on the application of fog to investigate the synergetic effect of corona and moisture on the performance of polymeric insulating samples is developed. Experiments are carried on different types of polymeric samples. Physico-chemical analysis conducted on the degraded samples resulted in following findings; higher hydroxylation, higher oxidation, detection of nitric acid on the sample surface, loss of Alumina trihydrate (ATH) filler, the decrease in tensile strength etc., under the fog condition. </p>
+
+                        <p>Further, an attempt is made to extract the light information from the corona discharges, for which a novel application of image processing technique, based on color segmentation is employed. A luminance component ‘Y’ parameter is computed from the processed corona images and is shown to correlate well with the corona released power. To overcome the limitation of conventional images, high dynamic range imaging technique is employed to accurately identify the location of corona stress on the polymeric samples. Interestingly, it is observed that HDR image provides the true correlation with actual degradation, whereas the conventional images resulted in pseudo-correlation.</p>
+                    </div>
+                </li>
+
+
+                <li> 13:02 - 13:13 : Vijay H. Bhosale and Joy Thomas - 
+                    <a href="javascript:toggle('54');">UWB Type High Power Electromagnetic Radiating System for Use as an Intentional EMI Source</a> <a href="slides_posters/EECS_2017_paper_25.pdf">[Poster and Slides]</a>
+                    <div class="abstract" id="54">
+                        <p>
+                            Use of sophisticated electronics for compactness and faster operation is ever increasing. Such sensitive electronics can get easily affected functionally or physically by the Intentional Electromagnetic Interference (IEMI). Short duration Ultra Wide Band (UWB) type pulse is one of such intentionally generated EMI source. To test the electronic system’s susceptibility a UWB source of appropriate rating is required. The high power UWB pulse generation requires a high voltage pulsed power source called pulser alongwith a high bandwidth antenna. The pulser has an energy storage device followed by a fast discharge switch whose role is very important in the UWB system operation as the switch performance parameters like rise time and dielectric recovery decide the intensity of radiated electric field and the system energy output. Most UWB systems developed worldwide have used pressurised dielectric gas as the switching medium in pulser. In this work gases at sub atmospheric pressure have been tried as the switching medium. For enhanced overall system energy output, energy per switching shot is enhanced by optimising switch breakdown voltage instead of improving the Pulse Repetition Rate (PRR) as attempted by previous researchers. </p>
+                            <p>Overall, the work consists of design, analytical and numerical simulation studies along with experimental evaluation of various performance parameters of the pulser, the switch, impulse radiating antenna (IRA) and the UWB system as a whole. The system developed under this work is on par with similar systems developed worldwide and sometimes even exceed in some of the performance parameters like Figure of Merit and PRR. 
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li> 13:14 - 13:25 : Viju Nair and K. Gopakumar - 
+                        <a href="javascript:toggle('55');">Investigations on Stacked Multilevel Inverter Topologies for Induction Motor Drives</a> <a href="slides_posters/EECS_2017_paper_16.pdf">[Poster and Slides]</a>
+                        <div class="abstract" id="55">
+                            <p>
+                                Induction motor drives (IMD) have been mostly governed by conventional two 
+                                level inverters. These inverters need to be switched at higher frequency to 
+                                reduce the harmonics in the phase voltage. Also the switching is between 0 
+                                and Vdc which again results in high dv/dt and associated EMI issues. To 
+                                mitigate the above issues, higher number of voltage levels was introduced 
+                                instead of just two level. As a consequence, Neutral point clamped (NPC), 
+                                Flying Capacitor (FC) and Cascaded H-bridge topologies were introduced. But 
+                                scaling these topologies for higher number of voltage levels (more than 3) 
+                                were difficult as NPC had neutral point balancing problem, FC suffered from 
+                                difficulty in balancing its flying capacitors and CHB requires large number of 
+                                isolated DC supplies. This work focusses on novel method to generate higher number of voltage levels through stacking.
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li><b>13:26 - 13:30 : Session 5 Concluding Remarks </b></li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr class="break">
+            <td width="15%">13:30 – 14:30</td>
+            <td width="85%">Lunch <br> <span class="de-emp">Main Guest House, IISc</span></td>
+        </tr>
+        <tr class="session">
+            <td width="15%">15:00 - 17:30</td>
+            <td width="85%"><a href="javascript:toggle('posters');"><b> Poster Session </b></a><br> <span class="de-emp">Faculty Hall Reception Area</span>
+            <div style="text-align: left;font-size:small;display: none;" id="posters">
+                <p>
+                    Poster Session will have posters from all the above research talks and the following : 
+                </p>
+                <ul>
+                    <li>
+                        Ajith S, Arpita Patra and Pratik Sarkar - Fast Actively Secure OT Extension for Short Secrets. 
+                        <a href="slides_posters/EECS_2017_paper_33.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Akash Valsangkar and Vijay Natarajan - An Exploratory Framework for Cyclone Identification and Tracking 
+                        <a href="slides_posters/EECS_2017_paper_33.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Divya R and Chandramani Singh - Fair and Optimal Mobile Assisted Offloading
+                        <a href="slides_posters/EECS_2017_paper_24.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Mayank Tiwari and Sanjit Chatterjee - Non-Interactive Id-based Hierarchical Key Agreement in MANETs
+                        <a href="slides_posters/EECS_2017_paper_26.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Rajat Sanyal and Kunal N. Chaudhury - Large Sensor Network Localization using Cliques information
+                        <a href="slides_posters/EECS_2017_paper_2.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Sanidhay Bhambay, Sudheer Poojary and Parimal Parag - Differential Encoding for Real-Time Status Updates
+                        <a href="slides_posters/EECS_2017_paper_41.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Dibakar Das, Gurunath Gurrala and U Jayachandra Shenoy - Linear Quadratic Regulator based Seamless Transfer in Microgrids
+                        <a href="slides_posters/EECS_2017_paper_9.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Himanshu Kumar and P. S. Sastry - Robust Loss Functions under Multi-class Label Noise for Deep Neural Networks
+                        <a href="slides_posters/EECS_2017_paper_32.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Rahul Chakraborty and Subba Reddy B - Thermal Aging Studies on High Temperature Vulcanized Silicone Rubber Insulators                
+                        <a href="slides_posters/EECS_2017_paper_21.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Soubhik Sanyal and Soma Biswas - Discriminative Pose-Free Descriptors for Face and Object Matching
+                        <a href="slides_posters/EECS_2017_paper_8.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Abhilash Jain and Rathna G.N. - Visual Speech Recognition Using LBP Features
+                        <a href="slides_posters/EECS_2017_paper_27.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Adarsh Patil and R Govindarajan - HAShCache : Heterogeneity Aware Shared DRAMCache for Integrated Heterogeneous Systems
+                        <a href="slides_posters/EECS_2017_paper_12.pdf">[poster]</a>
+                    </li>
+                    <li>
+                        Sridhar G and Murali Krishna Ramanathan - Efficient Whole Program Path Tracing
+                        <a href="slides_posters/EECS_2017_paper_43.pdf">[poster]</a>
+                    </li>
+                </ul>
+            </div>
+            </td>
+        </tr>
+        <tr class="slot">
+            <td width="15%">17:45 - 18:15</td>
+            <td width="85%"><b>Invited Talk 2: Naganand Doraswamy, Ideaspring Capital</b>
+                <br> <span class="de-emp">Chair : Jayant Haritsa, IISc </span>
+            </td>
+        </tr>
+
+        <tr class="session">
+            <td width="15%">18:15 - 19:00</td>
+            <td width="85%"><b>Alumni Meet and Valedictory</b> 
+                <br> <span class="de-emp"> Chair :  A G Ramakrishnan, IISc </span>
+            </td>
+        </tr>
+
+        <tr class="break">
+            <td width="15%">19:00 - 19:30</td>
+            <td width="85%">High Tea <br> <span class="de-emp">Faculty Hall Reception Area</span></td>
+        </tr>
+
+    </tbody>
+</table>
+
+</div>
+
+<div id="sidebar">
+    <ul><br/><br/>  
+        <li><a href="index.html">HOME</a></li><br/> 
+        <li><a href="callForAbstracts.html">CALL FOR ABSTRACTS</a></li><br/> 
+        <li><a href="callForParticipation.html">CALL FOR PARTICIPATION</a></li><br/>
+        <li><a href="https://goo.gl/forms/sfJajzYJkt5quZLo1" target="_blank">APPLICATION FOR PARTICIPATION</a></li><br/>
+        <li><a href="schedule.html">SCHEDULE</a></li><br/>
+        <li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>
+        <li><a href="committee.html">COMMITTEE</a></li><br/>             
+        <li><a href="related.html">RELATED LINKS</a></li><br/>  
+        <!-- <li><a href="schedule.html">SCHEDULE</a></li><br/>
+        <li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>                                   
+        <li><a href="participant.html">INDUSTRY PARTICIPATION</a></li><br/>                                                 
+
+        <li><a href="gallery.html">GALLERY</a></li><br/> -->    
+        <!--<li><a PROCEEDINGS>PROCEEDINGS</a></li><br/>--href="EECS_2015_proceeding.pdf"-->    
+    </ul> 
+
+    <br/>
+    <h4> Sponsors: </h4>
+    <a href="http://www.iisc.ac.in/"><img src="./sponsors/IIsc_logo.jpg" width="40%"></img><br/></a>  <br>
+    <p>Platinum</p>
+    <a href=""><img src="./sponsors/tcs.jpg" width="50%"></img><br/><br/></a> 
+    <p>Silver</p>                                               
+    <div class='img-container'>
+        <img src='./sponsors/ms.png'  width="70%" style="display:inline-block;"/><br/><br/>
+        <img src='./sponsors/adobe.jpg' width="40%" style="display:inline-block;" />
+        <a href="http://www.tek.com/"><img src="./sponsors/tektronix.png" width="70%" style="display:inline-block;""></img></a><br/><br/>
+           <a href="https://www.accenture.com/in-en/"><img src="./sponsors/accenture.jpeg" width="70%" style="display:inline-block;""></img></a><br/><br/>
+    </div>
+    <br>       
+            <!-- <div class="fadein">
+                <img src="indexPageSlideShow/image10.jpg" width="220" height="auto" alt="">
+            </div> -->  
+            <!-- <a href="http://www.ece.iisc.ernet.in/~divsymposium/EECS2015/gallery.html"><font size="2" color="white">Pictures from EECS2015</font></a> -->
+        </div>
+        <div id="footer">
+            <table width=1100 border=0 bordercolor=white cellpadding=0 cellspacing=0 align=left>
+                <tr>
+                    <td width=400 bgcolor="#FFF" align=left>
+                        <font size="2" color="gray" >Copyright: EECS Research Students Symposium, IISc</font>                   
+                    </td>
+                    <td width=250 bgcolor="#FFF" align=center>
+                        <a href="https://www.facebook.com/IISc-EECS-Symposium-2017-1928297610740426/" target="_blank" >
+                            <img src="social_facebook.png" height="20" alt="Facebook - Become a fan!" /></a>                    
+                        </td> 
+                        <td width=250 bgcolor="#FFF" align=center>
+                            <a href="https://twitter.com/eecs_iisc" target="_blank" >
+                                <img src="social_twitter.png" height="20" alt="Twitter - Follow us!" /></a>                 
+                            </td>
+
+                            <td width=200 bgcolor="#FFF" align=center>
+                                <a href="http://www.iisc.ernet.in/" target="_blank" >
+                                    <font size="2" color="gray" >IISc Home</font></a>                   
+                                </td>                   
+                            </tr>
+                        </table>
+                    </div>  
+
+                </div>
+
+            </body>
+            </html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>100 Years of Shannon</title>
+
+	<meta charset="utf-8">
+	<meta name="description" content="EECS Symposium" />
+
+	<style type="text/css">
+		body {font: normal 16px/1.5em helvetica, arial, sans-serif}
+		p {text-align:center}
+
+		.fadein { position:relative; width:220px; height:170px; }
+		.fadein img { 
+			position:absolute; 	
+			border-radius: 30px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			box-shadow: 2px 2px 0 0 #c1c1c1;
+			left:25px; top:20px; bottom: 10px; 
+		}
+
+		#container {
+			width:1100px;
+			margin:-10px auto;
+		}
+
+		#header {
+			text-align:center;
+			background: #2D3193;
+			color:#fff;
+			height:2px;
+		}
+
+		#content {
+			float:right;
+			width:836px;
+			text-align:center;	
+			background:#FFF;
+			padding:5px 5px
+		}
+
+		#sidebar {
+			float:left;
+			width:250px;
+			text-align:center;
+			background: #2D3193;
+			color:#FFF;
+			padding:0px 2px
+		}
+
+		#footer {
+			clear:both;
+			text-align:center;
+			background: #2D3193;
+			color:#fff;
+			height:2px;	
+		}
+
+		#sidebar a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		
+		#sidebar a:hover {
+			color: #06C;
+			text-decoration: none;
+		}
+		
+		#sidebar ul {
+			list-style: none;
+			list-style-type: none;  
+			text-align: center;
+			padding: 0px;
+			margin: 0px;
+		}
+		
+		#content p {
+			text-align:justify;
+		}
+
+	</style>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('.fadein img:gt(0)').hide();
+			setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 6000);
+		});
+	</script>
+	<script language="javascript"> 
+		function toggle(elementId) {
+      	var ele = document.getElementById(elementId);
+        	if(ele.style.display == "block") {
+         	ele.style.display = "none";
+        	}
+        	else {
+         	ele.style.display = "block";
+        	}
+		} 
+	</script>
+
+</head>
+
+
+<body>
+<div id="container">
+		<div id="header">	
+		</div>
+		<div id="sidebar">
+			<img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+		</div>
+		
+		<div id="content" style="color: #2D31F3; text-align:left; background-color:#FFF; background-image:url('iisc.png'); ">
+			<h1>EECS Research Students Symposium - 2016</h1>
+			<h3>April 28-29, 2016 </h3>
+			<h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+			<br/>
+			<br/>
+			<br/>
+		</div>
+</div>
+
+<div id="container" style="background :#2D3193;">
+
+<div id="content" style="text-align:justify;">
+
+<div class="shannonGalleryContainer">
+			<div class="fadein">
+                  <img src="shannonImages/Shannon_collage_new_A2_1.png" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Shannon Bio_A2_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Communication_A3_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Digital Circuits_A3_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Data Compression_A3_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Security_A3_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Storage_A3_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/History of Information Theory_A1_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Interests_A2_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Paper Collage_A2_2.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Shannon 1948_A4_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Shannon MS_A4_1.jpg" width="auto" height="500" alt="" />
+                  <img src="shannonImages/Shannon 1949_A4_1.jpg" width="auto" height="500" alt="" />
+			</div>	
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h2>Documentary on Shannon</h2>
+		<iframe width="700" height="450" src="https://www.youtube.com/embed/z2Whj_nL-x8" frameborder="0" allowfullscreen></iframe>
+		<br><br>		
+</div>
+</div>
+	
+		<div id="sidebar">
+			<ul><br/><br/>	
+	      	<li><a href="index.html">HOME</a></li><br/>	
+				<li><a href="committee.html">COMMITTEE</a></li><br/>	         
+	         <li><a href="callForAbstracts.html">CALL FOR ABSTRACTS</a></li><br/>		         	
+	         <li><a href="schedule.html">SCHEDULE</a></li><br/>
+		    	<li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>			    		         	
+		    	<li><a href="participant.html">INDUSTRY PARTICIPATION</a></li><br/>			    		         			    	
+	         <li><a href="related.html">RELATED LINKS</a></li><br/>	
+		    	<li><a href="gallery.html">GALLERY</a></li><br/>
+	         <!--<li><a PROCEEDINGS>PROCEEDINGS</a></li><br/>--href="EECS_2015_proceeding.pdf"-->	
+	      </ul> 
+
+			<br/>
+			<h4> Sponsors: </h4>
+				<img src="./sponsors/GE_white_monogram.png" width="50%"></img><br/><br/>
+				<!--<img src="./sponsors/Bosch.JPG" width="50%"></img><br/><br/>								
+				<img src="./sponsors/flipkart.png" width="50%"></img><br/><br/>-->												
+	        	<div class='img-container'>
+					<img src='./sponsors/Bosch.JPG'  width="70%" style="display:inline-block;"/><br/><br/>
+					<img src='./sponsors/Flipkart logo.jpg' width="70%" style="display:inline-block;" />
+				</div>
+				<br>
+				<img src="./sponsors/IIsc_logo.jpg" width="40%"></img><br/><br/><br/>
+		</div>
+		<div id="footer">
+		</div>	
+		</div>
+</body>
+</html>

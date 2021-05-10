@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EECS Research Students Symposium - 2015</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Demo of a simple 2 column css layout" />
+
+<script type="text/javascript">
+      <!--
+		var activeTab;
+		var activeSheet;
+
+		function setActiveTab(name){
+			tabHidden = document.getElementById('idActiveTabHidden');
+			initTab = document.getElementById('idTab' + initTabName);
+			initSheet = document.getElementById('idTabSheet' + initTabName);
+			if(initTab){
+				activeTab = initTab;
+			}
+			if(initSheet){
+				activeSheet = initSheet;
+			}
+			tab = document.getElementById('idTab' + name);
+			if(tab){
+				if(activeTab){
+					activeTab.className = 'tabUnactive';
+				}
+				tab.className = 'tabActive';
+				activeTab = tab;
+				if(tabHidden){
+					tabHidden.value = activeTab.id;
+				}
+			}
+			
+			sheet = document.getElementById('idTabSheet' + name);
+			if(sheet){
+				if(activeSheet){
+					activeSheet.className = 'sheetUnactive';
+				}
+				sheet.className = 'sheetActive';
+				activeSheet = sheet;
+			}
+			initTabName = "";
+		}
+	  //-->
+    </script>   
+	<script language="JavaScript">var initTabName;	initTabName = 'day1'; </script>
+
+
+
+<style type="text/css">
+body {font: normal 16px/1.5em helvetica, arial, sans-serif}
+p {text-align:center}
+
+#container {
+	width:1100px;
+	margin:-10px auto;
+}
+
+#header {
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:10px;
+}
+
+#content {
+	float:right;
+	width:836px;
+	text-align:center;	
+	background:#FFF;
+	padding:5px 5px
+}
+
+#sidebar {
+	float:left;
+	width:250px;
+	text-align:center;
+	background: #2D3193;
+	color:#FFF;
+	padding:2px 2px
+}
+
+#footer {
+	clear:both;
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:10px;	
+}
+
+#sidebar a {
+	color: #FFF;
+	text-decoration: none;
+}
+		
+#sidebar a:hover {
+	color: #06C;
+	text-decoration: none;
+}
+
+#sidebar ul {
+	list-style: none;
+	list-style-type: none;  
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#content p {
+	text-align:justify;
+}
+
+.tabActive{
+				height: 20px;
+				padding-left: 2px;
+				padding-right: 2px;
+				border-top: 1px solid #008242;
+				border-right: 1px solid #008242;
+				border-left: 1px solid #008242;
+				background-color: #DDDDDD;
+				color: #0000CC;
+				font-size: 20px;
+				cursor: pointer;
+				text-align: center;
+				width: 160;
+			}                    
+
+			.tabUnactive{
+				height: 20px;
+				color: #00003D;
+				font-size: 20px;
+				cursor: pointer;
+				border-bottom: 1px solid #464646;
+				border-top: 1px solid #DCDCDC;
+				border-right: 1px solid #DCDCDC;
+				border-left: 1px solid #DCDCDC;
+				background-color: #white;
+				width: 160;
+			}
+			.tabUnactive:hover{
+				cursor: pointer;
+        			background: #808080;
+                                color:#FFFFFF
+			}
+			.sheetUnactive{
+				display:none;
+			}
+			.sheetActive
+			{
+				display:block;
+				border-top:none;
+				padding:0px;				
+			}
+
+</style>
+<script language="javascript"> 
+function toggle(elementId) {
+	var ele = document.getElementById(elementId);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+  	}
+	else {
+		ele.style.display = "block";
+	}
+} 
+</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">	
+	</div>
+
+	<div id="sidebar">
+		<img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+	</div>
+	
+	<div id="content" style="color: #2D31F3; background: #cFcFcF; text-align:left;">
+
+		<h1>EECS Research Students Symposium - 2015</h1>
+		<h3>February 12-13, 2015 </h3>
+		<h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+		<br/>
+		<br/>
+		<br/>
+	</div>
+	
+	
+	
+
+</div>
+
+<div id="container" style="background :#2D3193;">
+	
+<div id="content" style="text-align:justify;">
+<table width="820" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+
+					<td width="36%" class="tabActive" onClick="setActiveTab('day1')" id="idTabday1" align='center' >February 12, 2015</td>
+					<td width="36%" class="tabUnactive" onClick="setActiveTab('day2')" id="idTabday2" align='center'>February 13, 2015</td>					
+				</tr>
+				</table>
+
+		<div id="idTabSheetday1" class="sheetActive">
+		<!--	
+<h6>Monday, June 23, 2014</h6>
+-->
+
+<table width=820px border=1 cellpadding="5" cellspacing="5">
+       	<tr>
+                <td width=110px bgcolor=#ccccFF>08.30 - 08.55</td>
+		<td colspan=2>Registration</td>
+	</tr>
+	<tr>
+                <td width=110px bgcolor=#ccccff>08.50 - 9.00</td>
+		<td colspan=2>Inauguration</td>
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>09.00 - 10.40</td>
+		<td colspan=2><a href="javascript:toggle('tt1');"><b>Session 1: (Electronics) Click to toggle details</b></a>
+<div id="tt1" style="display: none">
+<ul>
+<li><font color="cc0000">Viveka K.R (Ph.D, ECE): </font>Design of Wide Voltage Range Static Random Access Memories (SRAMs) </li>
+<li><font color="cc0000">Arjun Shetty (Ph.D, ECE): </font>Device Applications of III-Nitride Semiconductors</li>
+<li><font color="cc0000">R. Sudharshan Kaarthik (Ph.D, ESE): </font>A Voltage Space Vector Structure formed by Nineteen Concentric Dodecagons
+for Medium Voltage Induction Motor Drive</li>
+<li><font color="cc0000">Mohammad Hassan Hedayati (Ph.D, EE): </font>Integrated CM filter for Singel-Phase and Three-Phase PWM Rectifiers</li>
+<li><font color="cc0000">Abhijit K. (Ph.D, EE): </font>Control and Design of Power Converters for Renewable energy systems</li>
+</ul>
+<b>Session Chairs:</b><br/>
+Prof G. Narayanan, IISc <br/>
+Dr. Padma Desiraju, CAIR <br/>
+Dr. C.P. Ravi Kumar, TI-India <br/>
+</div>
+</td>
+	</tr>
+	<tr>
+		<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>
+                Coffee Break</td></center></font>
+		
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>11.00 - 11.45</td>
+		<td><b>Shri Subbiah Arunan</b>, Project Director, Mars Orbiter Mission, ISRO <br>
+		<i>Challenges and Execution of the Mars Orbiter Mission Project</i></br>
+		<a href="javascript:toggle('details');";>Details...</b></a>
+	<div id="details" style="display:none">
+<h4>Abstract</h4>
+<p>
+Mars Orbiter Mission (MOM) is India’s first interplanetary mission conceived and
+executed to demonstrate ISRO’s technical capabilities and also to perform science 
+experiments around Mars with indigenously developed scientific instruments. Mars 
+Orbiter Mission spacecraft was built at ISRO Satellite Centre - Bangalore with payloads 
+contributed by Space Application Centre - Ahmedabad, Space Physics Laboratory of 
+Vikram Sarabhai Space Centre – Thiruvananthapuram and Laboratory for Electro Optics 
+Sensor- Bangalore. The MOM spacecraft was launched from Satish Dhawan Space 
+Centre - Shriharikota on November 5th 2013 by Polar Satellite Launch Vehicle – XL, 
+India’s workhorse launch vehicle.
+</p>
+
+<p>
+The execution of MOM project involving various disciplines like satellite making, 
+payloads realisation, launch vehicle adoptability, mission design and development and 
+providing navigational solutions in a very short period of time - less than two years was 
+a major challenge for ISRO. The findings of the study committee were used as the basic 
+guidelines for the mission design and the vast experience of ISRO was used to adopt and
+modify various heritage systems for the Mars mission.
+</p>
+
+<p>
+The challenging areas of the mission were launch vehicle mission design, spacecraft 
+system design like propulsion sytem (restart of liquid engine after nearly 300 days of 
+hibernation), power system (solar panel to cater for requirements of both earth and 
+martian phases), deepspace communication system (very long distance and varied on-
+board gain requirements), incorporation of host of on-board autonomy features (very 
+long time of travel for signals), thermal control systems (optimization of hardware for 
+varied environments between earth and martian phases) and design, development and 
+qualification of deepspace mission specific hardware like Delta Differntial Oneway
+Ranging instrument for the first time. Providing navigational solutions with utmost 
+precision for critical events like earth bound maneuvers, Trans Mars Injection, 
+Trajectory Correction Maneuvers and Mars Orbit Injection was another area of major 
+challenge successfully overcome by ISRO. 
+</p>
+
+<p>
+The presentation provides more details of above aspects of Indian Mars Orbiter Mission.
+</p>
+<h4><u>Profile of Mr. S. Arunan</u></h4>
+<p>
+Shri. S. Arunan joined VIkram Sarabhai Space Centre (VSSC) of Indian Space Research Organisation in the year 1985 after completing graduation in Engineering from Madras University.
+Before joining ISRO Satellite Centre (ISAC), Bangalore at 1998, he worked as Project Engineer and Project 
+Manager in the areas of Cryogenic Propulsion for GSLV and Control System for PSLV in Vikram Sarabhai 
+Space Centre.
+</p>
+<p>
+He held the positions of Deputy Project Director for Technology Experiment Satellite (TES), Cartosat-1, 
+Chandrayaan-1 and Associate Project Director for Chandrayaan-2 before he took up current 
+responsibility of Project Director, Mars Orbiter Mission.
+</p>
+
+	</div>
+	</td>
+	<td rowspan=4 style="text-align: left;"><b>Session Chair:</b><br/>Prof. K.V.S. Hari,<br/> ECE</td>
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>11.45 - 12.05</td>
+		<td><b>Dr. Sridharan Devarajan</b>, CNS, IISc <br>
+		<i>Large Scale Neural Models of Brain Function</i></td>
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>12.05 - 12.25</td>
+		<td><b>Prof. S.P. Arun</b>, CNS, IISc <br>
+		<i>Bioengineering in IISc</i></td>
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>12.25 - 12.55</td>
+		<td><b>Dr. V. Murugesan</b>, SERC, IISc <br>
+		<i>Role of Computation in Fundamental Understanding of Optical Processes</i></td>
+	</tr>
+	<tr>
+		<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>
+                Lunch Break</td></center></font>
+		
+	</tr>
+	<tr>
+		<td width=110px bgcolor=#ccccff>2.00 - 3.40</td>
+		<td colspan=2><a href="javascript:toggle('tt2');"><b>Session 2 (Algorithms and Applications) Click to toggle details</b></a>
+<div id="tt2" style="display: none">
+<ul>
+<li><font color="cc0000">Prateek Jha (M.Sc., ECE): </font>Towards Smart Bandages</li>
+<li><font color="cc0000">Shalini Kaleeswaran (Ph.D, CSA): </font>Program Repair by Automated Generation of Hints</li>
+<li><font color="cc0000">Abhay Sharma (Ph.D, ECE): </font>Finding a subset of non-defective items from a large population: Fundamental limits and efficient algorithms</li>
+<li><font color="cc0000">Maria Francis (Ph.D, CSA): </font>Grobner Basis Algorithms for Polynomial Ideal Theory Over Noetherian Rings</li>
+<li><font color="cc0000">Farhad Merchant (Ph.D, SERC): </font>Algorithm-Architecture Co-design for NLA</li>
+</ul>
+<b>Session Chairs</b><br/>
+Dr. Arnab Bhattacharyya, IISc<br/> 
+Dr. Rajeev Shorey, TCS Innovation Labs, Bangalore <br/>
+</div>
+</td>
+	</tr>
+	<tr>
+		<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>
+                Coffee Break</td></center></font>
+		
+	</tr>
+	<tr>
+		<td width=110px bgcolor=#ccccff>4.00 - 4.20</td>
+		<td><b>Dr. Jay Warrior</b>, RBCCPS, IISc<br>
+                <i>Research to Application: Translating Technology for Impact</i></td>
+		<td rowspan=4 style="text-align: left;"><b>Session Chair:</b><br/>Prof. Jayant Haritsa,<br/> CSA</td>
+	</tr>
+	
+	<tr>
+		<td width=110px bgcolor=#ccccff>4.20 - 4.40</td>
+		<td><b>Prof. Chandra Kishen</b>, CISTUP, IISc<br>
+                <i>Problems Related to Intelligent Urban Planning - Smart Cities</i></td>
+	</tr>
+
+	<tr>
+                <td width=110px bgcolor=#ccccff>4:40 - 5:10</td>
+		<td><b>Dr. Chandramani Singh</b>, ESE, IISc<br>
+                <i>Proportionally Fair Spatial Aloha for Poisson Networks</i></td>
+	</tr>
+
+	<tr>
+                <td width=110px bgcolor=#ccccff>5:10 - 5:40</td>
+		<td><b>Dr. Aditya Gopalan</b>, ECE, IISc<br>
+                <i>Sequential Decision Making in Complex Environments</i></td>
+	</tr>
+
+	<tr>
+		<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>
+                High Tea</td></center></font>
+		
+	</tr>
+	
+	<tr>
+                <td width=110px bgcolor=#ccccff>6.00 - 8.20</td>		
+<td colspan=2><a href="javascript:toggle('tt3');"><b>Session 3 (Networks and Games) Click to toggle details</b></a>
+<div id="tt3" style="display: none">
+<ul>
+<li><font color="cc0000">Kundan Kandhway (Ph.D, ESE): </font>Campaigning in Heterogeneous Social Networks: Optimal Control of Sl Information epidemics</li>
+<li><font color="cc0000">Arun Rajkumar (Ph.D, CSA): </font>Ranking from Pairwise Preferences: The role of the Pairwise Preference Matrix</li>
+<li><font color="cc0000">Shweta Jain (Ph.D, CSA): </font>Multi-armed Bandit Mechanisms</li>
+<li><font color="cc0000">Chandrashekar L. (Ph.D, CSA): </font>Approximate dynamic Programming</li>
+<li><font color="cc0000">Swapnil Dhamal (Ph.D, CSA): </font>Models and Methods for formation and Analysis of Social Networks</li>
+<li><font color="cc0000">Satyanath Bhat (Ph.D, CSA): </font>Mechanism Design with Interdependent Values</li>
+<li><font color="cc0000">Pankaj Dayama (Ph.D, CSA): </font>Truthful Crowdsourcing Mechanisms with Application to Geo-Sensing</li>
+</ul>
+<b>Session Chairs</b><br/>
+Dr. Chandramani Singh, IISc <br/>
+Dr. Vinayaka Pandit, IBM Research <br/>
+</div>
+</td>
+	</tr>
+
+</table>
+		</div>
+		<div id="idTabSheetday2" class="sheetUnactive">
+
+<table width=820px border=1 cellpadding="5" cellspacing="5">
+       	<tr>
+                <td width=110px bgcolor=#ccccff>08.30 - 09.00</td>
+		<td colspan=2>Registration</td>
+	</tr>	
+	<tr>
+		<td bgcolor=#ccccff>09.00 - 10.40</td>
+<td colspan=2><a href="javascript:toggle('tt4');"><b>Session 4: (ML and Vision) Click to toggle details</b></a>
+<div id="tt4" style="display: none">
+<ul>
+<li><font color="cc0000">Avishek Chatterjee (Ph.D, EE): </font>High quality Photometric Reconstruction using a structured-light Stereo Depth Camera</li>
+<li><font color="cc0000">Sanath Narayan (Ph.D, EE): </font>Action Recognition in Videos using Trajectory Descriptors</li>
+<li><font color="cc0000">Harish Guruprasad Ramaswamy (Ph.D, CSA): </font>Consistent Algorithms for Multiclass Learning Problems under General Loss Matrices</li>
+<li><font color="cc0000">Prabuchandran K.J. (Ph.D, CSA): </font>Algorithms for Reinforcement Learning</li>
+<li><font color="cc0000">Ibrahim A. (Ph.D, EE): </font>Discovering Compressing Serial Episodes from Event Sequences</li>
+</ul>
+<b>Session Chairs</b><br/>
+Dr. P.P. Talukdar, IISc <br/>
+Dr. Ravindra Babu, Flipkart<br/>
+</div>
+</td>
+	</tr>
+	<tr>
+		<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>
+                Coffee Break</td></center></font>
+		
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>11.00 - 11.45</td>
+		<td><b>Dr. Kumar N. Sivarajan</b>, Chief Technology Officer, Tejas Networks and Adjunct Faculty Member, ECE, IISc <br/>
+		<i>Opportunities to Make an Impact in Telecommunications</i><br/>
+		<a href="javascript:toggle('det2');"><b>Details...</b></a>
+		<div id="det2" style="display:none">
+	
+<h4>Abstract:</h4>
+<p>
+The top buzzwords in telecom today are IoT, 5G and SDN. First, I will
+briefly review these notions and discuss how they can transform the
+telecom networks of today. Then, I will discuss what we can do, especially
+from India, to make an impact in these areas. Finally, I will summarize
+our experience in developing Tejas Networks over the last 15 years into a
+telecom product company from Bangalore.
+</p>
+<h4><u>Biography:</u></h4>
+<p>
+Kumar N. Sivarajan serves as the Chief Technology Officer and is
+responsible for setting the technology and product direction for Tejas
+Networks. Prior to cofounding Tejas Networks, Kumar was an Associate
+Professor in the ECE Department, at IISc, and has recently rejoined ECE as
+an Adjunct Faculty member. Earlier he has worked with the IBM Thomas J.
+Watson Research Center, Yorktown Heights, New York.
+</p>
+<p>
+Kumar is co-author of the textbook `Optical Networks: A Practical
+Perspective' published in February 1998. He is a Fellow of the Indian
+National Academy of Engineering and a recipient of the Swarnajayanti
+Fellowship from the Department of Science & Technology. He is also a
+recipient of the IEEE Fortescue Fellowship and the IEEE Baker Prize Paper
+Award.
+</p>
+<p>
+Kumar holds a B. Tech. in EE (Electronics) from IIT, Madras, and a Ph.D.
+in EE from the California Institute of Technology. He is a distinguished
+alumnus of IIT, Madras.
+</p>
+
+
+
+		</div>
+	
+	
+	</td>
+<td rowspan=3 style="text-align: left;"><b>Session Chair:</b><br/>Prof. P.S. Sastry,<br/> EE</td>
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>11.45 - 12.15</td>
+		<td><b>Dr. Kunal Chaudhury</b>, EE, IISc<br>
+		<i>
+Localization of Point Clouds from Incomplete Distances: Review and
+Recent Progress
+</i></td>
+	</tr>
+	<tr>
+		<td bgcolor=#ccccff>12.15 - 12.45</td>
+		<td><b>Dr. Bhavana Kanukurthi</b>, CSA, IISc <br>
+		<i>Updatability of Error Correcting Codes</i></td>
+	</tr>
+	<tr>
+		<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>
+                Lunch Break</td></center></font>
+		
+	</tr>
+	<tr>
+		<td width=110px bgcolor=#ccccff>2.00 - 4.40</td>
+<td colspan=2><a href="javascript:toggle('tt5');"><b>Session 5 (Communications) Click to toggle details</b></a>
+<div id="tt5" style="display: none">
+<ul>
+<li><font color="cc0000">Arkaprovo Das (Ph.D, ECE): </font>Fast Solvers for Electromagnetic Applications</li>
+<li><font color="cc0000">Venugopalakrishna Y. R. (Ph.D, ECE): </font>Physical Layer Data Fusion algorithms for Cognitive Radio applications</li>
+<li><font color="cc0000">Siddhartha Sarma (Ph.D, ESE): </font>Optimal Power Allocation for Protective Jamming in wireless Networks: A flow based model</li>
+<li><font color="cc0000">Vikas Kumar Dewangan (Ph.D, ECE): </font>Role of Power-Control in Enhancing the Performance of Opportunistic Selection Schemes</li>
+<li><font color="cc0000">Parthajit Mohapatra (Ph.D, ECE): </font>Fundamental Limits of Communication in Interference Limited Environments</li>
+<li><font color="cc0000">Arpan Chattopadhyay (Ph.D, ECE): </font>Impromptu Deployment of wireless Sensor Networks</li>
+<li><font color="cc0000">Shilpa Rao (Ph.D, ECE): </font>Trade-offs and Performance analysis of energy Harvesting wireless Sensor Networks</li>
+<li><font color="cc0000">Sanjeev G (Ph.D, ECE): </font>Spectrum Sensing Techniques for cognitive Radio Applications</li>
+</ul>
+<b>Session Chairs</b><br/>
+Dr. Himanshu Tyagi, IISc<br/>
+Dr. Aditya Karnik, GE Research<br/>
+</div>
+</td>
+	</tr>
+	<!--<tr>
+		<td bgcolor=#AAAAAA colspan="2"><font color=blue><center>
+                Coffee Break</td></center></font>
+		
+	</tr>-->	
+	<tr>
+                <td width=110px bgcolor=#ccccff>4.40 - 6.15</td>
+		<td colspan=2><b>Poster Presentation</b></td>
+	</tr>
+
+	<tr>
+                <td width=110px bgcolor=#ccccff>6.15 - 7.30</td>
+		<td colspan=2>
+			<b><u>Valedictory and Alumni Meet</u></b><br/>
+			<b>Session Chairs:</b><br/>
+			Prof. R. Govindarajan, SERC <br/>
+			Prof. Joy Kuri, DESE <br/>
+		</td>
+	</tr>
+
+</table>
+<br/>
+<br/>
+</div>
+
+
+</div>
+	
+	<div id="sidebar">
+	 <ul><br/><br/>	
+            <li><a href="index.html">HOME</a></li><br/>	
+            <li><a href="committee.html">COMMITTEE</a></li><br/>	
+            <li><a href="schedule.html">SCHEDULE</a></li><br/>	
+            <li><a href="related.html">RELATED LINKS</a></li><br/>	
+	    <li><a href="gallery.html">GALLERY</a></li><br/>	
+	    <li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>	
+            <li><a href="EECS_2015_proceeding.pdf">PROCEEDINGS</a></li><br/>
+         </ul> 
+
+<br/>
+	<br/>
+	<br/>
+	<br/>
+	<h4> Sponsors: </h4>
+	<img src="./img/adobe.png" width="30%"></img><br/><br/>
+        <div class='img-container'>
+		<img src='./img/xrci.png'  width="45%" style="display:inline-block;"/>
+		<img src='./img/flipkart.png' width="45%" style="display:inline-block;" />
+	</div>
+
+
+	</div>
+	<div id="footer">
+	</div>	
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+for i in *.JPG; do 
+convert "$i" -resize 200x100 "$i"; done

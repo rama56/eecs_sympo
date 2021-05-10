@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EECS Research Students Symposium - 2015</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Demo of a simple 2 column css layout" />
+
+<style type="text/css">
+body {font: normal 16px/1.5em helvetica, arial, sans-serif}
+p {text-align:center}
+
+#container {
+	width:1100px;
+	margin:-10px auto;
+}
+
+#header {
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:10px;
+}
+
+#content {
+	float:right;
+	width:836px;
+	text-align:center;	
+	background:#FFF;
+	padding:5px 5px
+}
+
+#sidebar {
+	float:left;
+	width:250px;
+	text-align:center;
+	background: #2D3193;
+	color:#FFF;
+	padding:2px 2px
+}
+
+#footer {
+	clear:both;
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:10px;	
+}
+
+#sidebar a {
+	color: #FFF;
+	text-decoration: none;
+}
+		
+#sidebar a:hover {
+	color: #06C;
+	text-decoration: none;
+}
+
+#sidebar ul {
+	list-style: none;
+	list-style-type: none;  
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#content p {
+	text-align:justify;
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="container">
+	<div id="header">	
+	</div>
+
+	<div id="sidebar">
+		<img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+	</div>
+	
+	<div id="content" style="color: #2D31F3; background: #cFcFcF; text-align:left;">
+
+		<h1>EECS Research Students Symposium - 2015</h1>
+		<h3>February 12-13, 2015 </h3>
+		<h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+		<br/>
+		<br/>
+		<br/>
+	</div>
+	
+	
+	
+
+</div>
+
+<div id="container" style="background :#2D3193;">
+	
+<div id="content" style="text-align:justify;">
+<h3> Alumni event is scheduled at 5 PM, February 13, 2015. Registration details will be announced soon. </h3>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+</div>
+	
+	<div id="sidebar">
+	 <ul><br/><br/>	
+            <li><a href="index.html">HOME</a></li><br/>	
+            <li><a href="committee.html">COMMITTEE</a></li><br/>	
+            <li><a href="schedule.html">SCHEDULE</a></li><br/>	
+            <li><a href="related.html">RELATED LINKS</a></li><br/>	
+	    <li><a href="gallery.html">GALLERY</a></li><br/>	
+	    <li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>	
+         </ul> 
+	</div>
+	<div id="footer">
+	</div>	
+
+</div>
+
+
+</body>
+</html>

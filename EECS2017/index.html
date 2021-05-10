@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EECS Research Students Symposium - 2017</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="EECS Symposium" />
+
+    <style type="text/css">
+        body {font: normal 16px/1.5em helvetica, arial, sans-serif}
+        p {text-align:center}
+
+        .fadein { position:relative; width:220px; height:170px; }
+        .fadein img { 
+            position:absolute;  
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            box-shadow: 2px 2px 0 0 #c1c1c1;
+            left:13px; top:0; bottom: 0; 
+        }
+
+        #container {
+            width:1100px;
+            margin:-10px auto;
+            background: #FFF;
+        }
+
+        #header {
+            text-align:center;
+            background: #2D6F93;
+            color:#fff;
+            height:2px;
+        }
+
+        #content {
+            float:right;
+            width:836px;
+            text-align:center;  
+            background:#FFF;
+            padding:5px 5px
+        }
+
+        #sidebar {
+            float:left;
+            width:250px;
+            text-align:center;
+            background: #2D6F93;
+            color:#FFF;
+            padding:0px 2px
+        }
+
+        #footer {
+            clear:both;
+            text-align:center;
+            background: #2D6F93;
+            color:#fff;
+            height:2px; 
+        }
+
+        #sidebar a {
+            color: #FFF;
+            text-decoration: none;
+        }
+        
+        #sidebar a:hover {
+            color: #E1BFBF;
+            text-decoration: none;
+        }
+        
+        #sidebar ul {
+            list-style: none;
+            list-style-type: none;  
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #content p { 
+            text-align:left; 
+        }
+
+        #content-header {
+            color: #2D6F93; 
+            text-align: justify;
+            background-color:#FFF; 
+            background-image:url('iisc.png');
+            float: right;
+            width: 836px;
+            padding: 5px 5px;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+
+    </style>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.fadein img:gt(0)').hide();
+            setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 2000);
+        });
+    </script>
+    <script language="javascript"> 
+        function toggle(elementId) {
+            var ele = document.getElementById(elementId);
+            if(ele.style.display == "block") {
+                ele.style.display = "none";
+            }
+            else {
+                ele.style.display = "block";
+            }
+        } 
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">   
+        </div>
+        <div id="sidebar">
+            <img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+        </div>
+        
+        <div id="content-header">
+            <h1>EECS Research Students Symposium - 2017</h1>
+            <h3>April 07-08, 2017 </h3>
+            <h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <div id="content" style="text-align:justify; ">
+            <h1>EECS 2017 Symposium</h1>
+            <p>
+                Welcome to the Eighth Joint Research Students Symposium of the Departments of CDS, CSA, ECE, EE, and ESE at the 
+                Indian Institute of Science!
+            </p>
+
+            EECS-2017 primarily is a forum for presentations by senior research students (expecting to graduate in 2017) 
+            involving the Departments of 
+            Computational and Data Sciences <a href="http://cds.iisc.ac.in/">(CDS)</a>, 
+            Computer Science and Automation <a href="http://www.csa.iisc.ernet.in">(CSA)</a>, 
+            Electrical Communication Engineering <a href="http://www.ece.iisc.ernet.in">(ECE)</a>, 
+            Electrical Engineering <a href="http://www.ee.iisc.ernet.in">(EE)</a>, 
+            and Electronic Systems Engineering <a href="http://www.dese.iisc.ernet.in">(ESE)</a>.   
+            <br/>
+            <br/>
+
+            <!-- <h1>News</h1> -->
+            <!-- <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+                <tr>
+                    <td width=470 bgcolor="#EEF2F6" align=left valign=top>                                  
+                        <ul>
+                            <li><a href="shannon.html">Celebrating 100 years of Shannon.</a></li>
+                        </ul>
+                        <br><br><br><br><br>
+                        <table width=470 border=1 cellpadding=1 cellspacing=1 align=center>
+                            <tr>
+                                <td width=230 align=center>                         
+                                    <a href="https://www.facebook.com/IIScEECS2016/" target="_blank" >
+                                    <img src="social_facebook2.png" height="25" alt="Facebook - Become a fan!" /></a>                               
+                                </td>                           
+                                <td width=230  align=center>
+                                    <a href="https://twitter.com/eecs_iisc" target="_blank" >
+                                    <img src="social_twitter2.png" height="25" alt="Twitter - Follow us!" /></a>                                                    
+                                </td>                                                           
+                            </tr>                       
+                        </table>
+                    </td>
+                    <td width=350 bgcolor="#EEF2F6">
+                    
+                        <a class="twitter-timeline" 
+                            data-dnt="true" 
+                            href="https://twitter.com/eecs_iisc" 
+                            data-widget-id="723435569787719684"
+                            height=200
+                            data-chrome="nofooter">Tweets by @eecs_iisc</a>
+                    <script>
+                        !function(d,s,id)
+                        {
+                            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                            if(!d.getElementById(id))
+                            {js=d.createElement(s);
+                                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js,fjs);
+                            }
+                        }
+                        (document,"script","twitter-wjs");
+                    </script>                   
+                    </td>
+                </tr>
+            </table> -->                                        
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <!-- Did this because br is not working -->            
+            <br>
+            <h1>Keynote Speakers and Special Invitees</h1>
+            
+
+
+            <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+                <tr>
+                    <td width=100 bgcolor="#EEF2F6" align=center>
+                        <img src="http://www.isac.gov.in/directors/images/annadurai.jpg" width="100%"></img>
+                    </td>
+                    <td width=650 bgcolor="#EEF2F6">
+                        <font size=3 face=verdana>
+                            <b><a href="http://www.isac.gov.in/directors/annadurai.jsp">M. Annadurai</a></b>
+                            <br>
+                            Director, ISRO Satellite Centre (ISAC), Bangalore.<br>
+                            <br><br><br>
+                            <a href="javascript:toggle('detailsMA');"><b>Future Satellites and Technologies</b></a> 
+                            <br> 
+                            <i>Friday : 10:15 - 11:00</i><br>
+                        </font>
+                        
+                        <div id="detailsMA" style="display:none">
+                            <h4><u>Abstract</u></h4>
+                            <p class="justify">
+                                In the modern era of Science & Technology, Satellites have become an integral part of National development. The benefits of satellites are exponentially increasing and its usage has become imperative in every walk of life for a common man. Towards this, the Future Satellite Programme is highly challenging and demands for the realisation of 12-18 Satellites per annum covering a wide spectrum of application areas like Communication, Meteorology, Navigation, Remote Sensing & Interplanetary missions with advanced technology demonstrations.
+                            </p>
+                            <p>
+                                The Communication satellite programme primarily focuses on bridging the gap of demand Vs capability of huge transponder requirements through High Throughput Satellite(HTS). The Advanced HTS is capable of handling 10-15 KW power to meet the country’s requirements in the communication sector. Further, advanced technologies like Electric propulsion system, I-6k bus developments, LEON 3 processor developments , large power handling systems, 18m unfurlable antenna  etc  are some of the critical technologies that are being pursued  to provide a High quality communication service.
+                            </p>
+                            <p>
+
+                                The Ever increasing demands for Remote Sensing Satellite calls for the need of  advanced technology demonstration like miniaturisation, onboard computer, onboard autonomy, advanced memory modules and data handling systems , large optics development etc in the Optical & Microwave Imaging domains for national natural resource management. Notwithstanding this, the programme also focuses on building sub-metre resolution satellites to meet the needs of varied user segments. Further the centre is also working on building GEO imaging Satellite that will be a technology breakthrough in the Remote sensing area catering to varied thematic application sectors for country’s development. 
+                                Navigation is another important domain wherein the continuations of 7 satellite NAVIC constellation are being carried out. The NAVIC Constellation has also provided a platform for the participation of Industries in Satellite building Activities. The centre is marching towards realisation of next generation of navigation satellites with enhanced position accuracy services. </p>
+                            <p>
+                                 Over and above, the spirit of scientific temper and a move towards exploration of outer space is in full swing with the challenging Lander & Rover technologies, space docking experiments, interplanetary mission studies, XpoSat Mission, Aditya L1 Missions etc on the anvil. Critical scientific instrument developmental activities are being carried out jointly with the active participation of Science & Research Institutes </p>
+                                    <p> The decadal achievements of Satellite programme has matured and the entire Satellite programme is undergoing a phenomenal change with a dual focus on Research & Development Activities as well as to scale up the satellite building capacity through active participation of Indian Industries in space sector.The lecture will highlight potential areas of Research both in short term basis and long term basis.
+                            </p>    
+                                <h4><u>Bio</u></h4>
+                                <p class="justify">
+                                    Dr. Annadurai is currently Director, ISRO Satellite Centre (ISAC), Bangalore.
+                                </p>
+
+                                <p style="text-align: justify;"> 
+                                 Dr Annadurai graduated in Electronics and Communication
+                                 Engineering from Government College of Technology,
+                                 Coimbatore, obtained his Post Graduate degree in Applied Electronics
+                                 from the PSG College of Technology, Coimbatore and Doctoral degree from
+                                 the Anna University.
+                             </p>   
+                             <p style="text-align: justify;">
+                                Joining ISRO in 1982, Dr Annadurai began his career at ISAC as
+                                the team leader to design and develop Software Satellite Simulator.
+                                During the period 1992 -2005, Dr Annadurai was the lead member of
+                                ISRO's satellite mission team and managed eight INSAT Missions
+                                as the Mission Director and brought about the efficient ground
+                                automation for satellite operations. As Project Director,
+                                Dr Annadurai made the most crucial contribution to the realisation of
+                                India's first Lunar Mission, Chandrayaan-1, which won many
+                                awards including the prestigious Space Pioneer Award, 2009.
+                                In 2011, Dr Annadurai became the Programme Director of
+                                Indian Remote Sensing Satellites (IRS) and Small Satellite Systems (SSS)
+                                and realised five satellite projects. His other major contribution
+                                is the realisation of the successful Mars Orbiter Mission in record time.                                 
+                            </p>
+                            <p style="text-align: justify;">
+                             Notable among the numerous awards and honours received by Dr. Annadurai,
+                             are the ISRO Team Excellence award-2007, ISRO Merit Award-2009,
+                             ISRO Team excellence award-2010, ISRO Outstanding Achievement Award-2014,
+                             National Aeronautical Award-2008 from Aeronautical Society of India,
+                             Rajyotsava Award for Science (2008) from Government of Karnataka,
+                             Hari Om Ashram Prerit Vikram Sarabhai Research Award (2004),
+                             C.P.A. Adithanar Literary Award 2013,
+                             Vivekananda Human Excellence Award, 2014 from Ramakrishna Mission,
+                             HK Firodia Award 2007, Sri Chandrasekharendra Saraswati National Eminence Award,
+                             2009 for Science and Technology, American Institute of Aeronautics and
+                             Astronautics Space Systems Award, 2009,
+                             Certificate of Appreciation from Boeing Asia-America Professional Association, USA
+                             and Laurels for Team Achievement - Chandrayaan-1 from International
+                             Academy of Astronautics, 2013, Beijing.
+                             Five universities have conferred Doctor of Science on him.
+                         </p>
+
+                         <p style="text-align: justify;">
+                            Dr Annadurai is a Fellow of International Astronautical Federation,
+                            Fellow of The Society for Shock Wave Research and
+                            a member of International Lunar Network Enabling Technologies Group.
+                            He has been awarded the prestigious Padma Shri, 2016
+                            for his contributions in the field of Science & Engineering
+                            by the President of India.    
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+<table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+    <tr>
+        <td width=100 bgcolor="#EEF2F6" align=center>
+            <img src="assets/p.anandan.jpg" width="100%"></img>
+        </td>
+        <td width=650 bgcolor="#EEF2F6">
+            <font size=3 face=verdana>
+                <b><a href="https://www.linkedin.com/in/p-anandan-72124b120/">P. Anandan</a></b>
+                <br>
+                Vice President for Research, Adobe<br>
+                <br><br><br>
+                <a href="javascript:toggle('detailsPA');"><b>How Data Science, Machine Learning, and AI are Transforming the Consumer Experience</b></a><br>
+                <i> Saturday : 10:35 - 11:20 </i><br>
+            </font>
+            
+            <div id="detailsPA" style="display:none">
+                <h4><u>Abstract</u></h4>
+                <p style="text-align: justify;">
+                    During the last two decades the experience of consumers has been undergoing a fundamental and dramatic transformation - giving a rich variety of informed choices, online shopping, consumption of news and entertainment on the go, and personalized shopping experiences.  All of this has been powered by the massive amounts of data that is continuously being collected and the application of machine learning, data science and AI techniques to it.
+                </p>
+                <p style="text-align: justify;">
+                    Adobe is a leader the Digital Marketing and is the leading provider of solutions to enterprises that are serving customers both in the B2B and B2C space.  In this talk,  we will outline the current state of the industry and the technology that is behind it, how Data Science and Machine Learning are gradually beginning to transform the experiences of the consumer as well as the marketer. We will also speculate on how recent developments in Artificial Intelligence will lead to deep personalization  and richer experiences for the consumer as well as more powerful and tailored end-to-end capabilities for the marketer.
+                </p>
+                <h4><u>Bio</u></h4>
+                <p style="text-align: justify;">
+                    P. Anandan is responsible for developing research strategy for Adobe, especially in the Artificial Intelligence and Machine Learning as applied to Digital Marketing and for leading the Adobe India Research lab.
+                </p>
+                <p style="text-align: justify;">
+                    Prior to Adobe, Anandan was Distinguished Scientist and Managing Director of Microsoft Research Outreach. Previously, he was Distinguished Scientist and Managing Director at Microsoft Research India, which he founded in December 2004 in Bangalore, India. He joined Microsoft Research in Redmond, Washington in 1997, where he founded and built the Interactive Visual Media group. Before joining Microsoft Anandan was the Head of Video Information Processing research at Sarnoff Corporation from 1991-1997.  He was an Assistant Professor of Computer Science at Yale University from 1987-1991.
+                </p>
+                <p style="text-align: justify;">
+                    Anandan holds an undergraduate degree in electrical engineering from the Indian Institute of Technology Madras, a master of science in computer science from the University of Nebraska, Lincoln, and a Ph.D. in computer science from the University of Massachusetts, Amherst. He is a Distinguished Alumnus of the University of Massachusetts as well as of IIT Madras, and has been inducted to the Nebraska Hall of Computing.  During a research career spanning over three decades Anandan has also done pioneering research in Computer Vision, specifically in the area of visual motion analysis and optical flow estimation.
+                </p>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+    <tr>
+        <td width=100 bgcolor="#EEF2F6" align=center>
+            <img src="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/padmanab.jpg" width="100%"></img>
+        </td>
+        <td width=650 bgcolor="#EEF2F6">
+            <font size=3 face=verdana>
+                <b><a href="https://www.microsoft.com/en-us/research/people/padmanab/">Venkat Padmanabhan</a></b>
+                <br>
+                Principal Researcher, Microsoft Research India, Bangalore.<br>
+                <br><br><br>
+                <a href="javascript:toggle('detailsVP');"><b>Pondering Hard Questions through Vignettes on Research</b></a><br>
+                <i> Friday : 11:30 - 12:15 </i><br>
+            </font>
+            
+            <div id="detailsVP" style="display:none">
+                <h4><u>Abstract</u></h4>
+                <p style="text-align: justify;">
+                    How should I pick a research problem? What counts as impact?
+                    When will my work get noticed? These are some questions that
+                    many of us researchers struggle with.
+                    I don't claim to have all the answers, but I'll share some
+                    thoughts through a few vignettes on my research in networked
+                    and mobile systems over the years, both the successes and the
+                    missed opportunities. This talk isn't intended to be prescriptive
+                    and especially the students in the audience are cautioned
+                    not to treat it as such!
+                </p>
+                <h4><u>Bio</u></h4>
+                <p style="text-align: justify;">
+                    Venkat Padmanabhan is a Principal Researcher at Microsoft Research India,
+                    where he founded the Mobility, Networks, and Systems group in 2007.
+                    He was previously with Microsoft Research Redmond, USA for nearly 9 years.
+                    Venkat's research interests are broadly in networked and mobile systems,
+                    and his work over the years has led to highly-cited papers and paper awards,
+                    technology transfers within Microsoft, and also industry impact.
+                    He received the Shanti Swarup Bhatnagar Prize and the inaugural
+                    ACM SIGMOBILE Test-of-Time paper award, both in 2016.
+                    Venkat holds a B.Tech. from IIT Delhi and an M.S. and a Ph.D. from UC Berkeley,
+                    all in Computer Science, and has been elected a Fellow of the INAE, the IEEE,
+                    and the ACM. He can be reached online at <a href="http://research.microsoft.com/~padmanab/">http://research.microsoft.com/~padmanab/</a> 
+                </p>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+    <tr>
+        <td width=100 bgcolor="#EEF2F6" align=center>
+            <img src="assets/vinay.jpg" width="100%"></img>
+        </td>
+        <td width=650 bgcolor="#EEF2F6">
+            <font size=3 face=verdana>
+                <b><a href="https://www.linkedin.com/in/vinayvkulkarni/">Vinay Kulkarni</a></b>
+                <br>
+                Chief Scientist and Head of Software Systems Research, Tata Consultancy Services, Pune, India<br>
+                <br><br><br>
+                
+                <a href="javascript:toggle('detailsVK');"><b>Toward a compliant, adaptive, and model driven digital enterprise</b></a>  
+                <br>
+                <i> Friday : 15:45 - 16:30 </i>
+                <br>
+            </font>
+            
+            <div id="detailsVK" style="display:none">
+                <h4><u>Abstract</u></h4>
+                <p style="text-align: justify;">
+                    Modern enterprises face an unprecedented regulatory regime.
+                    The cost of compliance continues to grow with traditional compliance
+                    practices relying heavily on domain experts whose judgement determines
+                    what compliance means and how to reflect regulations onto the enterprise
+                    processes and data to make them compliant.
+                    Compliance management needs to be automated to the extent possible,
+                    so that compliance can be proved quickly, reliably, and maintained
+                    through time- and geography-specific variations - while keeping the
+                    business efficient. The talk outlines an end-to-end regulatory
+                    compliance architecture and associated automation machinery.
+                </p>
+                <p style="text-align: justify;">
+                    Effective decision-making of modern organisation requires deep
+                    understanding of various aspects of organisation such as its goals,
+                    structure, business-as-usual operational processes, etc.
+                    The large size and complex structure of organisations,
+                    socio-technical characteristics, and fast business dynamics make
+                    decision-making a challenging endeavour. The state-of-practice
+                    relying heavily on human experts is turning out to be ineffective,
+                    imprecise, based on short-term implications and lacking in agility.
+                    The state-of-the-art is also found inadequate.
+                    The talk outlines a novel line of attack to the challenging problem
+                    of complex dynamic decision making.
+                </p>
+                <p style="text-align: justify;">
+                    Modern enterprises are complex systems of systems characterised by
+                    multiple stakeholders with possibly conflicting objectives,
+                    increasingly dynamic environment with a set of diverse change-drivers,
+                    and constant pressure to maximize growth opportunities while reducing
+                    “run-the-business” and “change-the-business” costs. Purely human-centric
+                    approach relying on expertise and past experience has turned out to be
+                    inadequate with the siloed nature of enterprises further exacerbating the
+                    situation. Several architectures such as sense-n-respond,
+                    MAPE (for Model, Analyse, Process and Execute) etc have been proposed
+                    but found ineffective due largely to absence of sophisticated technological
+                    support. Pervasive adoption of software systems that has led to
+                    digitization of enterprises offers an opportunity of which the talk
+                    provides a bird’s eye view.
+                </p>
+                <h4><u>Bio</u></h4>
+                <p style="text-align: justify;">
+                    Vinay Kulkarni is a Chief Scientist and Head of Software Systems Research at
+                    Tata Research Development Design Centre of Tata Consultancy Services (TCS).
+                    He is a member of the TCS Corporate Technology Council that oversees all R&D and
+                    innovation activities at TCS. His research interests include model-driven
+                    software engineering,
+                    self-adaptive systems, and enterprise modeling.
+                    His work in model-driven software engineering has led to a toolset
+                    that has been used to deliver several large business-critical systems
+                    over the past 20 years. Much of this work has found way into OMG standards,
+                    three of which Vinay contributed to in a leadership role.
+                    This work also received fair mention in respected international print media.
+                    Vinay has several patents to his credit, and has authored 100+ papers in
+                    scholastic journals and conferences worldwide. He is frequently invited to
+                    deliver talks at major conferences and events. Vinay has served as the
+                    conference and program chairperson for the premier ACM and IEEE
+                    international conferences in the area of software engineering;
+                    and is on technical program committees of many international conferences.
+                    Recently, Vinay got inducted as Fellow of Indian National Academy of Engineering.
+                    An alumnus of Indian Institute of Technology Madras, Vinay also serves as
+                    Visiting Professor at Middlesex University, London. 
+                </p>
+            </div>
+        </td>
+    </tr>
+</table>
+
+            <!-- <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+                <tr>
+                    <td width=100 bgcolor="#EEF2F6" align=center>
+                        <img src="./keynoteSpeakers/pramod.jpg" width="100%"></img>
+                    </td>
+                    <td width=650 bgcolor="#EEF2F6">
+                        <font size=3 face=verdana>
+                            <b><a href="https://www.linkedin.com/in/pramodkvarma">Pramod Varma</a></b>
+                            <br>
+                            Chief Architect and Technology Advisor,<br>
+                            Unique Identification Authority of India (UIDAI).
+                            <br><br><br>
+                            <i>"Building Identity Platform: Aadhaar Experience"</i>
+                        </font><br>
+                <a href="javascript:toggle('detailsPra');"><b>More information</b></a>
+                        <div id="detailsPra" style="display:none">
+                            <h4><u>Abstract</u></h4>
+                            <p>Aadhaar, India's Unique Identity Project, has become the largest biometric identity 
+                            system in the world, already covering more than 1 Billion people in just 5.5 years since 
+                            launch. Its strength lies in its design simplicity, sound strategy, and technology backbone! 
+                            Pramod Varma, who is the Chief Architect of Aadhaar and an iSpirt volunteer helping to design 
+                            various open APIs as part of Digital India, speaks about the architecture of Aadhaar.</p>
+                            <h4><u>Biography</u></h4>
+                            <p>Dr. Pramod Varma is currently the CTO for EkStep, a not-for-profit creating learner-centric, 
+                            technology enabled platform to improve applied literacy and numeracy.</p>
+                            <p>He continues to be the Chief Architect and Technology Advisor for Aadhaar (UID) project where 
+                            he is responsible for entire system architecture and strategic technology decisions. He joined UIDAI 
+                            in 2009 as part of the founding team and has been pivotal in ensuring an open, scalable, and secure 
+                            architecture is built to meet the needs of Aadhaar project. In addition, he also sits on the advisory 
+                            board of National Payment Corporation (NPCI), Goods and Services Tax Network (GSTN), and several 
+                            technology startups.</p>
+                            <p>Before joining UIDAI in July 2009, he was the Chief Technology Architect and Vice President of 
+                            Research at Sterling Commerce, now part of IBM. He worked across the organization and customers to 
+                            evangelize technology and helps product teams make strategic technology and architecture decisions. 
+                            He joined Sterling in 2005 when Sterling Commerce acquired Yantra Corporation, a leading supply chain 
+                            software company based in Boston, USA. He was one of the cofounders of Yantra Corporation and has 
+                            been anchoring all technology and architecture strategies. Before cofounding Yantra Corporation, he 
+                            began his career as part of the research team at Infosys Technologies.</p>
+                            <p>Over the past 20+ years, he has studied architectures spanning from mainframes to web and has worked 
+                            extensively with most programming languages and databases. He has researched and taught various 
+                            courses in Database Tuning, Distributed Computing, Internet Technologies, and Computer Architectures 
+                            among others.</p>
+                            <p>Pramod holds a Master’s and Ph.D. degree in Computer Science along with a second Master’s in Applied 
+                            Mathematics. His main areas of interest are Internet scale distributed architectures and intelligent 
+                            systems. He is passionate about technology, science, society, and teaching.</p>
+                        </div>                                                                      
+                    </td>
+                </tr>
+            </table>
+        -->
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <!-- Did this because br is not working -->
+        <h1>Invited  Talks</h1>
+        <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+            <tr>
+                <td width=100 bgcolor="#EEF2F6" align=center>
+                    <img src="http://ece.iisc.ernet.in/~vijay/img/pvk2.jpg" width="100%" alt="PVK image"></img>
+                </td>
+                <td width=650 bgcolor="#EEF2F6">
+                    <font size=3 face=verdana>
+                     <a href="http://ece.iisc.ernet.in/~vijay/"><b>P Vijay Kumar</b></a>
+                     <br>
+                     Department of Electrical Communication Engineering, IISc.
+                     <br><br><br>
+                     <a href="javascript:toggle('detailsPVK');"><b> A Beginning-Researcher's Guide to the Galaxy</b></a>
+                 </font> <br>
+                 <i> Friday : 17:00 - 18:00 </i>
+                 <br>
+
+                 <div id="detailsPVK" style="display:none">
+                    <h4><u>Abstract</u></h4>
+                    <p style="text-align: justify;">
+                       OK, so you have settled upon a career path in research. That’s good.
+                       A research career can be highly satisfying.   But how exactly do you go
+                       about conducting research ?  Is there an app for it ?   Perhaps.   What
+                       we do have though, is this talk in which we draw upon our past
+                       experience to present some tips, which hopefully will assist you in your
+                       efforts to set up a research plan.
+                   </p>
+                   <p style="text-align: justify;">
+                       While the talk is aimed primarily at the beginning researcher, it will
+                       likely be of general interest to all participants, not only because it
+                       draws from the collective experience of many researchers in the
+                       division, but also because it deals with issues that we all grapple with
+                       on a daily basis.
+                   </p>
+                   <h4><u>Bio</u></h4>
+                   <p style="text-align: justify;">
+                       P. Vijay Kumar received the B.Tech. and M.Tech. degrees from IIT Kharagpur and Kanpur respectively, and the Ph.D. degree from the University of Southern California (USC) in 1983. From 1983 to 2003 he was on the faculty of USC.  Since 2003, he has been on the faculty of the ECE Department of IISc Bengaluru. His research interests include algebraic coding theory and wireless communication. He received the 1995 IEEE Information Theory Society prize-paper award, a best-paper award at the DCOSS 2008 conference on sensor networks and the IEEE Data Storage best-paper award of 2011/2012.  A pseudorandom sequence family designed in a 1996 paper co-authored by him now forms the short scrambling code of the 3G WCDMA cellular standard.   He received the Prof. Rustum Choksi Award for Excellence in Research in Engineering in 2013 at IISc and was Tata Chem Chair Professor at IISc in 2013-2015.  He was a plenary speaker at the 2014 IEEE International Symposium on Information Theory and is a Fellow of the IEEE, INAE, IAS and INSA. 
+                   </p>
+               </div>                       
+           </td>
+       </tr>
+   </table>
+   <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+    <tr>
+        <td width=100 bgcolor="#EEF2F6" align=center>
+            <img src="assets/ndoraswamy.jpg" width="100%" alt="N Doraswamy image"></img>
+        </td>
+        <td width=650 bgcolor="#EEF2F6">
+            <font size=3 face=verdana>
+                <a href="https://www.linkedin.com/in/naganand-doraswamy-1141b01/"><b>Naganand Doraswamy</b></a>
+                <br>
+                Managing Director & Founder, Ideaspring Capital.
+                <br><br><br>
+                <a href="javascript:toggle('detailsND');"><b>A case for more start-ups from IISc</b></a><br>
+                <i> Saturday : 17:30 - 18:00 </i>
+                <br>
+            </font> 
+            
+            <div id="detailsND" style="display:none">
+                <h4><u>Abstract</u></h4>
+                <p style="text-align: justify;">
+                   Most of the visionary/innovative start-ups in technology require
+                   deep understanding both in technology and the smartness to map this
+                   technology to the future. IISc being the premier research institute in
+                   India is perfectly poised to support entrepreneurs/start-ups. With the
+                   start-up ecosystem maturing in India, IISc can take the leadership role in
+                   this area as start-ups are integral part of Innovation and bringing
+                   technology to the masses. The start-up ecosystem is hungry for this
+                   interaction and this has to be harnessed.
+               </p>
+               <h4><u>Bio</u></h4>
+               <p style="text-align: justify;">
+                   Naganand is the Founder and Managing Director of Ideaspring Capital-
+                   An stage VC firm focused on supporting start-ups in product innovation.
+                   Prior to this he was an entrepreneur with extensive experience in
+                   management and technology. He is an entrepreneur and is well networked in
+                   the community. He was the President of TiE Bangalore, and was on board of
+                   TiE Global trustees. He presently on the board of NASSCOM 10,000 start-up
+                   warehouse in Bangalore and member of FICCI start-up committee. He is on
+                   various committees of Government of Karnataka to further entrepreneurship.
+                   He is published author, published in journals and conferences and holds 8
+                   patents.  
+               </p>
+           </div>                    
+       </td>
+   </tr>
+</table>
+<table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+    <tr>
+        <td width=100 bgcolor="#EEF2F6" align=center>
+            <img src="http://cds.iisc.ac.in/wp-content/uploads/connections-images/sivaram-ambikasaran/Siva-4f263288d0d4c127ad54ff030751dee1-8bfb10e1967d9386f3fabd89c0cb375e.jpg" width="100%" alt="Sivaram Ambikasaran image"></img>
+        </td>
+        <td width=650 bgcolor="#EEF2F6">
+            <font size=3 face=verdana>
+                <a href="http://www.cds.iisc.ac.in/faculty/sivaram/"><b>Sivaram Ambikasaran</b></a>
+                <br>
+                Department of Computational and Data Sciences, IISc.
+                <br><br><br>
+                <a href="javascript:toggle('detailsSA');"><b>Fast algorithms for computational sciences.</b></a>
+            </font><br>
+            <i> Friday : 09:50 - 10:10 </i>
+            <br>
+            
+            <div id="detailsSA" style="display:none">
+                <h4><u>Abstract</u></h4>
+                <p style="text-align: justify;">
+                   I will present some of my work on the latest developments in fast matrix computations for computational science problems.
+               </p>
+               <h4><u>Bio</u></h4>
+               <p style="text-align: justify;">
+                After receiving his undergrad in Aerospace Engineering from IIT Madras in 2007, he moved to Stanford and obtain his Ph.D in Computational Mathematics in 2013. He then joined the Courant Institute of Mathematical Sciences as an Assistant Professor/Courant Instructor. In July 2015, he joined the faculty of ICTS-TIFR before moving to IISc as an Assistant Professor in April 2016. His research mainly focuses on constructing highly accurate fast algorithms leveraging Numerical Linear Algebra and Approximation theory.  
+            </p>
+        </div>
+
+    </td>
+</tr>
+</table>
+<table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+    <tr>
+        <td width=100 bgcolor="#EEF2F6" align=center>
+            <img src="http://drona.csa.iisc.ac.in/~barman/Siddharth_files/sidb.jpg" width="100%" alt="Siddharth Barman image"></img>
+        </td>
+        <td width=650 bgcolor="#EEF2F6">
+            <font size=3 face=verdana>
+                <a href="http://drona.csa.iisc.ac.in/~barman/"><b>Siddharth Barman</b></a>
+                <br>
+                Department of Computer Science and Automation, IISc.
+                <br><br><br>
+                <a href="javascript:toggle('detailsSB');"><b>Finding Equilibrium</b></a>
+            </font> <br>
+            <i> Saturday : 11:45 - 12:05 </i>
+            <br>
+            
+            <div id="detailsSB" style="display:none">
+                <h4><u>Abstract</u></h4>
+                <p style="text-align: justify;">
+                    Algorithmic game theory is an active and impactful area of research that in recent years has found many applications in the study of large strategic environments, such as online markets and auctions. A basic message that emerged from this area is in fact negative: determining game-theoretic solution concepts---e.g., Nash equilibria---is computationally hard in general.  But, given that such solution concepts are widely used in the design and analysis of strategic environments, these complexity barriers need to be addressed. Motivated by these considerations, in this talk I will present research directions that address hardness results for Nash equilibria, which are one of the most well-studied solution concepts in game theory. In particular, I will show that for a relevant class of two-player games an approximate Nash equilibrium can be efficiently determined. A key technical component of this work is an approximate version of Caratheodory's theorem; given the fundamental importance of Caratheodory's theorem, this approximate version is interesting in its own right.
+                </p>
+                <h4><u>Bio</u></h4>
+                <p style="text-align: justify;">
+                    Siddharth Barman is an Assistant Professor of Computer Science and Ramanujan Fellow at the Indian Institute of Science. Siddharth's research interests lie in the design, analysis, and applications of algorithms. His current research focuses on algorithmic game theory and approximation algorithms. Siddharth received his Ph.D. from the University of Wisconsin - Madison and held a postdoctoral position at the California Institute of Technology.
+                </p>                    
+            </td>
+        </tr>
+    </table>
+    <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+        <tr>
+            <td width=100 bgcolor="#EEF2F6" align=center>
+                <img src="http://www.ece.iisc.ernet.in/~kausikm/images/kausik.jpg" width="100%" alt="Kausik Majumdar image"></img>
+            </td>
+            <td width=650 bgcolor="#EEF2F6">
+                <font size=3 face=verdana>
+                    <a href="http://www.ece.iisc.ernet.in/~kausikm/"><b>Kausik Majumdar</b></a>
+                    <br>
+                    Department of Electrical Communication Engineering, IISc.
+                    <br><br><br>
+                    <a href="javascript:toggle('detailsKM');"><b>Externally Controlling Electronic Structure In Two Dimensional Monolayers</b></a>
+                </font> <br>
+                <i> Friday : 14:30 - 14:50 </i>
+                <br>
+                
+                <div id="detailsKM" style="display:none">
+                    <h4><u>Abstract</u></h4>
+                    <p style="text-align: justify;">
+                        Two dimensional layers of transition metal dichalcogenides (TMDs) exhibit strong optical activity in spite of their ultra-thin physical thickness. This has generated tremendous interest in two dimensional optoelectronic devices. The exciton binding energy is extremely high (0.3-0.6 eV) in these monolayers due to the out of plane carrier confinement, large carrier effective mass and small dielectric constant. Screening due to surrounding dielectric medium reshapes the electron-hole interaction potential and plays a pivotal role in deciding the binding energies of these strongly bound exciton complexes. However, owing to strong quasi-particle bandgap renormalization in such systems, a direct quantification of estimated shifts in binding energy in different dielectric media remains elusive using optical studies. I shall show that by changing the dielectric environment, one can obtain a large photoluminescence (PL) peak shift at low temperature for higher energy excitons (2s, 3s, 4s, 5s) in monolayer MoSe2, while the 1s exciton peak position remains unaltered - a direct evidence of varying compensation between screening induced exciton binding energy modulation and quasi-particle bandgap renormalization. The estimated modulation of binding energy for the 1s exciton is found to be 58.6% (70.5% for 2s, 78.9% for 3s, 85% for 4s) by coating an Al2O3 layer on top, while the corresponding reduction in quasi-particle bandgap is estimated to be around 0.25 eV. An example of the implications of such band structure change will be discussed in a real device application.
+                    </p>
+                    <h4><u>Bio</u></h4>
+                    <p style="text-align: justify;">
+                        Dr. Majumdar is an Assistant Professor in the Department of Electrical Communication Engineering at Indian Institute of Science. He works broadly on semiconductor devices with a focus on the physics of novel material systems and their applications in optoelectronics and nano-electronics.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+        <tr>
+            <td width=100 bgcolor="#EEF2F6" align=center>
+                <img src="http://www.ee.iisc.ac.in/people/faculty/prasantg/pics/prasanta_passport.jpg" width="100%" alt="Prasanta Kumar Ghosh image"></img>
+            </td>
+            <td width=650 bgcolor="#EEF2F6">
+                <font size=3 face=verdana>
+                    <a href="http://www.ee.iisc.ac.in/people/faculty/prasantg/"><b>Prasanta Kumar Ghosh</b></a>
+                    <br>
+                    Department of Electrical Engineering, IISc.
+                    <br><br><br>
+                    <a href="javascript:toggle('detailsPG');"><b>Smart Photoplethysmogram For Cuff-less Blood Pressure Measurement</b></a>
+                </font>  <br>
+                <i> Friday : 18:00 - 18:20 </i>
+                <br>
+                
+                <div id="detailsPG" style="display:none">
+                    <h4><u>Abstract</u></h4>
+                    <p style="text-align: justify;">
+                        Blood pressure (BP) is one of the vital signs that indicate current physical functioning of the body. BP is the measurement of the pressure or force of blood against the walls of arteries. Sphygmomanometer is typically used to measure systolic and diastolic blood pressure by increasing and gradually releasing the pressure in an inflatable rubber cuff applied to the arm. In this presentation, I shall talk about measuring BP using an estimated photoplethysmogram from a video of fingertip taken by the camera of a smartphone, referred to as smart photoplethysmogram. I shall summarize the challenges and present initial results which suggest that the smart photoplethysmogram has the potential for cuff-less BP monitoring.
+                    </p>
+                    <h4><u>Bio</u></h4>
+                    <p style="text-align: justify;">
+                        Prasanta Kumar Ghosh is an assistant professor in the department of Electrical Engineering (EE) at IISc.  He received his Ph.D. in Electrical Engineering from University of Southern California (USC), Los Angeles, USA in 2011.  Prior to that he obtained his M.Sc.(Engineering) in Electrical Communication Engineering from  Indian Institute of Science (IISc), Bangalore and B.E.(ETCE) in Electronics from Jadavpur University, Kolkata in 2006 and 2003 respectively. His research interests include non-linear signal processing methods with applications to speech and audio, audio visual signal processing and bio-medical signal processing. 
+                    </p>
+                </div>                   
+            </td>
+        </tr>
+    </table>
+    <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+        <tr>
+            <td width=100 bgcolor="#EEF2F6" align=center>
+                <img src="assets/hp.jpg" width="100%" alt="Hardik Pandya image"></img>
+            </td>
+            <td width=650 bgcolor="#EEF2F6">
+                <font size=3 face=verdana>
+                    <a href="http://beeslab.dese.iisc.ac.in/"><b>Hardik J. Pandya</b></a>
+                    <br>
+                    Department of Electronic Systems Engineering, IISc.
+                    <br><br><br>
+                    <a href="javascript:toggle('detailsHP');"><b>Towards a Portable Multi-Parameter Cancer Diagnostic Device</b></a>
+                </font><br>
+                <i> Saturday : 12:05 - 12:25 </i>
+                <div id="detailsHP" style="display:none">
+                    <h4><u>Abstract</u></h4>
+                    <p style="text-align: justify;">
+                       According to World Health Organization (WHO), cancer remains a global health problem and around 14.1 million new cancer cases were diagnosed in 2012 out of which 8.2 million people died. Breast cancer continues to be second largest cause of cancer-related female deaths in the world accounting for 12% amongst all cancer. Despite significant technological advances, screening and intraoperative procedures have remained largely unchanged for decades. The mechanical and electrical phenotyping has been demonstrated as a promising technique to study the progression of the breast cancer. Thus, a device capable of measuring alteration in mechanical, thermal, and electrical properties of the breast tissue quickly, accurately, and simultaneously will potentially open new avenues for breast cancer diagnosis. The design and fabrication of a Portable Multi-Parameter Cancer Diagnostic Device using 3D printing and micro-electro-mechanical-systems (MEMS) technology is presented. The novelty of this work is the simultaneous measurement of multiple tissue parameters, which can provide a deterministic and quantitative information of the tissue characteristics, including mechanical, electrical, and thermal characteristics of the normal tissue from the onset through disease progression of the tissue.
+                   </p>
+                   <h4><u>Bio</u></h4>
+                   <p style="text-align: justify;">
+                       Dr. Hardik J. Pandya is an Assistant Professor in the Department of Electronic Systems Engineering, Division of Electrical Sciences. He works on the integration of biology/medicine with microtechnology, nanotechnology and additive manufacturing to develop innovative tools to solve unmet clinical problems. His current research focuses on flexible sensors, microsensors, microfluidic devices, and microelectromechanical systems, all lately with an emphasis on cancer diagnosis, therapeutics, e-nose, and biomedical device technologies.  Before joining IISc, he worked as a postdoctoral scientist in the Department of Mechanical Engineering, Maryland Robotics Center, University of Maryland, College Park and in the Department of Medicine, Brigham and Women’s Hospital–Harvard Medical School affiliated with Harvard-MIT Health Science and Technology. His work has been highlighted as “Breaking Research News” by The Physicians Committee for Responsible Medicine and has been featured on IEEE Transactions on Biomedical Engineering July 2016 issue cover image as well as IEEE TBME July 2016 feature article for the website and monthly highlights. The work on portable cancer diagnosis tool was also featured on Science Translational Medicine as an Editorial Choice, Breast Cancer Diagnosis, March 2016 and has been highlighted on CapeRay blog as “Biochips and Diagnostic tools” in April 2016. 
+                   </p>
+               </div>                 
+           </td>
+       </tr>
+   </table>
+            <!-- <table width=820 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+                <tr>
+                    <td width=100 bgcolor="#EEF2F6" align=center>
+                        <img src="./facultyTalkPics/yogesh.jpg" width="100%"></img>
+                    </td>
+                    <td width=650 bgcolor="#EEF2F6">
+                        <font size=3 face=verdana>
+                            <a href="http://www.serc.iisc.ernet.in/~simmhan/"><b>Yogesh Simmhan</b></a>
+                            <br>
+                            Department of Computational and Data Sciences, IISc.
+                            <br><br><br>
+                            <i>"Exploring Distributed Platforms for Fast Data Analytics"</i>                            
+                        </font><br>
+                <a href="javascript:toggle('details1');"><b>More information</b></a>
+                        <div id="details1" style="display:none">
+                            <h4><u>Abstract</u></h4>
+                            <p>Fast data is a class of Big Data where events streaming at fast rates from hundreds of sources 
+                            need to be processed and analyzed with low latency. These data sources span social media such as 
+                            Twitter, transactions from eGovernance applications like Aadhaar, and observations from the Internet 
+                            of Things. This talk will introduce such fast data applications, identify gaps in existing Big Data 
+                            platforms to process such applications, and propose research directions on distributed processing 
+                            abstractions using elastic Cloud computing and wide-area Edge+Cloud execution paradigms to address 
+                            these gaps.</p>
+                            <h4><u>Brief Biography:</u></h4>
+                            <p>Yogesh Simmhan is an Assistant Professor at the Department of
+                                Computational and Data Sciences at the Indian Institute of Science,
+                                Bangalore. His research explores abstractions, algorithms and
+                                applications on distributed systems. These span Cloud Computing,
+                                Distributed Graph Processing Platforms and Elastic Stream Processing
+                                to support emerging "Big Data" and Internet of Things (IoT)
+                                applications. His research advances fundamental knowledge, and offers
+                                a practitioner's insight, on building scalable and resilient systems.
+                                He has won the IEEE TCSC SCALE Challenge Award and the IEEE/ACM
+                                Supercomputing HPC Storage Challenge Award. He is a Senior Member of
+                                IEEE and ACM, Associate Editor of IEEE Transactions on Cloud Computing
+                                and a member of the IEEE Future Directions Initiative on Big Data.
+                                Yogesh has a Ph.D. in Computer Science from Indiana University
+                                Previously, he was a Postdoc at Microsoft Research, San Francisco, a
+                                Research Assistant Professor at the University of Southern California,
+                                Los Angeles and Associate Director of the USC Center for Energy
+                                Informatics.</p>
+                        </div>                      
+                    </td>
+                </tr>
+            </table> -->
+            
+
+        </div>
+        
+        <div id="sidebar">
+            <ul><br/><br/>  
+                <li><a href="index.html">HOME</a></li><br/> 
+
+                <li><a href="callForAbstracts.html">CALL FOR ABSTRACTS</a></li><br/>                   
+                <li><a href="callForParticipation.html">CALL FOR PARTICIPATION</a></li><br/>
+                <li><a href="https://goo.gl/forms/sfJajzYJkt5quZLo1" target="_blank">APPLICATION FOR PARTICIPATION</a></li><br/>
+                <li><a href="schedule.html">SCHEDULE</a></li><br/>
+                <li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>  
+                <li><a href="committee.html">COMMITTEE</a></li><br/>                                                         
+                <li><a href="related.html">RELATED LINKS</a></li><br/>
+             <!-- <li><a href="schedule.html">SCHEDULE</a></li><br/>
+                <li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>                                   
+                
+             <li><a href="related.html">RELATED LINKS</a></li><br/> 
+             <li><a href="gallery.html">GALLERY</a></li><br/> -->    
+             <!--<li><a PROCEEDINGS>PROCEEDINGS</a></li><br/>--href="EECS_2015_proceeding.pdf"-->   
+         </ul> 
+
+         <br/>
+         <h4> Sponsors: </h4>
+         <a href="http://www.iisc.ac.in"><img src="./sponsors/IIsc_logo.jpg" width="40%"></img></a> <br/> <br>
+         <p>Platinum</p>
+         <a href="http://www.tcs.com"><img src="./sponsors/tcs.jpg" width="50%"></img></a><br/><br/>
+         <p>Silver</p>                                               
+         <div class='img-container'>
+           <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/"> <img src='./sponsors/ms.png'  width="70%" style="display:inline-block;"/></a><br/><br/>
+           <a href="http://labs.adobe.com/"> <img src='./sponsors/adobe.jpg' width="40%" style="display:inline-block;" /></a> <br> <br>
+           <a href="http://www.tek.com/"><img src="./sponsors/tektronix.png" width="70%" style="display:inline-block;""></img></a><br/><br/>
+           <a href="https://www.accenture.com/in-en/"><img src="./sponsors/accenture.jpeg" width="70%" style="display:inline-block;""></img></a><br/><br/>
+
+       </div> 
+        
+       <br>
+
+       <div >
+        <a class="twitter-timeline" 
+        data-dnt="true" 
+        href="https://twitter.com/eecs_iisc" 
+        data-widget-id="723435569787719684"
+        height=350
+        data-chrome="nofooter">Tweets by @eecs_iisc</a>
+        <script>
+            !function(d,s,id)
+            {
+                var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id))
+                    {js=d.createElement(s);
+                        js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js,fjs);
+                    }
+                }
+                (document,"script","twitter-wjs");
+            </script>                   
+        </div>
+
+            <!-- <div class="fadein">
+                <img src="indexPageSlideShow/image10.jpg" width="220" height="auto" alt="">
+            </div> -->  
+            <!-- <a href="http://www.ece.iisc.ernet.in/~divsymposium/EECS2015/gallery.html"><font size="2" color="white">Pictures from EECS2015</font></a> -->
+        </div>
+        <div id="footer" style="text-align:left">
+
+            <table width=1100 border=0 bordercolor=white cellpadding=0 cellspacing=0 align=left>
+                <tr>
+                    <td width=400 bgcolor="#FFF" align=left>
+                        <font size="2" color="gray" >Copyright: EECS Research Students Symposium, IISc</font>                   
+                    </td>
+                    <td width=250 bgcolor="#FFF" align=center>
+                        <a href="https://twitter.com/eecs_iisc" target="_blank" >
+                            <img src="social_twitter.png" height="20" alt="Twitter - Follow us!" /></a>                 
+                        </td>
+                        <td width=250 bgcolor="#FFF" align=center>
+                            <a href="https://www.facebook.com/IISc-EECS-Symposium-2017-1928297610740426/" target="_blank" >
+                                <img src="social_facebook.png" height="20" alt="Facebook - Become a fan!" /></a>                    
+                            </td>                                       
+                            <td width=200 bgcolor="#FFF" align=center>
+                                <a href="http://www.iisc.ernet.in/" target="_blank" >
+                                    <font size="2" color="gray" >IISc Home</font></a>                   
+                                </td>                   
+                            </tr>
+                        </table>                            
+                    </div>  
+                </div>
+
+            </body>
+            </html>
+        </a>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EECS Research Students Symposium - 2015</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Demo of a simple 2 column css layout" />
+
+<style type="text/css">
+body {font: normal 16px/1.5em helvetica, arial, sans-serif}
+p {text-align:center}
+
+#container {
+	width:1100px;
+	margin:-10px auto;
+}
+
+#header {
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:10px;
+}
+
+#content {
+	float:right;
+	width:836px;
+	text-align:center;	
+	background:#FFF;
+	padding:5px 5px
+}
+
+#sidebar {
+	float:left;
+	width:250px;
+	text-align:center;
+	background: #2D3193;
+	color:#FFF;
+	padding:2px 2px
+}
+
+#footer {
+	clear:both;
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:10px;	
+}
+
+#sidebar a {
+	color: #FFF;
+	text-decoration: none;
+}
+		
+#sidebar a:hover {
+	color: #06C;
+	text-decoration: none;
+}
+
+#sidebar ul {
+	list-style: none;
+	list-style-type: none;  
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#content p {
+	text-align:justify;
+}
+
+</style>
+<script language="javascript"> 
+function toggle(elementId) {
+        var ele = document.getElementById(elementId);
+        if(ele.style.display == "block") {
+                ele.style.display = "none";
+        }
+        else {
+                ele.style.display = "block";
+        }
+} 
+</script>
+
+</head>
+
+<body>
+<div id="container">
+	<div id="header">	
+	</div>
+
+	<div id="sidebar">
+		<img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+	</div>
+	
+	<div id="content" style="color: #2D31F3; background: #cFcFcF; text-align:left;">
+
+		<h1>EECS Research Students Symposium - 2015</h1>
+		<h3>February 12-13, 2015 </h3>
+		<h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+		<br/>
+		<br/>
+		<br/>
+	</div>
+	
+	
+	
+
+</div>
+
+<div id="container" style="background :#2D3193;">
+	
+<div id="content" style="text-align:justify;">
+<h1>EECS 2015 Symposium</h1>
+<p>Welcome to the Sixth Joint Research Students Symposium of the Departments of CSA, ECE, EE, ESE, and SERC at the Indian Institute of Science!</p>
+
+EECS-2015 primarily is a forum for presentations by senior doctoral students (expecting to graduate in 2015) involving the Departments of Computer Science and Automation <a href="http://www.csa.iisc.ernet.in">(CSA)</a>, Electrical Communication Engineering <a href="http://www.ece.iisc.ernet.in">(ECE)</a>, Electrical Engineering <a href="http://www.ee.iisc.ernet.in">(EE)</a>, Electronic Systems Engineering <a href="http://www.dese.iisc.ernet.in">(ESE)</a>, and Supercomputer Education and Research Centre <a href="http://www.serc.iisc.ernet.in">(SERC)</a>. This year's edition will comprise 30 presentations by doctoral students organized into five sessions:
+<ul>
+    <li>Electronics</li>
+    <li>Algorithms and Applications</li>
+    <li>Networks and Games</li>
+    <li>Machine Learning and Computer Vision</li>
+    <li>Communications</li>
+</ul>
+
+Highlights of EECS Symposium - 2015 include keynote talks, invited talks by inter-disciplinary centres in IISc, invited talks by faculty members of the five departments, poster presentations, and an Alumni Event. The symposium offers a splendid platform for exchange of state-of-the-art research ideas and for networking among students, faculty, industry researchers, and alumni. 
+
+<h1> Keynote Talks </h1>
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" valign="top" >
+<img src="./img/arunan.jpg" width="100%" align="top"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Shri Subbaiah Arunan</b></br>
+Project Director</br>
+Mars Orbiter Mission, ISRO (Recipient of "PADMASRI" in 2015)</br><br><br>
+<em>"Challenges and Execution of the Mars Orbiter Mission Project"</em><br>
+Thursday, February 12, 2015
+11.00-11.45 AM
+</font><br/>
+                <a href="javascript:toggle('details');"><b>Details...</b></a>
+        <div id="details" style="display:none">
+<h4>Abstract</h4>
+<p>
+Mars Orbiter Mission (MOM) is India’s first interplanetary mission conceived and
+executed to demonstrate ISRO’s technical capabilities and also to perform science
+experiments around Mars with indigenously developed scientific instruments. Mars
+Orbiter Mission spacecraft was built at ISRO Satellite Centre - Bangalore with payloads
+contributed by Space Application Centre - Ahmedabad, Space Physics Laboratory of
+Vikram Sarabhai Space Centre – Thiruvananthapuram and Laboratory for Electro Optics
+Sensor- Bangalore. The MOM spacecraft was launched from Satish Dhawan Space
+Centre - Shriharikota on November 5th 2013 by Polar Satellite Launch Vehicle – XL,
+India’s workhorse launch vehicle.
+</p>
+
+<p>
+The execution of MOM project involving various disciplines like satellite making,
+payloads realisation, launch vehicle adoptability, mission design and development and
+providing navigational solutions in a very short period of time - less than two years was
+a major challenge for ISRO. The findings of the study committee were used as the basic
+guidelines for the mission design and the vast experience of ISRO was used to adopt and
+modify various heritage systems for the Mars mission.
+</p>
+
+<p>
+The challenging areas of the mission were launch vehicle mission design, spacecraft
+system design like propulsion sytem (restart of liquid engine after nearly 300 days of
+hibernation), power system (solar panel to cater for requirements of both earth and
+martian phases), deepspace communication system (very long distance and varied on-
+board gain requirements), incorporation of host of on-board autonomy features (very
+long time of travel for signals), thermal control systems (optimization of hardware for
+varied environments between earth and martian phases) and design, development and
+qualification of deepspace mission specific hardware like Delta Differntial Oneway
+Ranging instrument for the first time. Providing navigational solutions with utmost
+precision for critical events like earth bound maneuvers, Trans Mars Injection,
+Trajectory Correction Maneuvers and Mars Orbit Injection was another area of major
+challenge successfully overcome by ISRO.
+</p>
+
+<p>
+The presentation provides more details of above aspects of Indian Mars Orbiter Mission.
+</p>
+<h4><u>Brief Biography of Mr. S. Arunan</u></h4>
+<p>
+Shri. S. Arunan joined VIkram Sarabhai Space Centre (VSSC) of Indian Space Research Organisation in the year 1985 after completing graduation in Engineering from Madras University.
+Before joining ISRO Satellite Centre (ISAC), Bangalore at 1998, he worked as Project Engineer and Project
+Manager in the areas of Cryogenic Propulsion for GSLV and Control System for PSLV in Vikram Sarabhai
+Space Centre.
+</p>
+<p>
+He held the positions of Deputy Project Director for Technology Experiment Satellite (TES), Cartosat-1,
+Chandrayaan-1 and Associate Project Director for Chandrayaan-2 before he took up current
+responsibility of Project Director, Mars Orbiter Mission.
+</p>
+
+        </div>
+
+
+</td>
+</tr>
+</table>
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" valign="top">
+<img src="./img/kumar.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Dr. N. Kumar Sivarajan</b></br>
+Chief Technology Officer</br>
+Tejas Networks</br><br><br>
+
+<em>"Opportunities to Make an Impact in Telecommunications"</em><br>
+Friday, February 13, 2015, 11.00-11.45 AM
+</font><br/>
+ <a href="javascript:toggle('det2');"><b>Details...</b></a>
+                <div id="det2" style="display:none">
+
+<h4>Abstract:</h4>
+<p>
+The top buzzwords in telecom today are IoT, 5G and SDN. First, I will
+briefly review these notions and discuss how they can transform the
+telecom networks of today. Then, I will discuss what we can do, especially
+from India, to make an impact in these areas. Finally, I will summarize
+our experience in developing Tejas Networks over the last 15 years into a
+telecom product company from Bangalore.
+</p>
+<h4><u>Biography:</u></h4>
+<p>
+Kumar N. Sivarajan serves as the Chief Technology Officer and is
+responsible for setting the technology and product direction for Tejas
+Networks. Prior to cofounding Tejas Networks, Kumar was an Associate
+Professor in the ECE Department, at IISc, and has recently rejoined ECE as
+an Adjunct Faculty member. Earlier he has worked with the IBM Thomas J.
+Watson Research Center, Yorktown Heights, New York.
+</p>
+<p>
+Kumar is co-author of the textbook `Optical Networks: A Practical
+Perspective' published in February 1998. He is a Fellow of the Indian
+National Academy of Engineering and a recipient of the Swarnajayanti
+Fellowship from the Department of Science & Technology. He is also a
+recipient of the IEEE Fortescue Fellowship and the IEEE Baker Prize Paper
+Award.
+</p>
+<p>
+Kumar holds a B. Tech. in EE (Electronics) from IIT, Madras, and a Ph.D.
+in EE from the California Institute of Technology. He is a distinguished
+alumnus of IIT, Madras.
+</p>
+</div>
+</td>
+</tr>
+</table>
+
+
+<h1>Invited Talks (Interdisciplinary Centres)</h1>
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/sparun.png" width=100%></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Prof. S.P. Arun</b></br>
+Centre for Neurosciences, IISc</br><br><br>
+
+<em>"Bioengineering in IISc"</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/sri.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Dr. Sridharan Devarajan</b></br>
+Centre for Neurosciences, IISc</br><br><br>
+
+<em>"Large Scale Neural Models of Brain Function"</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/jay.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Dr. Jay Warrior</b></br>
+Chief Technologist</br>
+Robert Bosch Centre for Cyberphysical Systems (RBCCPS), IISc</br><br><br>
+
+<em>"Research to Application: Translating Technology for Impact"</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/kishen.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Prof. J.M. Chandra Kishen</b></br>
+Chairman, Centre for Sustainable Transportation and Urban Planning (CISTUP), IISc</br><br><br>
+
+<em>"Problems Related to Intelligent Urban Planning - Smart Cities"</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+<h1>Faculty talks</h1>
+
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/bhavana.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>
+Dr. Bhavana Kanukurthi</b></br>
+Computer Science and Automation, IISc</br><br><br>
+
+<em>"Updatability of Error Correcting Codes"</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/aditya.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Dr. Aditya Gopalan</b></br>
+Electrical Communication Engineering, IISc</br><br><br>
+
+<em>"Sequential Decision Making in Complex Environments"</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/kunal.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Dr. Kunal Chaudhury</b></br>
+Electrical Engineering, IISc</br><br><br>
+
+<em>"Localization of Point Clouds from Incomplete and Noisy Distances: Intractability and Noisy Algorithms"
+</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/cm.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Dr. Chandramani Singh</b></br>
+Electronic Systems Engineering, IISc</br><br><br>
+
+<em>"Proportionally Fair Spatial Aloha for Poisson Networks"
+</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+
+<table width=825 border=0 bordercolor=white cellpadding=4 cellspacing=4 align=left>
+<tr>
+<td width=165 bgcolor="#EEF2F6" align=center>
+<img src="./img/mv.jpg" width="100%"></img>
+</td>
+<td width=600 bgcolor="#EEF2F6">
+<font size=3 face=verdana>
+<b>Dr. V. Murugesan</b></br>
+Supercomputer Education and Research Centre, IISc</br><br><br>
+
+<em>"Role of Computation in Fundamental Understanding of Optical Processes"</em><br>
+</font>
+</td>
+</tr>
+</table>
+
+
+
+</div>
+	
+	<div id="sidebar">
+	 <ul><br/><br/>	
+            <li><a href="index.html">HOME</a></li><br/>	
+            <li><a href="committee.html">COMMITTEE</a></li><br/>	
+            <li><a href="schedule.html">SCHEDULE</a></li><br/>	
+            <li><a href="related.html">RELATED LINKS</a></li><br/>	
+	    <li><a href="gallery.html">GALLERY</a></li><br/>	
+	    <li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>	
+	    <li><a href="EECS_2015_proceeding.pdf">PROCEEDINGS</a></li><br/>	
+         </ul> 
+<br/>
+	<br/>
+	<br/>
+	<br/>
+	<h4> Sponsors: </h4>
+	<img src="./img/adobe.png" width="30%"></img><br/><br/>
+        <div class='img-container'>
+		<img src='./img/xrci.png'  width="45%" style="display:inline-block;"/>
+		<img src='./img/flipkart.png' width="45%" style="display:inline-block;" />
+	</div>
+	</div>
+	<div id="footer">
+	</div>	
+
+</div>
+
+
+</body>
+</html>

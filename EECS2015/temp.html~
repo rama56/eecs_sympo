@@ -1,0 +1,24 @@
+<script>
+$(document).ready(function(){
+    $(".category-qms-expand").click(function(){
+        var id = $(this).attr("id");
+    var name = id.split("-")[1];
+    $("#category-qms-" + name).toggle(400);
+    if($(this).html() == "CLOSE"){
+        $(this).html("EXPAND");
+    }
+    else{
+        $(this).html("CLOSE");
+    }
+    return false;
+});
+});
+</script>
+
+
+
+
+<span> <a href="#" class="category-qms-expand" id="expand-cat1">EXPAND</a>Category Heading</span>
+<div id="category-qms-cat1" style="display:none">
+Expandable content in Category 1.
+</div>

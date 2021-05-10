@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EECS Research Students Symposium - 2016</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Demo of a simple 2 column css layout" />
+
+<script type="text/javascript">
+      <!--
+		var activeTab;
+		var activeSheet;
+
+		function setActiveTab(name){
+			tabHidden = document.getElementById('idActiveTabHidden');
+			initTab = document.getElementById('idTab' + initTabName);
+			initSheet = document.getElementById('idTabSheet' + initTabName);
+			if(initTab){
+				activeTab = initTab;
+			}
+			if(initSheet){
+				activeSheet = initSheet;
+			}
+			tab = document.getElementById('idTab' + name);
+			if(tab){
+				if(activeTab){
+					activeTab.className = 'tabUnactive';
+				}
+				tab.className = 'tabActive';
+				activeTab = tab;
+				if(tabHidden){
+					tabHidden.value = activeTab.id;
+				}
+			}
+			
+			sheet = document.getElementById('idTabSheet' + name);
+			if(sheet){
+				if(activeSheet){
+					activeSheet.className = 'sheetUnactive';
+				}
+				sheet.className = 'sheetActive';
+				activeSheet = sheet;
+			}
+			initTabName = "";
+		}
+	  //-->
+
+    </script>   
+	<script language="JavaScript">var initTabName;	initTabName = 'day1'; </script>
+
+
+
+<style type="text/css">
+body {font: normal 16px/1.5em helvetica, arial, sans-serif}
+p {text-align:center}
+
+#container {
+	width:1100px;
+	margin:-10px auto;
+}
+
+#header {
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:2px;
+}
+
+#content {
+	float:right;
+	width:836px;
+	text-align:center;	
+	background:#FFF;
+	padding:5px 5px
+}
+
+#sidebar {
+	float:left;
+	width:250px;
+	text-align:center;
+	background: #2D3193;
+	color:#FFF;
+	padding:0px 2px
+}
+
+#footer {
+	clear:both;
+	text-align:center;
+	background: #2D3193;
+	color:#fff;
+	height:2px;	
+}
+
+#sidebar a {
+	color: #FFF;
+	text-decoration: none;
+}
+		
+#sidebar a:hover {
+	color: #06C;
+	text-decoration: none;
+}
+
+#sidebar ul {
+	list-style: none;
+	list-style-type: none;  
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#content p {
+	text-align:justify;
+}
+
+.tabActive{
+				height: 20px;
+				padding-left: 2px;
+				padding-right: 2px;
+				border-top: 1px solid #008242;
+				border-right: 1px solid #008242;
+				border-left: 1px solid #008242;
+				background-color: #DDDDDD;
+				color: #0000CC;
+				font-size: 20px;
+				cursor: pointer;
+				text-align: center;
+				width: 160;
+			}                    
+
+			.tabUnactive{
+				height: 20px;
+				color: #00003D;
+				font-size: 20px;
+				cursor: pointer;
+				border-bottom: 1px solid #464646;
+				border-top: 1px solid #DCDCDC;
+				border-right: 1px solid #DCDCDC;
+				border-left: 1px solid #DCDCDC;
+				background-color: #white;
+				width: 160;
+			}
+			.tabUnactive:hover{
+				cursor: pointer;
+        		background: #808080;
+				color:#FFFFFF
+			}
+			.sheetUnactive{
+				display:none;
+			}
+			.sheetActive
+			{
+				display:block;
+				border-top:none;
+				padding:0px;				
+			}
+
+</style>
+<script language="javascript"> 
+function toggle(elementId) {
+	var ele = document.getElementById(elementId);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+  	}
+	else {
+		ele.style.display = "block";
+	}
+} 
+</script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">	
+		</div>
+		<div id="sidebar">
+			<img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+		</div>
+		
+		<div id="content" style="color: #2D31F3; text-align:left; background-color:#FFF; background-image:url('iisc.png'); ">
+			<h1>EECS Research Students Symposium - 2016</h1>
+			<h3>April 28-29, 2016 </h3>
+			<h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+			<br/>
+			<br/>
+			<br/>
+		</div>
+	</div>
+
+<div id="container" style="background :#2D3193;">
+	
+	<div id="content" style="text-align:justify;">
+
+		<table width="840" cellpadding="0" cellspacing="0" border="0">				
+			<tr>
+				<td width="36%" class="tabActive" onClick="setActiveTab('day1')" id="idTabday1" align='center' >April 28, 2016</td>
+				<td width="36%" class="tabUnactive" onClick="setActiveTab('day2')" id="idTabday2" align='center'>April 29, 2016</td>					
+			</tr>
+		</table>
+		
+		<div id="idTabSheetday1" class="sheetActive">
+
+			<table width=840px border=1 cellpadding="5" cellspacing="5">
+       		<tr>
+            	<td width=110px bgcolor=#ccccFF>08.30 - 08.55</td>
+					<td colspan=2>Registration</td>
+				</tr>
+				<tr>
+            	<td width=110px bgcolor=#ccccff>08.50 - 9.00</td>
+					<td colspan=2>Inauguration</td>
+				</tr>
+				<tr>
+					<td bgcolor=#ccccff>09.00 - 10.40</td>
+					<td colspan=2>
+						<a href="javascript:toggle('tt1');"><b>Session 1: OS, Architecture and HPC (Click to toggle details) </b></a>
+						<div id="tt1" style="display: none">
+							<ul>
+								<li><font>Aravinda Prasad and K. Gopinath: </font>
+									<a href="javascript:toggle('p1');">Prudent Memory Reclamation in Procrastination - Based Synchronization</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_16.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_16.pdf" target="_blank">Poster</a>									
+									<div id="p1" style="display: none">
+										<p>Procrastination is the fundamental technique used in synchronization mechanisms such as 
+										Read-Copy-Update (RCU) where writers, in order to synchronize with readers, defer the freeing 
+										of an object until there are no readers referring to the object. The synchronization mechanism 
+										determines when the deferred object is safe to reclaim and when it is actually reclaimed. 
+										Hence, such memory reclamations are completely oblivious of the memory allocator state. This 
+										induces poor memory allocator performance, for instance, when the reclamations are ill-timed. 
+										Furthermore, deferred objects provide hints about the future that inform memory regions that 
+										are about to be freed. Although useful, hints are not exploited by memory allocators. We 
+										introduce Prudence memory allocator that is tightly integrated with the synchronization 
+										mechanism to ensure visibility of deferred objects to the memory allocator. Such an integration 
+										enables Prudence to (i) identify the safe time to reclaim deferred objects’ memory, (ii) have 
+										an inclusive view of the allocated, free and about-to-be-freed objects, and (iii) exploit 
+										optimizations based on the hints about the future during important state transitions. Our 
+										evaluation in the Linux kernel shows that Prudence integrated with RCU performs 3.9X to 28X 
+										better in micro-benchmarks compared to the SLUB allocator. It also improves the overall 
+										performance perceptibly (4%-18%) for a mix of widely used synthetic and application 
+										benchmarks. Further, it performs better (up to 98%) in terms of various allocator attributes 
+										when compared with the SLUB allocator.</p>
+									</div>
+								</li>
+								<li><font>Kartik Nagar and Y. N. Srikant: </font>
+									<a href="javascript:toggle('p2');">Precise analysis of private and shared caches for tight WCET estimates</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_43.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_43.pdf" target="_blank">Poster</a>									
+									<div id="p2" style="display: none">
+										<p>Worst Case Execution Time (WCET) is an important metric for programs running on real-time 
+										systems, and finding precise estimates of a program's WCET is crucial to avoid wastage of 
+										computational resources. Caches have a major impact on a program's execution time, and 
+										accurate estimation of a program's cache behavior generally leads to significant reduction 
+										of its estimated WCET. However, in multi-path programs the same memory access can exhibit 
+										different cache behavior in different execution instances. This issue is further exacerbated 
+										in shared caches in a multi-core architecture, where interfering memory accesses from 
+										co-running programs on other cores can arrive at any time and modify the cache state. 
+										To ensure safe estimation of WCET, traditional cache analysis techniques try to statically 
+										find accesses which are guaranteed to hit the cache across all execution instances. However, 
+										this introduces significant imprecision in the final WCET estimate.<br>
+										
+										In our work, we take a fundamentally different approach to cache analysis, by trying to find 
+										lower bounds on the number of cache hits guaranteed across all execution instances. For 
+										shared cache analysis, we propose an Integer Linear Programming based approach and an 
+										algorithmic approach to find worst-case distribution of interfering accesses across a 
+										program. For private caches, we first obtain a precise relation between program paths and 
+										cache behavior, and then use this information to make precise predictions about number of 
+										guaranteed cache hits in a basic block and in the worst-case execution instance of the 
+										program.</p>
+									</div> 									
+								</li>		
+								<li><font>Somashekaracharya G Bhaskaracharya and Uday Bondhugula: </font>
+									<a href="javascript:toggle('p3');">Automatic Optimization of Arrays in Affine Loop-Nests</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_45.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_45.pdf" target="_blank">Poster</a>									 
+									<div id="p3" style="display: none">
+										<p>Efficient memory allocation is crucial for data-intensive
+										applications as a smaller memory footprint ensures better cache
+										performance. Consequently, larger problem sizes can be run given a
+										fixed amount of main memory. The solutions found by existing
+										techniques for automatic optimization of arrays in affine
+										loop-nests are often far from good or optimal. In this talk, we
+										present a new automatic storage optimization framework and
+										techniques which can be used to achieve intra-array as well as
+										inter-array storage reuse within affine loop-nests with a
+										pre-determined schedule.<br>
+										
+										Over the last two decades, several heuristics have been developed
+										for achieving complex transformations of affine loop-nests using
+										the polyhedral model. However, no comparably strong
+										heuristics exist for tackling the problem of automatic memory footprint
+										optimization. We bridge this gap by formulating the problem of
+										storage optimization as one of finding the right storage
+										partitioning hyperplanes: each storage partition corresponds to a
+										single storage location. Statement-wise storage partitioning
+										hyperplanes are determined that partition a unified global array
+										space so that values with overlapping live ranges are not mapped
+										to the same partition.<br>
+										
+										Storage reduction factors we report from a
+										polyhedral storage optimizer, SMO, developed using our storage
+										partitioning approach, demonstrate its effectiveness on several
+										benchmarks drawn from the domains of image processing, stencil
+										computations, high-performance computing, and the class of tiled
+										codes in general. The reductions in storage requirement over
+										previous approaches range from constant factors to asymptotic in
+										the loop blocking factor or array extents.</p>
+									</div> 
+								</li>
+								<li><font>Ashish Mishra, Y. N. Srikant and Aditya Kanade: </font>
+									<a href="javascript:toggle('p11');">Typestate Analysis for Android Applications</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_42.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_42.pdf" target="_blank">Poster</a>									
+									<div id="p11" style="display: none">
+										<p>Android is the fastest growing mobile OS platform, this has made it the sweetest
+										target for the attackers. Finding and removing any programming bug or error in
+										Android apps is quintessential for security. Many works perform program analysis to
+										track and debug such programming errors, but control flow in Android applications,
+										managed by the Android framework is hard to correctly reason about statically,
+										failing which, these analysis' are prone to both being imprecise and unsound.
+										Android developers access system and other critical resources like databases,
+										camera etc. via a set of exposed APIs. These resources have complex API usage
+										protocols which the developers must follow, failing which might lead to error or
+										runtime exceptions. These errors are hard to find and debug, and if undetected they
+										might form attack vectors for various attacks on data and resources. These errors
+										can be tracked via a Typestate analysis against the usage protocols. Here we
+										present a TypeState analysis for Android applications.This is the first Typestate
+										analysis for Android applications and the first static analysis work taking into
+										account the correct asynchronous control flow semantics of Android. We evaluate our
+										analysis on new benchmark apps, related to Typestate properties and we add them to
+										an earlier Android benchmark suite, DroidBench. We compare the results against a
+										typestate analysis built over control flow graph typical of what other static
+										analysis are using. We show empirically that we are more precise and miss lesser
+										violations compared to the model used by other analysis.</p>
+									</div>
+								</li>								
+								<li><font>Santhi Natarajan, Debnath Pal and S. K. Nandy: </font>
+									<a href="javascript:toggle('p5');">Accelerated and Accurate Alignment of Short Reads in High Throughput Next Generation Sequencing [NGS] Platforms</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_31.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_31.pdf" target="_blank">Poster</a>									 
+									<div id="p5" style="display: none">
+										<p>The genome of an organism encompasses the unique set of genetic instructions for every 
+										individual in a species. Understanding the genome involves determining the order of the 
+										constituent bases within the sequence, and the process is widely known as sequencing. Next 
+										Generation Sequencing (NGS) massively parallel sequencing of genetic data with high 
+										throughput. NGS offers an unparalleled interrogation of the genome, throwing deeper insight 
+										into the functional and structural investigation of genetic data. Classified as a complex 
+										big data engineering problem, Short Read Mapping (SRM) within the NGS pipeline presents 
+										profound technical and computing challenges. Existing solutions for accelerating SRM provide 
+										notable performance, while leveraging heuristics. In this context, we need precise, 
+										affordable, reliable and actionable results from SRM, to support any application, with 
+										uncompromised accuracy and performance. Here, we present a massively parallel and scalable 
+										archetype, for accurate alignment of short reads, at a fine grained single nucleotide 
+										resolution. The solution offers a complete coverage of the genome, including repeat 
+										regions in the reference and the redundancy in short reads. We present AccuRA, the 
+										reconfigurable hardware accelerator model for SRM, and GMAccS, the scalable GPGPU model for 
+										SRM. With a very efficient lookup algorithm, they offer full coverage for a read, within the 
+										repeat regions, as well as for redundant reads, thus reporting all the possible regions of 
+										alignment for every short read. The archetypes could successfully scale at multiple levels 
+										of granularity, while aligning the smaller archeal, bacterial and fungal genomes, to the 
+										much larger mammalian human genomes.</p>
+									</div>
+								</li>
+								<li><font>Unnikrishnan Cheramangalath, Rupesh Nasre and Y. N. Srikant: </font>
+									<a href="javascript:toggle('p6');">Falcon: A Graph Manipulation Language for Heterogeneous Systems</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_24.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_24.pdf" target="_blank">Poster</a>									
+									<div id="p6" style="display: none">
+										<p>Graph algorithms have been shown to possess enough parallelism to keep several computing 
+										resources busy—even hundreds of cores on a GPU. Unfortunately, tuning their implementation 
+										for efficient execution on a particular hardware configuration of heterogeneous systems 
+										consisting of multicore CPUs and GPUs is challenging, time consuming, and error prone. To 
+										address these issues, we propose a domain-specific language (DSL), Falcon, for implementing 
+										graph algorithms that (i) abstracts the hardware, (ii) provides constructs to write explicitly 
+										parallel programs at a higher level, and (iii) can work with general algorithms that may 
+										change the graph structure (morph algorithms). We illustrate the usage of our DSL to implement 
+										local computation algorithms (that do not change the graph structure) and morph algorithms 
+										such as Delaunay mesh refinement, survey propagation, and dynamic SSSP on GPU and multicore 
+										CPUs. Using a set of benchmark graphs, we illustrate that the generated code performs close 
+										to the state-of-the-art hand-tuned implementations.</p>
+									</div>
+								</li>
+								<li><font>Rajesh Thakur and Y. N. Srikant: </font>
+									<a href="javascript:toggle('p7');">Efficient Compilation of Stream Programs for Heterogeneous Architectures: A Model-Checking based Approach</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_34.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_34.pdf" target="_blank">Poster</a>									 
+									<div id="p7" style="display: none">
+										<p>Stream programming based on the synchronous data flow (SDF) model naturally exposes data, 
+										task and pipeline parallelism. Statically scheduling stream programs for homogeneous 
+										architectures has been an area of extensive research. With graphic processing units (GPUs) 
+										now emerging as general purpose co-processors, scheduling and distribution of these stream 
+										programs onto heterogeneous architectures (having both GPUs and CPUs) provides for challenging 
+										research. Exploiting this abundant parallelism in hardware, and providing a scalable 
+										solution is a hard problem.<br>
+										In this paper we describe a coarse-grained software pipelined scheduling algorithm for 
+										stream programs which statically schedules a stream graph onto heterogeneous architectures. 
+										We formulate the problem of partitioning the work between the CPU cores and the GPU as a 
+										model-checking problem. The partitioning process takes into account the costs of the required 
+										buffer layout transformations associated with the partitioning and the distribution of the 
+										stream graph. The solution trace result from the model checking provides a map for the 
+										distribution of actors across different processors/cores. This solution is then divided into 
+										stages, and then a coarse grained software-pipelined code is generated. We use CUDA streams 
+										to map these programs synergistically onto the CPU and GPUs. We use a performance model for 
+										data transfers to determine the optimal number of CUDA streams on GPUs. Our 
+										software-pipelined schedule yields a speedup of upto 55.86X and a geometric mean speedup of 
+										9.62X over a single threaded CPU.</p>
+									</div>
+								</li>
+								<li><font>Suvam Mukherjee and Deepak D'Souza: </font>
+									<a href="javascript:toggle('p8');">Proving Data-Race Freedom of Kernel API's in a Real-Time Operating System</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_58.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_58.pdf" target="_blank">Poster</a>									
+									<div id="p8" style="display: none">
+										<p>We propose a technique for proving absence of data-races due to kernel
+										API's in a real-time operating system (RTOS) that relies on flag-based
+										scheduling and synchronization. The first step in the approach is to
+										model the control-flow and accesses to shared data-structures in an
+										n-task application using these kernel API's, as a model (say M_n)
+										in a model-checking tool like Spin. Next, to remove the dependency on
+										n, as well as to address feasibility issues, we construct a finite
+										number of reduced models M, that together preserve the races in
+										M_n. It is now sufficient to model-check each of these M's in order to
+										exhaustively list out all possible data-races that may occur in any
+										M_n. If all races reported here are benign, we have a proof that the
+										RTOS kernel is free from harmful data-races. We describe our approach
+										in the context of FreeRTOS, a popular RTOS in the embedded domain. We
+										found several races, proposed fixes for them, and obtained a verified
+										race-free version of FreeRTOS.</p>
+									</div>
+								</li>														
+							</ul>
+							<b>Session Chairs:</b><br>
+							Suparna Bhattacharya (HP), <br>
+							Matthew Jacob (IISc).						
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>
+                Coffee Break</td></center></font>
+		
+				</tr>
+				<tr>
+					<td bgcolor=#ccccff>11.00 - 11.45</td>
+					<td colspan=1><b>Keynote talk: Pramod Varma</b>,<br> Chief Architect and Technology Advisor,<br> 
+					Unique Identification Authority of India (UIDAI). <br></td>
+					<td rowspan="3" style="text-align:center" width="150px" ><b>Session Chair</b><br>Jayant Haritsa (IISc)</td>					
+				</tr>				
+				<tr>
+					<td bgcolor=#ccccff>11.45 - 12.30</td>
+					<td colspan=1><b>Keynote talk: Vivek Raghavan</b>,<br> Chief Product Manager & Biometric Architect,<br> 
+					Unique Identification Authority of India (UIDAI). <br></td>									
+				</tr>
+				<tr>
+					<td bgcolor=#ccccff>12.30 - 12.50</td>
+					<td colspan=1><b>Faculty talk: Yogesh Simmhan</b>,<br> Department of Computational and Data Sciences, IISc.<br></td>									
+				</tr>
+
+				<tr>
+					<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>Lunch Break</td></center></font>		
+				</tr>
+
+				<tr>
+					<td width=110px bgcolor=#ccccff>14.00 - 15.00</td>
+					<td colspan=2>
+						<a href="javascript:toggle('tt2');"><b>Session 2: Programming Languages and Algorithms (Click to toggle details)</b></a>
+						<div id="tt2" style="display: none">
+							<ul>
+								<li><font>Pallavi Maiya and Aditya Kanade: </font>
+									<a href="javascript:toggle('p9');">Systematic State Space Exploration for Event-driven Multi-threaded Programs.</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_12.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_12.pdf" target="_blank">Poster</a> 
+									<div id="p9" style="display: none">
+										<p>Event-driven programming is becoming a preferred style of developing efficient and 
+										responsive applications like smartphone applications and browsers. This model is 
+										multi-threaded and threads communicate through shared objects or by posting asynchronous 
+										events. In this concurrency model, unforeseen thread interleavings coupled with 
+										non-deterministic reorderings of events can lead to subtle concurrency errors. The existing 
+										concurrency analysis techniques are primarily for multi-threaded programs; we extend this to 
+										event-driven multi-threaded programs.<br>
+
+										Android applications are a popular systems in this concurrency model. We have formalized the 
+										concurrency semantics of Android applications and defined corresponding happens-before 
+										relation. We have developed a dynamic race detector which uses this relation. Our relation 
+										generalizes the so far independently studied happens-before relations for multi-threaded 
+										programs and single-threaded event-driven programs. We have implemented a tool called 
+										DROIDRACER, which has detected potential races in popular applications like Facebook and 
+										Twitter.<br>
+
+										A race detector can detect races in only a few thread schedules. However, covering all 
+										schedules requires a systematic explorer whose scalability depends on state space reduction 
+										techniques like Partial Order Reduction. Existing POR techniques reorder every pair of events 
+										handled on the same thread even if reordering them does not lead to different states. 
+										We propose a new POR technique called the dependence-covering set, which reorders events 
+										handled by the same thread only if necessary. We prove that exploring only dependence-covering 
+										sets preserves all deadlock cycles and assertion violations. We demonstrate that our 
+										technique explores far lesser transitions compared to exploration based on persistent sets, 
+										a popular POR technique.</p>
+									</div>
+								</li>
+								<li><font>Anirudh Santhiar and Aditya Kanade: </font>
+									<a href="javascript:toggle('p10');">Concurrency Analysis for Asynchronous APIs.</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_13.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_13.pdf" target="_blank">Poster</a>									 
+									<div id="p10" style="display: none">
+										<p>Programmers want to design highly responsive software, hiding latency
+										from users wherever possible. This has led to the increasing adoption
+										of asynchronous programming models supported by asynchronous APIs and
+										libraries. However, the use of asynchronous events can lead to
+										unforeseen event interleavings, resulting in bugs, and it is difficult
+										for developers to reason about control flow in asynchronous	applications.<br>
+										
+										First, we consider event driven programs where events are dequeued
+										sequentially from an event queue, and processed by invoking their
+										handlers. A handler may itself pause, dequeue more events, and run
+										their handlers in another programmatic event loop. In this case,
+										there can be races between the paused handler and another
+										handler that runs inside the programmatic event loop. We present an
+										efficient happens-before based race detection technique for such
+										programs. We have implemented our technique in an offline race
+										detector for C/C++ programs, called SparseRacer. We discovered 13 new
+										and harmful race conditions in 9 open-source applications including
+										Okular and KOrganizer. Our techniques to improve efficiency resulted
+										in an average speedup of 5X in race detection time.<br>
+										
+										Mixing synchronous and asynchronous waiting in C#'s asynchronous
+										programming model can result in deadlocks. Finding such deadlocks is
+										challenging owing to the mixture of synchronous and asynchronous
+										calls. We design a static analysis to detect such deadlocks. In
+										preliminary experiments, we applied the analysis to 7 open source
+										benchmarks, and it found deadlocks in all of them.</p>
+									</div>
+								</li>
+								<li><font>Hemanth Sangappa and K. R. Ramakrishnan: </font>
+									<a href="javascript:toggle('p48');">An Analysis of RANSAC Algorithm.</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_29.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<!--<a href="./posters-2016-04-25/EECS2016_paper_29.pdf" target="_blank">Poster</a>-->									
+									<div id="p48" style="display: none">
+										<p>Random Sampling and Consensus (RANSAC) is an iterative algorithm for robust estimation 
+										of model parameters in the presence of outliers in observed data. First proposed by 
+										Fischler and Bolles back in 1981, it still is a very popular algorithm among the Computer 
+										Vision community. A common practice among researchers while implementing RANSAC is to take 
+										a few samples more than the minimum required for estimation of model parameters, but the 
+										implications of this heuristic is lacking in literature. In this work we present an 
+										analysis of this common heuristic.</p>
+									</div>
+								</li>								
+								<li><font>Palash Dey: </font>
+									<a href="javascript:toggle('p12');">Winner Determination and Manipulation Problems in Algorithmic Social Choice</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_21.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_21.pdf" target="_blank">Poster</a>									 
+									<div id="p12" style="display: none">
+										<p>In many real life situations, including multiagent systems, agents often need to agree 
+										upon a common alternative even if they have different preferences over the available 
+										alternatives. Voting is one of the most suitable tools in these scenarios. Common and 
+										classic applications of voting in artificial intelligence include collaborative filtering, 
+										planning among multiple automated agents etc. Our goal is to study the time, space, and 
+										sample complexity of fundamental problems in voting.<br>
+										
+										The typical setting may be described as follows. An election consists of a set of voters, 
+										a set of alternatives, and a voting rule. The vote of any voter can be thought of as a 
+										ranking (more precisely, a complete order) of the set of alternatives. A voting profile is 
+										just a collection of votes of all voters. Finally, a voting rule is a function that takes a 
+										voting profile as input and outputs an alternative, which is regarded as the winner of the 
+										election.<br>
+										
+										In the first part of the thesis, we show tight sample complexity bounds for winner prediction 
+										and margin of victory estimation in elections; design optimal algorithms for finding the 
+										winner in a stream of votes; prove tight bounds on query cmplexity for preference elicitation 
+										for various important domains of preferences; establish parameterized complexity dichotomy 
+										for committee selection problem in the presence of outliers.<br>
+										
+										In the second part of the thesis, we study classical computation complexity and parameterized 
+										complexity of various control problems e.g. manipulation detection, possible winner, 
+										coalitional manipulation, and bribery.</p>
+									</div>
+								</li>
+								<li><font>Debarghya Ghoshdastidar and Ambedkar Dukkipati: </font>
+									<a href="javascript:toggle('p13');">Consistency of spectral algorithms for hypergraphs under planted partition model</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_25.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_25.pdf" target="_blank">Poster</a>									
+									<div id="p13" style="display: none">
+										<p>Hypergraph partitioning lies at the heart of various problems in engineering and science. 
+										While partitioning uniform hypergraphs is required in computer vision, non-uniform hypergraph 
+										partitioning has applications in database systems, circuit design etc. Hypergraph partitioning 
+										is typically a NP-hard problem. Yet, over the last two decades, several efficient heuristics 
+										are known in the literature and their empirical success is widely appreciated. In contrast to 
+										the extensive studies related to graph partitioning, theoretical guarantees of hypergraph 
+										partitioning approaches are not known in the literature. The purpose of our work is to 
+										establish, for the first time, the statistical error bounds for spectral algorithms for 
+										partitioning uniform and non-uniform hypergraphs.<br>
+										The mathematical framework is the following. Consider a set of n vertices, which are divided 
+										into k classes. A random hypergraph is generated on the n vertices by independently adding 
+										subsets of the vertices to the edge set with probabilities depending on the labels of the 
+										participating vertices. We provide an upper bound on the number of disagreements between the 
+										true class labels, and the labels obtained from spectral algorithms for hypergraph 
+										partitioning. We show that under certain conditions, the error is o(n) with high probability. 
+										In the literature, such error bounds are only known in the case of graphs, where the model 
+										coincides with the popular stochastic block model. Our results are based on matrix 
+										concentration inequalities and perturbation bounds, and the derived bounds can be used to 
+										comment on the consistency of spectral hypergraph partitioning algorithms.</p>
+									</div>
+								</li>
+							</ul>
+							<b>Session Chairs:</b><br>
+							Ganesan Ramalingam (Microsoft),<br>
+							R. Govindarajan (IISc).						
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor=#ccccff>15.00 - 15.20</td>
+					<td colspan=1><b>Faculty talk: Arpita Patra</b>,<br> Department of Computer Science and Automation, IISc. <br></td>									
+					<td rowspan="2" style="text-align:center"><b>Session Chair</b><br>P. Vijay Kumar (IISc)</td>								
+				</tr>
+				<tr>
+					<td bgcolor=#ccccff>15.20 - 15.40</td>
+					<td colspan=1><b>Faculty talk: Parameshwar P. Iyer </b>,<br> Department of Management Studies, IISc. <br></td>									
+				</tr>								
+				
+				<tr>
+					<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>Coffee Break</td></center></font>
+				</tr>
+			
+				<tr>
+					<td bgcolor=#ccccff>16.00 - 16.20</td>
+					<td colspan=1><b>Faculty talk: Himanshu Tyagi</b>,<br> Department of Electrical Communication Engineering, IISc. <br></td>
+					<td rowspan="1" style="text-align:center"><b>Session Chair</b><br>P. Vijay Kumar (IISc)</td>									
+				</tr>
+				
+				<tr>
+					<td width=110px bgcolor=#ccccff>16.20 - 18.35</td>
+					<td colspan=2>
+						<a href="javascript:toggle('tt3');"><b>Session 3: Networks, Communication and Information Theory (Click to toggle details)</b></a>
+						<div id="tt3" style="display: none">
+							<ul>
+								<li><font>Shashank Vatedka and Navin Kashyap: </font>
+									<a href="javascript:toggle('p14');">Lattice Codes for Secure Communication and Secret Key Generation</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_15.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_15.pdf" target="_blank">Poster</a>									
+									<div id="p14" style="display: none">
+										<p>In this work, we study two problems in information-theoretic security. Firstly, we study 
+										a wireless network where two nodes want to securely exchange messages via an 
+										honest-but-curious relay. There is no direct link between the user nodes, and all 
+										communication must take place through the relay. We give two secure protocols for 
+										this problem and study their performance. In the second problem, we consider the 
+										scenario where multiple terminals have access to private correlated Gaussian sources 
+										and a public noiseless communication channel. The objective is to generate a secret 
+										key using these sources and public communication in a way that an eavesdropper having 
+										access to the public communication can obtain no information about the key. We give 
+										a protocol with polynomial complexity to achieve this under certain assumptions on 
+										the sources and characterize its performance.<br>
+										
+										The key tools used in designing these protocols are nested lattice codes, which have 
+										been widely used in several problems of communication and security. We also study 
+										lattice constructions that permit polynomial-time encoding and decoding. In this 
+										regard, we first look at a class of lattices obtained from low-density parity-check 
+										(LDPC) codes, and show that they have several desirable properties. We also give 
+										concatenated lattice coding schemes with polynomial-time encoders and decoders that 
+										achieve the capacity of the additive white Gaussian noise channel.</p>
+									</div>
+								</li>
+								<li><font>Albert Sunny and Joy Kuri: </font>
+									<a href="javascript:toggle('p15');">A Framework for Designing Multihop Energy Harvesting Sensor Networks</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_20.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_20.pdf" target="_blank">Poster</a>									 
+									<div id="p15" style="display: none">
+										<p>Efficient resource planning in energy harvesting wireless sensor networks (WSN) is of 
+										immense practical significance. However, it is encumbered by the sheer diversity of 
+										parameters that affect the performance of such WSNs. In this paper, we propose a unified 
+										framework that can be leveraged to efficiently design and deploy such large-scale networks. 
+										To this end, we propose an intuitive utility function to quantify the Quality of Monitoring 
+										(QoM). Based on this QoM, we formulate a long-term time-averaged joint resource allocation 
+										problem, whose optimal solution serves as a metric to compare different deployment scenarios. 
+										This resource allocation problem is subject to energy and capacity constraints inherent to 
+										WSNs. The capacity constraints, though very intuitive, require us to enumerate all the maximal 
+										independent sets in the network — a well known NP-hard problem. Therefore, for computational 
+										tractability, we replace the maximal independent set constraints with clique constraints. We 
+										also prove the sufficiency of the clique constraints, and present an algorithm that obtains 
+										an ϵ-optimal solution to the original problem. Finally, we present numerical evaluations 
+										to validate the correctness of the proposed algorithm.</p>
+									</div>
+								</li>
+								<li><font>Sudheer Poojary and Vinod Sharma: </font>
+									<a href="javascript:toggle('p16');">Modeling and Analysis of Networks with High-speed TCP Connections</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_23.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_23.pdf" target="_blank">Poster</a>									
+									<div id="p16" style="display: none">
+										<p>We derive an expression for throughput of TCP Compound and TCP CUBIC connections with 
+										random losses. We consider the case of a single TCP connection with random losses and 
+										negligible queuing, i.e., constant round trip time. We consider a sequence of appropriately 
+										scaled window size processes, indexed by p, the packet error rate. We show that as p goes to 
+										zero, this sequence converges to a limiting Markov chain. We use the stationary distribution 
+										of the limiting Markov chain to give an approximation for TCP Compound and TCP CUBIC 
+										throughput for small p. We validate our model and approximations through ns2 simulations.</p>
+									</div>
+								</li>
+								<li><font>Priyanka Das and Neelesh B. Mehta: </font>
+									<a href="javascript:toggle('p17');">Interference-Constrained Cooperative Relaying for Cognitive Radio</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_38.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_38.pdf" target="_blank">Poster</a>									
+									<div id="p17" style="display: none">
+										<p>Cognitive radio (CR) is a promising technology that enables reuse of underutilized 
+										spectrum and helps mitigate the severe spectrum shortage faced by society today. In underlay 
+										mode of CR, a cognitive user can transmit concurrently with a higher priority primary user, 
+										but the interference it causes to the primary user must be constrained. These interference 
+										constraints severely limit the performance of the cognitive users.<br>
+										
+										We develop advanced cooperative relaying techniques to address this issue. In it, one among 
+										the available cognitive nodes called relays that are in the vicinity of the cognitive users 
+										is selected to forward the signals transmitted by the cognitive transmitter to its receiver. 
+										We develop novel relay selection rules that are optimized for either maximizing the 
+										reliability of communication, which is measured in terms of the uncoded symbol error 
+										probability, or the rate of communication, which is measured in terms of the capacity. 
+										All these rules satisfy a constraint on the average interference caused to the primary.<br>
+
+										The proposed rules determine which relay to select and whether to select none of the 
+										relays at all as a function of the channel gains between the various nodes. They outperform 
+										several ad hoc relay selection rules proposed in the literature. We also analyze the 
+										performance of the proposed rules by deriving closed-form expressions for the average 
+										data rate or average symbol error probability. Lastly, we gain several insights by 
+										studying the asymptotic regimes of low and high average signal-to-noise ratios, in which 
+										these expressions simplify significantly.</p>
+									</div>
+								</li>
+								<li><font>Manuj Mukherjee and Navin Kashyap: </font>
+									<a href="javascript:toggle('p18');">On the Communication Complexity for SK Generation in the Multiterminal Source Model</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_41.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_41.pdf" target="_blank">Poster</a>									
+									<div id="p18" style="display: none">
+										<p>Csiszar and Narayan introduced the problem of secret key (SK) generation in the 
+										multiterminal source model. The multiterminal source model consists of a set of terminals 
+										observing i.i.d. copies of correlated discrete random variables. The terminals are allowed 
+										to communicate over a noiseless public channel. The aim is to generate a group key secured 
+										from a passive eavesdropper listening to the public channel. Csiszar and Narayan evaluated 
+										the SK capacity, i.e., the maximum rate of a secret key. The key capacity was achieved 
+										through a communication for omniscience. Here, omniscience refers to each terminal recovering 
+										the observations of the remaining terminals. The focus of this work is to characterize 
+										the communication complexity of SK generation (R_SK), i.e., the minimum rate of 
+										communication required to generate a secret key of maximum rate. The omniscience protocol 
+										of Csiszar and Narayan ensures that R_SK\leq R_CO, R_CO being the minimum rate of 
+										communication for omniscience. Following the work of Tyagi for two terminals, we obtain a 
+										lower bound on R_SK for the case of m\geq 2 terminals. Sufficient conditions for 
+										R_SK-maximality, i.e., the case where R_SK=R_CO, are also studied. We further show that 
+										these conditions are also necessary for the hypergraphical source, a special case of the 
+										multiterminal source model. </p>
+									</div>
+								</li>
+								<li><font>Mohit Sharma and Chandra Murthy: </font>
+									<a href="javascript:toggle('p19');">Design of Dual Energy Harvesting Communication Links with Retransmission</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_56.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_56.pdf" target="_blank">Poster</a>									
+									<div id="p19" style="display: none">
+										<p>In this work, we consider retransmission based point-to-point dual energy harvesting 
+										(EH) links, where both transmitter and receiver are energy harvesting nodes (EHNs). The 
+										transmitter needs to periodically send a packet to a receiver, and the packet is dropped 
+										if it is not delivered within a fixed number of transmission attempts. The goal is to 
+										determine the optimal battery size as well as to design retransmission index-based transmit 
+										power policy(RIP), which minimizes the packet drop probability (PDP) while maintaining 
+										energy neutrality at the nodes. First, we analyze the PDP gap between the PDP of dual EH 
+										links with infinite and finite batteries and establish near-optimality of the policies 
+										designed to operate in the energy unconstrained regime (EUR), i.e., the regime where the 
+										rate of energy use at each EHN is less than the corresponding harvesting rate. Next, the 
+										optimal RIPs are designed using the techniques from geometric programming. The numerical 
+										results obtained through extensive Monte Carlo simulations show that the proposed RIPs 
+										outperforms the state-of-art policies. For example, in case of mono EH links with ARQ over 
+										slow as well as fast fading channels, the designed RIP outperforms policies designed using 
+										Markov decision process based methods.</p>
+									</div>
+								</li>
+								<li><font>Jobin Francis and Neelesh Mehta: </font>
+									<a href="javascript:toggle('p20');">BS-side Estimation for Reduced Feedback Best-M Scheme in OFDM Systems</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_57.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_57.pdf" target="_blank">Poster</a>									
+									<div id="p20" style="display: none">
+										<p>Rate adaptation and scheduling have become indispensable in current and next generation 
+										cellular systems since they improve the spectral efficiency by adapting the user the base 
+										station (BS) transmits to and the transmit rate depending on the channel conditions. To do 
+										so, the BS needs the downlink channel state information (CSI). Hence, the users must feed 
+										them back to the BS, which expends uplink radio resources. Since this feedback could 
+										overwhelm the uplink, several reduced feedback schemes have been proposed in the literature 
+										that trades off between feedback overhead and the loss in throughput due to reduced CSI.<br>
+										
+										For the practically important best-M scheme, in which each user feeds back only its M 
+										strongest subchannels and their indices to the BS, we develop minimum mean square error 
+										(MMSE) and throughput-optimal approaches that enable the BS to transmit reliably even on 
+										subchannels not fed back by any user. In the former, an MMSE estimate of the SNR is generated 
+										at the BS for subchannels not reported by a user. In the latter, the user and its transmit 
+										rate are selected so as to maximize the throughput. This approach provides a fundamental 
+										limit on the achievable throughput. The novelty of these approaches lies in their 
+										exploitation of the structure of the best-M feedback information and the correlation among 
+										subchannel gains. In terms of system-level impact, the proposed approaches improve the 
+										throughput compared to several conventional approaches – without requiring any additional 
+										feedback – for uncorrelated and correlated subchannels.</p>
+									</div>
+								</li>
+								<li><font>Birenjith and P. Vijay Kumar: </font>
+									<a href="javascript:toggle('p21');">Codes for Distributed Storage</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_64.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_64.pdf" target="_blank">Poster</a>									 
+									<div id="p21" style="display: none">
+										<p>In a distributed storage system, a data file comprising of information symbols data symbols drawn from a finite alphabet, is encoded using an error-correcting code and the resulting code symbols are stored in nodes in a network. A desirable attribute in a distributed storage system is the efficiency in carrying out repair of failed nodes. Among many others, two important metrics to characterize efficiency of node repair are repair bandwidth, i.e., the amount of data download in the case of a node failure and repair degree, i.e., the number of helper nodes accessed for node repair. While ``regenerating codes'' aim to minimize the repair bandwidth, ``codes with locality'' seek to minimize the repair degree. In our work, we study the fundamental performance limits of these classes of codes, and present code constructions designed to meet these limits.</p>
+									</div>
+								</li>
+								<li><font>Raviteja and P. Vijay Kumar: </font>
+									<a href="javascript:toggle('p22');">An Animation and Chirplet-Based Approach to Developing a PIR Sensing Intrusion Detection System for an Outdoor Setting</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_65.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_65.pdf" target="_blank">Poster</a>									
+									<div id="p22" style="display: none">
+										<p>This paper presents the development of a passive infra-red sensor tower platform along with 
+										a classification algorithm to distinguish between human intrusion, animal intrusion and 
+										clutter arising from wind-blown vegetative movement in an outdoor environment. The research 
+										was aimed at exploring the potential use of wireless sensor networks as an early-warning 
+										system to help mitigate human-wildlife conflicts occurring at the edge of a forest. There 
+										are three important features to the development. Firstly, the sensor platform employs multiple 
+										sensors arranged in the form of a two-dimensional array to give it a key spatial-resolution 
+										capability that aids in classification. Secondly, given the challenges of collecting data 
+										involving animal intrusion, an Animation-based Simulation tool for Passive Infra-Red sEnsor 
+										(ASPIRE) was developed that simulates signals corresponding to human and animal intrusion 
+										and some limited models of vegetative clutter. This speeded up the process of algorithm 
+										development by allowing us to test different hypotheses in a time-efficient manner. Finally, 
+										a chirplet-based model for intruder signal was developed significantly helped boost 
+										classification accuracy despite drawing data from a smaller number of sensors. An SVM-based 
+										classifier was used which made use of chirplet, energy and signal cross-correlation-based 
+										features. The average accuracy obtained for intruder detection and classification on 
+										real-world and simulated data sets was in excess of 97%.</p>
+									</div>
+								</li>
+								<li><font>Abhijit Bhattacharya and Anurag Kumar: </font>
+									<a href="javascript:toggle('p23');">Network Design for QoS under IEEE 802.15.4 ("Zigbee") CSMA/CA for Internet of Things Applications</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_14.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_14.pdf" target="_blank">Poster</a>									
+									<div id="p23" style="display: none">
+										<p>We focus on design and analysis of multi-hop wireless sensor networks (WSN) under the 
+										IEEE 802.15.4 PHY and MAC for IoT applications. In particular, we address the broad problem of 
+										designing a multi-hop WSN at minimum deployment cost, i.e., by placing as few additional relay 
+										nodes and base stations as possible, to convey sensed data from a set of given source 
+										locations to at least one base station location, while satisfying given Quality of Service 
+										(QoS) objectives.<br>
+										
+										First, we consider very low data rate applications where the contention due to CSMA is 
+										negligible; we show that the problems reduce to graph design problems with various 
+										topological constraints, and the resulting problems are NP-hard. We propose fast, polynomial 
+										time heuristics to obtain good solutions. We also provide worst case and average case 
+										approximation guarantees for our proposed algorithms.<br>
+										
+										Next, we deal with low to moderate data rate applications where the inter-node contention 
+										must be taken into account to accurately predict the network performance. We first develop 
+										an approximate, but accurate fixed point analysis for multi-hop tree networks that takes 
+										into account collision due to CSMA contention, hidden node effects, etc. We then provide a 
+										simplification of this analysis for the case of no hidden nodes in a low discard probability 
+										regime, and use this simplified model to derive explicit conditions on the topology, and the 
+										arrival rate vector to satisfy given QoS objectives, which in turn, yield simple design rules 
+										for throughput optimal network design.</p>
+									</div>
+								</li>
+								<li><font>Akhil P. T. and Rajesh Sundaresan: </font>
+									<a href="javascript:toggle('p24');">Separable Convex Optimization with Linear Ascending Constraints</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_66.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_66.pdf" target="_blank">Poster</a>									
+									<div id="p24" style="display: none">
+										<p>We consider the maximization of a separable concave function subject to linear ascending 
+										constraints. The problem arises as the core optimization in several resource allocation 
+										scenarios and is a special case of an optimization of a separable concave function over the 
+										bases of a polymatroid. The algorithms to maximize a separable concave function over the bases 
+										of a polymatroid fall into two broad categories: greedy algorithms and decomposition 
+										algorithms. In this work, we present an algorithm that falls in the category of decomposition 
+										algorithms. This class of algorithms divides the optimization problem into several 
+										sub-problems which are easier to solve. Our algorithm decomposes the optimization over 
+										linear ascending constraints into sub-problems with single sum constraint.<br>
+										
+										We also consider a network utility maximization problem consisting of multiple users sending 
+										data over the network specified by linear ascending constraints.The utility maximization 
+										problem is formulated as a separable concave maximization problem over the flow constraints 
+										imposed by the network. The problem is solved in a distributed manner as in 
+										kelly-Maulloo-Tan (J. oper. Res. Soc. 1998) by decomposing it into sub-problems; one for each 
+										user and one for the network. Our algorithm has users adapting the prices they are willing to 
+										pay and the network allocating rates in tune to the user prices. We also map the solution of 
+										the network problem to a geometric problem of finding the concave cover of a set of points 
+										in a plane which enables an efficient solution to the network problem.</p>
+									</div>
+								</li>
+							</ul>
+							<b>Session Chairs:</b><br>
+							Kumar Sivarajan (Tejas Networks),<br> H. S. Jamadagni (IISc).						
+						</div>
+					</td>
+				</tr>
+								
+				<tr>
+					<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>High Tea</td></center></font>		
+				</tr>
+	
+				<tr>
+					<td width=110px bgcolor=#ccccff>19.00 - 20.15</td>
+					<td colspan=2>
+						<a href="javascript:toggle('tt4');"><b>Session 4: RF and Electronics (Click to toggle details)</b></a>
+						<div id="tt4" style="display: none">
+							<ul>
+								<li><font>Arnab Kumar Biswas and S. K. Nandy: </font>
+								 	<a href="javascript:toggle('p25');">Securing Multiprocessor System-on-Chip</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_22.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_22.pdf" target="_blank">Poster</a>								 	 
+									<div id="p25" style="display: none">
+										<p>With Multiprocessor-System-on-Chips (MPSoCs) pervading our lives, security issues are
+										emerging as a serious problem and attacks against these systems are becoming more critical
+										and sophisticated. We have designed and implemented different hardware based solutions to
+										ensure security of an MPSoC. Security assisting modules can be implemented at different
+										abstraction levels of an MPSoC design. We propose solutions both at circuit level and system
+										level of abstractions. At the VLSI circuit level abstraction, we consider the problem of presence
+										of noise voltage in input signal coming from outside world. This noise voltage disturbs the
+										normal circuit operation inside a chip causing false logic reception. If the disturbance is caused
+										intentionally the security of a chip may be compromised causing glitch/transient attack. We
+										propose an input receiver with hysteresis characteristic that can work at voltage levels between
+										0.9V and 5V. The circuit can protect the MPSoC from glitch/transient attack. At the system level
+										we propose solutions targeting Network-on-Chip (NoC) as the on-chip communication medium.
+										We survey the possible attack scenarios on present-day MPSoCs and investigate a new attack
+										scenario, i.e., router attack targeted toward NoC enabled MPSoC. We propose different
+										monitoring-based countermeasures against routing table-based router attack in an MPSoC
+										having multiple Trusted Execution Environments (TEEs). Software attacks, the most common
+										type of attacks, mainly exploit vulnerabilities like buffer overflow. This is possible if proper
+										access control to memory is absent in the system. We propose four hardware based
+										mechanisms to implement Role Based Access Control (RBAC) model in NoC based MPSoC.</p>
+									</div>
+								</li>
+								<li><font>Keerthan P. and K. J. Vinoy: </font>
+								 	<a href="javascript:toggle('p26');">Wide-Band Radio Frequency Signal Analysis and Processing Using Cascaded All-Pass Networks</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_33.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<!--<a href="./posters-2016-04-25/EECS2016_paper_33.pdf" target="_blank">Poster</a>-->									
+									<div id="p26" style="display: none">
+										<p>The increasing demand for wireless communication, radar and imaging systems that are aware of 
+										the environment and adapt suitably to the operating conditions can be met by real time signal 
+										analysis. Emergence of signal analysis in analog domain can be attributed to the development of 
+										dispersive delay lines (DDL). In this regard, all-pass networks (APN) have been explored as a 
+										potential wide-band, high resolution DDL. An iterative procedure is developed to design APN 
+										circuits for monotonous group delay response at radio frequencies. They exhibit linear and 
+										non-linear group delay responses with both positive and negative slopes. The design is 
+										extended for surface mount device implementation to accommodate mounting pads, component 
+										availability, tolerance and finite quality factor. The design frequency range is chosen as 
+										[0.5 – 1] GHz. The experimental results are compared with ideal circuit and full wave 
+										simulations for validation. The implementation has greatly improved the performance in 
+										terms of group delay dispersion with a reduced footprint and lower insertion loss.<br>
+										
+										Signal propagation through DDL with group delay dispersion is analysed. A quadratic phase 
+										approximation is assumed. It is found that the signal experiences expansion of pulse width, 
+										reduction of its peak amplitude and a temporal displacement of the spectral components. 
+										APN is shown to have wide range of applications. A reconfigurable delay line is developed 
+										where the delay of the overall system is made tunable. Time stretch and time compression of 
+										the linear frequency modulated waveform is demonstrated. Frequency discriminator is developed 
+										with a resolution of 15 MHz.</p>
+									</div>
+								</li>
+								<li><font>Nikita Ambasana and Dipanjan Gope: </font>
+								 	<a href="javascript:toggle('p27');">Intelligent and Fast Electrical Design Space Exploration Techniques for Package-Boards</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_35.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<!--<a href="./posters-2016-04-25/EECS2016_paper_35.pdf" target="_blank">Poster</a>-->								 	 
+									<div id="p27" style="display: none">
+										<p>Package-board design plays a crucial role in determining the performance of high-speed 
+										systems. Lack of CAD tools for signal integrity aware design and synthesis lead to longer 
+										design cycles and non-optimal package-board interconnect geometries. In this work an end 
+										to end system is developed for intelligent and fast electrical design space exploration 
+										for package boards.<br> 
+										In the first part of the work, the functional similarities between package-board design and 
+										radio-frequency imaging are explored. Qualitative inverse-solution methods are applied to 
+										solve multi-objective, multi-variable package design problems. A novel piecewise linear 
+										algorithm is developed for an efficient solution in the design space using metric to 
+										design sensitivity. The presented algorithm is demonstrated to converge to the desired 
+										specifications with fewer forward-solve iterations.<br>
+										In the second part of the work, we explore learning based modeling techniques that rapidly 
+										map frequency domain metrics like differential insertion-loss and cross-talk to time domain 
+										metrics like eye-height and eye-width facilitating faster design validation and hence 
+										full-factorial design space sweep. Numerical results performed with common learning based 
+										models on SATA 3.0 and PCIe Gen 3 channels generate less than 3% average error.<br> 
+										In the third part of the work, we present a mathematical formulation to obtain a Jacobian 
+										for a given structure mesh’s electrical properties to the mesh shape parameters for a 2.5D 
+										solver. Such a Jacobian enables first order Taylor updates for linear mesh modifications 
+										enabling the CAD operator to get real time updates on the change in electrical parameters 
+										of the structure with changes in geometry.</p>
+									</div>
+								</li>
+								<li><font>Vijayashree Bhat and K. J. Vinoy: </font>
+								 	<a href="javascript:toggle('p28');">Investigation of Planar Microstrip Capacitive Probe fed Antenna for Time and Frequency Domain Characteristics</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_46.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_46.pdf" target="_blank">Poster</a>									
+									<div id="p28" style="display: none">
+										<p>In this research, planar microstrip Ultra-Wide Band (UWB) antenna with capacitive 
+										probe feed is studied for its time domain (TD) and frequency domain (FD) characteristics. 
+										Ultra-wideband antennas are those that have fractional bandwidth of atleast 20% or more 
+										than 500 MHz. A UWB antenna has several applications in medical imaging, ground penetrating 
+										and imaging radar (GPRI), surveillance, through wall imaging, indoor communications and 
+										outdoor handheld devices. Compactness, low profile, low cost makes the planar UWB microstrip 
+										antennas more flexible and realizable. The antenna examined in this study has a wide 
+										bandwidth of 1 GHz. Investigation of TD characteristics of wideband antenna is done using 
+										FD and TD simulations and validated using experimental results. Furthermore, simulation 
+										study is established for UWB antenna on FD characteristics such as Scattering parameters 
+										(S11=-10dB, BW=3.1 GHz-4.2 GHz), Gain (~7dB), Efficiency (99.1%) and Radiation pattern 
+										(single-directional), TD characteristics such as Group Delay (<0.5ns) and Pulse Fidelity 
+										Factor (PFF>0.8). In addition, different UWB short pulses and its influence on the antenna 
+										characteristics is also explored and single element is optimized for nearly constant phase 
+										center using the weighting function as input pulse spectrum. Also, mutual coupling is 
+										reduced between antennas to -16 dB and gain improvement is seen in the array elements. 
+										Thus, this study on planar antenna with capacitive probe feed for FD and TD characteristics 
+										proves to satisfy all requirements for UWB signal and system applications.</p>
+									</div>
+								</li>
+								<li><font>Javed G. S. and Gaurab Banerjee: </font>
+									<a href="javascript:toggle('p29');">Frequency domain CMOS Capacitance Interface</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_62.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_62.pdf" target="_blank">Poster</a>									
+									<div id="p29" style="display: none">
+										<p>A frequency domain capacitance interface system is proposed for a femto-farad capacitance 
+										measurement. In this technique, a ring oscillator circuit is used to generate a change in 
+										time period, due to a change in the sensor capacitance. The time-period difference of two 
+										such oscillators is compared and is read-out using a phase frequency detector and a charge 
+										pump. The output voltage of the system, is proportional to the change in the input sensor 
+										capacitance. The capacitance sensor interface system was designed and a prototype was 
+										implemented in a 0.13 m standard CMOS technology. Experimental and simulation results are 
+										presented. It exhibits a maximum sensitivity of 8.1 mV/fF, which is 2x - 10x better over 
+										the state-of-the-art.</p>
+									</div>
+								</li>
+								<li><font>Anuja Chanana and S. Mahapatra: </font>									
+								 	<a href="javascript:toggle('p63');">Investigations of 2D material metal contact using Density Functional Theory</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_63.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_63.pdf" target="_blank">Poster</a>								 	 
+									<div id="p63" style="display: none">
+										<p>A low Schottky barrier height (SBH) at source/drain contact is essential for achieving 
+										high drive current in atomic layer MoS2-channel-based field effect transistors. Approaches 
+										such as choosing metals with appropriate work functions and doping the channel are employed 
+										previously to improve the carrier injection from the contact electrodes to the channel and 
+										thus mitigate the SBH between the MoS2 and metal. Recent experiments demonstrate significant 
+										SBH reduction when graphene layer is inserted between metal slab (Ti and Ni) and MoS2. 
+										However, the physical or chemical origin of this phenomenon is not yet clearly understood. 
+										In this work, density functional theory simulations are performed, employing 
+										pseudopotentials with very high basis sets to get insights of the charge transfer between 
+										metal and monolayer MoS2 through the inserted graphene layer. Our atomistic simulations on 
+										16 different interfaces involving five different metals (Ti, Ag, Ru, Au, and Pt) reveal 
+										that (i) such a decrease in SBH is not consistent among various metals, rather an increase 
+										in SBH is observed in case of Au and Pt; (ii) unlike MoS2-metal interface, the projected 
+										dispersion of MoS2 remains preserved in any MoS2-graphene-metal system with shift in the 
+										bands on the energy axis. (iii) A proper choice of metal (e.g., Ru) may exhibit ohmic 
+										nature in a graphene-inserted MoS2-metal contact. These understandings would provide a 
+										direction in developing high-performance transistors involving heteroatomic layers as 
+										contact electrodes.</p>
+									</div>
+								</li>
+							</ul>
+							<b>Session Chairs:</b><br>Arun Chandrasekhar (Intel),<br>Soumyendu Raha (IISc).						
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div align=right><a href="schedule.pdf" target="_blank"><b>Full schedule...</b></a></div>
+			<br><br>		
+		</div>
+		
+				
+		<div id="idTabSheetday2" class="sheetUnactive">
+
+			<table width=840px border=1 cellpadding="5" cellspacing="5">
+       		<tr>
+            	<td width=110px bgcolor=#ccccff>08.30 - 09.00</td>
+					<td colspan=2>Registration</td>
+				</tr>				
+				<tr>
+					<td width=110px bgcolor=#ccccff>9.00 - 10.40</td>
+					<td colspan=2>
+						<a href="javascript:toggle('tt5');"><b>Session 5: High Voltage and Power Electronics (Click to toggle details)</b></a>
+						<div id="tt5" style="display: none">
+							<ul>
+								<li><font>Sumit Pramanick and K. Gopakumar: </font>
+									<a href="javascript:toggle('p31');">Switched Capacitive Filter for Harmonic Suppression in Variable Speed Induction Motor Drive</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_19.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_19.pdf" target="_blank">Poster</a>									
+									<div id="p31" style="display: none">
+										<p>A novel switched capacitive filter is proposed to eliminate 5th and 7th order harmonics 
+										from the phase voltage of a conventional two-level inverter. Dodecagonal voltage space 
+										vector is implemented using a single DC supply. A switching technique is proposed which 
+										pre-charges the capacitor and controls its voltage while simultaneously eliminating 5th 
+										and 7th order harmonics from the phase voltage. It is shown that the higher switching 
+										frequency is shifted to low voltage switches, thus reducing the switching loss compared 
+										to a conventional two-level inverter where high switching frequency is used for harmonic 
+										suppression.</p>
+									</div>
+								</li>	
+								<li><font>Arun Rahul S. and K. Gopakumar: </font>
+									<a href="javascript:toggle('p32');">A Hybrid Seven Level Inverter Topology with a Single DC Supply and Reduced Switch Count</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_26.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_26.pdf" target="_blank">Poster</a>									
+									<div id="p32" style="display: none">
+										<p>A new three-phase hybrid seven level inverter topology with a single DC supply is proposed 
+										for the first time. The proposed inverter is realized by cascading two three-level flying 
+										capacitor inverters with a half bridge module. The inverter topology has switching state 
+										redundancies for each of the pole voltage level. By using these switching state 
+										redundancies, capacitor charge can be controlled in every PWM switching cycle. This feature 
+										is advantageous for reducing the capacitor size. Another advantage of the proposed inverter 
+										is that the charge balancing of each capacitor can be controlled irrespective of the 
+										modulation index and the load power factor. A hysteresis based capacitor charge control 
+										algorithm is implemented for the proposed inverter. Furthermore, the proposed topology uses 
+										lesser number of semiconductor devices, capacitors and DC power supplies compared to 
+										conventional seven level inverter topologies.</p>
+									</div>
+								</li>
+								<li><font>Avanish Tripathi and G. Narayanan: </font>
+									<a href="javascript:toggle('p33');">Low Switching Frequency Pulse Width Modulation For Induction Motor Drives</a>
+									<br><a href="./slides-2016-04-25/EECS2016_paper_30.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_30.pdf" target="_blank">Poster</a>									 
+									<div id="p33" style="display: none">
+										<p>High-power induction motor (IM) drives suffer from high energy loss on account of 
+										switching whereas, in high-speed motor drives, the maximum modulation frequency is quite 
+										high. Hence, in both the cases, the ratio of switching frequency to modulation frequency, 
+										i.e. the pulse number P, is quite low. Such motor drives suffer from high total harmonic 
+										distortion (THD) in line current and pulsating torque. While the thesis addresses both the 
+										problems, the presentation discusses only the problem of pulsating torque.
+										Two optimal PWM techniques are proposed to minimize pulsating torque in IM drives operating 
+										at low pulse number. One of them is based on frequency domain approach, and is independent 
+										of load and motor parameters. The other one, based on synchronous reference frame approach, 
+										considers load and machine parameters. The proposed methods are shown to be better than 
+										sine-triangle PWM and selective harmonic elimination PWM. Further, this work attempts to 
+										predict the torque ripple and torque harmonic spectrum for low pulse number operations. A 
+										method to predict the torque harmonic spectrum based on PWM waveforms is proposed. All 
+										concepts proposed are validated through simulations and experiments on a 3.7 kW IM drive.</p>
+									</div>
+								</li>
+								<li><font>Anirudh Guha and G. Narayanan: </font>
+									<a href="javascript:toggle('p34');">Dead-time induced oscillations in voltage source inverter-fed induction motor drives</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_32.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_32.pdf" target="_blank">Poster</a>									
+									<div id="p34" style="display: none">
+										<p>The inverter dead-time is integral to the safety of a voltage source inverter (VSI). 
+										Dead-time is introduced between the complementary gating signals of the top and bottom 
+										switches in each VSI leg to prevent shoot-through fault. However, dead-time is observed to 
+										induce sustained sub-harmonic oscillations in the currents, torque and speed of a 100-kW 
+										open-loop induction motor drive, operated under no-load. This work attempts to understand 
+										the oscillatory behaviour of the drive, predict the same, and validate these predictions. 
+										Methods for mitigation of such sub-harmonic oscillations are also proposed. 
+										A model of a VSI including the dead-time effect is derived, considering the inverter output 
+										voltages in the synchronous reference frame. This inverter model is incorporated with the 
+										standard dynamic equations of the induction motor, to derive the proposed dynamic model for 
+										inverter-fed induction motor in the synchronous reference frame. A small-signal model of 
+										the drive is derived by linearizing the non-linear system dynamic equations, about a 
+										steady-state operating point. Stability analysis performed using the proposed model brings 
+										out the region of oscillatory behaviour of the 100-kW motor drive on the voltage versus 
+										frequency (V-f) plane, considering no-load. The analysis is validated through simulations 
+										and experiments. 
+										To mitigate the oscillatory behaviour of the drive, an active damping scheme is proposed. 
+										This scheme emulates the effect of an external inductor in series with the stator winding. 
+										Small-signal model of the drive with the proposed scheme, simulations and experiments 
+										demonstrate the mitigation of light-load instability with the proposed active damping scheme.</p>
+									</div>
+								</li>
+								<li><font>Abhijit Kshirsagar and L. Umanand: </font>
+									<a href="javascript:toggle('p35');">Reduced switch count multilevel inverter topologies for open end induction motor drives</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_37.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_37.pdf" target="_blank">Poster</a>									
+									<div id="p35" style="display: none">
+										<p>Multilevel inverter based motor drives have inherent advantages such as reduced harmonic content, lower torque ripple and lower
+										dV/dt stresses on the motor windings. Two novel multilevel topologies are proposed here with low switch count.
+										The first is a nine-level topology for driving a three-phase open-end induction motor. The proposed topology is powered by
+										two unequal, isolated DC sources and has only eight switches and two capacitors per phase. The capacitors do not require
+										pre-charging and are charged at startup using the motor phase currents. The capacitor voltages are balanced at switching
+										frequency, thereby reducing the capacitance requirement. The proposed scheme also eliminates circulating power and overcharging of DC links.
+										The capacitors are charged using phase currents at startup and do
+										not require precharging circuits. The capacitance requirement is low since all capacitors are balanced at switching frequency.
+										
+										Then, by cascading a three-level H-bridge to this nine-level inverter, a seventeen level topology is then developed.
+										All the advantages of the nine-level scheme are retained, and seventeen level output is generated with the addition of
+										four switches and one floating capacitor per phase. Both topologies are used to drive a 400V, 1.5HP induction motor for experimental validation
+										The proposed topologies have advantages of lower component counts, lower capacitance requirements and do not require capacitor
+										precharging systems, which make these topologies attractive for medium-voltage high power applications including traction,
+										industrial drives and electric vehicles.</p>
+									</div>
+								</li>
+								<li><font>Debasish Nath and Udaya Kumar: </font>
+									<a href="javascript:toggle('p36');">Total Electric Field due to an Electron Avalanche and its Coupling to Transmission Line Conductors</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_54.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_54.pdf" target="_blank">Poster</a>									
+									<div id="p36" style="display: none">
+										<p>The corona on high voltage overhead lines in addition to power loss and audible noise, 
+										is also a source of electromagnetic noise. The basic mechanism behind corona discharge is 
+										an electron avalanche. The rapid spatial and temporal rate of charge separation in the 
+										avalanche results in dynamic electromagnetic field spanning a wide frequency spectrum 
+										ranging up to GHz. The literature relating basic avalanche process to the resulting 
+										electromagnetic field is rather limited and available ones deal only with far field 
+										component of an isolated avalanche. However, the near field components of the corona 
+										dominate in dictating the induced currents in the supporting conductor. These induced 
+										currents propagate along the lines and hence can be a strong source of electromagnetic 
+										noise. Therefore, a complete knowledge on the corona produced electromagnetic field is 
+										essential for evaluating the resulting electromagnetic noise. Starting from Townsend’s 
+										model for avalanche and retarded potentials, an expression for the total field due to an 
+										isolated electron avalanche is deduced. Validation is provided with a recent work, which 
+										deals only with the radiated field, and, by using the electric field integral equation for 
+										the total field. Coupling of the total electric field to conductor is considered. It is 
+										observed that the current in the conductor is completely dominated by the near field 
+										component of the field. The measured current in the conductor is affected by the circuit 
+										locus and the circuit components present.</p>
+									</div>
+								</li>
+								<li><font>Pritam Mukherjee and L. Satish: </font>
+									<a href="javascript:toggle('p37');">A Novel Generalized Analytical Framework to Diagnose True Radial and Axial Displacements in an Actual Transformer Winding</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_55.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_55.pdf" target="_blank">Poster</a>									
+									<div id="p37" style="display: none">
+										<p>Frequency response analysis (FRA) has emerged as the de-facto industry standard 
+										condition-monitoring tool to assess mechanical integrity of transformer windings. Taking 
+										cognizance of its hidden potential, international bodies, viz., IEEE, IEC, and CIGRE have 
+										published standards/guides on its use and interpretation. Having said that, the diagnostic 
+										part - working backwards starting from the FRA data to interpret a winding damage, locate 
+										it, and assess its severity, has so far remained teasingly elusive. Probing the vast 
+										literature in this field points to the fact that lack of a rigorous mathematical basis to 
+										explain the underlying complex processes is, perhaps, the main reason for this.<br>
+										
+										Driven by this motivation, a theoretical analysis of the problem of localization of an 
+										incipient/minor mechanical damage (displacement in particular) and also assessing its 
+										severity was taken up. A generalized analytical framework for handling winding 
+										displacements and FRA data has been successfully formulated by considering the harmonic 
+										sum of squares of natural frequencies, instead of just the natural frequencies. This 
+										manipulation leads to an elegant closed-form expression that connects the displacement 
+										location and its severity, to changes in natural frequencies and provides a general 
+										platform for localization and severity assessment of damages occurring in a transformer 
+										winding. For its implementation, short circuit natural frequencies and a few other terminal 
+										measurements are the only inputs that are necessary. This formulation is used to demonstrate 
+										localization of radial and axial displacement in an isolated, actual, single, air-cored 
+										continuous-disk winding. Extensive experimental verification was done and the results are 
+										encouraging.</p>
+									</div>
+								</li>
+								<li><font>Sethupathy S. and Udaya Kumar: </font>
+									<a href="javascript:toggle('p38');">Stable Galerkin Finite Element Formulation for the Simulation of Electromagnetic Flowmeter</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_51.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_51.pdf" target="_blank">Poster</a>									
+									<div id="p38" style="display: none">
+										<p>The electromagnetic flowmeter is employed for the flow rate measurement of liquid metals 
+										in fast breeder reactors. Due to the complexities in the measuring environment, theoretical 
+										evaluation of its sensitivity is always preferred and the Galerkin finite element method 
+										(GFEM) is generally employed. However, the GFEM is known to suffer from numerical 
+										oscillations at higher flow rates. To overcome this, Streamline upwind/PetrovGalerkin 
+										(SU/PG) schemes are adopted from fluid dynamics and employed. However, the SU/PG scheme 
+										is known to introduce boundary errors transverse to the flow. In addition, it requires 
+										the evaluation of stabilization parameter and this parameter is not readily available 
+										for elements of order beyond quadratic. To overcome these problems, two novel, stable 
+										schemes are proposed. The Z-transform approach is used to devise these schemes and the 
+										error bounds of these schemes are also derived.<br>
+										
+										Scheme 1: In this scheme, the stability is achieved by restating the input field in terms 
+										of vector potential and the GFEM is employed without any modification. This scheme is 
+										restricted to axially varying input fields, which is generally true for flowmeter analysis.<br>
+										
+										Scheme 2: In this scheme, the stability is achieved through appropriate averaging of the 
+										input field. Unlike scheme-1, this scheme can handle variation of input field perpendicular 
+										to the flow direction also.<br>
+										
+										Extensive 3D numerical simulations are carried out and stable results are obtained with 
+										these schemes. In addition, the schemes are successfully verified for the standard test 
+										problem TEAM-9.</p>
+									</div>
+								</li>
+							</ul>
+							<b>Session Chairs:</b><br>Rajendra Naik (GE),<br> Vinod John (IISc).						
+						</div>
+					</td>
+				</tr>				
+				<tr>
+					<td bgcolor=#ccccff>10.40 - 11.00</td>
+					<td colspan=1><b>Faculty talk: Kaushik Basu</b>,<br> Department of Electrical Engineering, IISc.<br></td>
+					<td rowspan="2" style="text-align:center"><b>Session Chair</b><br>Phaneendra Yelavarthy (IISc)</td>
+				</tr>				
+				<tr>
+					<td bgcolor=#ccccff>11.00 - 11.20</td>
+					<td colspan=1><b>Faculty talk: Mayank Shrivastava</b>,<br>Department of Electronic Systems Engineering, IISc.<br></td>									
+				</tr>				
+										
+				<tr>
+					<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>Coffee Break</td></center></font>		
+				</tr>
+				
+				<tr>
+					<td bgcolor=#ccccff>11.40 - 12.25</td>
+					<td colspan=1><b>Keynote talk: Shihab Shamma</b>,<br>K. Vaidyanathan Distinguished Chair, IISc.<br>
+					Institute of Systems Research, University of Maryland, College Park, USA.<br></td>
+					<td rowspan="1" style="text-align:center"><b>Session Chair</b><br>P.S. Sastry (IISc)</td>										 									
+				</tr>				
+				
+				<tr>
+					<td width=110px bgcolor=#ccccff>12.25 - 13.00</td>
+					<td colspan=2>
+						<a href="javascript:toggle('tt6');"><b>Session 6: Signal Processing (Click to toggle details)</b></a>
+						<div id="tt6" style="display: none">
+							<ul>
+								<li><font>H. G. Ranjani and T. V. Sreenivas: </font>
+									<a href="javascript:toggle('p39');">Discovering variable length phrases from symbolic notation of Carnatic music</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_40.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_40.pdf" target="_blank">Poster</a>									
+									<div id="p39" style="display: none">
+										<p>The melodic framework of Indian classical music, referred to as ragas, are widely 
+										acknowledged among musicians to be composed of grammatical structures which can be seen in 
+										3 strata: (i) use of specific swaras (notes) (ii) gamakas (ornamentation) on the specified 
+										swaras (iii) swara sub-sequences or phrases (prayogas ). Together these create particular 
+										raga-bhava (mood). Here, we attempt to discover phrases from symbolic transcripts of 
+										rendering of different ragas using a stochastic segmentation approach. Phrases are assumed 
+										to be independent sub-sequences in an avarthana (one rhythm cycle), repetitive across 
+										avarthanas and krithis (compositions). The segmentation framework finds optimal segmentation 
+										to capture these repetitive phrases, given the sequence of swaras of the krithis. 
+										Multigram models are used for segmentation. This results in a multinomial distribution, 
+										with each variable representing a possible phrase, each of length less than equal to N. 
+										These phrases and their distributions are the parameters of the model, are referred to as 
+										dictionary. We estimate the dictionary through segmental K-means training. Further, we have 
+										proposed a two-stage modification to obtain longer length phrases. Any N-length phrase 
+										whose occurrence exceeds a threshold is considered as new symbols themselves. A second 
+										stage of segmentation is performed on the updated symbol set. Performance is evaluated in 
+										terms of perplexity and musicological similarity on 12 ragas each represented by over 2000 
+										swara sequences collected from seven krithis each, set to five different talas (rhythm 
+										framework).. Appreciable number of musicological phrases is discovered as a result of both 
+										multigram and modified multigram model.</p>
+									</div>
+								</li>
+								<li><font>K. Venkata Vijay Girish and Ramakrishnan A. G.: </font>
+									<a href="javascript:toggle('p40');">Analysis of audio intercepts: Can we identify and locate the speaker?</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_50.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_50.pdf" target="_blank">Poster</a>									
+									<div id="p40" style="display: none">
+										<p>In the analysis of intercepts of conversations, one of the motivations
+										is to be able to identify the nature of background noise as a means
+										of identifying the possible geographical location of a speaker. The next
+										task is to identify if the speech is from one of the known suspects. A
+										dictionary learning and block sparsity based source recovery approach
+										has been used to estimate hierarchically the type of background environment 
+										and the speaker in a noisy speech recording, simulated at different SNRs using ten noise 
+										sources. Given a test utterance, a noise label is assigned using block sparsity approach, 
+										and subsequently, the speaker is classified using sum of weights recovered from the 
+										concatenation of speaker dictionaries and the identified noise source dictionary. Using the 
+										dictionaries of the identified speaker and noise sources, frame-wise speech and noise energy 
+										are estimated using a source recovery method. The energy estimates are then used to identify 
+										the segments, where speech is present. We obtain 100% accuracy for background classification 
+										and around 99% for speaker classification at a SNR of 10 dB.</p>
+									</div>
+								</li>
+								<li><font>Aniruddha Adiga and Chandra Sekhar Seelamantula: </font>
+									<a href="javascript:toggle('p41');">An Alternating Projections Algorithm for Sparse Blind Deconvolution: Application to Speech Signal Deconvolution</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_53.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_53.pdf" target="_blank">Poster</a>									
+									<div id="p41" style="display: none">
+										<p>We address the problem of blind deconvolution (BD) considering the signal as the output 
+										of a linear, shift-invariant filter excited by a sparse source. The cost function involved 
+										in BD is developed within a Bayesian framework and includes an $\ell_2$ data term and a 
+										non-convex $\ell_p$-norm ($0 \le p \le 1$) as the sparsity inducing penalty function. 
+										Since the penalty function is not differentiable at the origin, we consider an 
+										$\epsilon$-regularized $\ell_p$-norm substitute for optimization. In addition to the 
+										penalty function being non-convex, the data term is non-convex since both filter and 
+										excitation are unknown. Thus, the overall cost function becomes non-convex. We propose to 
+										optimize the cost function using an {\it alternating minimization (Alt. Min.) strategy}, 
+										and develop an alternating $\ell_p-\ell_2$ algorithm (ALPA). In the estimation of the 
+										excitation, the ensuing cost function is also non-convex and is optimized using 
+										majorization-minimization technique. Convergence analysis of the algorithm shows that the 
+										majorized cost function and the original $\ell_p$-norm-based cost function are 
+										non-increasing in every step of Alt. Min. provided that the $\epsilon$ parameter is chosen 
+										suitably. We also analyze the use of pseudo-inverse solution as an initialization. With 
+										respect to the excitation, we derive tail probabilistic bounds for the average absolute 
+										deviation of the least-squares initialization from the true excitation and the bound 
+										depends on the conditioning of the system. As an application, we consider the problem of 
+										blind deconvolution of speech signals and show that ALPA yields a sparse excitation 
+										(sparser than state-of-the-art).</p>
+									</div>
+								</li>
+							</ul>
+							<b>Session Chairs:</b><br>Om Deshmukh (Xerox),<br>Prasanta Ghosh (IISc).						
+						</div>
+					</td>
+				</tr>								
+				
+				<tr>
+					<td bgcolor=#AAAAAA colspan="3"><font color=blue><center>Lunch Break</td></center></font>		
+				</tr>
+				
+				<tr>
+					<td bgcolor=#ccccff>14.00 - 14.45</td>
+					<td colspan=1><b>Keynote talk: Surojit Chatterjee</b>,<br>Senior Vice President, Flipkart.<br></td>										 									
+					<td rowspan="1" style="text-align:center"><b>Session Chair</b><br>Ramesh Hariharan (IISc)</td>					
+				</tr>												
+				
+				<tr>
+					<td width=110px bgcolor=#ccccff>14.45 - 16.15</td>
+					<td colspan=2>
+						<a href="javascript:toggle('tt7');"><b>Session 7: Machine Learning, Games and Optimization (Click to toggle details)</b></a>
+						<div id="tt7" style="display: none">
+							<ul>
+								<li><font>Praphul Chandra, Sujit Gujar and Y. Narahari: </font>
+									<a href="javascript:toggle('p42');">Crowdfunding Public Projects with Provision Point: A Prediction Market Approach.</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_17.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_17.pdf" target="_blank">Poster</a>									
+									<div id="p42" style="display: none">
+										<p>Civic crowdfunding is emerging as a popular means to generate funding from citizens for 
+										public and community projects. The private financing of a public project is not a new 
+										phenomenon and has received significant attention in the literature. At the heart of the 
+										issue is the free-riding problem: since public projects are non-excludable and non-rival, 
+										agents have an incentive to free-ride on the contributions of others. Civic crowdfunding 
+										has two salient features (i) Crowdfunding relies on voluntary contributions and hence 
+										neither coercion nor punishment is an option. (ii) Since contributions arrive over time, 
+										an agent is able to observe the contributions of the agents who have contributed so far 
+										for the public project.<br>
+										
+										We design mechanisms for crowdfunding platforms with sequentially arriving agents. Our 
+										mechanism uses a prediction market to award, to each contributing agent, an appropriate 
+										number of securities based on the quantum and the timing of his contribution. If the 
+										project is not fully funded, each agent is refunded an amount equal to the number of 
+										securities awarded to him. With our approach, we prove, under reasonable technical 
+										assumptions, that there is a non-empty set of sub-game perfect equilibria of the 
+										induced game such that it is best for each agent to contribute immediately upon arrival, 
+										an amount proportional to his true value for the project, and moreover, the project 
+										achieves full funding at these equilibria. We evaluate the performance of our mechanism 
+										employing logarithmic and quadratic scoring rule based markets.</p>
+									</div>
+								</li>
+								<li><font>Arunselvan Ramaswamy and Shalabh Bhatnagar: </font>
+									<a href="javascript:toggle('p43');">Stochastic approximation algorithms with set-valued mean fields and their applications.</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_18.pdf" target="_blank">Slides</a>&nbsp&nbsp<a href="./posters-2016-04-25/EECS2016_paper_18.pdf" target="_blank">Poster</a>									
+									<div id="p43" style="display: none">
+										<p>This talk primarily considers stochastic approximation algorithms (SAA) wherein
+										the mean fields are set-valued. Applications to optimization, reinforcement
+										learning and supervised learning are presented.
+										
+										When analyzing SAA the almost sure boundedness (stability) of the iterates
+										is often assumed. However, in many practical applications, this assumption is
+										not easy to verify. We present two sets of sufficient conditions that guarantee the
+										stability and convergence of SAA including those with set-valued mean fields.
+										As an application, we discuss a solution to the “approximate drift problem”.
+										In gradient based learning algorithms, gradient estimates are used instead of
+										true gradients resulting in estimation errors at each stage. Prior literature
+										on gradient methods with errors including Bertsekas and Tsitsiklis (2000)
+										“couple” the estimation error and step-size and this coupling could affect the
+										learning rate. We use our framework to eliminate such “couplings” and unlike
+										previous works we do not need the errors to vanish over time.
+										
+										Next, we discuss a framework to analyze two timescale SAA with set-valued
+										mean fields. As an application, we use this framework to analyze the two
+										timescale SAA corresponding to the Lagrangian dual problem in optimization
+										theory. We use the Lagrangian dual problem to bring out the advantages of
+										our framework over all previous frameworks. Finally, we present easily verifiable
+										sufficient conditions for the stability and convergence of SAA with ‘controlled
+										Markov’ noise. Such algorithms arise naturally in reinforcement learning. As an
+										application, we present an improvement to a general form of temporal difference
+										learning algorithms.</p>
+									</div>
+								</li>
+								<li><font>Ranganath B. N. and Shalabh Bhatnagar: </font>
+									<a href="javascript:toggle('p44');">Scalable Sparse Bayesian Nonparametric and Matrix Tri-factorization Models for Text Segmentation, Topical analysis and Entity Resolution in Dyadic data.</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_39.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_39.pdf" target="_blank">Poster</a>									
+									<div id="p44" style="display: none">
+										<p>1, In our first work, we address the problem of segmentation of collections of sequence 
+										data such as documents through the nonparametric Block Exchangeable model(BEM) that captures 
+										the new notion of Block Exchangeability. We show that Block Exchangeability lies in between 
+										Markov Exchangeability and Complete Exchangeability for which segmentation is meaningful, 
+										leads to scalable inference and parametrically, contains sparser number of transition 
+										parameters.<br> 
+										
+										2, Subsequently, in our second work, we explore the sparse relationships for dyadic data, 
+										where we explore sparse relationships between the domain entities and the topic, such as 
+										user-topic and document-topic relationships through sparse matrix tri-factorization 
+										formulation involving sparsity constraints, not only on the individual factor matrices, 
+										but also on the product of two of the factors via the surrogate through L1-regularization.<br> 
+										
+										3, Finally, in the third work, we address the problem of entity resolution in dyadic data, 
+										where the goal is to identify real users associated with the user references in the 
+										documents. For this, we propose a Bayesian nonparametric `Sparse entity resolution model' 
+										(SERM) exploring the sparse relationships between the grouped data i.e., grouping of the 
+										documents, and the topics, author entities in the group via the Indian Buffet process and 
+										also exploit the sparseness between an author entity and the associated author aliases 
+										through k-NN mechanism.</p>
+									</div>
+								</li>
+								<li><font>Thirumulanathan Dhayaparan, Rajesh Sundaresan and Y. Narahari: </font>
+									<a href="javascript:toggle('p45');">Optimal Auctions for Two goods with Uniformly Distributed Valuations.</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_52.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_52.pdf" target="_blank">Poster</a>									
+									<div id="p45" style="display: none">
+										<p>Optimal auctions are the auction mechanisms that generate the highest expected revenue 
+										to the seller. Consider the setting when only one buyer participates in the auction. The 
+										optimal auction mechanism when there is only a single good to be sold, was proved (in 
+										[Myerson 1981]) to be a take-it-or-leave-it offer at a reserve price that depends only on 
+										the distribution of the valuation of the buyer. The general problem of optimal auctions 
+										when there are two items to be sold, remains unsolved yet. The solution when the 
+										distribution of valuations is uniform in $[0,b_1]\times[0,b_2]$ is known from 
+										[Daskalakis et al. 2013]. Taking cue from this solution, we solve the problem of finding 
+										the optimal auction when the valuations of the buyer are distributed in any arbitrary 
+										rectangle $[c_1,c_1+b_1]\times[c_2,c_2+b_2]$ in the positive quadrant. We conjecture that 
+										our solution methodology can be used to solve a wider class of distributions. We have some 
+										preliminary results to support the conjecture.</p>
+									</div>
+								</li>
+								<li><font>Nidhin Koshy Vaidhiyan and Rajesh Sundaresan: </font>
+									<a href="javascript:toggle('p46');">An Active Sequential Hypothesis Testing model for Visual Search.</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_59.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_59.pdf" target="_blank">Poster</a>									
+									<div id="p46" style="display: none">
+										<p>We describe a decision-theoretic model for visual search. We first model visual search 
+										as an active sequential hypothesis testing problem. Our analysis suggests an appropriate 
+										neuronal dissimilarity index which correlates strongly with the reciprocal of search times. 
+										We will then consider a scenario where the subject has to find an oddball image, but without 
+										any prior knowledge of the oddball and distractor images. We model this scenario as one of 
+										detecting an odd Poisson point process having a rate different from the common rate of the 
+										others. The revised model suggests a new neuronal dissimilarity index. The new dissimilarity 
+										index is also strongly correlated with the behavioural data.<br>
+										
+										We thus propose a framework for connecting the perceptual distances in the neuronal and the 
+										behavioural spaces. Our framework can possibly be used to analyze the connection between 
+										the neuronal space and the behavioural space for various other behavioural tasks.</p>
+									</div>
+								</li>
+								<li><font>Bhushan Kotnis and Joy Kuri: </font>
+									<a href="javascript:toggle('p47');">Incentivized Campaigning in Social Networks.</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_60.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_60.pdf" target="_blank">Poster</a>									
+									<div id="p47" style="display: none">
+										<p>Campaigners, advertisers and activists are increasingly turning to social recommendation mechanisms provided by social media for promoting
+										their products, services, brands and even ideas. However, many times,
+										such social network based campaigns perform poorly in practice due to
+										the lack of recommendations beyond the primary level, i.e., the message
+										travels only a few hops from its source. A natural strategy for increasing
+										the hop count is to provide incentives for recommendations. Here, we
+										address the problem of minimizing the cost incurred by the campaigner
+										for incentivizing a set of agents in the social network while ensuring that
+										the campaign message reaches a given number of agents. We also address
+										the dual problem of maximizing the campaign penetration for a resource
+										constrained campaigner. To do the same we use percolation theory for
+										formulating two optimization problems. The optimization problems are
+										non trivial and are not amenable to traditional approaches due to the
+										involvement of a solution of a fixed point equation which needs to be
+										computed numerically. One of our primary contribution is that we use
+										results from reliability theory to establish some key properties of the fixed
+										point equation, which enables us to solve the optimization problems using
+										algorithms that are linairthmic in the maximum node degree. Furthermore, we evaluate the efficacy of the analytical solution on real world
+										social networks.</p>
+									</div>
+								</li>
+								<li><font>Jayvant Anantpur, Nagendra Gulur, Shivaram Kalyanakrishnan and R Govindarajan: </font>
+									<a href="javascript:toggle('p4');">RLWS:A Reinforcement Learning Based GPU Warp Scheduler</a> 
+									<br><a href="./slides-2016-04-25/EECS2016_paper_27.pdf" target="_blank">Slides</a>&nbsp&nbsp
+										<a href="./posters-2016-04-25/EECS2016_paper_27.pdf" target="_blank">Poster</a>									
+									<div id="p4" style="display: none">
+										<p>The Streaming Multiprocessors (SMs) of a Graphics Processing Unit (GPU) consist of a few 
+										tens of SIMD cores and execute instructions from a group of consecutive threads, called warps. 
+										At each cycle, an SM schedules a warp from a group of active warps and can context switch 
+										among the active warps to hide various stalls. Hence the performance of the warp scheduler 
+										is critical to the performance of the GPU. Heuristic warp scheduling algorithms work well 
+										only for the situations they are designed for. GPU workloads are becoming very diverse in 
+										nature and hence one heuristic may not work for all cases. To work well over a diverse range 
+										of workloads, which might exhibit hitherto unseen characteristics, a warp scheduling 
+										algorithm must be able to adapt on-line.<br> 
+										We propose a Reinforcement Learning (RL) based Warp Scheduler which learns to schedule warps 
+										based on the current state of the core and the long-term benefits of scheduling actions. 
+										The RL based warp scheduler can adapt not only to different types of workloads, but also to 
+										different execution phases in each workload. As the design space involving the RL state 
+										variables and the RL parameters is large, we use a Genetic Algorithm to identify the useful 
+										subset of state variables and RL parameter values. We evaluated the proposed RL based 
+										scheduler using the GPGPU-SIM simulator on a large number of workloads. Our RL based 
+										implementation achieved an average speedup of 1.05x over the LRR strategy and 1.07x over 
+										the TL strategy.</p>
+									</div>
+								</li>								
+							</ul>
+							<b>Session Chairs:</b><br>Vinay Jammu (GE),<br>Chiranjib Bhattacharya (IISc).
+						</div>
+					</td>
+				</tr>								
+				
+				<tr>
+					<td bgcolor=#ccccff>16.30 - 18.15</td>
+					<td colspan="2"><b>Poster session:</b> 55 posters (48 final year PhD student presenters and 7 final year MSc (Res) students).
+						<a href="javascript:toggle('tt8');"><b>(Click to toggle details)</b></a>						 
+						<div id="tt8" style="display: none">
+							<br><br>Posters from all 48 PhD students, and,
+							<ul>
+								<li><font>Vinay Vasista, Uday Kumar Reddy B. and Ravi Teja Mullapudi: </font>PolyMage: Automatic Optimization for Image Processing Pipelines</li>
+								<br><a href="./posters-2016-04-25/EECS2016_paper_28.pdf" target="_blank">Poster</a>								
+								<li><font>Nikita Prabhu and R. Venkatesh Babu: </font>Image Representation using Attribute-Graphs.</li>
+								<br><a href="./posters-2016-04-25/EECS2016_paper_11.pdf" target="_blank">Poster</a> 
+								<li><font>Prakhar Ojha and Partha Talukdar: RelCrowd: </font>Relational Crowdsourcing for Estimating Knowledge Graph Accuracy under Budget.</li>
+								<br><a href="./posters-2016-04-25/EECS2016_paper_36.pdf" target="_blank">Poster</a>								
+								<li><font>Srinivas S. S. Kruthiventi and R. Venkatesh Babu: </font>Visual Flow Analysis and Saliency Prediction.</li> 
+								<br><a href="./posters-2016-04-25/EECS2016_paper_44.pdf" target="_blank">Poster</a>								
+								<li><font>Ashirbad Mishra, Sathish Vadhiyar, Rupesh Nasre and Keshav Pingali: </font>A Fine-Grained Hybrid CPU-GPU Algorithm for Betweenness Centrality Computations.</li> 
+								<br><a href="./posters-2016-04-25/EECS2016_paper_47.pdf" target="_blank">Poster</a>								
+								<li><font>Girijanandan Nucha and Vijay Natarajan: </font>Computing contour tree for piecewise polynomial functions.</li> 
+								<br><a href="./posters-2016-04-25/EECS2016_paper_48.pdf" target="_blank">Poster</a>								
+								<li><font>Daniel Sanju Antony and Rathna G. N.: </font>Performance Analysis of Non Local Means algorithm using Hardware Accelerators.</li>
+							</ul>
+						</div>					
+					
+					</td>
+					<!--<td width="150px" ><center><b>High tea</b></center><br></td>-->										 									
+				</tr>				
+				
+				<tr>
+					<td bgcolor=#ccccff>18.15 - 19.30</td>
+					<td colspan=2><b>Valedictory and Alumni Meet.</b><br></td>					 									
+				</tr>
+				<tr>
+					<td bgcolor=#ccccff>19.30</td>
+					<td colspan=2><center><b>High Tea</b></center></td>					 									
+				</tr>						
+												
+			</table>
+			<div align=right><a href="schedule.pdf" target="_blank"><b>Full schedule...</b></a></div>
+			<br><br><br><br><br><br><br><br><br><br><br>			
+		</div>
+
+</div>
+	
+		<div id="sidebar">
+			<ul><br/><br/>	
+	      	<li><a href="index.html">HOME</a></li><br/>	
+				<li><a href="committee.html">COMMITTEE</a></li><br/>	         
+	         <li><a href="callForAbstracts.html">CALL FOR ABSTRACTS</a></li><br/>		         	
+	         <li><a href="schedule.html">SCHEDULE</a></li><br/>
+		    	<li><a href="alumnievent.html">ALUMNI EVENT</a></li><br/>			    		         	
+		    	<li><a href="participant.html">INDUSTRY PARTICIPATION</a></li><br/>			    		         			    	
+	         <li><a href="related.html">RELATED LINKS</a></li><br/>	
+		    	<li><a href="gallery.html">GALLERY</a></li><br/>	
+	         <!--<li><a PROCEEDINGS>PROCEEDINGS</a></li><br/>--href="EECS_2015_proceeding.pdf"-->	
+	      </ul> 
+
+			<br/>
+			<h4> Sponsors: </h4>
+				<img src="./sponsors/GE_white_monogram.png" width="50%"></img><br/><br/>
+				<!--<img src="./sponsors/Bosch.JPG" width="50%"></img><br/><br/>								
+				<img src="./sponsors/flipkart.png" width="50%"></img><br/><br/>-->												
+	        	<div class='img-container'>
+					<img src='./sponsors/Bosch.JPG'  width="70%" style="display:inline-block;"/><br/><br/>
+					<img src='./sponsors/Flipkart logo.jpg' width="70%" style="display:inline-block;" />
+				</div>
+				<br>
+				<img src="./sponsors/IIsc_logo.jpg" width="40%"></img><br/><br/><br/>
+		</div>		
+		<div id="footer"></div>	
+
+</div>
+
+
+</body>
+</html>

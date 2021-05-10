@@ -1,0 +1,27 @@
+CALL FOR ABSTRACTS
+
+The symposium invites abstracts from Ph.D. and M.Tech.(Res.) (formerly M.Sc.(Engg)) research students in their final year, i.e., students expecting to finish in the calendar year 2016) from the departments of CSA, ECE, EE, ESE or CDS. Students will be nominated by their advisor. Ph.D. students will be able to give a brief oral presentation of their research in about 15 minutes, along with a poster presentation during the Alumni reception. M.Tech.(Res.) students will present just their poster. 
+
+
+SUBMISSION GUIDELINES
+
+Nominated M.Tech.(Res.) and Ph.D. students should upload their extended abstract in plain text, limited to 250 words, along with the poster to be presented in PDF format. Further, Ph.D. students should submit their oral presentation slides in PDF format. Submissions will be reviewed and suggestions for improvements will be provided by the reviewers. Students should incorporate this feedback and upload a final version of the abstract, poster and slides. These final versions will be available as part of the online proceedings. Incomplete submissions are liable to be rejected at the review or final stage.
+
+The submission should be done with the approval of the student's supervisor. Students must include their supervisor as the last author in their submissions.
+
+NOTE: Students should keep the audience in mind (students and faculty from the Electrical Sciences Division) and pitch their presentation at an appropriate level. They should also manage their time well so as to finish the presentation comfortably within the scheduled duration, and allow some time for questions. We recommend about 15 slides or so. Guidelines on how to give a technical talk to a broad technical audience is available here [http://www.ece.iisc.ernet.in/~divsymposium/lib/exe/fetch.php?media=giving_talks.pdf]. (Courtesy: Chris Godsil) 
+
+
+SUBMISSION WEBSITE
+
+https://easychair.org/conferences/?conf=eecs2016
+
+Students must create an account on EasyChair conference management site, if they do not have one, login and submit the relevant documents by the deadlines given below.
+
+IMPORTANT DATES
+
+1. Nominations of students from advisor : March 21st 2016
+2. Submissions of abstract, poster (M.Tech.(Res.) and Ph.D. students) and slides (for PhD students) : April 4th 2016
+3. Reviews provided on the submissions: April 13th, 2016.
+4. Submission of final abstract, poster (M.Tech.(Res.) and Ph.D.)and slides (Ph.D.): April 20th, 2016. 
+

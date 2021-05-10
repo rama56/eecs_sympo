@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>The Holy Grail of Layouts: Example #4: A List Apart</title>
+	<style type="text/css">
+
+		/*** The Essential Code ***/
+
+		body {
+			margin: 0;
+			padding-left: 300px;    /* LC fullwidth */
+			/*padding-right: 190px;  RC fullwidth + CC padding */
+			min-width: 240px;       /* LC fullwidth + CC padding */
+			width:1048px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		#header{
+			margin-left: -300px;    /* LC fullwidth */
+			margin-right: -40px;   /*RC fullwidth + CC padding */
+		}
+		#footer {
+			margin-left: -300px;    /* LC fullwidth */
+			margin-right: -40px;   /*RC fullwidth + CC padding */
+		}
+
+		.column {
+			position: relative;
+			float: left;
+		}
+
+		#center {
+			padding: 0 20px;
+			width: 100%;
+		}
+
+		#left {
+			width: 280px;           /* LC width */
+			padding: 0 10px;        /* LC padding */
+			right: 340px;           /* LC fullwidth + CC padding */
+			margin-left: -100%;
+		}
+/*
+		#right {
+			width: 130px;            RC width 
+			padding: 0 10px;         RC padding 
+			margin-right: -100%;
+		}*/
+
+		#footer {
+			clear: both;
+		}
+
+		/*** IE Fix ***/
+		* html #left {
+			left: 150px;            /* RC fullwidth */
+		}
+
+		/*** Just for Looks ***/
+
+		body {
+			background: #FFF;
+		}
+
+		#header, #footer {
+			font-size: large;
+			text-align: center;
+			padding: 0.3em 0;
+			background: #2D3193;
+		}
+
+		#left {
+			background: #2D3193;
+                        color:#FFF;
+			height:100%;
+		}
+
+		#center {
+			background: #FFF;
+		}
+
+		#right {
+			background: #F66;
+		}
+
+		.column {
+			padding-top: 1em;
+			text-align: justify;
+		}
+		#left a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		
+		#left a:hover {
+			color: #06C;
+			text-decoration: none;
+		}
+		#left ul {
+	               list-style: none;
+                       list-style-type: none;  
+		       text-align: center;
+                       padding: 0px;
+                       margin: 0px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="header"></div>
+<div id="center" class="column" style="color: #2D31F3; background: #cFcFcF;">
+		<h1>EECS Research Students Symposium - 2015</h1>
+		<h3>February 12-13, 2015 </h3>
+		<h4>Venue: Faculty Hall, Indian Institute of Science </h4>
+		<br/>		
+		<br/>
+		<br/>
+		<br/>
+	</div>
+
+	<div id="left" class="column">
+		<img src="IIsc_logo.jpg" style="max-width:250px;margin:auto;display:block;"/> 
+		</br>
+	</div>
+
+	<div id="center" class="column">
+		<h1>This is the main content.</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p><a href="default.asp">HOME</a>
+	</div>
+
+	<div id="left" class="column">
+		 <ul>
+<br/>	<br/>	
+  <li><a href="default.asp">HOME</a></li><br/>	
+  <li><a href="news.asp">SCHEDULE</a></li><br/>	
+  <li><a href="contact.asp">GALLERY</a></li><br/>	
+  <li><a href="about.asp">RELATED LINKS</a></li><br/>	
+  <li><a href="about.asp">ALUMNI EVENT</a></li><br/>	
+  <li><a href="about.asp">COMMITTEE</a></li><br/>	
+</ul> 
+	</div>
+
+	
+
+	<div id="footer"></div>
+
+</body>
+
+</html>
+
