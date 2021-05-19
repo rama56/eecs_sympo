@@ -208,19 +208,24 @@ $base_path_url = "https://eecs.iisc.ac.in/EECS2021/";
       <div class="row text-center text-white align-items-center mt-5">
         <!-- <div class="col-12 col-md-3 col-lg-3">
         </div> -->
-        <div class="col-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-3 col-lg-3">
           <h3  style="text-align: center; " class="text-h3 btn btn-outline-success">
             <a href="resources/EECS_2021_brochure.pdf" target="_blank" style="color: white">EECS 2021 Brochure</a>
           </h3>
         </div>
-        <div class="col-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-3 col-lg-3">
           <h3  style="text-align: center;" class="text-h3 btn btn-outline-success">
             <a href="resources/EECS_2021_BookofAbstracts.pdf" target="_blank" style="color: white">Book of Abstracts</a>
           </h3>
         </div>
-        <div class="col-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-3 col-lg-3">
           <h3  style="text-align: center; " class="text-h3 btn btn-outline-success">
             <a href="resources/EECS_2021_symposium_program.pdf" target="_blank" style="color: white">Symposium Program</a>
+          </h3>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+          <h3  style="text-align: center; " class="text-h3 btn btn-outline-success">
+            <a href="awards.html" target="_blank" style="color: white">Best Presentation Awards</a>
           </h3>
         </div>
         <!-- <div class="col-12 col-md-3 col-lg-3">

@@ -11,51 +11,257 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css ">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-  <link rel="stylesheet" type="text/css" href="css/newstyle_v3.css">
-  <!-- Plugins -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script> 
-    $(function(){
-      $("#header_bar").load("header_bar.html"); 
-      $("#footer_space").load("footer_space.html");
-    });
-  </script> 
+  <link rel="stylesheet" type="text/css" href="css/newstyle_v3.css"> 
 </head>
 <body>
-  <div id="header_bar"> </div>
+  <div id='header_bar'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="padding: 0px!important;">
+      <div class="container" style="max-width: 90%;">
+        <a class="navbar-brand mr-1" href="index.php">
+          <img src="resources/images/logos/iisc-seal.jpg" alt="" style="width: 60px;">
+          <strong>EECS 2021 </strong>
+          <!--  <span>Indian Institute of Science Bangalore</span> -->
+          <span class="content-desktop"> | IISc Bangalore</span>
+          <span class="content-mobile">IISc Bangalore</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active mr-3">
+              <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown19" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">About</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown19">
+                <a class="dropdown-item" href="index.php#about">About</a>
+                <a class="dropdown-item" href="index.php#participating_departments">Participating departments</a>
+                <a class="dropdown-item" href="index.php#themes">Themes</a>
+              </div>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="index.php#speakers">Speakers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Schedule</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown20">
+                <a class="dropdown-item" href="schedule-may7.html">Day 1 (May 7)</a>
+                <!-- <a class="dropdown-item" href="http://www.rbccps.org/cyphyss2020/schedule/">Cyber-Physical Systems Symposium - 2020</a> -->
+                <a class="dropdown-item" href="schedule-may8.html">Day 2 (May 8)</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sponsors</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown21">
+                <a class="dropdown-item" href="index.php#sponsors">Current Sponsors</a>
+                <a class="dropdown-item" href="cfs.html">Call for Sponsorship</a>
+              </div>
+            </li> -->
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="index.php#sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="index.php#contact">Contacts</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="legacy.html">Legacy</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_symposium_program.pdf">Program</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_brochure.pdf">Info. Brochure</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" target="_blank" href="resources/EECS_2021_BookofAbstracts.pdf">Book of Abstracts</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://forms.office.com/r/pgZj93WrPD" target="_blank" class="btn btn-primary nav-link text-white">Register &gt;</a>
+            </li> 
+          </ul> 
+        </div>
+      </div>
+      <!-- SPONSOR LOGO -->
+      <!-- <a class="nav-item" href="https://www.cisco.com/c/en_in/about/csr.html" target="_blank">
+        <img src="resources/images/logos/cisco-final.png" height="60px"/>
+      </a> -->
+    </nav>
+  </div>
   
-  <section class="pt-4 pb-4">
+  <section class="pt-4 pb-4 below_header">
     <div class="container">
       <!-- PAGE HEADING -->
-      <p style="text-align: center;"><span style="text-decoration: underline;"><strong><span lang="en-GB">EECS Research Students' Symposium</span></strong></span></p>
-      <p style="text-align: center;"><span><strong><span lang="en-GB">Student best paper awards</span></strong></span></p>
-      <p style="text-align: center;"><span><strong><span lang="en-GB">The best paper awards are sponsored by <a href="https://btirc.iisc.ac.in/">British Telecom India Research Centre (BTIRC), IISc</a></span></strong></span></p>
-      <p><strong><u><span lang="en-GB">Track-1</span></u></strong></p>
+      <h3 style="text-align: center;"><strong>Best Student Presentation Awards</strong></h3>
+  
+
 
       <!-- BEST PAPER DETAILS -->
-      <p><span lang="en-GB">[1] Ankit Soni, ESE (Advisor: Mayank Srivastava) - Design of GaN based High Electron Mobility Transistor (HEMT) &amp; Diodes for Power and RF Applications</span></p>
-      <p><span lang="en-GB">[2] Medha Dandu, ECE (Advisor: Kausik Majumdar) - Unravelling the energy transfer in 2D heterostructures for enhanced optical properties</span></p>
-      <p><strong><u><span lang="en-GB">Track-2</span></u></strong></p>
-      <p><span lang="en-GB">[1] Ajay Kochar, ECE (Advisor: K.J. Vinoy) - Mitigation of Highest Sidelobe Level degradation due to Quantized Phases in mmWave 5G Arrays</span></p>
-      <p><span lang="en-GB">[2] Sayan Sen Gupta, ECE (Advisor: Neelesh B. Mehta) - Energy-Efficient Detection in Wireless Sensor Networks</span></p>
-      <p><strong><u><span lang="en-GB">Track-3</span></u></strong></p>
-      <p><span lang="en-GB">[1] Purvi Agrawal, EE (Advisor: Sriram Ganapathy) - Neural Representation Learning for Speech Signals</span></p>
-      <p><span lang="en-GB">[2] Vijaikumar M, CSA (Advisor: Shirish Shevade and M Narasimha Murty) - Graph Attention Mechanism for Top-N Recommendation Systems</span></p>
-      <p><span lang="en-GB">[2] Vivek B.S., CDS (Advisor: R. Venkatesh Babu) - Efficient Regularization for Single-Step Adversarial Training</span></p>
-      <p><strong><u><span lang="en-GB">Track-4</span></u></strong></p>
-      <p><span lang="en-GB">[1] Karthik P. N., ECE (Advisor: Rajesh Sundaresan) - Odd Arm Identification in Multi-armed Bandits with Markov Observations</span></p>
-      <p><span lang="en-GB">[2] Priya J. Nadkarni, ESE (Advisor: Shayan Srinivasa Garani) - Entanglement-assisted and unassisted algebraic quantum error correcting codes</span></p>
-      <p><strong><u><span lang="en-GB">Track-5</span></u></strong></p>
-      <p><span lang="en-GB">[1] Divya Ravi, CSA (Advisor: Arpita Patra) - On the Round Complexity Landscape of Secure Multi-party Computation</span></p>
-      <p><span lang="en-GB">[2] Kripa Shanker, CSA (Advisor: Vinod Ganapathy) - An Evaluation of Methods to Port Legacy Code to SGX Enclaves</span></p>
-      <p><span lang="en-GB">[2] Janaky Murthy, CSA (Advisor: Chandan Saha) - Equivalence test for the trace iterated matrix multiplication polynomial</span></p>
-      <p><strong><u><span lang="en-GB">Track-6</span></u></strong></p>
-      <p><span lang="en-GB">[1] Burra Lakshmi Ramya Krishna, ESE (Advisor: Chandramani Singh and Joy Kuri) - Scheduling with Waiting Costs and Deadlines.</span></p>
-      <p><span lang="en-GB">[2] Aditya Shankar Kar, EE (Advisor: Gurunath Gurrala) - Tuning of Multi-Band Power System Stabilizers in Multi-Machine Power Systems</span></p>
+      <table class="table table-striped notmyelement" style="border-bottom: 1px solid black">
+        <tr style="text-align: center">
+          <td><u><i>Session</i></u></td>
+          <td><u><i>Cluster</i></u></td>
+          <td><u><i>Winner</i></u></td>
+          <td><u><i>Title</i></u></td>
+        </tr>
+        <tr>
+          <td>3A</td>
+          <td>AI and Machine Learning</td>
+          <td>Shubham Gupta,<br>CSA</td>
+          <td><a href="student_abstracts.html#CSS_shubhamgupta">A provably optimal algorithm for finding fair communities</a></td>
+        </tr>
+        <tr>
+          <td>3B</td>
+          <td>Nanodevices, VLSI Circuits <br>& Microsystems-1</td>
+          <td>Sarthak Das,<br>ECE</td>
+          <td><a href="student_abstracts.html#CSS_sarthakdas">Excitons in flatlands</a></td>
+        </tr>
+        <tr>
+          <td>3C</td>
+          <td>Security and Cryptography</td>
+          <td>Sruthi Sekar,<br>Math/CSA</td>
+          <td><a href="student_abstracts.html#CSS_sruthisekar">Non-malleable Codes</a></td>
+        </tr>
+        <tr>
+          <td>7A</td>
+          <td>Visual Analytics</td>
+          <td>Praveen Kumar Pokala,<br>EE</td>
+          <td><a href="student_abstracts.html#CSS_praveenkumarpokala">Nonconvex Analysis-Sparse Model — Moreau Envelope Regularization <br> and Projected Proximal Gradient Descent Optimization</a></td>
+        </tr>
+        <tr>
+          <td>7B</td>
+          <td>Nanodevices, VLSI Circuits <br>& Microsystems-2</td>
+          <td>Sayak Dutta Gupta,<br>ESE</td>
+          <td><a href="student_abstracts.html#CSS_sayakduttagupta">Novel p-type AlTiO Gate Oxide e-mode Operation in AlGaN/GaN HEMTs:<br> 600V Technology with Record High Performance</a></td>
+        </tr>
+        <tr>
+          <td>7C</td>
+          <td>Signal Processing and <br> Communications</td>
+          <td>Vinay Kumar B R,<br>ECE</td>
+          <td><a href="student_abstracts.html#CSS_vinaykumarbr">Probabilistic Forwarding with Coding for              Network-wide Broadcast</a></td>
+        </tr>
+        <tr>
+          <td>7D</td>
+          <td>Computer Systems</td>
+          <td>Aakash Khochare,<br>CDS</td>
+          <td><a href="student_abstracts.html#CSS_aakashkhochare">Algorithms for Co-scheduling of Edge Analytics <br> and Routes for UAV Fleet Missions</a></td>
+        </tr>
+        <tr>
+          <td>8A</td>
+          <td>Cyber-Physical Systems</td>
+          <td>Sagar G V,<br>ECE</td>
+          <td><a href="student_abstracts.html#CSS_sagargubbivenkatesh">Translating Natural Language Instructions to Computer <br>Programs for Robot Manipulation</a></td>
+        </tr>
+        <tr>
+          <td>8B</td>
+          <td>Power Engineering</td>
+          <td>Kiran Kumar Challa,<br>EE</td>
+          <td><a href="student_abstracts.html#CSS_kirankumarchalla">An Algorithm for Fitting Passive              Equivalent Circuits for Lumped <br> Parameter Frequency Dependent Transmission Line models</a></td>
+        </tr>
+        <tr>
+          <td>8C</td>
+          <td>Brain, Computation <br> and Data</td>
+          <td>Aditya Rastogi,<br>CDS</td>
+          <td><a href="student_abstracts.html#CSS_adityarastogi">Model based deep learning architecture                 for generalized <br> p-norm regularization</a></td>
+        </tr>
+        <tr>
+          <td>8D</td>
+          <td>Computational Sciences</td>
+          <td>Tushar Sakorikar,<br>ESE</td>
+          <td><a href="student_abstracts.html#CSS_tusharsakorikar">Modelling of electrical transport in biological tissues</a></td>
+        </tr>
+      </table>
     </div>
   </section>
 
   <div id='footer_space'>
+    <section class="mb-0 mt-0">
+      <div class="footer text-dark">
+        <div class="   bg-light pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6 col-sm-4">
+                <a href="#">
+                 <img src="resources/images/logos/IISc_Seal.jpg" height="158px">
+                </a>
+                <address class="color-light-20">
+                  <a href="https://eecs.iisc.ac.in/"> Division of EECS
+                  <br> Electrical, Electronics and Computer Sciences </a>
+                  <br> Indian Institute of Science, Bangalore
+                </address>
+              </div>
+              <div class="col-xs-6 col-sm-5">
+                <h5 class="my-2">Participating Departments</h5>
+                <ul class="list-unstyled list-light">
+                  <li>
+                    <a href="http://cds.iisc.ac.in" target="_blank">Computational and Data Sciences</a>
+                  </li>
+                  <li>
+                    <a href="https://csa.iisc.ac.in/" target="_blank">Computer Science and Automation</a>
+                  </li>
+                  <li>
+                    <a href="http://www.ee.iisc.ac.in/" target="_blank">Electrical Engineering</a>
+                  </li>
+                  <li>
+                    <a href="http://ece.iisc.ac.in" target="_blank">Electrical Communication Engineering</a>
+                  </li>
+                  <li>
+                    <a href="http://dese.iisc.ac.in/" target="_blank">Electronic Systems Engineering</a>
+                  </li>
+                  <li>
+                    <a href="http://www.rbccps.org/" target="_blank">Robert Bosch Centre for Cyber-Physical Systems</a>
+                  </li>
+                </ul>
+            </div>
+            <br style="clear:both" class="hidden-sm-up">
+            <div class="col-xs-4 col-sm-3">
+              <h5 class="my-2">Important Links</h5>
+              <ul class="list-unstyled list-light">
+                <li>
+                  <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Registration Link">
+                    <a href="https://forms.office.com/r/pgZj93WrPD">Registration</a>
+                  </span>
+                </li>
+                <!-- <li>
+                  <span class="d-inline-block" tabindex="0">
+                    <a href="cfs.html">Call for Sponsorship</a>
+                  </span>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row f-flex justify-content-between" style="justify-content: space-between;">
+            <div class="col-md-8 text-xs-center  text-left text-secondary my-1">
+              <p class="mt-2  text-dark"> &copy; Copyright 2021  All Rights Reserved |
+                <a class=" " href="http://eecs.iisc.ac.in" target="_blank">Division of EECS</a>
+              </p>
+            </div>
+            
+            <div class="col-md-4 text-xs-center   text-lg-right text-secondary my-1">
+              <div class="btn-container  mt-1 text-md-right text-sm-center">
+                <div class="mb-1 mr-3 align-self-right pt-0 d-inline-block">
+                  <a href="https://twitter.com/eecsiisc" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-twitter fa-lg  " aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.facebook.com/EECS-IISc-Research-Students-Symposium-2021-105756351649015" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+                  </a>
+                  <a href=" https://www.linkedin.com/company/eecs-iisc-research-students-symposium" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+                  </a>
+                  <!-- <a href="#" role="button" class=" p-2 m-2 btn btn-light">
+                    <i class="fab fa-google-plus fa-lg" aria-hidden="true"></i>
+                  </a> -->
+                </div>
+              </div> 
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- jQuery is required -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
